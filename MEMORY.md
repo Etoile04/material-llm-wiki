@@ -176,6 +176,15 @@ This is your long-term memory. Distill important events, decisions, and lessons 
 - Document platform-specific notes
 - Source: Daily memory 2026-02-05
 
+**macOS Compatibility Fix (2026-02-06)**
+- Replaced `script(1)` command with Python's `pty` module
+- `run_with_pty()` function now uses `pty.openpty()`
+- Better error handling with try/finally blocks
+- Real-time output printing for better UX
+- Tested and verified on macOS
+- **Commit**: 3e2f3e6 - "fix: Replace script(1) with Python pty module for macOS compatibility"
+- Source: Daily memory 2026-02-06
+
 ### Progress Reporting
 
 **Issue**: Failed to report progress every 30 minutes actively
@@ -268,10 +277,9 @@ This is your long-term memory. Distill important events, decisions, and lessons 
 - Test Spec Kit workflow
 
 ### Long-term
-- Fix Python wrapper macOS compatibility
-- Submit PR to original repository
+- Submit PR to original repository (including macOS compatibility fix)
 - Share usage experience and best practices
 
 ---
 
-*Last Updated: 2026-02-05*
+*Last Updated: 2026-02-06*

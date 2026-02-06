@@ -62,17 +62,28 @@ This is a backward-compatible change. All existing functionality is preserved wh
 - **Commit**: `acb9d95`
 
 ## Create PR
-1. Visit: https://github.com/win4r/claude-code-clawdbot-skill/compare/main...Etoile04:claude-code-clawdbot-skill-enhanced:fix/macos-pty-compatibility
+
+### Method 1: Direct GitHub Web Link (Recommended)
+
+1. Visit: https://github.com/win4r/claude-code-clawdbot-skill/compare/main...Etoile04:pr/macos-pty-fix
 2. Click "Create pull request"
 3. Use the title and body from this document
 4. Review and submit
 
-## Alternative: Using GitHub CLI
+### Method 2: GitHub CLI (may require permissions)
+
 ```bash
 gh pr create \
   --repo win4r/claude-code-clawdbot-skill \
   --base main \
-  --head Etoile04:fix/macos-pty-compatibility \
+  --head Etoile04:pr/macos-pty-fix \
   --title "fix: Replace script(1) with Python pty module for macOS compatibility" \
   --body-file /path/to/PR-macos-pty-fix.md
 ```
+
+## Branch Information
+
+- **Base branch**: `win4r/claude-code-clawdbot-skill` main
+- **Head branch**: `Etoile04:pr/macos-pty-fix` (clean branch based on upstream/main)
+- **Commit**: `4d2f0e1`
+- **Files changed**: 1 file, 50 insertions(+), 7 deletions(-)

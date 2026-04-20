@@ -1,0 +1,382 @@
+---
+name: llm-wiki
+description: >-
+  Build and maintain a Karpathy-style LLM knowledge base for nuclear materials research.
+  Ingests raw sources (papers, PDFs, notes), compiles cross-linked concept/entity/summary
+  pages, answers queries against the corpus, lints the graph for health, and processes
+  human feedback via audit/. Use when (1) scaffolding a new knowledge base,
+  (2) ingesting articles/papers/PDFs into raw/, (3) compiling or restructuring wiki
+  articles, (4) answering questions against the wiki, (5) running lint passes,
+  (6) processing human feedback from audit/.
+---
+
+# LLM Wiki — Nuclear Materials Knowledge Base
+
+> Based on Karpathy's LLM Wiki pattern. Adapted for OpenClaw by Wenjie Li.
+
+## Core Idea
+
+Instead of RAG (re-retrieving raw docs every time), the LLM **compiles** raw sources into a persistent, cross-linked wiki. Knowledge compounds — every ingest, query, lint, and audit pass makes the wiki richer.
+
+- **You** own: sourcing raw material, asking questions, steering direction, filing feedback.
+- **LLM** owns: all writing, cross-referencing, filing, bookkeeping, and applying feedback.
+
+Five operations: `compile`, `ingest`, `query`, `lint`, `audit`.
+
+## Directory Layout
+
+```
+<wiki-root>/
+├── CLAUDE.md              ← Schema: scope, conventions, current articles, gaps
+├── log/                   ← Per-day operation log (one file per day)
+│   └── YYYYMMDD.md
+├── audit/                 ← Human feedback inbox
+│   └── resolved/          ← Processed feedback
+├── raw/                   ← Immutable source documents (LLM reads only)
+│   ├── articles/          ← Web articles, notes
+│   ├── papers/            ← Extracted paper text
+│   └── refs/              ← Pointer files for external PDFs/binaries
+├── wiki/                  ← LLM-generated knowledge (LLM writes)
+│   ├── index.md           ← Master catalog
+│   ├── concepts/          ← Concept/topic pages (<1200 words each)
+│   ├── entities/          ← Materials, models, people, organizations
+│   └── summaries/         ← Per-source summary pages (200-400 words)
+├── parameters/            ← Structured parameter data (JSON)
+└── outputs/
+    └── queries/           ← Query answers (promote durable ones to wiki/)
+```
+
+## 语言规范
+
+### 中文为主、英中对照
+
+- **所有 wiki 页面**以中文撰写，英文术语首次出现时标注在括号中
+- 例如：「裂变气体气泡（Fission Gas Bubble, FGB）在辐照初期...」
+- **术语对照表**：`raw/terminology.md` — 所有页面必须使用统一翻译
+- **参数符号**保持英文（如 $D_v$, $E_m$），描述用中文
+- **文件名**保持英文（便于跨平台兼容），页面标题和内容用中文
+
+### 格式示例
+
+```markdown
+# 再结晶（Recrystallization）
+
+> 辐照诱发再结晶是指...
+
+## 物理机制
+
+裂变气体扩散（Fission Gas Diffusion）驱动...
+
+## 关键参数
+
+| 符号 | 数值 | 单位 | 材料 | 来源 |
+|------|------|------|------|------|
+| $\Phi_{rx}$ | 2-4×10²¹ | fissions/m³ | U-10Mo | [[wiki/summaries/2013_Kim_RecrystallizationFGBSwellingUMo|Kim 2013]] |
+```
+
+## Core Principles
+
+### 1. Divide and Conquer
+
+Single concept page = **400–1200 words**. When a topic exceeds this:
+- Create subfolder: `wiki/concepts/<topic>/`
+- Index page: `wiki/concepts/<topic>/index.md`
+- Each aspect: `wiki/concepts/<topic>/<aspect>.md`
+
+### 2. Mermaid for Diagrams, KaTeX for Formulas
+
+- Flow/state/hierarchy diagrams → **mermaid** (never ASCII art)
+- Formulas → **KaTeX**: inline `$f(x)$` or block `$$...$$`
+
+### 3. Raw File Policy
+
+- Small text files → copy to `raw/`
+- Large PDFs (>10MB) → pointer file in `raw/refs/`:
+  ```yaml
+  ---
+  kind: ref
+  external_path: /path/to/file.pdf
+  size: ~50 MB
+  ---
+  ```
+- Wiki pages cite `[[raw/refs/<slug>]]` like any source
+
+### 4. Audit is the Human Feedback Surface
+
+- Humans file feedback → `audit/` directory
+- AI processes feedback → moves to `audit/resolved/` with resolution notes
+- Never delete audit files
+
+## The Five Operations
+
+### 1. `compile`
+
+(Re)structure wiki content. Run after big ingests, when pages outgrow limits, or when index.md is stale.
+
+Steps:
+1. Read `CLAUDE.md`, `wiki/index.md`, target subtree
+2. Split oversized pages (>1200 words)
+3. Merge near-duplicates
+4. Rebuild `wiki/index.md`
+5. Log to `log/YYYYMMDD.md`
+
+### 2. `ingest`
+
+Add a new source. One source typically touches 5–15 wiki pages.
+
+Steps:
+1. **PDF 转 Markdown**：将 PDF 提取为高质量 Markdown
+   ```bash
+   # 方法 A: MinerU（最高质量，保留公式和表格）
+   ~/.venvs/mineru/bin/mineru -p "<pdf_path>" -o raw/papers/ -b pipeline -m auto -l en -f true -t true
+   
+   # 方法 B: 批量转换脚本（自动选 MinerU 或 pdftotext）
+   python3 scripts/convert_pdfs.py <batch.json> raw/papers/
+   ```
+   - 输出保存到 `raw/papers/`
+   - **MinerU** 保留 LaTeX 公式和 Markdown 表格（推荐）
+   - **⚠️ 必须开启公式识别**: `-f true`（默认开启，但需显式确认）
+   - **pdftotext** 作为后备（不保留公式格式）
+   - MinerU 环境: `~/.openclaw/workspace/.venv-mineru/`
+   - 如果 PDF 已有对应 `.md`，自动跳过
+2. 读取 `raw/papers/<slug>.md` 全文
+3. 创建 `wiki/summaries/<slug>.md`（200-400 词中文摘要）
+   - **⚠️ 模型类论文必须包含 `## Key Equations` 章节**
+   - 公式用 LaTeX 格式（`$$...$$` 块级、`$...$` 行内）
+   - 每个公式标注物理含义和变量说明
+   - 如果源 MD 缺公式，用 web_search 搜索论文 DOI 获取
+4. 创建/更新 `wiki/concepts/` 概念页
+5. 创建/更新 `wiki/entities/` 实体页
+6. 提取参数到 `parameters/<slug>.json`
+7. 更新 `wiki/index.md`
+8. 记录日志到 `log/YYYYMMDD.md`
+
+**⚠️ PDF 转 Markdown 是必需步骤**：
+- 所有 PDF 必须先转换为 Markdown，保存到 `raw/papers/`
+- MinerU 路径：`/Users/lwj04/.openclaw/workspace/.venv-mineru/bin/mineru`
+- **公式识别必须开启**: `-f true -t true`
+- 大型 PDF（>10MB）MinerU 处理较慢，可用 pdftotext 先处理
+- 批量处理：`python3 scripts/convert_pdfs.py batch.json raw/papers/`
+
+**⚠️ Summary 公式要求**：
+- 涉及数理模型的论文，summary 必须包含 `## Key Equations` 章节
+- 公式用 LaTeX 格式，标注物理含义
+- 如果 MinerU 转换缺公式，用 web_search + DOI 补充
+- 公式缺失是知识库质量的关键风险点
+
+### 3. `query`
+
+Answer a question grounded in the wiki.
+
+Steps:
+1. Read `wiki/index.md`
+2. Read relevant pages + one level of wikilinks
+3. If insufficient material, say so and suggest what to ingest
+4. Synthesize answer with `[[Page Name]]` citations
+5. Save to `outputs/queries/`
+6. Promote durable answers to `wiki/concepts/`
+7. Log
+
+### 4. `lint`
+
+Health check. Check:
+- Dead wikilinks (`[[Target]]` where file doesn't exist)
+- Orphan pages (no inbound links)
+- Missing index entries
+- Oversized pages (>1200 words)
+- Stale parameters (not updated in >30 days)
+- Audit shape (malformed files)
+- Log consistency
+
+### 5. `audit`
+
+Process human feedback from `audit/`.
+
+Steps:
+1. List open audits
+2. For each: read, locate target text, decide action (accept/partial/reject/defer)
+3. Apply corrections to target files
+4. Append resolution section, move to `audit/resolved/`
+5. Log
+
+### 6. `validate` — 参数质量验证
+
+对 `parameters/` 目录下的 JSON 文件进行质量检查。
+
+Steps:
+1. 读取 `parameters/` 或指定目录下的所有 JSON 文件
+2. 运行 `scripts/validate_params.py`
+3. 检查项：
+   - **量级合理性**（magnitude check）：支持 typed values，`scalar` 检查单值，`range` 检查上下界，`expression` 跳过数值校验
+   - **单位一致性**（unit consistency）：同参数不同来源的单位是否可转换
+   - **必填字段**（required fields）：id, symbol, unit, category, source_file，以及 typed value 所需字段
+   - **ID 唯一性**（unique ID）：全局无重复
+   - **重复检测**（duplication）：不同 ID 但相同 symbol+material+temperature 的记录
+4. **typed value schema**：
+   - `value_type: scalar|range|expression|list`
+   - `scalar` → `value`
+   - `range` → `value_min`, `value_max`
+   - `expression` → `value_expr`
+   - `list` → `values`
+4. 输出三级报告：**pass** ✅ / **warn** ⚠️ / **fail** ❌
+5. 对 fail 项给出具体修复建议
+6. Log to `log/YYYYMMDD.md`
+
+### 7. `compare` — 参数版本比对
+
+对比两个参数目录（如 v1 和 v2），精确匹配论文级别变更。
+
+Steps:
+1. 读取两个参数目录（v1 和 v2）
+2. 运行 `scripts/compare_params.py`
+3. 按论文级别精确匹配（source_file + symbol + material + temperature）
+4. 分类输出：
+   - **匹配**（matched）：完全一致
+   - **新增**（added）：v2 独有
+   - **修正**（corrected）：同 ID 但值/单位不同
+   - **冲突**（conflict）：匹配键相同但值差异超阈值
+   - **缺失**（missing）：v1 有但 v2 无
+5. 对冲突项标注差异原因：单位不同 / 条件不同 / 提取错误 / 疑似匹配错误
+6. Log to `log/YYYYMMDD.md`
+
+## `wiki/index.md` Format
+
+```markdown
+# Index — <Topic>
+
+> One-sentence scope.
+
+## 🔖 Navigation
+- [[#Concepts]] · [[#Entities]] · [[#Summaries]] · [[#Open Questions]]
+
+## Concepts
+### <Category>
+- [[concepts/Foo]] — one-line summary
+
+## Entities
+- [[entities/Bar]] — one-line summary
+
+## Summaries (chronological)
+- YYYY-MM-DD — [[summaries/slug]] — one-line summary
+
+## Open Questions
+- Q1: ...
+```
+
+## `log/` Format
+
+- One file per day: `log/YYYYMMDD.md`
+- H1 = date; H2 per entry: `## [HH:MM] <op> | <description>`
+- Ops: compile, ingest, query, lint, audit, promote, split
+
+## `CLAUDE.md` Format
+
+The schema file. Contains:
+- **Scope**: What this wiki covers
+- **Naming conventions**: File naming rules
+- **Current articles**: List of all wiki pages
+- **Research gaps**: Topics needing more sources
+- **Open questions**: Unresolved issues
+- **Conventions**: Style rules, units, terminology
+
+Read at the start of every session.
+
+## Parameter Database
+
+`parameters/` stores structured JSON extracted from sources. Each file:
+```json
+[
+  {
+    "id": "unique_id",
+    "name": "Parameter Name",
+    "symbol": "$D_v$",
+    "value_type": "scalar",
+    "value": 1.38e-8,
+    "unit": "m²/s",
+    "uncertainty": "±50%",
+    "temperature": "400-800 K",
+    "material": "U-10Mo",
+    "source_file": "summaries/slug.md",
+    "confidence": "high"
+  },
+  {
+    "id": "unique_id_2",
+    "name": "Range Parameter",
+    "symbol": "$D_v$",
+    "value_type": "range",
+    "value_min": 1e-16,
+    "value_max": 1e-9,
+    "unit": "m²/s",
+    "temperature": "773 K",
+    "material": "U-10Mo",
+    "source_file": "summaries/slug.md",
+    "confidence": "medium"
+  },
+  {
+    "id": "unique_id_3",
+    "name": "Expression Parameter",
+    "symbol": "$Q$",
+    "value_type": "expression",
+    "value_expr": "1e-16 to 1e-9",
+    "unit": "J",
+    "temperature": "773 K",
+    "material": "U-10Mo",
+    "source_file": "summaries/slug.md",
+    "confidence": "low"
+  }
+]
+```
+
+### Typed Value Schema
+
+`value_type` 字段指示值的类型：
+
+| value_type | 必填字段 | 说明 |
+|---|---|---|
+| `scalar` | `value` | 单个数值（默认） |
+| `range` | `value_min`, `value_max` | 数值范围 |
+| `expression` | `value_expr` | 公式、文字描述或无法解析的表达式 |
+| `list` | `values` (array) | 离散多个值 |
+
+### 参数质量门禁（Parameter Quality Gate）
+
+参数数据在进入 wiki 前需通过质量门禁：
+
+1. **自动检查**：每次 `ingest` 操作后自动运行 `validate`
+2. **报告级别**：
+   - 全部 pass → 自动写入 `parameters/`
+   - 存在 warn → 写入但标记待审查
+   - 存在 fail → 阻断写入，返回修复建议
+3. **版本比对**：参数更新时自动运行 `compare`，记录变更历史
+4. **定期审计**：`lint` 操作包含参数完整性检查
+
+## Use Cases
+
+- **Research deep-dive** — reading papers on metal fuel swelling over weeks
+- **Model parameter database** — structured extraction for model calibration
+- **Writing companion** — building knowledge for academic papers
+- **Team knowledge base** — shared understanding of fuel behavior
+
+### 质量保障流程（Quality Assurance Workflow）
+
+```
+ingest → validate → (pass) → 写入 parameters/
+                     → (fail) → 返回修复建议 → 人工审核 → 重新 ingest
+
+参数更新 → compare(v1, v2) → 匹配/新增/修正/冲突/缺失
+                                    → 冲突项 → 标注原因 → 人工裁定
+
+textlint → validate + compare → 报告 → log/YYYYMMDD.md
+```
+
+**核心原则**：
+- 自动检查优先，人工审核兜底
+- 所有变更有据可查（log）
+- 冲突不静默覆盖，必须标注并等待裁定
+
+## References
+
+- `references/schema-guide.md` — CLAUDE.md template
+- `references/article-guide.md` — Writing good wiki articles
+- `references/log-guide.md` — Log file conventions
+- `references/audit-guide.md` — Audit file format

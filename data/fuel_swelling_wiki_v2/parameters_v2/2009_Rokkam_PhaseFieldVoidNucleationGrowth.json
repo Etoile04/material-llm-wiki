@@ -18,7 +18,11 @@
     "name": "生长速率系数",
     "symbol": "$\\lambda$",
     "value_type": "list",
-    "values": [0.268, 0.349, 0.412],
+    "values": [
+      0.268,
+      0.349,
+      0.412
+    ],
     "unit": "无量纲（约化单位）",
     "material": "通用金属",
     "category": "microstructure",
@@ -32,7 +36,10 @@
     "name": "KJMA方程参数（高源强）",
     "symbol": "$\\rho_e, k$",
     "value_type": "list",
-    "values": [0.278, 1.72e-4],
+    "values": [
+      0.278,
+      0.000172
+    ],
     "unit": "无量纲",
     "material": "通用金属",
     "category": "microstructure",
@@ -46,7 +53,10 @@
     "name": "形核率",
     "symbol": "$J$",
     "value_type": "list",
-    "values": [2.22, 1.04],
+    "values": [
+      2.22,
+      1.04
+    ],
     "unit": "空洞/时间步",
     "material": "通用金属",
     "category": "microstructure",
@@ -60,7 +70,10 @@
     "name": "Ostwald熟化参数（高源强）",
     "symbol": "$\\rho_0, \\tau_1$",
     "value_type": "list",
-    "values": [0.1885, 230.05],
+    "values": [
+      0.1885,
+      230.05
+    ],
     "unit": "无量纲",
     "material": "通用金属",
     "category": "microstructure",
@@ -74,7 +87,10 @@
     "name": "空位源项强度",
     "symbol": "$P_{cascv}$",
     "value_type": "list",
-    "values": [0.1, 0.25],
+    "values": [
+      0.1,
+      0.25
+    ],
     "unit": "无量纲（约化单位）",
     "material": "通用金属",
     "category": "simulation",
@@ -88,7 +104,12 @@
     "name": "初始过饱和比",
     "symbol": "$S_v$",
     "value_type": "list",
-    "values": [100, 200, 300, 1000],
+    "values": [
+      100,
+      200,
+      300,
+      1000
+    ],
     "unit": "无量纲",
     "material": "通用金属",
     "category": "simulation",
@@ -96,5 +117,85 @@
     "source_section": "Key Equations",
     "confidence": "medium",
     "notes": "S_v=1000用于形核模拟以缩短孕育期"
+  },
+  {
+    "id": "2009_Rokkam_PhaseFieldVoidNucleationGrowth_param_008",
+    "name": "空位形成能",
+    "symbol": "$E_{fv}$",
+    "value_type": "scalar",
+    "value": "1.0",
+    "unit": "eV",
+    "uncertainty": null,
+    "temperature": "1276",
+    "material": "Generic metal",
+    "category": "irradiation",
+    "source_file": "raw/mineru/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals.md",
+    "source_section": "Section 2.2",
+    "confidence": "medium",
+    "notes": "E_fv_tilde=9.09对应约1 eV，T≈1276K。文中说明不代表特定金属"
+  },
+  {
+    "id": "2009_Rokkam_PhaseFieldVoidNucleationGrowth_param_009",
+    "name": "热平衡空位浓度",
+    "symbol": "$c_0^v$",
+    "value_type": "scalar",
+    "value": "1.13e-4",
+    "unit": "fraction",
+    "uncertainty": null,
+    "temperature": "1276",
+    "material": "Generic metal",
+    "category": "thermodynamic",
+    "source_file": "raw/mineru/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals.md",
+    "source_section": "Section 2.2",
+    "confidence": "medium",
+    "notes": "c_o ≈ exp(-E_fv/kBT) at T≈1276K"
+  },
+  {
+    "id": "2009_Rokkam_PhaseFieldVoidNucleationGrowth_param_010",
+    "name": "Landau能量参数",
+    "symbol": "$\\tilde{A}=\\tilde{B}$",
+    "value_type": "scalar",
+    "value": "9.09",
+    "unit": "dimensionless",
+    "uncertainty": null,
+    "temperature": "1276",
+    "material": "Generic metal",
+    "category": "thermodynamic",
+    "source_file": "raw/mineru/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals.md",
+    "source_section": "Section 2.2",
+    "confidence": "medium",
+    "notes": "双稳态Landau项常数"
+  },
+  {
+    "id": "2009_Rokkam_PhaseFieldVoidNucleationGrowth_param_011",
+    "name": "空位迁移率（无量纲）",
+    "symbol": "$\\tilde{M}_v$",
+    "value_type": "scalar",
+    "value": "1.0",
+    "unit": "dimensionless",
+    "uncertainty": null,
+    "temperature": null,
+    "material": "Generic metal",
+    "category": "diffusion",
+    "source_file": "raw/mineru/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals.md",
+    "source_section": "Section 2.2",
+    "confidence": "medium",
+    "notes": "M_v = D_v/(kBT)的无量纲形式"
+  },
+  {
+    "id": "2009_Rokkam_PhaseFieldVoidNucleationGrowth_param_012",
+    "name": "Allen-Cahn动力学系数（无量纲）",
+    "symbol": "$\\tilde{L}$",
+    "value_type": "scalar",
+    "value": "1.0",
+    "unit": "dimensionless",
+    "uncertainty": null,
+    "temperature": null,
+    "material": "Generic metal",
+    "category": "diffusion",
+    "source_file": "raw/mineru/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals.md",
+    "source_section": "Section 2.2",
+    "confidence": "medium",
+    "notes": "序参量方程的动力学系数"
   }
 ]

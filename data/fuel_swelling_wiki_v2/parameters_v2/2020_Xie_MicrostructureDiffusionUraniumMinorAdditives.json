@@ -115,9 +115,18 @@
     "symbol": "$T_{trans}$",
     "value_type": "list",
     "values": [
-      {"species": "U", "T_K": 600},
-      {"species": "Mo", "T_K": 650},
-      {"species": "Xe", "T_K": 800}
+      {
+        "species": "U",
+        "T_K": 600
+      },
+      {
+        "species": "Mo",
+        "T_K": 650
+      },
+      {
+        "species": "Xe",
+        "T_K": 800
+      }
     ],
     "unit": "K",
     "material": "γU-10Mo",
@@ -135,7 +144,7 @@
     "unit": "W/m·K",
     "temperature": "500 °C",
     "material": "γU-Mo",
-    "category": "material_property",
+    "category": "fuel_performance",
     "source_file": "summaries/2020_Xie_MicrostructureDiffusionUraniumMinorAdditives.md",
     "confidence": "medium",
     "notes": "高热导率使电子能量沉积快速耗散"

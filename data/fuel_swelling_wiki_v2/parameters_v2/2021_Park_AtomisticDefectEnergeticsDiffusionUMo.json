@@ -9,7 +9,7 @@
     "unit": "eV",
     "temperature": "400–1200 K",
     "material": "γU (bcc)",
-    "category": "defect_energetics",
+    "category": "irradiation",
     "source_file": "summaries/2021_Park_AtomisticDefectEnergeticsDiffusionUMo.md",
     "source_section": "Key Equations",
     "confidence": "high",
@@ -20,12 +20,12 @@
     "name": "γU自间隙原子形成能",
     "symbol": "$E_{self\\text{-}i}^{f}(\\gamma U)$",
     "value_type": "range",
-    "value_min": 0.90,
+    "value_min": 0.9,
     "value_max": 1.08,
     "unit": "eV",
     "temperature": "400–1200 K",
     "material": "γU (bcc)",
-    "category": "defect_energetics",
+    "category": "irradiation",
     "source_file": "summaries/2021_Park_AtomisticDefectEnergeticsDiffusionUMo.md",
     "source_section": "Key Equations",
     "confidence": "high",
@@ -67,9 +67,18 @@
     "symbol": "$Q_{inter\\text{-}D}$",
     "value_type": "list",
     "values": [
-      {"composition": "U-7Mo", "Q_eV": 0.79},
-      {"composition": "U-10Mo", "Q_eV": 0.84},
-      {"composition": "U-12Mo", "Q_eV": 1.07}
+      {
+        "composition": "U-7Mo",
+        "Q_eV": 0.79
+      },
+      {
+        "composition": "U-10Mo",
+        "Q_eV": 0.84
+      },
+      {
+        "composition": "U-12Mo",
+        "Q_eV": 1.07
+      }
     ],
     "unit": "eV",
     "material": "γU-xMo",
@@ -85,9 +94,18 @@
     "symbol": "$D_{0,inter\\text{-}D}$",
     "value_type": "list",
     "values": [
-      {"composition": "U-7Mo", "D0_m2s": "4.83e-8"},
-      {"composition": "U-10Mo", "D0_m2s": "3.85e-8"},
-      {"composition": "U-12Mo", "D0_m2s": "3.72e-8"}
+      {
+        "composition": "U-7Mo",
+        "D0_m2s": "4.83e-8"
+      },
+      {
+        "composition": "U-10Mo",
+        "D0_m2s": "3.85e-8"
+      },
+      {
+        "composition": "U-12Mo",
+        "D0_m2s": "3.72e-8"
+      }
     ],
     "unit": "m²/s",
     "material": "γU-xMo",
@@ -103,9 +121,18 @@
     "symbol": "$D_{self\\text{-}D}^{U}(1200K)$",
     "value_type": "list",
     "values": [
-      {"composition": "U-7Mo", "D_m2s": "5.89e-11"},
-      {"composition": "U-10Mo", "D_m2s": "2.38e-11"},
-      {"composition": "U-12Mo", "D_m2s": "2.44e-12"}
+      {
+        "composition": "U-7Mo",
+        "D_m2s": "5.89e-11"
+      },
+      {
+        "composition": "U-10Mo",
+        "D_m2s": "2.38e-11"
+      },
+      {
+        "composition": "U-12Mo",
+        "D_m2s": "2.44e-12"
+      }
     ],
     "unit": "m²/s",
     "temperature": "1200 K",
@@ -125,7 +152,7 @@
     "unit": "eV",
     "temperature": "400 K",
     "material": "γU-10Mo (wt.%)",
-    "category": "defect_energetics",
+    "category": "irradiation",
     "source_file": "summaries/2021_Park_AtomisticDefectEnergeticsDiffusionUMo.md",
     "source_section": "Key Equations",
     "confidence": "medium",

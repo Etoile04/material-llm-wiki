@@ -278,6 +278,7 @@ Read at the start of every session.
     "id": "unique_id",
     "name": "Parameter Name",
     "symbol": "$D_v$",
+    "value_type": "scalar",
     "value": 1.38e-8,
     "unit": "m²/s",
     "uncertainty": "±50%",
@@ -285,9 +286,45 @@ Read at the start of every session.
     "material": "U-10Mo",
     "source_file": "summaries/slug.md",
     "confidence": "high"
+  },
+  {
+    "id": "unique_id_2",
+    "name": "Range Parameter",
+    "symbol": "$D_v$",
+    "value_type": "range",
+    "value_min": 1e-16,
+    "value_max": 1e-9,
+    "unit": "m²/s",
+    "temperature": "773 K",
+    "material": "U-10Mo",
+    "source_file": "summaries/slug.md",
+    "confidence": "medium"
+  },
+  {
+    "id": "unique_id_3",
+    "name": "Expression Parameter",
+    "symbol": "$Q$",
+    "value_type": "expression",
+    "value_expr": "1e-16 to 1e-9",
+    "unit": "J",
+    "temperature": "773 K",
+    "material": "U-10Mo",
+    "source_file": "summaries/slug.md",
+    "confidence": "low"
   }
 ]
 ```
+
+### Typed Value Schema
+
+`value_type` 字段指示值的类型：
+
+| value_type | 必填字段 | 说明 |
+|---|---|---|
+| `scalar` | `value` | 单个数值（默认） |
+| `range` | `value_min`, `value_max` | 数值范围 |
+| `expression` | `value_expr` | 公式、文字描述或无法解析的表达式 |
+| `list` | `values` (array) | 离散多个值 |
 
 ### 参数质量门禁（Parameter Quality Gate）
 

@@ -1,0 +1,286 @@
+{
+  "mappings": [
+    {
+      "v1": "1979_Ronchi_FissionGasSwellingMX_Fuels",
+      "v2": "1979_Ronchi_FissionGasSwellingMX_Fuels",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "1985_Willard_SwellingPhaseReversionU10Mo",
+      "v2": "1985_Willard_SwellingPhaseReversionU10Mo",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "1993_Rest_VoidSwellingAlphaU",
+      "v2": "1993_Rest_VoidSwellingAlphaU",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2005_Rest_RecrystallizationSwellingUO2UMo",
+      "v2": "2005_Rest_RecrystallizationSwellingUO2UMo",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2008_Surh_VoidNucleationGrowthCoalescence",
+      "v2": "2008_Surh_VoidNucleationGrowthCoalescence",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2009_Rokkam_PhaseFieldVoidNucleationGrowth",
+      "v2": "2009_Rokkam_PhaseFieldVoidNucleationGrowth",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2016_Sun_NeutronRadiographyU10ZrSwelling",
+      "v2": "2016_Sun_NeutronRadiographyU10ZrSwelling",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2020_Williams_PIRT_SwellingUZr",
+      "v2": "2020_Williams_PIRT_SwellingUZr",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2021_Robinson_PredictiveSwellingUMoMonolithic",
+      "v2": "2021_Robinson_PredictiveSwellingUMoMonolithic",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2021_Zhang_EffectiveSwellingInertMatrix",
+      "v2": "2021_Zhang_EffectiveSwellingInertMatrix",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2022_Yun_CavitationalVoidSwelling",
+      "v2": "2022_Yun_CavitationalVoidSwelling",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2023_Smith_EarlySelfOrganizationGBS",
+      "v2": "2023_Smith_EarlySelfOrganizationGBS",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2023_Smith_UCInclusionsGBS",
+      "v2": "2023_Smith_UCInclusionsGBS",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2023_Ye_IntegratedSimulationU10Mo",
+      "v2": "2023_Ye_IntegratedSimulationU10Mo",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2021_Qian_RateTheoryUN",
+      "v2": "2021_Qian_RateTheoryUN",
+      "method": "auto",
+      "confidence": 1.0
+    },
+    {
+      "v1": "2022_Jian_FissionGasSwellingModelU10Mo",
+      "v2": "jian_2022_further_development_of_the_fission_gas_swelling_mo",
+      "method": "auto",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2016_Hu_GrainMorphologyGasBubbleUMo",
+      "v2": "hu_et_al_2016_effect_of_grain_morphology_on_gas_bubble_swelling_in_umo_fuels_a_3",
+      "method": "auto",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2011_Millett_PhaseFieldGasBubbleKinetics",
+      "v2": "millett_et_al_2011_phase_field_simulation_of_irradiated_metals_part_ii_gas_bubble_kinetics_ccdd79e2",
+      "method": "auto",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2015_Cui_MechanisticGaseousSwellingUMo",
+      "v2": "Cui_et_al_2015_Modifications_and_applications_of_the_mechanistic_gaseous_swellin",
+      "method": "auto",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2022_Hanson_EMPIrESwellingAnalysis",
+      "v2": "Hanson_et_al._-_2022_-_Non-destructive_analysis_of_swelling_in_the_EMPIrE_fuel_test_fff4750c",
+      "method": "auto",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2015_Miller_TEMGasBubbleSuperlatticeU7Mo",
+      "v2": "miller_et_al_2015_transmission_electron_microscopy_characterization_of_the_fission_gas_bubble_superlattice_in_irradiat_e",
+      "method": "auto",
+      "confidence": 0.85
+    },
+    {
+      "v1": "1990_Hofman_SwellingBehaviorUPuZr",
+      "v2": "Hofman_et_al._1990_Swelling behavior_of_U-Pu-Zr_fuel",
+      "method": "auto",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2024_Muntaha_GB_SurfaceDiffusion",
+      "v2": "muntaha_et_al_2024_impact_of_grain_boundary_and_surface_diffusion_on_predicted_fission_gas_bubble_behavior_and_release",
+      "method": "auto",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2022_Aagesen_PFBubbleInterconnection",
+      "v2": "Aagesen et al._2022_Phase-field simulations of fission gas bubble growth and interconnection in U-(Pu)-Zr nuclear fuel",
+      "method": "auto",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2001_Rest_GRSIS_FissionGasMetallic",
+      "v2": "2001_Fission_gas_release_and_swelling_model_of_metallic_fast_reactor_fuel",
+      "method": "manual",
+      "confidence": 0.8
+    },
+    {
+      "v1": "1992_Rest_CavitationalSwellingAlphaUPuZr",
+      "v2": "Fission_gas_bubble_nucleated_cavitational_swelling_of_alpha_phase_of_irradiated_UPuZr_fuel",
+      "method": "manual",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2008_Kim_IntergranularFGBubblesUMo",
+      "v2": "kim_et_al_2008_characterization_of_intergranular_fission_gas_bubbles_in_u_mo_fuel_dff09fb0",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2011_Kim_FissionProductInducedSwellingUMo",
+      "v2": "kim_hofman_2011_fission_product_induced_swelling_of_u_mo_alloy_fuel",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2013_Karahan_FEAST_METAL_FuelSwelling",
+      "v2": "karahan_andrews_2013_extended_fuel_swelling_models_and_ultra_high_burn_up_fuel_behavior_of_u_pu_zr_metallic_fuel_using_f",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2013_Kim_FissionInducedSwellingCreepUMo",
+      "v2": "kim_et_al_2013_fission_induced_swelling_and_creep_of_u_mo_alloy_fuel",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2013_Kim_RecrystallizationFGBSwellingUMo",
+      "v2": "kim_hofman_cheon_2013_recrystallization_and_fission_gas_bubble_swelling_of_u_mo_fuel",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2015_Gan_ThermalStabilityGasBubbleSuperlattice",
+      "v2": "Gan et al. - 2015 - Thermal stability of fission gas bubble superlattice in irradiated U-10Mo fuel",
+      "method": "manual",
+      "confidence": 0.95
+    },
+    {
+      "v1": "2016_Hu_GasBubbleSuperlatticeFormationPF",
+      "v2": "hu_et_al_2016_formation_mechanism_of_gas_bubble_superlattice_in_umo_metal_fuels_phase_field_modeling_investigation",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2017_Casella_CharacterizationFissionGasBubblesU10Mo",
+      "v2": "Casella et al_2017_Characterization of fission gas bubbles in irradiated U-10Mo fuel",
+      "method": "manual",
+      "confidence": 0.95
+    },
+    {
+      "v1": "2018_Liang_3DPhaseFieldIntragranularBubbleUMo",
+      "v2": "liang_et_al_2018_three_dimensional_phase_field_simulations_of_intragranular_gas",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2018_Millett_ComputationalExperimentalPorosityMetallic",
+      "v2": "mllett_et_al_2018_computational_and_experimental_studies_of_microstructure_scale",
+      "method": "manual",
+      "confidence": 0.85
+    },
+    {
+      "v1": "2020_Aagesen_BisonUPuZrSwellingLowerLengthScale",
+      "v2": "Aagesen_JR._Jokisaari_Ke_2020_Lower_length_scale_informed_improvements_to_Bison_U-Pu-Zr_fuel_swelling_model",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2020_Beeler_ImprovedEOSXeBubbleUMo",
+      "v2": "Beeler et al._2020_A improved equation of state for Xe gas bubbles in γU-Mo fuels",
+      "method": "manual",
+      "confidence": 0.95
+    },
+    {
+      "v1": "2020_Hu_DefectClusterGasBubbleUMo",
+      "v2": "hu_et_al_2020_defect_cluster_and_nonequilibrium_gas_bubble_associated_growth_in_irradiated_umo_fuels_a_cluster_dynamics_",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2021_Hilty_FissionGasBubblesThermalConductivity",
+      "v2": "Hilty_et_al_2021_Impact_of_fission_gas_bubbles_on_thermal_conductivity_of_UO2",
+      "method": "manual",
+      "confidence": 0.95
+    },
+    {
+      "v1": "2024_Aagesen_VacancyProductionPF",
+      "v2": "Aagesen - 2024 - Parameterization of vacancy production rate in phase-field models of fission gas bubble evolution in",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2024_Arivu_APTSegregationGasBubblesUMo",
+      "v2": "Arivu 等 - 2024 - Atom probe tomography of segregation at grain boundaries and gas bubbles in neutron irradiated U-10",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2025_Hanson_StablePredictableSwellingU10Mo",
+      "v2": "Hanson et al. - 2025 - Microstructurally validated stable and predictable swelling in low-enriched uranium monolithic U-10M",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2025_Jiang_GasBubbleSuperlatticePhaseField",
+      "v2": "jiang_et_al_2025_formation_of_gas_bubble_superlattice_in_u_mo_alloys_a_phase_field_study_9dd3a03b",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2026_FigueroaBengoa_HighBurnupPorosityUMo",
+      "v2": "2026 - Porosity_ swelling_ and composition evolution in high-burnup monolithic U-Mo fuel",
+      "method": "manual",
+      "confidence": 0.9
+    },
+    {
+      "v1": "2023_Li_ElasticConstantsU10Mo",
+      "v2": "li_et_al_2023_models_for_effective_elastic_constants_of_irradiated_u_10mo_fuels_with_distributed_fission_gas_bubbl",
+      "method": "manual",
+      "confidence": 0.9
+    }
+  ],
+  "unmapped_v1": [
+    "2019_Mohamed_MURRLEU10MoSwellingCreep"
+  ],
+  "unmapped_v2": [
+    "151846_f3c95453"
+  ]
+}

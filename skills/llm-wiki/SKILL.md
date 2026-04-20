@@ -148,6 +148,16 @@ Steps:
 4. 创建/更新 `wiki/concepts/` 概念页
 5. 创建/更新 `wiki/entities/` 实体页
 6. 提取参数到 `parameters/<slug>.json`
+   - **参数提取范围**（不限于肿胀，覆盖以下 8 类）：
+     - 扩散系数（Diffusion Coefficient）：$D_v$, $D_i$, 互扩散系数
+     - 激活能（Activation Energy）：$E_m$, $E_f$, 迁移/形成能
+     - 热力学参数（Thermodynamic）：$ΔG$, $ΔH$, $ΔS$, 溶解度极限
+     - 相变参数（Phase Transformation）：相变温度、相图数据、CALPHAD 参数
+     - 弹性/力学性质：弹性常数、剪切模量、泊松比
+     - 辐照损伤参数：空位形成能、间隙形成能、级联效率
+     - 肿胀/气泡参数：肿胀率、气泡密度/尺寸、裂变气体释放率
+     - 燃料性能：热导率、比热、密度
+   - 每类参数都应提取，即使论文主题不是肿胀
 7. 更新 `wiki/index.md`
 8. 记录日志到 `log/YYYYMMDD.md`
 

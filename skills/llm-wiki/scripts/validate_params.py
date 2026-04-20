@@ -138,7 +138,28 @@ def check_magnitude(records: list[dict]) -> list[dict]:
         if vt == 'range' and r.get('value_min') not in (None, '') and r.get('value_max') not in (None, ''):
             vals = [r.get('value_min'), r.get('value_max')]
         elif vt == 'list' and isinstance(r.get('values'), list):
-            vals = r.get('values', [])
+            # Extract numeric values from list items (skip dicts, keep strings/numbers)
+            vals = []
+            for item in r.get('values', []):
+                if isinstance(item, dict):
+                    # Extract all numeric values from dict
+                    for v in item.values():
+                        if isinstance(v, (int, float)):
+                            vals.append(float(v))
+                        elif isinstance(v, str):
+                            try:
+                                vals.append(float(v))
+                            except (ValueError, TypeError):
+                                pass
+                elif isinstance(item, (int, float)):
+                    vals.append(float(item))
+                elif isinstance(item, str):
+                    try:
+                        vals.append(float(item))
+                    except (ValueError, TypeError):
+                        pass
+            if not vals:
+                continue
         else:
             vals = [r.get('value')]
         for raw_val in vals:

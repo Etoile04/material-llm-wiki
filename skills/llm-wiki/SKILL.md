@@ -128,18 +128,23 @@ Steps:
 1. **PDF 转 Markdown**：将 PDF 提取为高质量 Markdown
    ```bash
    # 方法 A: MinerU（最高质量，保留公式和表格）
-   ~/.venvs/mineru/bin/mineru -p "<pdf_path>" -o raw/papers/ -b pipeline -m auto
+   ~/.venvs/mineru/bin/mineru -p "<pdf_path>" -o raw/papers/ -b pipeline -m auto -l en -f true -t true
    
    # 方法 B: 批量转换脚本（自动选 MinerU 或 pdftotext）
    python3 scripts/convert_pdfs.py <batch.json> raw/papers/
    ```
    - 输出保存到 `raw/papers/`
    - **MinerU** 保留 LaTeX 公式和 Markdown 表格（推荐）
+   - **⚠️ 必须开启公式识别**: `-f true`（默认开启，但需显式确认）
    - **pdftotext** 作为后备（不保留公式格式）
-   - MinerU 环境: `~/.venvs/mineru/`（Python 3.13, MinerU 3.0.4）
+   - MinerU 环境: `~/.openclaw/workspace/.venv-mineru/`
    - 如果 PDF 已有对应 `.md`，自动跳过
 2. 读取 `raw/papers/<slug>.md` 全文
 3. 创建 `wiki/summaries/<slug>.md`（200-400 词中文摘要）
+   - **⚠️ 模型类论文必须包含 `## Key Equations` 章节**
+   - 公式用 LaTeX 格式（`$$...$$` 块级、`$...$` 行内）
+   - 每个公式标注物理含义和变量说明
+   - 如果源 MD 缺公式，用 web_search 搜索论文 DOI 获取
 4. 创建/更新 `wiki/concepts/` 概念页
 5. 创建/更新 `wiki/entities/` 实体页
 6. 提取参数到 `parameters/<slug>.json`
@@ -148,9 +153,16 @@ Steps:
 
 **⚠️ PDF 转 Markdown 是必需步骤**：
 - 所有 PDF 必须先转换为 Markdown，保存到 `raw/papers/`
-- MinerU 路径：`~/.venvs/mineru/bin/mineru`
+- MinerU 路径：`/Users/lwj04/.openclaw/workspace/.venv-mineru/bin/mineru`
+- **公式识别必须开启**: `-f true -t true`
 - 大型 PDF（>10MB）MinerU 处理较慢，可用 pdftotext 先处理
 - 批量处理：`python3 scripts/convert_pdfs.py batch.json raw/papers/`
+
+**⚠️ Summary 公式要求**：
+- 涉及数理模型的论文，summary 必须包含 `## Key Equations` 章节
+- 公式用 LaTeX 格式，标注物理含义
+- 如果 MinerU 转换缺公式，用 web_search + DOI 补充
+- 公式缺失是知识库质量的关键风险点
 
 ### 3. `query`
 

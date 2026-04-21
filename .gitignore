@@ -1,0 +1,27 @@
+
+# MinerU raw outputs (PDFs, images, large files)
+
+# NVL build artifacts
+clawd/skills/zotero-ontology-research/tools/ontology_viewer_enhanced/nvl/static/
+clawd/skills/zotero-ontology-research/tools/ontology_viewer_enhanced/nvl_standalone/dist/
+
+# Generated reports (workspace root)
+*.docx
+*.pdf
+*.png
+*.json
+
+# Environment / secrets
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+PlugMem/
+.openclaw/
+.clawhub/
+.reme/
+
+# MinerU raw outputs (PDFs, images, large files)
+data/fuel_swelling_wiki/raw/mineru/
+data/fuel_swelling_wiki_v2/raw/mineru/
+data/fuel_swelling_wiki/raw/pdftotext/

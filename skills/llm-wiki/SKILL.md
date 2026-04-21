@@ -125,21 +125,53 @@ Steps:
 Add a new source. One source typically touches 5–15 wiki pages.
 
 Steps:
-1. **PDF 转 Markdown**：将 PDF 提取为高质量 Markdown
-   ```bash
-   # 方法 A: MinerU（最高质量，保留公式和表格）
-   ~/.venvs/mineru/bin/mineru -p "<pdf_path>" -o raw/papers/ -b pipeline -m auto -l en -f true -t true
-   
-   # 方法 B: 批量转换脚本（自动选 MinerU 或 pdftotext）
-   python3 scripts/convert_pdfs.py <batch.json> raw/papers/
-   ```
-   - 输出保存到 `raw/papers/`
-   - **MinerU** 保留 LaTeX 公式和 Markdown 表格（推荐）
-   - **⚠️ 必须开启公式识别**: `-f true`（默认开启，但需显式确认）
-   - **pdftotext** 作为后备（不保留公式格式）
-   - MinerU 环境: `~/.openclaw/workspace/.venv-mineru/`
-   - 如果 PDF 已有对应 `.md`，自动跳过
-2. 读取 `raw/papers/<slug>.md` 全文
+
+#### 0. 源文件验证（Pre-ingest Check）
+1. 读取 MD 文件前 50 行，提取论文标题
+2. 与目录名/文件名对比
+3. 如不匹配：以 MD 内容中的标题为准，更新 slug 为 `YYYY_Author_ShortTitle`
+4. 记录不匹配到 `log/YYYYMMDD.md`
+
+#### 1. PDF 转 Markdown（三层策略）
+
+**优先级**: mineru-open-api > 本地 MinerU > pdftotext
+
+```bash
+# 方法 A: mineru-open-api flash-extract（推荐，免 token）
+# 限制：<10MB 且 <20页，自动含公式+表格+OCR
+mineru-open-api flash-extract "<pdf_path>" -o raw/papers/ --language en
+
+# 大文件分页：
+mineru-open-api flash-extract "<pdf_path>" -o raw/papers/ --language en --pages 1-20
+
+# 方法 B: mineru-open-api extract（需 token，无限制）
+# 适用于 >10MB 或 >20页，支持 VLM 模型
+mineru-open-api extract "<pdf_path>" -o raw/papers/ --language en -f md
+
+# 方法 C: 本地 MinerU（离线备选，需 HF 模型缓存）
+~/.openclaw/workspace/.venv-mineru/bin/mineru -p "<pdf_path>" -o raw/papers/ -b pipeline -m auto -l en -f true -t true
+
+# 方法 D: pdftotext（最后兜底，不保留公式格式）
+pdftotext "<pdf_path>" raw/papers/<slug>.txt
+```
+
+**选择策略**:
+| 条件 | 方法 |
+|------|------|
+| <10MB 且 <20页 | flash-extract（免 token）|
+| >10MB 或 >20页 | extract（需 MINERU_TOKEN）|
+| 网络不可用 | 本地 MinerU 或 pdftotext |
+
+**Token 配置**: `~/.mineru/config.yaml` 或环境变量 `MINERU_TOKEN`
+
+- 输出保存到 `raw/papers/` 或 `raw/mineru/<slug>/`
+- 如果 PDF 已有对应 `.md` 且公式覆盖率 >70%，自动跳过
+- 转换后验证公式覆盖率：`grep -c '\$\$' output.md`
+
+#### 2. 读取源文件全文
+- 读取 MD/TXT 文件全文
+- ⚠️ pdftotext 文件前 200 行可能是元数据，跳过
+- ⚠️ MinerU 输出中 `Formula Recognition: ❌ Disabled` 的需重新转换
 3. 创建 `wiki/summaries/<slug>.md`（200-400 词中文摘要）
    - **⚠️ 模型类论文必须包含 `## Key Equations` 章节**
    - 公式用 LaTeX 格式（`$$...$$` 块级、`$...$` 行内）

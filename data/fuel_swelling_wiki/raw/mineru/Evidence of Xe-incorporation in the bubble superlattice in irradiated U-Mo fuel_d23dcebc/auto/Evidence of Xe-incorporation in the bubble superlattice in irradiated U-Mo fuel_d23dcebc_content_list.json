@@ -1,0 +1,1933 @@
+[
+    {
+        "type": "text",
+        "text": "Formation of gas bubble superlattice in U-Mo alloys: A phase-field study\\* ",
+        "text_level": 1,
+        "bbox": [
+            60,
+            206,
+            810,
+            228
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yanbo Jiang a, Shisen Gao a, Yongxiao La a, Wenbo Liu a,b,\\* iD ",
+        "bbox": [
+            62,
+            239,
+            541,
+            257
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Department of Nuclear Science and Technology, Xi'an Jiaotong University, Xi'an 710049 China ",
+        "bbox": [
+            63,
+            267,
+            608,
+            287
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ARTICLEINFO ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            317,
+            193,
+            329
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ABSTRACT ",
+        "text_level": 1,
+        "bbox": [
+            337,
+            317,
+            433,
+            329
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords:   \nGas bubble superlattice   \nGrain boundary   \nU-Mo alloy   \nPhase-field method ",
+        "bbox": [
+            62,
+            343,
+            174,
+            395
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The pact  rabouary GB) on the ormation andevolution  gas bubble superlatti (GBS)iU-Mo aundatiolotandnhata havcets.nh, a phase-field model coupled Kim-Kim-Suzuki (KKS) model and explicit nucleation algorithm was developed to simulate G ormation. Thecculatio vacances angas atoms e  ubblenucleation, witdrea migration of interstitial atoms inducinga hadowefct and causingorderebubblearrangements. The GBS zat ns. The GB was hown fluenc GBS formation gifiantly with the surroundin region divideint dnue zone and a peak zone. The width of the denuded zone is influenced by the GB properties. In this work, the relationship between the denuded zone width and the GB absorption strength was derived using a onedimensional steady-state vacancy diffusion equation. It was ound that the denudezone widhncrease wit aeh sncefct.The haslsltn esu eotnt ihe predictons. The indings contrbute to a beteunderstanding of how saffecradiation-inducedostructural changes in nuclear materials. ",
+        "bbox": [
+            337,
+            343,
+            937,
+            499
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            537,
+            163,
+            548
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The study of Uranium-Molybdenum (U-Mo) systems has gained significant attention due to their critical role in the development of advanced nuclear fuels. U-Mo alloys are widely considered promising candidates for high-performance nuclear reactors, (Snelgrove et al., 1997; Keiser et al., 2003), particularly in applications requiring highdensity fuels with excellent thermal conductivity, radiation tolerance, and dimensional stability (Kim and Hofman, 2011; Meyer et al., 2014; Van Den Berghe and Lemoine, 2014). Their use is especially relevant in research reactors, where enriched uranium fuels must meet strict performance and safety criteria while minimizing waste and proliferation risks. These demands have led to an increasing focus on understanding the microstructural evolution of U-Mo alloys under irradiation. However, the swelling due to fission gases of these metallic fuels has been found to be significantly more severe than that of mixed oxide fuels over time. Irradiation-induced swelling has emerged as a critical issue that must be addressed, primarily attributed to the nucleation and growth of fission gas bubbles produced during the fission process of uranium-235 (Ajantiwalay et al., 2020). The rate of production of gas atoms (Xe and ",
+        "bbox": [
+            62,
+            563,
+            485,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Kr) during fission far exceeds their solubility in the metallic fuel matrix. These gas atoms tend to diffuse and accumulate, leading to bubble formation. The presence of these bubbles can substantially alter the microstructure of the fuel, thereby compromising thermal conductivity and mechanical integrity. Consequently, a comprehensive understanding of the mechanisms governing the formation and evolution of irradiation-induced bubbles is essential, along with elucidating the impact on microstructural characteristics and irradiation conditions on bubble dynamics, in order to clarify the overall performance and safety of U-Mo fuels in high-power reactor applications. ",
+        "bbox": [
+            514,
+            537,
+            937,
+            668
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The evolution of bubbles in U-Mo alloys is a highly complex process with the formation of gas bubble superlattices (GBS) observed during the early stages of irradiation. These superlattices, composed of orderly arranged bubbles, significantly influence the microstructural dynamics and swelling behavior of the fuel. Characterized by coherent arrangements within the U-Mo matrix, the bubble superlattices exhibit lattice parameters distinct from those of the underlying crystal structure. The diameters of the intragranular bubbles are approximately $1 { - } 3 \\ \\mathrm { ~ n m }$ forming a superlattice with a fcc structure, while the bulk material displays a bcc structure. The lattice constants of these superlattices typically range from 7 to $1 2 \\mathrm { n m }$ (Gan et al., 2010; Van den Berghe et al., 2008; Miller et al., 2015). The mechanisms underlying the formation of GBS have been the subject of extensive research, with proposed explanations including the interactions between dislocation and cavity (Dubinko et al., 1986; Dubinko et al., 1989; Dubinko and Turkin, 1994), anisotropy of elastic constants (Stoneham, 1971; Willis, 1975; Yu and Lu, 2005), and anisotropic diffusion processes involving self-interstitial atom (SIA) (Woo and Frank, 1985; Walgraef et al., 1996; Heinisch and Singh, 2003; Evans, 2005; Hu et al., 2016). Given that the symmetry of the superlattices generally adheres to that of the primary lattice, onedimensional diffusion of SIAs is considered a promising primary cause of bubble superlattice formation. Therefore, investigating the onedimensional SIA diffusion and its interactions with microstructural features, such as grain boundary (GB), is crucial for understanding the formation and evolution of GBS. ",
+        "bbox": [
+            514,
+            669,
+            937,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "discarded",
+        "text": "Contents lists available at ScienceDirect Nuclear Enginering and Design Nuclear Engineering and Design ELSEVIER journal homepage: www.elsevier.com/locate/nucengdes ",
+        "bbox": [
+            58,
+            66,
+            939,
+            171
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "discarded",
+        "text": "Check for updates ",
+        "bbox": [
+            840,
+            185,
+            890,
+            223
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "discarded",
+        "text": "C E-mail address: liuwenbo@xjtu.edu.cn (W. Liu). ",
+        "bbox": [
+            63,
+            832,
+            754,
+            867
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            357,
+            45,
+            640,
+            54
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "discarded",
+        "text": "https://doi.org/10.1016/j.nucengdes.2025.113912 Received 24 November 2024; Received in revised form 12 January 2025; Accepted 10 February 2025 Available online 20 February 2025 0029-5493 $' { \\textcircled{ \\mathbf { C } } }$ . ",
+        "bbox": [
+            58,
+            877,
+            794,
+            926
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            62,
+            66,
+            485,
+            262
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In recent years, the formation of GBS in U-Mo alloys and their influencing factors have been extensively studied. However, due to the complexity of the physical mechanisms underlying bubble evolution and the fact that GBS only appear at low fission density, experimental investigation of the evolution of GBS structures is quite challenging. Numerical simulations, as an effective and cost-efficient research method, can provide guidance and theoretical support for experimental studies. The phase-field method, due to its capability to simulate the microstructural evolution of materials while accommodating multiphysics fields coupling, has been successfully applied in nuclear materials to investigate the nucleation and growth of void (Millett et al., 2009; Millett et al., 2011; Jiang et al., 2020; Rokkam et al., 2009), bubble evolution (Jiang et al., 2024; Jiang et al., 2022; Jiang et al., 2024; La et al., 2024; Millett et al., 2011; Lan et al., 2024); superlattice formation (Hu et al., 2016; Aagesen et al., 2021; Gao et al., 2018; Gao et al., 2022), thermal conductivity calculation (Bai et al., 2016; Liang et al., 2018; Lan et al., 2023; Jiang et al., 2025), and recrystallization (Jiang et al., 2025; Abdoelatef et al., 2019; Liang et al., 2017). Hu et al. developed a phase-field model combined with the Monte Carlo method to study the formation mechanisms of bubble superlattices (Hu et al., 2016). This model accounts for multiple physical processes and reveals that rapid one-dimensional migration of SIAs along the $\\langle 1 1 0 \\rangle$ direction in the body-centered cubic U matrix results in the alignment of bubbles along the same direction. This suggests that one-dimensional directional migration of SIA should be a primary mechanism for the observed GBS in U-Mo alloys. But the generation of fission gases is artificially suppressed to maintain a saturated concentration of xenon in their model. Aagesen et al. (Aagesen et al., 2021) derived a phase-field model from the largescale functional to simulate the formation of voids and bubble superlattices. Their model is capable of explaining the formation of superlattices through either nucleation and growth mechanisms or independent decomposition processes, quantifying the superlattice spacing as a function of model parameters. It was found that the superlattice spacing decreases with increasing flux of gas atoms, consistent with experimental observations. In our previous research (Jiang et al., 2024); the influence of GB absorption strength on bubble evolution was discussed. The absorption strength of defects by GBs is considered an inherent characteristic of GBs, independent of vacancy or gas atomic diffusion rate. The adsorption capacity of GBs significantly affects the width of the denuded zone and the distribution of defect concentration in the peak zone. Understanding this relationship is critical for elucidating the role of GBs in microstructural evolution and provides theoretical support for optimizing material performance. ",
+        "bbox": [
+            62,
+            258,
+            484,
+            832
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In this work, a phase-field model coupled Kim-Kim-Suzuki (KKS) model and explicit nucleation algorithm was developed to simulate the formation of GBS in U-Mo alloys with $7 ~ \\mathrm { w t } \\%$ Mo (U-7Mo). Initially, the GBS formation and evolution process in a single crystal was simulated, and the bubble diameter and lattice constant of the GBS were compared with experimental results. Next, a structure containing GB was constructed to investigate the effect of GB on GBS formation. The relationship between the denuded zone width and the GB absorption strength was quantitatively derived using a one-dimensional steadystate vacancy diffusion equation. Additionally, simulations were conducted by modifying the GB absorption coefficient, and the results were compared with the theoretical predictions to explore the impact of defect absorption intensity by GB on the denuded zone width. ",
+        "bbox": [
+            62,
+            832,
+            485,
+            935
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            514,
+            66,
+            937,
+            131
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2Phase-field model ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            147,
+            650,
+            158
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Considering the formation and development of bubble superlattices in U-Mo alloys, this section proposes a mesoscale phase-field model that couples bubble nucleation theory with self-interstitial atom (SIA) directional migration. This phase-field model of irradiation bubble evolution, known as the KKS model, is developed based on the formula proposed by Kim et al (Kim et al., 1999). In this model, it is assumed that the pure material is the matrix phase, and the chemical substances considered in the model are vacancies at lattice positions, SIAs from the matrix, and gas atoms assumed to be located at interstitial positions in the matrix. Therefore, the model will introduce vacancy concentration $c _ { \\nu } ( \\mathbf { r } , t )$ and gas atomic concentration $c _ { g } ( \\mathbf { r } , t )$ . Based on the assumption that one-dimensional anisotropic diffusion of different SIAs leads to the formation of bubble superlattices (Hu et al., 2016); SIA with two different diffusion directions are introduced into the current model, one diffusing faster in the (Dubinko et al., 1986) direction and the other diffusing faster in the [01] direction, with concentrations given by $c _ { 1 } ( \\mathbf { r } , t )$ and $c _ { 2 } ( \\mathbf { r } , t )$ , respectively. In addition, the non-conserved order parameter $\\eta$ is used to distinguish the differences between the matrix phase and the bubble phase, which smoothly vary from 1.0 in the bubble phase to 0.0 in the matrix phase. Referring to the hypothesis in Aagesen et al.'s work (Aagesen et al., 2021), the bubble phase is composed of vacancies and gas atoms, resulting in $c _ { \\nu } + c _ { g } = 1 . 0$ and $c _ { i } = 0 . 0$ in the bubble phase, where $c _ { i } ( \\mathbf { r } , t )$ represents all two types of SIA. In order to consider the influence of GBs on the formation and evolution of bubble superlattice, based on Chen et al.'s work (Chen and Wei, 1994), a series of order parameters $\\phi _ { i } ( \\mathbf { r } , t )$ was introduced in the model to represent grains, where $\\phi _ { i } = 1 . 0$ in the i-th grain. ",
+        "bbox": [
+            514,
+            174,
+            937,
+            529
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.1.Total free energy ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            552,
+            640,
+            563
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In the current phase-field model, the evolution of bubbles and grains in U-Mo alloy needs to be considered. The total free energy of the system can be understood as the sum of distinct energy contributions. The chemical free energy density accounts for the energy associated with the chemical composition in the system. The polycrystalline energy density reflects the energy related to the grain boundaries and crystallographic structure. The double well potential represents the energy barrier of phase transition. The gradient energy density represents the energy density of interface. The total free energy is described as: ",
+        "bbox": [
+            514,
+            578,
+            937,
+            696
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8fbcbeaf69fb59dc168aab68dd1b4742a157510626c6046315ace639551d0b85.jpg",
+        "text": "$$\nF = \\int _ { N } \\Bigl [ f _ { c h e m } + f _ { p o l y } + W g ( \\eta ) + f _ { g r a d } \\Bigr ] d V\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            702,
+            736,
+            728
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $f _ { c h e m }$ indicates the chemical free energy density, $f _ { p o l y }$ indicates the polycrystalline energy density and $f _ { g r a d }$ indicates the gradient energy density, respectively. The double well function is shown as $g ( \\eta ) = \\eta ^ { 2 } ( 1 \\cdot$ $\\eta ) ^ { 2 }$ and W is the potential height. ",
+        "bbox": [
+            512,
+            740,
+            937,
+            793
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "As in Aagesen'work (Bai et al., 2016), the chemical free energy density is composed of the free energy density of the matrix phase and the bubble phase, which is shown as: ",
+        "bbox": [
+            512,
+            793,
+            936,
+            832
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6298f496972246869e277e1ff3cbfe99c86cedd37af4f17ded5af4c8744c2c09.jpg",
+        "text": "$$\nf _ { c h e m } = [ 1 - h ( \\eta ) ] f ^ { m } \\Big ( c _ { \\nu } ^ { m } , c _ { g } ^ { m } , c _ { i } ^ { m } \\Big ) + h ( \\eta ) f ^ { b } \\Big ( c _ { \\nu } ^ { b } , c _ { g } ^ { b } , c _ { i } ^ { b } \\Big )\n$$",
+        "text_format": "latex",
+        "bbox": [
+            509,
+            838,
+            805,
+            861
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $f ^ { m }$ is the chemical free energy density in the matrix phase and $f ^ { b }$ is in the bubble phase. $h ( \\eta )$ is an interpolating function with $h ( \\eta ) =$ $\\eta ^ { 3 } ( 6 \\eta ^ { 2 } - 1 5 \\eta + 1 0 )$ that ensures the energy density changes smoothly between the bubble phase to matrix phase from $h ( 1 ) = 1$ to $h ( 0 ) = 0$ . ",
+        "bbox": [
+            512,
+            871,
+            937,
+            924
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Referring to the work of Aagesen et al. (Aagesen et al., 2022), the free energy density of the matrix phase and the bubble phase can be approximated by a parabola, while ensuring that the chemical potential of each conserved field variable in the parabolic approximation is the same as that in the ideal solution model. The chemical free energy density in the matrix of U-Mo alloy is written as: ",
+        "bbox": [
+            531,
+            925,
+            937,
+            938
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            45,
+            124,
+            52
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "discarded",
+        "text": "2 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            960
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            60,
+            65,
+            485,
+            132
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/a15f89b56ef8ef0a218d60c4860b4663ea321078ff87af7e4fafdf92fdf98bc2.jpg",
+        "text": "$$\n\\begin{array} { c } { { f ^ { m } = k _ { \\nu } ^ { m } \\left( c _ { \\nu } ^ { m } - c _ { \\nu } ^ { m , e q } \\right) ^ { 2 } + k _ { g } ^ { m } { \\left( c _ { g } ^ { m } - c _ { g } ^ { m , e q } \\right) } ^ { 2 } + k _ { i } ^ { m } \\left[ \\left( c _ { 1 } ^ { m } - c _ { 1 } ^ { m , e q } \\right) ^ { 2 } \\right. } } \\\\ { { \\left. + \\left( c _ { 2 } ^ { m } - c _ { 2 } ^ { m , e q } \\right) ^ { 2 } \\right] } } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            57,
+            137,
+            391,
+            186
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/05af0c708e007986ea3f2ed00931909508a59aee7644f79fabff925c62ed47d0.jpg",
+        "text": "$$\nf ^ { b } = k _ { \\nu } ^ { b } { \\left( c _ { \\nu } ^ { b } - c _ { \\nu } ^ { b , e q } \\right) } ^ { 2 } + k _ { g } ^ { b } { \\left( c _ { g } ^ { b } - c _ { g } ^ { b , e q } \\right) } ^ { 2 } + k _ { i } ^ { b } \\left[ { \\left( c _ { 1 } ^ { b } - c _ { 1 } ^ { b , e q } \\right) } ^ { 2 } + { \\left( c _ { 2 } ^ { b } - c _ { 2 } ^ { b , e q } \\right) } ^ { 2 } \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            57,
+            195,
+            470,
+            224
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $k _ { \\nu } ^ { m } , k _ { g } ^ { m } , k _ { i } ^ { m } , k _ { \\nu } ^ { b } , k _ { g } ^ { b }$ and $k _ { i } ^ { b }$ are the parabola curvatures, $c _ { \\nu } ^ { m , e q } , c _ { g } ^ { m , e q }$ and $c _ { i } ^ { m , e q }$ are the equilibrium concentration of vacancy, gas atom and SIA in the maabrx phase, $c _ { \\nu } ^ { b , e q } , c _ { g } ^ { b , e q }$ and $c _ { i } ^ { b , e q }$ are te ulbntation ",
+        "bbox": [
+            60,
+            245,
+            485,
+            301
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Following the work of Tonks et al. (Tonks et al., 2015), the polycrystalline energy density is described as: ",
+        "bbox": [
+            60,
+            301,
+            485,
+            327
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/cb7ddc38fe2c2b738f66e06a48085cb486af30ef06f11c1dea37a22988755c6d.jpg",
+        "text": "$$\nf _ { p o b y } = \\mu \\left[ \\sum _ { i } \\left( { \\frac { \\phi _ { i } ^ { 4 } } { 4 } } - { \\frac { \\phi _ { i } ^ { 2 } } { 2 } } \\right) + \\left( { \\frac { \\eta ^ { 4 } } { 4 } } - { \\frac { \\eta ^ { 2 } } { 2 } } \\right) + a _ { G B } \\sum _ { i } \\sum _ { j > i } \\phi _ { i } ^ { 2 } \\phi _ { j } ^ { 2 } + a _ { s } \\sum _ { i } \\eta ^ { 2 } \\phi _ { i } ^ { 2 } \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            57,
+            332,
+            463,
+            368
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $\\mu$ is the constant of polycrystalline energy density. $a _ { G B }$ and $a _ { s }$ are the parameter of diffuse surface. The parameter $a _ { G B }$ related to GBs is taken the value of 1.5 which is set to ensure the symmetry of the diffusion interface. And the parameter $a _ { b }$ related to the bubble surface is determined by $a _ { s } = a _ { G B } \\gamma _ { s u r f } / \\gamma _ { G B }$ where $\\gamma _ { G B }$ is the GB energy and $\\gamma _ { s u r f }$ is the surface energy (Jiang et al., 2024). ",
+        "bbox": [
+            60,
+            393,
+            485,
+            471
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The gradient energy density is written as: ",
+        "bbox": [
+            82,
+            472,
+            329,
+            485
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/05a9b398dcd12a63ef3313c4983c888f4e6a349403863481d1d97d3a6aff9171.jpg",
+        "text": "$$\nf _ { g r a d } = \\frac { \\kappa _ { \\eta } } { 2 } | \\nabla \\eta | ^ { 2 } + \\sum _ { i } \\frac { \\kappa _ { \\phi } } { 2 } | \\nabla \\phi _ { i } | ^ { 2 }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            57,
+            491,
+            228,
+            518
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $\\kappa _ { \\eta }$ and $\\kappa _ { \\phi }$ are the gradient energy coefficient of bubble surface and GB, with dimensions of energy per unit length. ",
+        "bbox": [
+            60,
+            529,
+            484,
+            556
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.2. KKS model description ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            573,
+            221,
+            585
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In the KKS model, the total defect concentration is considered to be composed of the defect concentration of each phase (Aagesen et al., 2021). To simplify the representation, $c _ { n } ~ ( n = \\nu , g , i )$ is used here to represent the concentration of all point defects, which is described as: ",
+        "bbox": [
+            60,
+            598,
+            485,
+            651
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/14acccc9dea68c9a3ed7c7bfd9ee17d6671c894dc8ed376d752b017f8bf79532.jpg",
+        "text": "$$\nc _ { n } = [ 1 - h ( \\eta ) ] c _ { n } ^ { m } + h ( \\eta ) c _ { n } ^ { b }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            60,
+            658,
+            213,
+            673
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In this expression, the total defect concentration is linked to the defect concentration in each phase through an interpolation function. Furthermore, based on the assumption of thermodynamic equilibrium in the KKS model, the assumption that the chemical potentials of each component in the matrix phase and bubble phase are the same is applied, which is expressed by the following formula: ",
+        "bbox": [
+            60,
+            680,
+            485,
+            759
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "related to the surface energy $\\gamma _ { s }$ and interface thickness 2 of the material, as expressed below: ",
+        "bbox": [
+            512,
+            65,
+            937,
+            92
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/336a3bec3dc2e4a843d0f2b5be004a2d233ad0c34b7e861ca76a504f6757af6a.jpg",
+        "text": "$$\n\\begin{array} { l } { \\displaystyle \\gamma _ { s } = \\frac { \\sqrt { \\kappa _ { \\eta } W } } { 3 \\sqrt { 2 } } } \\\\ { \\displaystyle 2 \\lambda = 2 . 2 \\sqrt { 2 } \\sqrt { \\frac { \\kappa _ { \\eta } } { W } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            98,
+            616,
+            168
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d74047792f9c593b650b6a0f9e278e62f583150eb750898b1e43b6e346f63401.jpg",
+        "text": "$$\n\\mu _ { n } = \\frac { d f ^ { m } } { d c _ { n } ^ { m } } = \\frac { d f ^ { b } } { d c _ { n } ^ { b } }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            58,
+            765,
+            152,
+            794
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where the interface thickness $2 \\lambda = 1 0 ~ \\mathrm { { n m } }$ was selected based on numerical stability considerations and the requirement to accurately capture the interface effects. The value of $\\kappa _ { \\eta }$ and W can be calculated by Eqs. (910) to be $\\kappa _ { \\eta } = 2 . 4 5 \\times 1 0 ^ { - 8 } \\mathrm { J / m }$ and $\\dot { W } = 2 . 3 8 \\times 1 0 ^ { 9 } \\mathrm { J } / \\mathrm { m } ^ { 3 }$ In addition, the phase-field parameters of GBs are also directly related to physical parameters, which is expressed as (Moelans et al., 2008): ",
+        "bbox": [
+            512,
+            177,
+            937,
+            257
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d5b6f33e435e9b88e7c874a62649e6407a705cb9e7019d69177af7fe94dd5b5a.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle \\gamma _ { G B } = \\frac { \\sqrt { 2 \\mu \\kappa _ { \\phi } } } { 3 } } } \\\\ { { \\displaystyle l _ { G B } = \\sqrt { \\frac { 8 \\kappa _ { \\phi } } { \\mu } } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            509,
+            262,
+            594,
+            337
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where the GB thickness $l _ { G B }$ was chosen to be $1 0 \\mathrm { n m }$ , and the value of $\\kappa _ { \\phi }$ and $\\mu$ can be determined by Eqs. (1112) to be $\\kappa _ { \\phi } = 3 . 7 5 \\times 1 0 ^ { - 9 } \\mathrm { J / m }$ and $\\mu = 3 . 0 0 \\times 1 0 ^ { 8 } \\mathrm { J } / \\mathrm { m } ^ { 3 }$ . ",
+        "bbox": [
+            510,
+            348,
+            937,
+            387
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $\\mu _ { n } \\left( n = \\nu , g , i \\right)$ represents the total chemical potential of each point defect concentration. The Newton-Raphson method is used to numerically solve Eqs. (7-8) to obtain the local defect concentrations in different phases and in each phase-field calculation step. ",
+        "bbox": [
+            60,
+            805,
+            484,
+            857
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.3. Evolution equations ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            412,
+            655,
+            424
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A series of modified Cahn-Hilliard equations (Cahn, 1961) are employed to describe the spatial and temporal evolution of the concentrations of vacancy, gas atom and two types of SIAs, which are written as: ",
+        "bbox": [
+            510,
+            438,
+            937,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "When applied at larger simulation scales, The KKS model has great advantages as it decouples the relationship between diffusion interface width and interfacial energy, making the phase-field parameters of the diffusion interface directly related to actual physical parameters. Referring to the work of $\\mathrm { H u }$ et al. (Hu et al., 2007), the height of the gradient energy coefficient kappa $\\kappa _ { \\eta }$ and the double well potential W are ",
+        "bbox": [
+            60,
+            858,
+            485,
+            938
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b859c9c088d4dcb1d8ec34d0153a186e6146c87c206d5385b5c1a0d5b3d8c0d9.jpg",
+        "text": "$$\n\\begin{array} { l } { \\displaystyle \\frac { \\partial c _ { \\nu } } { \\partial t } = \\nabla \\cdot M _ { \\nu } \\nabla \\mu _ { \\nu } + P _ { \\nu } - K _ { \\nu i } c _ { \\nu } ( c _ { 1 } + c _ { 2 } ) - S _ { \\nu } , } \\\\ { \\displaystyle } \\\\ { \\displaystyle \\frac { \\partial c _ { g } } { \\partial t } = \\nabla \\cdot M _ { g } \\nabla \\mu _ { g } + P _ { g } } \\\\ { \\displaystyle \\frac { \\partial c _ { 1 } } { \\partial t } = \\nabla \\cdot \\left( \\frac { { P } _ { 1 } c _ { 1 } \\nabla \\mu _ { 1 } } { k _ { B } T } \\right) + P _ { 1 } - K _ { \\nu i } c _ { \\nu } c _ { 1 } - S _ { 1 } } \\\\ { \\displaystyle \\frac { \\partial c _ { 2 } } { \\partial t } = \\nabla \\cdot \\left( \\frac { { P } _ { 2 } c _ { 2 } \\nabla \\mu _ { 2 } } { k _ { B } T } \\right) + P _ { 2 } - K _ { \\nu i } c _ { \\nu } c _ { 2 } - S _ { 2 } } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            509,
+            495,
+            751,
+            638
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $M _ { \\nu } = D _ { \\nu } / k _ { B } T$ and $M _ { g } = D _ { g } / k _ { B } T$ are the mobilities of vacancy and gas atom which are related to the diffusivity. ${ \\pmb D } _ { 1 }$ and $\\pmb { D } _ { 2 }$ are the diffusion coefficients of two types of SIAs, respectively. According to the assumption of Aagesen (Aagesen et al., 2022), The diffusivities of the two SIAs with unit of $\\mathrm { n m } ^ { 2 } / s$ are anisotropic and taken the tensorial form as: ",
+        "bbox": [
+            512,
+            646,
+            937,
+            726
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6498493ac39ff49f65a9669d494084c8f5de1819c188131b7cceeae05de00634.jpg",
+        "text": "$$\n\\begin{array} { r } { \\pmb { D } _ { 1 } = \\left( \\begin{array} { c c } { 1 0 } & { 0 } \\\\ { 0 } & { 0 } \\end{array} \\right) } \\\\ { \\pmb { D } _ { 2 } = \\left( \\begin{array} { c c } { 0 } & { 0 } \\\\ { 0 } & { 1 0 } \\end{array} \\right) } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            731,
+            610,
+            800
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$P _ { \\nu }$ is the production rate of vacancies in the solid matrix. Referring to the phase-field model proposed by Liang et al (Liang et al., 2018). in irradiated U-Mo alloy, the vacancy production rate in the fuel can be related to the fission rate according to $P _ { \\nu } = f _ { r } / \\delta$ ,where $f _ { r }$ is the fission rate and $\\delta$ is a constant with a value of $5 . 1 2 \\times 1 0 ^ { 2 }$ in this work. In cascade collisions, the number of vacancies is equal to the number of SIAs generated by Frankel pairs. Therefore, assuming that collision cascades generate SIA species 1 and 2 with equal probability, their total generation rate must be equal to the total vacancy generation rate $P _ { 1 } { = } P _ { 2 } { = } \\ P _ { \\nu } / 2$ . The generation rate of gas atom is expressed as $P _ { g } { = } ( 1 -$ $\\eta ) ^ { 2 } \\varLambda \\Omega f _ { r }$ (Liang et al., 2018), where $\\Omega$ is the volume of the U-Mo lattice and $\\varLambda$ is a constant. When SIAs and vacancies meet, they recombine and form a perfect lattice. $K _ { \\nu i }$ is the rate of vacancyinterstitial recombination. Due to the unique properties of GBs, they serve as effective absorption traps for many atomic defects. Vacancies and SIAs near GBs can be permanently captured. Therefore, the absorption term for GBs needs to be added to the model and described as (Millett et al., 2009): $S _ { \\nu } = s _ { \\nu } ( 1 \\cdot$ . $\\Phi _ { \\angle }$ , $S _ { 1 } = s _ { 1 } ( 1 { \\cdot } \\Phi )$ , $S _ { 2 } = s _ { 2 } ( 1 { \\cdot } \\Phi )$ , where $s _ { \\nu } , s _ { 1 }$ and $s _ { 2 }$ are the constant representing the strength of the vacancy and SIAs absorbed by GBs. An assumption is adopted that the absorption capacity of GB for SIA and vacancy is the same, with $s _ { \\nu } = s _ { 1 } = s _ { 2 } .$ . $\\Phi$ takes the form $\\Phi = \\sum ( \\phi _ { i } ) ^ { 2 }$ , that ensures $\\Phi = 1 . 0$ in the grain interior and $\\Phi < 1 . 0$ at the GBs. ",
+        "bbox": [
+            514,
+            805,
+            937,
+            938
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            939,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            44,
+            126,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "discarded",
+        "text": "3 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            962
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            62,
+            65,
+            485,
+            223
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "All order parameters evolves by Allen-Cahn equations as (Cahn and Allen, 1977): ",
+        "bbox": [
+            60,
+            224,
+            484,
+            249
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/11e1cb16314d8348f9f5a2b0d79667b612237a53917d733c8fead700c56dea0c.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle { \\frac { \\partial \\eta } { \\partial t } } = - L _ { \\eta } \\frac { \\delta F } { \\delta \\eta } } } \\\\ { { \\displaystyle { \\frac { \\partial \\phi _ { i } } { \\partial t } } = - L _ { \\phi } \\frac { \\delta F } { \\delta \\phi _ { i } } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            57,
+            255,
+            146,
+            324
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $L _ { \\eta }$ and $L _ { \\phi }$ are the mobility of bubble surface and GB. A nondimensional grid spacing $( x = l / l ^ { * } )$ , time step $( \\tau = t / t ^ { * } )$ are applied to numerical solution of the evolution equations. The reference length scale is $l ^ { * } = 0 . 8 \\ \\mathrm { n m }$ and time scale is $t ^ { * } = 0 . 1$ s during numerical implementation, and the grid size is $x \\ = 0 . 5$ , time step is $\\tau = 0 . 0 1$ . In addition, under periodic boundary conditions, the forward Euler method in time and the finite difference method in space are applied to solve the Cahn Hilliard equation and Allen Cahn equation. The temperature selected for this simulation is $4 7 3 \\ \\mathrm { K } ,$ which is based on the typical operating conditions of uranium molybdenum fuel in nuclear reactors. Research within this temperature range is crucial for evaluating fuel performance. In addition, the parameters used in our analysis were derived from the work of Liang et al. (Liang et al., 2018), which employed the same simulated temperature. ",
+        "bbox": [
+            62,
+            332,
+            485,
+            518
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.4. Nucleation model ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            532,
+            191,
+            543
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The nucleation process of irradiation-induced bubbles begins with the introduction of gas atoms and defects, such as vacancies generated during irradiation. Gas atoms diffuse through the material and are attracted to vacancies, forming gas-vacancy complexes that act as initial clusters. As these clusters grow, they may reach a subcritical nucleus state, which is thermodynamically unstable and must overcome a nucleation energy barrier to grow into stable bubbles. This barrier depends on factors like defect densities and microstructural features, such as GBs. Once the critical size is reached, the nucleus becomes stable, and the bubble grows by absorbing additional gas atoms and vacancies (Simmons et al., 200o). In present phase-field method, an explicit nucleation method is applied to introduce the discrete kernel of new bubble. Referring to the nucleation method in U-Mo alloy mentioned by Liang et al. (Liang et al., 2018); the nucleation probability of discrete regions as a function of simplified local nucleation probability can be calculated as: ",
+        "bbox": [
+            62,
+            558,
+            485,
+            767
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/fc9f1fa7ef138022b6354f4554c3972d686a993c9743517ca23ca3997c4235fc.jpg",
+        "text": "$$\nJ ( t ) = k _ { 1 } \\mathrm { e x p } ( - k _ { 2 } / \\Delta c _ { \\nu } )\n$$",
+        "text_format": "latex",
+        "bbox": [
+            60,
+            775,
+            201,
+            790
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $k _ { 1 }$ and $k _ { 2 }$ are the nucleation factors, and $\\Delta c _ { \\nu }$ is the local supersaturation (Simmons et al., 2000). ",
+        "bbox": [
+            60,
+            800,
+            484,
+            825
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In a discretized zone, the overall nucleation probability is shown as: ",
+        "bbox": [
+            72,
+            827,
+            484,
+            839
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0ffaf895b1af53bb99d7f0c4d4f26f09c81f88d5c27605b997d0393d5caf8bb8.jpg",
+        "text": "$$\nP ( t ) = 1 - \\exp ( { } - J \\Delta t { } )\n$$",
+        "text_format": "latex",
+        "bbox": [
+            58,
+            846,
+            194,
+            861
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\Delta t$ is the time interval of the nucleation probability calculation. Calculate the nucleation probability of each supersaturated region with spatial features at each simulation time interval $\\Delta t ,$ and perform the nucleation step. After calculating the probability, the location of nucleation can be determined. In addition, it is necessary to introduce a depletion zone of defects when introducing bubble cores to ensure concentration conservation. Specifically, the geometric shape of the bubble core is chosen to approximate the circular shape in a discrete lattice. The depletion zone around the nucleus is selected to have a width of approximately half its diameter. The depletion zone reduces the required number of components to provide the additional solute needed to form the bubble phase in the nucleus (Cahn, 1961). It is worth noting that the nucleation probability in the bubble is set to zero. Therefore, when calculating the nucleation probability, the nucleation probability of the formed bubbles and their depletion regions is almost zero, thus avoiding bubble overlap. All parameters of U-Mo alloy used in the present simulation are shown in Table 1. ",
+        "bbox": [
+            60,
+            871,
+            485,
+            936
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            514,
+            66,
+            937,
+            223
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.Results ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            238,
+            581,
+            249
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In this section, the formation and evolution of GBS in U-Mo alloy are discussed by the phase-field model proposed previously. In materials, interstitial atoms are those located in the gaps between the lattice sites. They do not occupy the normal lattice positions but instead occupy the void regions. The diffusion of these interstitial atoms is typically not random but rather directional, and it is considered to be the primary cause of GBS. Specifically, the formation of GBS can be explained by the shadow effect. The shadow effect refers to the phenomenon where, as interstitial atoms diffuse in a certain direction, existing bubbles block part of the migration path of the interstitial atoms, leading to the formation of depleted regions (i.e., regions with lower concentrations of interstitial atoms) in the areas obstructed by the bubbles. On the other hand, the regions not obstructed by the bubbles will form saturated regions (i.e., regions with higher concentrations of interstitial atoms). Therefore, the presence of bubbles affects the directional diffusion of interstitial atoms, intensifying the concentration differences of interstitial atoms across different regions. Due to the existence of different diffusion paths for interstitial atoms in the directional diffusion process, these atoms will form depleted regions in some areas and saturated regions in others. The bubble-blocking effect causes the interstitial depleted regions to appear periodically in different locations, leading to an alternating arrangement of depleted and saturated regions, as shown in Fig. 1, where red represents the bubbles and blue represents the depleted regions caused by the blocking of diffusion. This alternating arrangement itself has a certain periodicity, and the nucleation and growth of bubbles are more likely to occur in the depleted regions because these areas have fewer interstitial atoms, requiring less energy for bubble formation. As the bubbles continue to form and grow, they arrange according to the periodic distribution of the interstitial depleted regions. During the evolution process, bubbles such as those shown in areas B, C and D in Fig. 1 may appear outside of the lattice positions. However, influenced by the interstitial saturated regions, these bubbles will shrink over time as they absorb interstitial atoms, causing all the bubbles to become regular, similar to the one shown in position A. This process ultimately results in the formation of a bubble superlattice structure. ",
+        "bbox": [
+            514,
+            264,
+            937,
+            592
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/80dd6023f31f787981be05e18a08dff60f0c830833be75c72f16140fb88455da.jpg",
+        "table_caption": [
+            "Table 1 Parameters of U-Mo alloy used in the present phase-field simulation. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Physics parameter</td><td>Symbol</td><td>Value</td><td>Reference</td></tr><tr><td>Temperature</td><td>T</td><td>473 K</td><td></td></tr><tr><td>Parabolic factor of matrix</td><td>km = km</td><td>6.00 × 1011 J/m3</td><td>(Aagesen et al., 2022)</td></tr><tr><td>Parabolic factor of matrix</td><td>km</td><td>1.20 × 1011 J/m3</td><td>(Aagesen et al., 2022)</td></tr><tr><td>Parabolic factor of bubble</td><td>kb</td><td>1.20 × 1010 J/m3</td><td>(Aagesen et al., 2022)</td></tr><tr><td>Parabolic factor of bubble</td><td>$k\\qrac }$</td><td>2.40 × 1010 J/m3</td><td>(Aagesen et al., 2022)</td></tr><tr><td>Parabolic factor of bubble</td><td>$k}$</td><td>6.00 × 1011 J/m3</td><td>(Aagesen et al., 2022)</td></tr><tr><td>Surface energy</td><td>Ys$</td><td>1.81 J/m2</td><td>(Liang et al., 2018)</td></tr><tr><td>GB energy Diffusion coefficient of</td><td>YGB</td><td>0.5 J/m^{2</td><td>(Hu et al., 2015)</td></tr><tr><td>vacancy</td><td>Dv</td><td>4.10 × 10-17 m{2/ s</td><td>(Liang et al., 2018)</td></tr><tr><td>Diffusion coefficient of gas atom</td><td></td><td>3.84 × 10-17 m2/ s</td><td>(Rest, 2010)</td></tr><tr><td>Constant of gas atom generation</td><td>Λ</td><td>0.25</td><td>(Spino et al., 2005)</td></tr><tr><td>Mobility of bubble surface</td><td>Lη</td><td>9.04 × 10-8 m³/</td><td>(Liang et al., 2018)</td></tr><tr><td>Mobility of GB</td><td>L4</td><td>J/s 1.82 × 10-14 m³/</td><td>(Liang et al., 2016)</td></tr><tr><td>Nucleation factor</td><td>k1</td><td>J/s 1 × 10-3</td><td>(Liang et al., 2018)</td></tr><tr><td>Nucleation factor</td><td>k2</td><td>1 × 10-5</td><td>(Liang et al., 2018)</td></tr></table>",
+        "bbox": [
+            507,
+            638,
+            937,
+            934
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            44,
+            124,
+            52
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "discarded",
+        "text": "4 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            962
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e10ba17b084bb522bf4ba60badb129b301d6f9480f66736078abcbf23d3d9995.jpg",
+        "image_caption": [
+            "Fig. 1. Schematic diagram of shadow effect in GBS formation. A: Bubbles located on the superlattice sites. B: Bubbles not located on the superlattice sites. C: Small bubbles located in the shaded regions. D: Oversized bubbles located on the lattice sites. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            65,
+            68,
+            478,
+            377
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            62,
+            450,
+            485,
+            556
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            512,
+            66,
+            936,
+            104
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In the present study, a $1 0 2 . 4 \\times 1 0 2 . 4 \\mathrm { ~ n m }$ two-dimensional region was utilized to simulate the formation of GBS in U-Mo alloys. The initial defect concentration was set to the thermal equilibrium concentration. The formation of GBS in U-Mo is depicted in Fig. 2, corresponding to the fission densities of (a) 1, (b) 2, (c) 3, (d) 4, (e) 5 and ( $\\mathbf { \\hat { f } } ) 6 \\times 1 0 ^ { 2 1 } \\mathbf { f i s s / c m ^ { 3 } }$ . The fluence values were chosen to represent the typical conditions under which gas bubble superlattice occurs (Aagesen et al., 2022; Liang et al., 2018). In the initial stages of irradiation, gas atoms, vacancies, and interstitial atoms were introduced into the system. As defects accumulated, bubbles began to nucleate. The nucleation of bubbles was modeled based on the nucleation model developed in the previous section. The probability of bubble nucleation was found to be related to the vacancy concentration, with the nucleation probability increasing as vacancies accumulated. At a fission density of $\\bar { 1 } \\times 1 0 ^ { 2 1 } \\mathrm { f i s s / c m } ^ { 3 }$ , bubbles began to nucleate, although their size was very small at this stage. As defects continued to be introduced, existing bubbles absorbed vacancies and gas atoms, causing them to grow. Simultaneously, bubbles also shrank by absorbing interstitial atoms. At a fission density of $3 \\times 1 0 ^ { 2 1 }$ $\\mathrm { { f i s s / c m ^ { 3 } } }$ , bubbles started to align and form a superlattice structure. At this point, due to the shadow effect, periodically arranged interstitial depleted regions were formed, leading to the periodic alignment of bubbles, which is consistent with experimental observations (Miller et al., 2015). However, irradiation-induced bubbles were also observed at non-lattice positions during this stage. This is because the difference between interstitial depleted and saturated regions was minimal at the early stages of irradiation, resulting in a nearly uniform nucleation probability across all lattice sites. As the fission density increased, the influence of bubbles on interstitial diffusion became more pronounced, amplifying the difference between the depleted and saturated regions. Bubbles located in the saturated regions shrank due to interstitial absorption, while bubbles in the depleted regions remained stable. After a fission density of $4 \\times 1 0 ^ { 2 1 } \\mathrm { f i s s / c m } ^ { 3 }$ , the GBS structure remained stable, with bubbles no longer changing significantly with further increases in fission density. ",
+        "bbox": [
+            514,
+            104,
+            937,
+            553
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The GB plays a crucial role in the formation of GBS. Literature review indicates that during irradiation near GBs voids are formed early and the fission gases generated in these regions migrate to the intergranular bubbles, partially filling the developing voids (Ajantiwalay et al., 2020). During irradiation, the regions surrounding the GB can be divided into three distinct zones, as shown in Fig. 3. The first is the denuded zone, where the concentration of vacancies and interstitial atoms decreases to zero due to the GB's absorption of these defects. The second is the peak zone, where the anisotropic migration of interstitial atoms occurs more rapidly than the isotropic diffusion of vacancies. As a result, interstitial atoms are more strongly influenced by the GB absorption. In this zone, a region with a significantly higher ratio of vacancies to interstitials compared to other parts of the grain is observed. Voids nucleate and grow most intensely in this peak zone (Millett et al., 201 1) reaching high expansion values in the early stages of irradiation (Evans and Foreman, 1985), and GBS forms within this region. Moving inward towards the grain, the third zone is characterized by a reduced vacancy-to-interstitial ratio. ",
+        "bbox": [
+            529,
+            554,
+            934,
+            567
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/d70c09d2af0e4e1f7ed944e8eb9b0f5cf88e443c854f6dddb92910b9e3fd2151.jpg",
+        "image_caption": [
+            "Fig. 2. The morphology of the GBS for (a) 1, (b) 2, (c) 3, (d) 4, (e) 5 and (f) $6 \\times 1 0 ^ { 2 1 }$ fiss/cm3. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            164,
+            583,
+            835,
+            916
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            44,
+            126,
+            54
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "discarded",
+        "text": "5 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            962
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            62,
+            66,
+            485,
+            288
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A bicrystal structure was constructed to investigate the influence of GB on the formation of GBS, as shown in Fig. 4, where the white region represents the GB. For simulation size considerations, a grid size of $2 0 4 . 8 \\times 2 0 4 . 8 ~ \\mathrm { n m }$ was used in subsequent simulations. Due to the absorption of defects by the GB, the formation process of GBS is illustrated in Fig. 4, corresponding to the fission densities of (a) 1, (b) 2, (c) 3, (d) 4, (e) 5 and (f) $6 \\times 1 0 ^ { 2 1 }$ fiss/cm³. It can be observed that a denuded zone and a peak zone appear around the GB influenced by the GB. In the denuded zone, the defect concentration is zero, while in the peak zone, the defect concentration increases with the increase in fission density, leading to the nucleation and growth of bubbles. At a fission density of 3 $\\times ~ 1 0 ^ { 2 \\bar { 1 } } ~ \\mathrm { f i s s / c m ^ { 3 } }$ ,bubbles begin to show a tendency to form a lattice arrangement. As the fission density increases, the bubble lattice in the GB peak zone stabilizes and persists. ",
+        "bbox": [
+            62,
+            291,
+            485,
+            474
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The width of the denuded zone is an important characteristic influenced by the GB. It is well known that factors such as irradiation dose, temperature, dose rate (Konobeev et al., 1975), as well as the type and orientation of the GB (Han et al., 2012), can affect the width of this zone. Theoretically, as the GB's absorption of defects increases, the width of the denuded zone should also increase. Therefore, simulations were conducted using GBs with different absorption coefficients to study the formation of GBS, as shown in Fig. 5, where the corresponding fission density is $6 \\times 1 0 ^ { 2 1 }$ fiss/cm3 and the GB absorption coefficient are (a) $s _ { \\nu }$ $= 0 . 0 4$ , (b) $s _ { \\nu } = 0 . 0 6$ and (c) $s _ { \\nu } = 0 . 0 8$ .From the figures, it can be observed that, with the increase in the GB absorption, the location of bubble formation shifts further away from the GB. ",
+        "bbox": [
+            62,
+            475,
+            485,
+            620
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/bbe08b604d10a8bf2b8f0877d56f5b91e1627b8174817f0c7a31b8540a846cf8.jpg",
+        "image_caption": [
+            "Fig. 3. Schematic diagram of GBS formation around GBs. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            67,
+            641,
+            477,
+            911
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            515,
+            66,
+            813,
+            78
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4Discussion ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            93,
+            601,
+            104
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.1. Model validation ",
+        "text_level": 1,
+        "bbox": [
+            515,
+            119,
+            640,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In the previous section, a phase-field model was developed to simulate the formation of GBS in U-Mo alloys, as shown in Fig. 6. Further, it was necessary to conduct a quantitative analysis of the simulation results to validate the proposed model. Therefore, the bubble diameter and lattice constant measured in experiments on GBS were used for model validation. In our simulations, bubble sizes were determined using the connected region labeling method, and lattice constant was measured by calculating the distance between the bubbles. The 4- point connected region labeling method works by identifying and labeling distinct regions of connected elements within a grid or lattice. In this method, a point is classified as part of a connected region if it shares at least one edge or corner with another point in the region. For 2D grids, a point can be connected to its four neighbors, which are examined in succession. If a point belongs to a previously identified region, it is labeled accordingly. Otherwise, a new label is assigned. This method is particularly useful for determining the size of clusters, such as bubbles in the simulation, by counting the number of points within each labeled region. ",
+        "bbox": [
+            514,
+            146,
+            937,
+            380
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The average bubble diameter as a function of fission density was plotted in Fig. 6, as indicated by the red points. It can be seen that as bubble nucleation and growth occur, the bubble radius increases. The growth of bubbles can be attributed to the accumulation of vacancies and gas atoms, which are incorporated into existing bubbles, leading to their enlargement. At a fission density of $1 \\times 1 0 ^ { 2 1 } \\mathrm { { \\ddot { f u s s / c m } } } ^ { 3 }$ , the bubble diameter is approximately $1 . 3 \\ \\mathrm { n m }$ As the fission density increases, the bubble diameter stabilizes after $3 \\times 1 0 ^ { 2 1 } \\mathrm { f i s s / c m } ^ { 3 }$ . The bubble diameters measured experimentally at different fission densities were also plotted in Fig. 6. To evaluate the agreement between the simulation results and the experimental data, RMSE (Root Mean Square Error) was calculated. Since the x-coordinates (fission density) of the simulation and experimental data do not match exactly, interpolation was applied to align them to the same $\\mathbf { X }$ -coordinates before performing the calculation. $\\begin{array} { r } { \\mathrm { R M S E } = \\sqrt { \\sum _ { i = 1 } ^ { n } \\Big ( y _ { s i m , i } - y _ { \\mathrm { e x p } , i } ^ { \\prime } \\Big ) ^ { 2 } / n } , } \\end{array}$ where $y _ { s i m }$ is the simulation data and $y _ { \\mathit { \\Pi } _ { e x p } } ^ { \\prime }$ is the interpolated experimental data. The RMSE was calculated to be 0.276, indicating a good agreement between the simulation and experimental results (Van den Berghe et al., 2008; Miller et al., 2015; Leenaers et al., 2016; Gan et al., 2014). As bubbles continue to absorb defects, their growth rate slows down. Due to the shadow effect, a large number of interstitial atoms diffuse within the GBS, which reduces the number of vacancies available for bubble absorption, thereby limiting further growth. Consequently, after reaching a certain fission density, the bubbles in the superlattice structure stabilize, and their size remains constant. ",
+        "bbox": [
+            514,
+            385,
+            937,
+            726
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The lattice constant is also an important characteristic of GBS. Fig. 7 shows the variation of the lattice constant with fission density. In the early stages of irradiation, no lattice constant can be measured without GBS. The lattice constants measured experimentally at different fission densities are also plotted in Fig. 7, and The RMSE was calculated to be 0.302 shown a good agreement between the simulation and experimental data (Van den Berghe et al., 2008; Miller et al., 2015; Leenaers et al., 2016; Gan et al., 2014). The lattice constant decreases slightly as fission density increases, which may be related to the growth of bubbles. However, the relationship between the lattice constant and fission density appears to be minimal overall. According to previous reports, the gas appm/dpa ratio may be the decisive factor in determining the lattice constant. Harrison et al. (Harrison et al., 2017) emphasized the importance of the He appm/dpa ratio as a descriptor for bubble lattice formation. In their study on bubble lattice formation in tungsten under ",
+        "bbox": [
+            514,
+            727,
+            937,
+            924
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            45,
+            124,
+            52
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "discarded",
+        "text": "6 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            962
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e0ae39dd48b825278f646293bab14ebf910c9899418bb78d232a08106e025b4a.jpg",
+        "image_caption": [
+            "Fig. 4. The morphology of the GBS with a GB for (a) 1, (b) 2, (c) 3, (d) 4, (e) 5 and (f) $6 \\times 1 0 ^ { 2 1 }$ fiss/cm3. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            163,
+            69,
+            835,
+            428
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/875a705eb476f24ee7e365937aa55b135fce29c68465ecac137dee74807fc681.jpg",
+        "image_caption": [
+            "Fig. 5. The morphology of the GBS with a GB under $6 \\times 1 0 ^ { 2 1 }$ fiss/cm³ for (a) $s _ { \\nu } = 0 . 0 4$ , (b) $s _ { \\nu } = 0 . 0 6$ and (c) $s _ { \\nu } = 0 . 0 8$ . "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            164,
+            472,
+            835,
+            648
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "He implantation at a temperature of approximately $0 . 2 T _ { m } ,$ the authors used different He energies to achieve an He appm/dpa ratio ranging from 500 to 40000. The bubble lattice adapted to different implantation conditions, and as the He appm/dpa ratio decreased, both the bubble diameter and lattice constant increased. As a result, the lattice constant remains relatively unchanged even at higher fission densities, since the gas appm/dpa ratio governs how bubbles form and influence the material microstructure. This suggests that the lattice constant is primarily determined by the gas appm/dpa ratio overshadowing the direct effects of fission density on the lattice constant. ",
+        "bbox": [
+            62,
+            684,
+            484,
+            815
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.2. The effect of GB ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            832,
+            186,
+            844
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "GBs play a significant role in the formation of GBS, and the underlying mechanisms can be attributed to their ability to absorb and influence the distribution of defects. To study the impact of GBs on GBS formation, a system containing GBs was constructed as shown in Fig. 4. With increasing fission density, bubbles were observed to form progressively on both sides of the GB and align into a superlattice arrangement under the influence of the directionally diffusing interstitial atoms. Throughout this process, the bubble size increased gradually until reaching a stable state, which was consistent with the GBS formation process observed in systems without GB. The average bubble diameter as a function of fission density is shown as red dots in Fig. 8. During the early stages of irradiation, the bubble size increased rapidly. However, when the fission density exceeded $3 \\times 1 0 ^ { 2 1 } ~ \\mathrm { f i s s / c m } ^ { \\bar { 3 } }$ , the bubble size exhibited minimal further growth. This stabilization can be explained by the decreasing availability of defects, particularly vacancies, as discussed previously. The fitted curve, shown as a solid black line in Fig. 8, follows the equation $y = 3 . 8 2 \\mathrm { - } 5 . 7 9 \\times \\exp ( - x / 1 . 3 2 )$ . The fitting results indicate that the bubble diameter in the GBS near the GB reaches a maximum value $3 . 8 2 \\ \\mathrm { n m }$ , beyond which it approaches this limit with increasing fission density. The simulation results align well with the fitting curve, providing further validation of the model and the observed trends. It is worth noting that although both Fig. 6 and Fig. 8 show the variation of bubble diameter with fission density in GBS, Fig. 6 shows the simulation results of a single crystal without GBs, while Fig. 8 reflects the influence of GBs on the system. The presence of GB inhibits the growth of bubbles, resulting in smaller bubble diameters in Fig. 8 compared to Fig. 6, with a difference of approximately $0 . 5 \\ \\mathrm { n m }$ at the same fission density. ",
+        "bbox": [
+            62,
+            858,
+            485,
+            936
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            514,
+            684,
+            937,
+            934
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            939,
+            54
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            45,
+            126,
+            52
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "discarded",
+        "text": "7 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            960
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/192b85c6ea587dd21f025a1fe3a59d61c71d32ed24be51416a3e4358f689d557.jpg",
+        "image_caption": [
+            "Fig. 6. The variation of bubble diameter with fission density and comparison with experimental data. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            63,
+            66,
+            480,
+            332
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/a5e1360fd69d1123d5223adea4694cc84e5f6787ce75cac495a2cf514f9c9781.jpg",
+        "image_caption": [
+            "Fig. 7. The variation of lattice parameter with fission density and comparison with experimental data. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            65,
+            388,
+            477,
+            654
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            60,
+            703,
+            485,
+            744
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The existence of the denuded zone arises from the fact that the vacancy concentration is lower directly adjacent to the GBs, due to the annihilation of excess vacancies within the GB. This phenomenon is a direct result of the vacancy absorption by the GB, where they are effectively removed from the bulk region. In the bulk region, as the supersaturation of vacancies continually increases over time due to the irradiation source term, voids begin to nucleate once a critical vacancy concentration is reached. The width of the denuded zone can therefore be defined as the region adjacent to the GB where the vacancy concentration does not exceed the critical nucleation threshold. This critical concentration is essential for void formation, as it dictates the point at which voids begin to nucleate and grow. To account for this phenomenon in a model, the one-dimensional steady-state diffusion equation is employed within GB. Considering the equilibrium of vacancy diffusion, generation and annihilation processes within GB, this equation can be described as: ",
+        "bbox": [
+            62,
+            745,
+            485,
+            928
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/bc56673e7ced5f1f1363108910f2609d8c0068314750e2bd0dd7cc40959b72e0.jpg",
+        "image_caption": [
+            "Fig. 8. Simulation results and fitting line of bubble diameter variation with fission density. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            517,
+            68,
+            932,
+            331
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            512,
+            380,
+            937,
+            406
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b99deda9e239ed53987629482b1726c94c90802bc74626dab3362bbc2b86e4e2.jpg",
+        "text": "$$\nD _ { \\nu } \\frac { \\partial ^ { 2 } c } { \\partial x ^ { 2 } } + P _ { \\nu } - \\frac { s _ { \\nu } } { 2 } = 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            413,
+            626,
+            441
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "where $x$ is the distance from the middle of GB to the semi-infinite solid. $s _ { \\nu } / 2$ is approximately equal to $S _ { \\nu }$ in the GB. Using the boundary conditions $c _ { \\nu } = c _ { \\nu } ^ { e q }$ $( x = 0$ and $\\mathrm { d } c _ { \\nu } / \\mathrm { d } x = 0$ $( x = 0 )$ , the functional solution of vacancy concentration with $x$ can be written as: ",
+        "bbox": [
+            512,
+            451,
+            937,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0887001335439bdc08f08787e09e238e4890b7680b8e555066b504596f70fb22.jpg",
+        "text": "$$\nc = \\frac { ( s _ { \\nu } - 2 P _ { \\nu } ) } { 4 D _ { \\nu } } x ^ { 2 } + c _ { \\nu } ^ { e q }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            510,
+            638,
+            537
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "As a result, the vacancy concentration at the boundary of the GB at position $\\lambda$ can be calculated as $c _ { G B }$ . The region adjacent to GB that does not exceed the critical vacancy concentration can be defined as a denuded zone. The behavior of vacancies in this region can be considered using a one-dimensional steady-state diffusion equation as follows (Millett et al., 2009): ",
+        "bbox": [
+            512,
+            543,
+            937,
+            621
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5d59b4456a73b323ae28a233317edc67a7914bf9f1dd9f8456c34b9cbe3c541b.jpg",
+        "text": "$$\nD _ { \\nu } \\frac { { \\partial } ^ { 2 } c } { \\partial x ^ { 2 } } + P _ { \\nu } = 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            629,
+            601,
+            656
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Appling the boundary conditions $c _ { \\nu } = c _ { G B } \\left( x = 0 \\right)$ and $\\mathrm { d } c _ { \\nu } / \\mathrm { d } x = 0$ $( x$ $= W _ { \\mathrm { d z } } )$ , the vacancy concentration as a function of $x$ can be obtained: ",
+        "bbox": [
+            512,
+            662,
+            937,
+            688
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d6b3401d51016ad4024ed8d2387057996bbe4a9b04896ca03a8ecb43aaf3e06e.jpg",
+        "text": "$$\nc = \\frac { P _ { \\nu } } { 2 D _ { \\nu } } x ^ { 2 } - \\frac { P _ { \\nu } } { D _ { \\nu } } W _ { \\mathrm { d z } } x + \\frac { ( s _ { \\nu } - 2 P _ { \\nu } ) } { 4 D _ { \\nu } } \\lambda ^ { 2 } + c _ { \\nu } ^ { e q }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            694,
+            744,
+            722
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "where $W _ { \\mathrm { d z } }$ is the width of the denuded zone, and $\\lambda$ is the half width of GB. Assuming that the vacancy concentration at the edge of the denuded zone is the critical saturation concentration $c _ { c r } ,$ such that: ",
+        "bbox": [
+            512,
+            732,
+            937,
+            773
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/1d063fadc0fab09252acb716a3b247df1f344d98133ee661a22fd1c50d13020b.jpg",
+        "text": "$$\nc _ { c r } = \\ - \\frac { P _ { \\nu } } { 2 D _ { \\nu } } W _ { \\mathrm { d z } } ^ { 2 } + \\frac { ( s _ { \\nu } - 2 P _ { \\nu } ) } { 4 D _ { \\nu } } \\lambda ^ { 2 } + c _ { \\nu } ^ { e q }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            779,
+            719,
+            805
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "After simplifying: ",
+        "bbox": [
+            532,
+            813,
+            638,
+            825
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/42141afa8415438c15996343fa7f45a8b2bb5171b1f0e126cb7844faf2c33c6b.jpg",
+        "text": "$$\nW _ { \\mathrm { d z } } = \\sqrt { \\frac { ( s _ { \\nu } - 2 P _ { \\nu } ) } { 2 P _ { \\nu } } \\lambda ^ { 2 } + \\frac { 2 D _ { \\nu } } { P _ { \\nu } } ( c _ { \\nu } ^ { e q } - c _ { c r } ) }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            832,
+            734,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The relationship between the width of denuded zone and absorption coefficient $s _ { \\nu }$ can be obtained. From the formula, it can be seen that $s _ { \\nu }$ has a minimum value for the occurrence of denuded zones, and only when the GB absorption coefficient is greater than this value will the denuded zone appear. Assuming that the critical supersaturation concentration of vacancies is 0.01, the one-dimensional vacancy distribution perpendicular to the GB direction for different GB absorption coefficients $s _ { \\nu }$ is shown in Fig. 9. It can be observed that within the GB, the vacancy concentration increases toward the GB edge. Additionally, the vacancy concentration at the GB edge increases as $s _ { \\nu }$ increases. This is because vacancies within the GB tend to diffuse toward the GB edge to maintain equilibrium with a higher GB absorption strength. Further, in the direction from the GB edge towards the interior of the grain, the vacancy concentration decreases continuously until it reaches the critical supersaturation concentration. At this point, the derivative of the vacancy concentration with respect to position becomes zero, indicating a steady-state condition. The distance from the GB edge to this point is considered the width of the denuded zone. As shown in the figure, the width of the denuded zone also increases as the absorption coefficient $s _ { \\nu }$ increases. ",
+        "bbox": [
+            512,
+            872,
+            937,
+            925
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            45,
+            126,
+            52
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "discarded",
+        "text": "8 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            962
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            62,
+            66,
+            485,
+            274
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "According to Eq. (28), the denuded zone width as a function of the GB absorption coefficient $s _ { \\nu }$ can be quantitatively calculated, as shown by the black solid line in Fig. 10. It can be observed that the denuded zone width increases with increasing $s _ { \\nu } ,$ which is attributed to the enhanced absorption of defects by the GB. However, as $s _ { \\nu }$ continues to increase, the rate of increase in denuded zone width diminishes, suggesting the possible existence of a limit to the vacancy denuded zone. The formation of GBS around the GB was simulated using the developed phase-field model with varying $s _ { \\nu }$ values, as shown in Fig. 5. The simulation results indicate that the denuded zone width around the GB increases with increasing $s _ { \\nu }$ . By statistically analyzing the distance of bubbles from the GB, the denuded zone width under steady-state conditions was obtained as a function of $s _ { \\nu } ,$ represented by the blue dots in Fig. 10. The simulation results show good agreement with the calculated values. ",
+        "bbox": [
+            62,
+            278,
+            485,
+            474
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Additionally, the effect of the GB absorption coefficient on bubble diameter is shown by the red dashed line in Fig. 10, where the average bubble diameter is plotted for different $s _ { \\nu }$ values when the GBS reaches stability at a fission density of $6 \\times 1 0 ^ { 2 1 }$ fiss/cm³. It can be observed that as $s _ { \\nu }$ increases, the bubble diameter also increases. This can likely be attributed to the stronger vacancy segregation near the GB at higher $s _ { \\nu } ,$ which leads to a higher supersaturation of vacancies. However, the bubble diameter stabilizes with further increases in $s _ { \\nu } .$ This stabilization can be explained by the saturation of vacancy supersaturation levels, which limits further growth of bubbles. It is worth mentioning that simply modeling GB as vacancy absorption sink is an idealized approach, mainly to reduce model complexity and focus on the core mechanism of research. Future work aims to further explore the relationship between the GB absorption coefficient and GB properties. Such an investigation could bridge the gap between lower-scale simulations and practical engineering applications by enabling predictions of GBS formation around specific GBs based on their properties. By understanding and quantifying how GB characteristics influence the absorption and evolution of gas bubbles, this research has the potential to translate atomistic and mesoscale findings into actionable insights for the design and optimization of materials in irradiation environments. ",
+        "bbox": [
+            62,
+            476,
+            485,
+            633
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/cd6e24ff80a00b62825301dde836173cd8da9b2592ec41ba12955107bb2ba1a0.jpg",
+        "image_caption": [
+            "Fig. 9. One-dimensional vacancy distribution perpendicular to the GB direction for different GB absorption coefficients $s _ { \\nu . }$ "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            65,
+            659,
+            473,
+            902
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b0115a780b4272caf1811700c37e70e4b5f4b0f74ca416c9244cd2da2254e728.jpg",
+        "image_caption": [
+            "Fig. 10. The variation of denuded zone width and bubble diameter with GB absorption coefficient $s _ { \\nu . }$ "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            517,
+            68,
+            932,
+            307
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            514,
+            358,
+            937,
+            476
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5. Conclusions ",
+        "text_level": 1,
+        "bbox": [
+            514,
+            490,
+            611,
+            501
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A coupled KKS model and an explicit nucleation algorithm were successfully implemented in a phase-field model to simulate the formation of GBS in U-Mo alloys. Additionally, the impact of the GB absorption strength on the denuded zone width was systematically investigated. The primary conclusions are summarized as follows: ",
+        "bbox": [
+            512,
+            517,
+            937,
+            581
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "(1) The developed phase-field model was applied to simulate the formation and evolution of GBS in U-Mo alloys. With increasing fission density, vacancies and gas atoms were observed to accumulate in the matrix, leading to the bubble formation. The shadow effect caused by the one-dimensional directional migration of interstitial atoms resulted in the ordered arrangement of bubbles in the matrix. The formed GBS exhibited irradiationinduced stability, as further increases in fission density led to minimal changes in bubble radius and lattice constant. The simulated bubble diameters and lattice constants were in good agreement with experimental measurements. ",
+        "bbox": [
+            531,
+            595,
+            937,
+            738
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "(2) GBs were found to play a significant role in the formation and evolution of GBS. A structure containing a GB was constructed, and the validated model was employed to study the influence of the GB on GBS formation. Simulation results indicated that regions near the GB could be divided into distinct zones during irradiation. The first zone was the denuded zone, characterized by defect depletion. The second was the peak zone, where GBS primarily formed. During the formation process, bubble diameters initially increased but later stabilized in the vicinity of the GB. ",
+        "bbox": [
+            531,
+            740,
+            937,
+            871
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "(3) The absorption strength of GB for defects was shown to influence the width of the denuded zone. A quantitative relationship between the GB absorption coefficient $s _ { \\nu }$ and the denuded zone width was obtained through a one-dimensional steady-state diffusion equation. It was found that the denuded zone width increased with higher absorption strength, due to enhanced vacancy absorption at the GB which drives defect migration to maintain equilibrium. Simulations incorporating varying $s _ { \\nu }$ values were conducted, and the results were consistent with the calculations. As the GB absorption strength increased, bubble diameters within the surrounding GBS initially increased but eventually saturated. ",
+        "bbox": [
+            529,
+            872,
+            937,
+            924
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            45,
+            124,
+            52
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "discarded",
+        "text": "9 ",
+        "bbox": [
+            495,
+            953,
+            504,
+            960
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            102,
+            66,
+            485,
+            170
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Declaration of competing interest ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            199,
+            278,
+            210
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. ",
+        "bbox": [
+            60,
+            224,
+            484,
+            263
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgements ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            281,
+            186,
+            292
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "This work was supported by the Joint Fund of the National Natural Science Foundation of China and the China Academy of Engineering Physics (NSAF Joint Fund) (Grants No. U2130105) and the Innovative Scientific Program of China National Nuclear Corporation (CNNC). ",
+        "bbox": [
+            62,
+            307,
+            484,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Data availability ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            373,
+            168,
+            385
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Data will be made available on request. ",
+        "bbox": [
+            84,
+            399,
+            317,
+            411
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            430,
+            131,
+            441
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Snelgrove, J.L., Hofman, G.L., Meyer, M.K., 1997. Development of very-high-density lowenriched-uranium fuels. Nucl. Eng. Des. 178, 119126. https://doi.org/10.1016/ S0029-5493(97)00217-3.   \nKeiser, D.D., Hayes, S.L., Meyer, M.K., 2003. High-density, low-enriched uranium fuel for nuclear research reactors. Metals Mater. Soc. 55, 5558. https://doi.org/10.1007/ s11837-003-0031-0.   \nKim, Y.S., Hofman, G.L., 2011. Fission product induced swelling of UMo alloy fuel. J. Nucl. Mater. 419, 291301. https://doi.org/10.1016/j.jnucmat.2011.08.018.   \nMeyer, M.K., Gan, J., Jue, J.F., 2014. Irradiation performance of U-Mo monolithic fuel. Nucl. Eng. Technol. 46, 169182. https://doi.org/10.5516/NET.07.2014.706.   \nVan Den Berghe, S., Lemoine, P., 2014. Review of 15 years of high-density low-enriched UMo dispersion fuel development for research reactors in Europe. Nucl. Eng. Technol. 46, 125146. https://doi.org/10.5516/NET.07.2014.703.   \nAjantiwalay, T., Smith, C., Keiser, D.D., 2020. A critical review of the microstructure of U-Mo fuels. J. Nucl. Mater. 540, 152386. https://doi.org/10.1016/j. jnucmat.2020.152386.   \nGan, J., Keiser, D.D., Wachs, D.M., 2010. Transmission electron microscopy characterization of irradiated U-7Mo/Al-2Si dispersion fuel. J. Nucl. Mater. 396 (23), 234239.   \nVan den Berghe, S., Van Renterghem, W., Leenaers, A., 2008. Transmission electronmicroscopy investigation of irradiated U-7 wt% Mo dispersion fuel. J. Nucl. Mater. 375, 340346. https://doi.org/10.1016/j.jnucmat.2007.12.006.   \nMiller, B.D., Gan, J., Keiser Jr., D.D., 2015. Transmission electron microscopy characterization of the fission gas bubble superlattice in irradiated U-7 wt%Mo dispersion fuels. J. Nucl. Mater. 458, 115121. https://doi.org/10.1016/j. jnucmat.2014.12.012.   \nDubinko, V.I., Slezov, V.V., Tur, A.V., 1986. The theory of gas bubble lattice. Radiat. Eff. Defects Solids 100 (12), 85104. https://doi.org/10.1080/00337578608208738.   \nDubinko, V.I., Tur, A.V., Turkin, A.A., 1989. A mechanism of formation and properties of the void lattice in metals under irradiation. J. Nucl. Mater. 161 (1), 5771. https:// doi.org/10.1016/0022-3115(89)90462-5.   \nDubinko, V.I., Turkin, A.A., 1994. Self-organization of cavities under irradiation. Appl. Phys. A 58 (1), 2134. https://doi.org/10.1007/BF00331513.   \nStoneham, A.M., 1971. Theory of regular arrays of defects - Void lattice. J. Phys. F. 1 (6), 778784. https://doi.org/10.1088/0305-4608/1/6/311   \nWillis, J.R., 1975. Interaction of gas-bubbles in an anisotropic elastic solid. J. Mech. Phys. Solids 23 (2), 129138. https://doi.org/10.1016/0022-5096(75)90022-8.   \nYu, H.C., Lu, W., 2005. Dynamics of the self-assembly of nanovoids and nanobubbles in solids. Acta Mater. 53 (6), 17991807. https://doi.org/10.1016/j. actamat.2004.12.029.   \nWoo, C.H., Frank, W., 1985. A theory of void-lattice formation. J. Nucl. Mater. 137 (1), 721. https://doi.org/10.1016/0022-3115(85)90044-3.   \nWalgraef, D., Lauzeral, J., Ghoniem, N.M., 1996. Theory and numerical simulations of defect ordering in irradiated materials. PhysRevB 53 (22), 1478214794. https:// doi.org/10.1103/PhysRevB.53.14782.   \nHeinisch, H.L., Singh, B.N., 2003. Kinetic Monte Carlo simulations of void lattice formation during irradiation. Phil. Mag. 83 (3134), 36613676. https://doi.org/ 10.1080/14786430310001605416. formation during irradiation. Phil. Mag. 85 (11), 11771190. https://doi.org/ 10.1080/14786430512331325606.   \nHu, S.Y., Burkes, D.E., Lavender, C.A., Senor, D.J., Setyawan, W., Xu, Z.J., 2016. Formation mechanimfgas ubble superlatticein UMo metal fuels: phaseeld modeling investigation. J. Nucl. Mater. 479, 202215.   \nMillett, P.C., El-Azab, A., Rokkam, S., 2009. Void nucleation and growth in irradiated polycrystalline metals: a phase-field model. Modelling Simul. Mater. Sci. Eng. 17, 064003.https://doi.org/10.1088/0965-0393/17/6/064003.   \nMillett, P.C., El-Azab, A., Rokkam, S., 2011. Phase-field simulation of irradiated metals: Part I: Void kinetics. Comput. Mater. Sci. 50, 949959. https://doi.org/10.1016/j. commatsci.2010.10.034.   \n.  . intergranular voids and grain boundaries during radiation in $\\mathbf { U } \\mathbf { O } _ { 2 }$ Comput. Mater. Sci., 110176https://doi.org/10.1016/j.commatsci.2020.110176.   \nRokkam, S., El-Azab, A., Millett, P., 2009. Phase field modeling of void nucleation and growth in irradiated metals. Modelling Simul. Mater. Sci. Eng. 17 (6), 064002. https://doi.org/10.1088/0965-0393/17/6/064002.   \nY.  . radiation-induced bubbles in polycrystalline tungsten: a phase-field simulation. J. Nucl. Mater. 588, 154757. https://doi.org/10.1016/j.jnucmat.2023.154757.   \nY. Y. evolution in recrystallized U-Mo alloy. Nucl. Eng. Technol. 54, 226233. https://doi. org/10.1016/j.net.2021.07.034.   \n. Y.  X.X. evolution in high burn-up $\\mathrm { U O } _ { 2 } { \\mathrm { : } }$ a phase-field study. J. Nucl. Mater. 601, 155312. https://doi.org/10.1016/j.jnucmat.2024.155312.   \nLa, Y.X., Jiang, Y.B., Lan, X., 2024. Phase-field simulation of fission bubbles formation in csi caicucear uel. Nucl. E. Des., 1348. htps:/// 10.1016/j.nucengdes.2024.113485.   \nMillett, P.C., El-Azab, A., Wolf, D., 2011. Phase-field simulation of irradiated metals: Part II: gas bubble kinetics. Comput. Mater. Sci. 50, 960970. https://doi.org/10.1016/j. commatsci.2010.10.032.   \nLan, X., Jiang, Y.B., Sun, D., 2024. Three-dimensional phase-field simulation of intergranular bubble evolution in $\\mathrm { { U O } } _ { 2 }$ during irradiation. Nucl. Eng. Des. 416, 112766. https://doi.org/10.1016/j.nucengdes.2023.112766.   \nAagesen, L.K., Biswas, S., Jiang, W., 2021. Phase-field simulations of fission gas bubbles in high burnup $\\mathbf { U } \\mathbf { O } _ { 2 }$ during steady-state and LOCA transient conditions. J. Nucl. Mater. 557, 153267. https://doi.org/10.1016/j.jnucmat.2021.153267.   \nGao, Y., Zhang, Y.F., Schwe, D., 2018. Formation and self-organization of void superlattices under irradiation: a phase field study. Material 1, 7888. https://doi. org/10.1016/j.mtla.2018.04.003.   \nY..  A.. L 0. Te   las symmetry selection of irradiation-induced void superlattices in cubic metals. Comput. Mater. Sci. 206, 111252. https://doi.org/10.1016/j. commatsci.2022.111252.   \nBai, X.M., Tonk, M.R., Zhang, Y.F., 2016. Multiscale modeling of thermal conductivity of high burnup structures in $\\mathrm { { U O } } _ { 2 }$ fuels. J. Nucl. Mater. 470, 208215. https://doi.org/ 10.1016/j.jnucmat.2015.12.028.   \nLiang, L.Y., Kim, Y.S., Mei, Z.G., 2018. Fission gas bubbles and recrystallization-induced degradation of the effective thermal conductivity in U-7Mo fuels. J. Nucl. Mater. 511, 438445. https://doi.org/10.1016/j.jnucmat.2018.09.054.   \nLan, X., Jiang, Y.B., La, Y.X., 2023. Calculation of the effective thermal conductivity of porous polycrystalline U-10Mo alloy based on phase-field simulation. Nucl. Eng. Des. 413, 112552. https://doi.org/10.1016/j.nucengdes.2023.112552.   \nJiang, Y.B., Shen, W.L., La, Y.X., 2025. Phase-field simulation of recrystallization and calculation of the effective thermal conductivity of polycrystalline $\\mathrm { { U O } } _ { 2 }$ Ann. Nucl. Energy. 211, 110918. https://doi.org/10.1016/j.anucene.2024.110918.   \nAbdoelatef, M.G., Badry, F., Schwen, D., 2019. Mesoscale modeling of high burn-up structure formation and evolution in $\\mathrm { { U O } } _ { 2 }$ Metals Mater. Soc. 71, 48174828. https://doi.org/10.1007/s11837-019-03830-z.   \nL M .G. Y, A.. 01. F aliz intergranular bubble-driven swelling in U-Mo fuel. Comput. Mater. Sci. 138, 1626. https://doi.org/10.1016/j.commatsci.2017.06.013.   \nKim, S.G., Kim, W.T., Suzuki, T., 1999. Phase-field model for binary alloys. PhysRevE 60 (6), 71867197.https://doi.org/10.1103/PhysRevE.60.7186.   \nC, L.Q., We Y., . Cmp imlation  the doma ynamic   queed system with a large number of nonconserved order parameters: the grain-growth kinetics. PhysRevB 50, 15752. https://doi.org/10.1103/PhysRevB.50.15752.   \nAagesen, L.K., Jokisaari, A., Schwen, D., 2022. A phase-field model for void and gas bubble superlattice formation in irradiated solids. Comput. Mater. Sci. 215, 111772. https://doi.org/10.1016/j.commatsci.2022.111772.   \nTo . ZY.BuelA..D model that considers particle size distribution using the phase field method. Modelling Simul. Mater. Sci. Eng. 23, 045009.   \nHu, S.Y., Murray, J., Weiland, H., 2007. Thermodynamic description and growth kinetics of stoichiometric precipitates in the phase-field approach. Calphad. 31, 303312. https://doi.org/10.1016/j.calphad.2006.08.005.   \nMoelans, N., Blanpain, B., Wollants, P., 2008. Quantitative analysis of grain boundary properties in a generalized phase field model for grain growth in anisotropic systems. PhysRevB. 78, 024113. https://doi.org/10.1103/PhysRevB.78.024113.   \nCahn, J.W., 1961. On spinodal decomposition. Acta Mater. 9, 795801. https://doi.org/ 10.1016/0001-6160(61)90182-1.   \nLiang, L.Y., Mei, Z.G., Kim, Y.S., 2018. Three-dimensional phase-field simulations of intragranular gas bubble evolution in irradiated U-Mo fuel. Comput. Mater. Sci. 145, 8695.https://doi.org/10.1016/j.commatsci.2017.12.061.   \nCahn, J.W., Allen, S.M., 1977. A microscopic theory for domain wall motion and its experimental verification in Fe-Al alloy domain growth kinetics. Le Journal De Physique Colloques 38, C7C51. https://doi.org/10.1051/jphyscol:1977709.   \nSimmons, J.P., Shen, C., Wang, Y., 2000. Phase field modeling of simultaneous nucleation and growth by explicitly incorporating nucleation events. Scripta. Mater. 43, 935942.https://doi.org/10.1016/S1359-6462(00)00517-0.   \nHu, S.Y., Casella, A.M., Lavender, C.A., 2015. Assessment of effective thermal conductivity in U-Mo metallic fuels with distributed gas bubbles. J. Nucl. Mater. 462, 6476.https://doi.org/10.1016/j.jnucmat.2015.03.039.   \nRest, J., 2010. An analytical study of gas-bubble nucleation mechanisms in uraniumalloy nuclear fuel at high temperature. J. Nucl. Mater. 402, 179185. https://doi. org/10.1016/j.jnucmat.2010.05.022.   \nSpino, J., Rest, J., Goll, W., Walker, C.T., 2005. Matrix swelling rate and cavity volume balance of $\\mathrm { { U O } } _ { 2 }$ fuels at high burn-up. J. Nucl. Mater. 346, 131144. https://doi.org/ 10.1016/j.jnucmat.2005.06.015.   \nLiang, L., Mei, Z.G., Kim, Y.S., 2016. Mesoscale model for fission-induced recrystallization in U-7Mo alloy. Comput. Mater. Sci. 124, 228237. https://doi.org/ 10.1016/j.commatsci.2016.07.033.   \nEvans, J.H., Foreman, A.J.E., 1985. Some implications of anisotropic self-interstitial diffusion on void swelling in metals. J. Nucl. Mater. 137, 16. https://doi.org/ 10.1016/0022-3115(85)90043-1.   \nKonobeev, Y.V., Subbotin, A.V., Bykov, V.N., 1975. Grain boundary void denuded zone in irradiated metals. Phys. Stat. Sol. (a) 29, K121. https://doi.org/10.1002/ pssa.2210290246.   \nHan, W.Z., Demkowicz, M.J., Fu, E.G., 2012. Effect of grain boundary character on sink efficiency. Acta. Mater. 60, 63416351. https://doi.org/10.1016/j. actamat.2012.08.009.   \nLeenaers, A., Van Renterghem, W., Van den Berghe, S., 2016. High burn-up structure of U(Mo) dispersion fuel. J. Nucl. Mater. 476, 218230. https://doi.org/10.1016/j. jnucmat.2016.04.035.   \nGan, J., Miller, B.D., Keiser Jr, D.D., 2014. Microstructural characterization of irradiated U7Mo/Al5Si dispersion fuel to high fission density. J. Nucl. Mater. 454, 434445. https://doi.org/10.1016/j.jnucmat.2014.08.052.   \nHarrison, R.W., Greaves, G., Hinks, J.A., 2017. Engineering selforganising helium bubble lattices in tungsten. Sci. Rep. 7 (1), 7724. https://doi.org/10.1038/s41598-017- 07711-w. ",
+        "bbox": [
+            60,
+            451,
+            482,
+            938
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            510,
+            75,
+            936,
+            933
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            937,
+            54
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            45,
+            124,
+            54
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "discarded",
+        "text": "10 ",
+        "bbox": [
+            494,
+            953,
+            507,
+            962
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            60,
+            66,
+            482,
+            247
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            512,
+            66,
+            936,
+            247
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "discarded",
+        "text": "Nuclear Engineering and Design 435 (2025) 113912 ",
+        "bbox": [
+            699,
+            44,
+            939,
+            54
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "discarded",
+        "text": "11 ",
+        "bbox": [
+            492,
+            953,
+            505,
+            962
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "discarded",
+        "text": "Y. Jiang et al. ",
+        "bbox": [
+            62,
+            44,
+            126,
+            54
+        ],
+        "page_idx": 10
+    }
+]

@@ -1,0 +1,405 @@
+# 📄 PDF Parsing Result
+
+**File:** `/Volumes/openclaw记忆/Zotero_storage/storage/V4JX5WD9/Hu et al._2016_Formation mechanism of gas bubble superlattice in UMo metal fuels Phase-field modeling investigation.pdf`
+**Backend:** `pipeline`
+**Pages:** 0 to end
+**Formula Recognition:** ❌ Disabled
+
+
+## a b s t r a c t
+
+Nano-gas bubble superlattices are often observed in irradiated UMo nuclear fuels. However, the formation mechanism of gas bubble superlattices is not well understood. A number of physical processes may affect the gas bubble nucleation and growth; hence, the morphology of gas bubble microstructures including size and spatial distributions. In this work, a phase-field model integrating a first-passage Monte Carlo method to investigate the formation mechanism of gas bubble superlattices was developed. Six physical processes are taken into account in the model: 1) heterogeneous generation of gas atoms, vacancies, and interstitials informed from atomistic simulations; 2) one-dimensional (1-D) migration of interstitials; 3) irradiation-induced dissolution of gas atoms; 4) recombination between vacancies and interstitials; 5) elastic interaction; and 6) heterogeneous nucleation of gas bubbles. We found that the elastic interaction doesn’t cause the gas bubble alignment, and fast 1-D migration of interstitials along 〈110〉 directions in the body-centered cubic U matrix causes the gas bubble alignment along 〈110〉 directions. It implies that 1-D interstitial migration along [110] direction should be the primary mechanism of a fcc gas bubble superlattice which is observed in bcc UMo alloys. Simulations also show that fission rates, saturated gas concentration, and elastic interaction all affect the morphology of gas bubble microstructures.
+
+© 2016 Elsevier B.V. All rights reserved.
+
+
+
+## 1. Introduction
+
+The development of metallic alloy fuels such as UMo dispersion fuels and monolithic UMo fuels is part of a global effort on nuclear non-proliferation, and low-enriched uranium fuels are being developed by programs throughout the world [1]. In the United States, the efforts are led by the Office of Material Management and Minimization Reactor Conversion Program within the National Nuclear Security Administration. Although UMo fuels have the advantage of high density, excellent irradiation performance, and good thermal conductivity, swelling of these metallic fuels over time is known to be much more severe than mixed-oxide fuels. This characteristic is an important design parameter because it not only affects the thermal conductivity of the fuels but also the mechanical integrity of fuel structures. Nuclear reactions continuously generate fission gas atoms such as Xe and Kr, while fission fragment irradiation produces vacancy and interstitial defects and their clusters. Because the solubility of fission gas atoms is extremely low in UMo fuels, the gas atoms segregate and form gas bubbles. Fission gas bubble nucleation and growth are primarily responsible for the swelling in metallic fuels. Therefore, a fundamental understanding of the effect of microstructures and irradiation conditions on gas bubble nucleation and growth kinetics is important for developing mitigation strategies for the swelling of the fuels and the continued development of advanced fuels for use in high-specific-power/ neutron-flux research and test reactors.
+
+Gas bubble structures have been examined in post-irradiation samples of dispersion and monolithic UMo fuels at different fission densities [1e6]. Descriptions of some observed gas bubble and grain microstructure features follow. First, intragranular gas bubbles are small, around 1e3 nm in diameter, and tend to form gas bubble superlattices. Second, the gas bubble superlattice is coherent with the Ue7 wt%Mo fuel that has a body-centered cubic (bcc) structure with a lattice constant of 0.343 nm while the gas bubble superlattice has a face-centered cubic (fcc) structure. The lattice constant of fcc gas bubble superlattices is approximately
+
+
+
+
+
+7e12 nm. Third, with the increase of fission density, the density and size of intragranular gas bubbles increases slightly. In contrast, the density and size of intergranular gas bubbles increase with fission density. Finally, when the fission density is larger than 4.5  1021 fiss/cm3 , the gas bubble superlattice inside small grains begins to collapse, and recrystallization on grain boundaries takes place and extends to the grain interior, producing a microstructure with grains ranging from 100 to 500 nm in size with large intergranular gas bubbles. As a result, swelling kinetics increase significantly. It is expected that a number of material processes such as 1) the heterogeneous generation of fission defects; 2) anisotropy of diffusivity; 3) irradiation-induced dissolution of gas atoms; 4) elastic interaction; and 5) the nucleation of gas bubbles may affect the formation and evolution of gas bubble superlattices. Furthermore, initial microstructures (such as grain sizes, second-phase particles, and dislocation density) and radiation conditions (such as temperature and fission rate) also may affect the formation and evolution of gas bubble superlattices. The microstructures of intragranular gas bubbles including bubble size distribution and overall saturated gas concentration affect the net flux of gas atoms to grain boundaries and kinetics of the intergranular gas bubble and recrystallization, hence, the swelling kinetics.
+
+
+
+
+
+It is well known that the orientation of void and gas bubble superlattices in irradiated metals usually follows those of the host lattice. For this reason, 1-D migration of self-interstitial atom (SIAs) along the close-packed crystallographic directions is believed to be a prime factor in many studies of void lattice formation [7e18]. The molecular dynamics simulations of displacement cascades have revealed that glissile clusters of self-interstitial crowdions are formed directly in cascades and during defect evolution, and that they migrate one-dimensionally along close-packed directions with extremely low activation energies [19e21]. Occasionally, under various conditions, a crowdion cluster can change its Burgers vector and glide along a different close-packed direction. However, the detailed mechanism of void and gas bubble superlattice formation is still not well understood. Heinisch and Singh [14] developed a kinetic Monte Carlo method central to the production bias model of irradiation damage and simulated the effect of one-dimensional migration of self-interstitial atoms (1-D SIAs) on the formation of void lattices. Their results demonstrated that both 1-D migration and Burgers vectors changes of SIA clusters are important for the void lattice formation. A phase-field model integrating first passage Kinetic Monte Carlo method and irradiation induced void nucleation demonstrated that 1-D migration of SIAs, large mean free path of SIAs and randomly void nucleation are important for the void lattice formation [18]. However, Evans [15] examined some of processes involved the in the alignment of voids by using a similar model proposed by Heinisch et al. [14]. His results suggested that 1-D SIA transport of either the crowdions or small interstitial clusters may cause the coalescence between neighboring voids along the crystallographic directions and prevent the precise void lattice formation. Recently, Semenov et al. [16,17] investigated the effect of system instability and symmetrybreaking on void lattice formation. They found that the presence of a small amount of 1-D migrating SIAs with mean-free path comparable to the average distance between voids can bias the void coarsening process, such that the non-aligned voids have a much larger probability to shrink than the aligned ones.
+
+
+
+
+
+Unlike voids, there exists a high internal pressure inside nanosized gas bubbles. Experimental results show that the pressure of Xe gas bubbles is about several GPa which depends on the gas bubble size and Xe concentration inside the gas bubble. Such a high pressure might cause long range elastic interaction among gas bubbles and gas bubble alignment to minimize the deformation energy of the system. The over-pressured gas bubbles might also cause the emission of dislocation loops. Therefore, the high pressure inside gas bubbles makes the theoretical investigation and modeling difficult. Three possible mechanisms that have been proposed to explain the formation of gas bubble superlattices are 1) elastic interaction between bubbles, 2) planar diffusion of host interstitial atoms, and 3) dislocation loop punching from overpressurized bubbles [4,22e24]. However, the mechanism that dominates the formation of gas bubble superlattices, especially fcc gas bubble superlattice in bcc UMo matrix, is still an open question. Furthermore, the effect of radiation conditions on the evolution kinetics of gas bubble superlattices has not been quantitatively investigated.
+
+
+
+
+
+Gas bubble evolution in U-Mo metal fuel is a complicated process. The formation and growth of gas bubbles require continuous supplies of vacancies and gas atoms by diffusion while interstitials can hinder the nucleation and growth of gas bubbles through recombination or annihilation reactions. Irradiation-induced dissolution of gas atoms from gas bubbles also may affect the gas bubble evolution kinetics. Furthermore, internal pressure inside gas bubbles is high, especially in small gas bubbles. The elastic interaction among gas bubbles and the cladding constraint in monolithic fuels might be important for gas bubble nucleation as well as growth kinetics. Thermodynamic and kinetic properties of UMo alloys and defects including Xe, vacancies, and U interstitials in bcc U single crystals have been investigated by experiments [25e28] and theoretical simulations with density functional theory (DFT) [29e33] and the molecular dynamics (MD) method [31,34e36]. The results show that Xe substitution is stable; the dumbbell configurations of U interstitials along [100] and [110] are energetically favored; and the migration barrier of U interstitials is about 0.1 eV, which is much smaller than that of vacancies (0.5 eV). The defect generation and spatial distribution during cascades in bcc U were simulated using MD methods [37,38]. The results show that most surviving interstitials have dumbbell configurations along [100] and [110]. Almost all the interstitials remain isolated and vacancies tend to cluster into polyhedral voids [38]. The equation of state of Xe gas phase also has been examined by experiments [39e41] and atomistic simulations [42]. During the past decade, the phase-field approach has been applied to study microstructure evolutions in irradiated materials such as gas bubble evolution in UO2 nuclear fuels [43,44], interstitial loop growth kinetics [45], and radiationinduced segregation and precipitation [46,47]. In the current work, a phase-field model with thermodynamic and kinetic properties obtained from experiments and atomistic simulations was developed to 1) examine the effect of microstructures, thermodynamic and kinetic properties of defects, elastic interactions, and radiation conditions on gas bubble evolution in irradiated UMo nuclear fuels, and 2) study the gas bubble superlattice formation mechanism.
+
+
+
+
+
+The organization of this paper is described here. In Section 2, the phase-field model of gas bubble evolution in the irradiated UMo alloys is described. The thermodynamic and kinetic properties used in the simulations are assessed and discussed in Section 3. The parameters of the phase-field model and simulation cell are listed in Section 4. The simulation results describing the effect of irradiation conditions on gas bubble evolution kinetics and gas bubble structures are presented in Section 5. Conclusions and discussion are given in Section 6.
+
+
+
+
+
+## 2. Description of multicomponent and multiphase phasefield model
+
+
+
+
+In this work, we consider gas bubble evolution in bcc UMo nuclear fuels. Microstructure and defects in irradiated UMo fuels is complicated. Mo usually depletes at grain boundaries and enriches at the center of the grain because of congruent growth during solidification [48]. Depletion of Mo at grain boundaries may affect the stability of bcc UMo phase and lead to a phase transition from gamma U to alpha U [49,50]. Such an inhomogeneous Mo distribution also may cause internal stresses because the bcc UMo lattice constant is dependent on the Mo concentration. Furthermore, the fission reaction of 235U generates different gas atoms including Xe, Kr, and I. Meanwhile, the fission fragment cascade generates point defects and defect clusters. To simplify the description of the system without losing the physics, a uniform distribution of Mo was assumed, which implies that the system has a single bcc phase and no internal stress; all fission gas atoms (Xe, Kr, I, …) were considered to be Xe atoms, and defect clusters generated by fission fragment cascades were replaced by the same amount of point defects. We further assumed that two phases (i.e., the Xe gas phase and matrix bcc UMo phase) coexist, the fission center is a heterogeneous nucleation site of gas bubbles because a large vacancy cluster might form during the irradiation as shown in MD simulations [38], and interstitials with dumbbell configurations in 〈110〉 directions migrate along [110] directions while vacancies and Xe have isotropic diffusivity. With the assumptions described above, the gas bubble microstructures in a polycrystalline UMo alloy can be uniquely described by the following phase-field variables: 1) three concentration variables c c1 r; t ; c2 r; t ; c3 r; t presenting the ¼ f ð Þ ð Þ ð Þgconcentrations of U and Mo interstitials, vacancies, and Xe atoms, respectively; 2) one order-parameter variable h0 r; t presenting ð Þthe distribution of gas bubbles that is equal to 1 inside a gas bubble and 0 outside the gas bubble; and 3) a set of order parameters h1 r; t ; h2 r; t ; ::::; hN r; t presenting the grain orientations at f ð Þ ð Þ ð Þgposition r and time t. The multicomponent and multiphase free energy model was employed to describe the total free energy of the system F h ; h; c [51e53] that is expressed as a function of the ð Þorder-parameter field h  h0 r; t ; h1 r; t ; h2 r; t ; ::::; hN r; t ¼ f ð Þ ð Þ ðand molar-fraction field c  c1 r; t ; c2 r; t ; c3 r; t :
+
+$$
+\tag{1}
+
+
+where V is the volume of the system, fb is the chemical free energy density, fs is the gradient energy density representing interfacial energy, and felas is the elastic energy density associated with lattice mismatch of defects and applied stresses.
+
+The chemical free energy density in equation (1) is defined as
+
+
+
+where fa ca is the chemical free energy of a phases. For example, ð Þf0 c0 is the free energy of the Xe gas phase, and ð Þfa ca ; a 1; 2; …; N is the free energy of the matrix phase. We ð Þ ð ¼ Þassumed that different phases at point r have different concentrations, but the same chemical potential vfa ca =vca i vfb cb =vcb i; a; b  0; 1; 2; …; N; and i  1; 2; 3 . ð Þ ¼ ð Þ ð ¼ ¼ ÞThe term ha h is a shape function that is related to the volume ð Þfraction of a phase at point r. The concentration satisfies the constraint equation c  P ha h ca. In addition, to correctly a 0;1;…;N   
+¼describe the equilibrium properties at a triple point of three different phases such as a gas bubble and two different grains, the shape function is defined as ha h  h2a= PNr 0 h2r . The gradient energy density in equation (1) is given as
+
+(3)
+
+
+\tag{4}
+
+where ma, ka and ga;b are model parameters determined by the properties of the interface between a andb phases. Parameters ma and ka are determined by interfacial energy and interface thickness while ga;b is determined by interfacial symmetry. For the case ignoring the ga;b terms in equation (4), quantitative relationships between these model parameters and interfacial properties can be obtained by thin interface limit analysis [53,54]. Since the free energy in equation (4) has intercrossed terms ga;b, we use a numerical method to determine the parameters ma and ka. Especially, we consider a one dimension problem with an interface of interest (such as gas bubble/grain, and grain/grain interface). We optimize the model parameters ma and ka to ensure that the properties of the interface including the interfacial energy and interface thickness are satisfied.
+
+Generally speaking, the diffusion of vacancies, interstitials, and gas atoms and gas bubble evolution can be simulated by solving the Cahn-Hilliard and Allan-Cahn equations, which are similar to conventional phase-field models [43]. However, both experiments and MD simulations show that interstitials in UMo alloys have a much larger diffusivity than that of vacancies [28,36,55]. With the migration barriers, 0.1 eV for interstitials and 0.5 eV for vacancies in bcc UMo alloys, the diffusivities can be calculated, resulting in a diffusivity of interstitials about five orders of magnitude larger than that of vacancies at 400 K. The time step solving the diffusion equations of vacancies, interstitials, and Xe atoms can be estimated by Dt  min Dx2=DSIA; Dx2=DVac; Dx2=DXe , where Dx is the grid ¼ ð Þsize in the simulation cell, and Di i  SIA; Vac; Xe is the diffusivity ð ¼ Þof a self-interstitial atom, vacancy, and Xe, respectively. Therefore, the interstitial diffusivity will determine the time step in the simulations under the assumption that a vacancy and Xe have the same diffusivity. A very small time step is required to solve the diffusion equations because of the large diffusivity of interstitials, which significantly affects the numerical efficiency in phase-field modeling. Furthermore, the interstitials usually have very strong anisotropic diffusivity. For example, both atomistic simulations and in situ transmission electron microscopy (TEM) results demonstrate that interstitials with a dumbbell configuration along 〈110〉 directions migrate along 〈110〉 directions in bcc Fe. Because density functional theory and MD results show that both the formation energy for the dumbbell configuration of U interstitials along 〈110〉 direction and migration barrier of interstitials are low, it is reasonable to assume that the U interstitial (SIA) migrates along 〈110〉 direction of bcc UMo similar to that in bcc Fe. The strong anisotropy of interstitial migration causes additional difficulty in solving the diffusion equation. In our work, the phase-field model coupling a one-dimensional random walk model, first developed to simulate the void lattice formation [18], was extended to study the gas bubble evolution with a large difference and strong anisotropy of defects’ diffusivity. We used the first-passage Monte Carlo method to describe the one-dimensional migration of interstitials [18,56,57], and the phase-field model is used to describe the evolution of defects and microstructure.
+
+
+
+
+
+The one-dimensional migration of interstitials was viewed as a random walk along specific directions. Considering an interstitial from the position r0 0 and time t0 0, the probability that the ¼ ¼interstitial reaches the position r at time t is the solution of the diffusion equation:
+
+
+
+
+
+\tag{5}
+
+
+with an initial condition p r; 0 d 0; 0 ; and boundary condition ð Þ ¼ ð Þp r  ∞; t 0. DSIA is the diffusivity of the interstitial, and d is the ð ¼ Þ ¼Kronecker delta function. For a given SIA distribution, c1 r; t at ð Þtime t, the change of SIA concentration, Dc1 r; t after a time step ð ÞDt, includes three contributions. The first contribution was associated with the one-dimensional migration of SIAs along the 12 〈110〉 directions in a bcc crystal. It is usually true that SIAs cannot penetrate through sinks such as voids, gas bubbles, and grain boundaries so that SIAs accumulate on the interface of sinks when SIAs approach sinks. Fig. 1 schematically shows the probability that interstitials at the point r0 migrate to the position r at time Dt, where r0 is one point on lines that pass through the point r and have one of the 12 〈110〉 directions. If both r and r0 do not locate on sink interfaces as shown in Fig. 1(a), the change of SIA concentration at the point r resulting from one-dimensional migration of SIAs can be calculated as
+
+\tag{6}
+
+
+where p Dr0 ; Dt and p 0; Dt are the solution of equation (5), k ð Þ ð Þrepresents runs for 12 different 〈110〉 directions, Dr0  r0 r  is the ¼ distance between r0 and r, and Rk min ffiffiffiffiffiffiffiffiffiffiffiffiffiffiDSIA Dt p ; R0 is the min-¼ ð Þimum value of the mean free path ffiffiffiffiffiffiffiffiffiffiffiffiffiffiDSIA Dt p of an SIA during the time step Dt and R0 that is the distance between the point r and the surface of the nearest sink such as gas bubble and grain boundaries along the kth direction. If r locates on a sink boundary, the probability p Dr0 ; Dt in equation (6) is calculated by
+
+\tag{7}
+
+
+where Dr 00k  r 00k r0k is the distance between r 00k and r0k, and ¼ p Dr0 ; Dt is the shadow area as shown in Fig. 1(b). In this case the ð Þsummation over k in equation (6) runs from 1 to 6 because there is no interstitial flux to the point r from the sink side.
+
+The second contribution is the generation of SIAs g\_ SIA r; t Dt, ð Þand the third contribution is the reaction between vacancies and SIAs g\_ SIA r; t Dt. Therefore, the evolution equation of interstitials ð Þcan be written as:
+
+
+
+
+
+\tag{8}
+
+
+The microstructure evolution including gas bubbles and grains is controlled by the time dependent Cahn-Hilliard equations [58] and Allen-Cahn equations [59]:
+
+\tag{9a}
+
+
+![](images/719b160f9e8c2949dfb7aee60c19f45715adcd684ba0c5f82c287f8b1175cc74.jpg)
+
+where Mij and Lr are mobility coefficients, and xi and xr are the thermal fluctuations. In equation (9a), g\_ i is the generation rate of defect i, and g\_ is the reaction rate that is proportional to diffusivity and concentrations of defects. The g\_ i and g\_ i could be calculated by the same expressions in the rate theory [60,61]. A sink term of defects can be added into equations (8) and (9a) to take the effect of defects such as distributed dislocations on the accumulation of interstitials and vacancies.
+
+By numerically solving these two groups of equations (8,9a and b), we can obtain the spatial and temporal evolution of the phasefield variables of c  c1 x; t ; c2 x; t ; c3 x; t and h  h0 x; t ; h1 x; t ; h2 x; t ; ::::; hN x; t , and thus the micro-¼ f ð Þ ð Þ ð Þ ð Þgstructure evolution. In this generic phase-field model, the chemical free energy density fb is a function of concentration and orderparameter fields, while the gradient energy density fs is described by order-parameter fields shown in equations (2) and (3). The unknown parameters, m, k and gr;s jr;s; m\~ , are completely deterð Þmined by the grain boundary and/or interface properties, and are independent of the concentration fields c  c1 x; t ; c2 x; t ; /; cM x; t and chemical free energy fb. One ¼ f ð Þ ð Þ ð Þgadvantage of such a free energy formulation is that it is convenient in determining model parameters, especially for a multiphase and multicomponent system. The unknown model parameters can be quantitatively determined once the grain boundary properties including interface thickness, interfacial energy, and interface symmetry are known [53,54]. Another advantage of such a model is that the chemical free energy fa ca of different phases, which can ð Þbe obtained from atomistic simulations and phase diagram calculations, can be directly used as shown in equation (4). Therefore, the model has potential application in simulating the concurrent evolution of multiphases in a system; for example, the evolution of gas bubbles, gamma, alpha, gamma prime phases, and grain growth in UMo alloy fuel.
+
+
+
+
+
+![](images/8810014ef9a93ed5318d0ec3fb886825b45a5c39b838e7a7a5800ce0dafa865c.jpg)  
+Fig. 1. Probability distribution of a random walker at Dt from initial position r0 at t  0.
+
+
+## 3.1. Chemical free energies of matrix and gas phases
+
+Atomistic simulations show that Xe gas atoms are a substitutional defect with formation energy of approximately 5.549 eV [30,32]. The formation energy of U vacancies is about 1.08e1.38 eV [30,32,35]. Stable U interstitials have a dumbbell configuration along the 〈100〉 and 〈110〉 directions. Their formation energies are 0.5 eV and 0.55 eV, respectively. The ideal solution model is used to describe the excess chemical free energy of the matrix phase (U-Mo-Xe alloy) with vacancies and gas atoms. If the contribution of interstitials is ignored the free energy of matrix phase reads as
+
+\tag{10}
+
+\tag{11}
+
+where Ai and Bi i  0; 1; 2 are constants determined by the therð ¼ Þmodynamic properties of the system. The pressure-volumetemperature (P-V-T) relation of Xe has been studied from experiments [39,41] and MD simulations [42]. For Xe gas bubbles, the modified equation of state can be described as
+
+\tag{12}
+
+
+where g is the interfacial energy of gas bubbles, p the local pressure, R the radius of the gas bubble, NR the number of gas atoms inside the gas bubble, and bv the resolution rate of gas atoms from the gas bubble. The parameter hs can be determined by fitting P-V-T inside the gas bubble with the equation of state of Xe gas bubbles. Fig. 2 plots the internal pressure and Xe concentration as a function of gas bubble radius (R) for a givenp  0, g  0:6N=m2, T  400 K, and ¼ ¼ ¼hs 0:36. As can be seen, the internal pressure is approximately ¼1:2GPa, and the Xe concentration is approximately 0.6 when the radii of the gas bubbles are a few nanometers. The Xe concentration has molar-fraction units. As the number of gas bubbles increase, the internal pressure and concentration quickly decreases. In this work, we consider the evolution of nano-sized intragranular gas bubbles. Equilibrium pressure and Xe concentration inside the nano-sized gas bubbles at T 400 K are assumed to be 1:2 GPa and 0.6, ¼respectively, and the equilibrium concentration of the vacancy inside the gas bubble is 0.4. The unknown parameters in equation (11) can be fit using the equation of state and equal chemical potentials of matrix and gas phases at equilibrium concentrations.
+
+![](images/477dfa61adfecce22718071a187a0dec682de99d865bcda51ab531d18743043f.jpg)  
+Fig. 2. Pressure and concentration inside Xe gas bubbles as a function of gas bubble radius.
+
+
+
+## 3.2. Defect generation and gas bubble nucleation
+
+
+
+
+Defect generation and spatial distribution during displacement cascades in bcc U has been simulated using MD methods [37,38]. Fig. 3(a) shows the spatial distribution of defects due to a 50 keV primary knocked-on atom (PKA) cascade at 16 ps. It is found a large vacancy cluster at the cascade center, a high-vacancy concentration zone next to the cascade center, and isolated interstitials away from the cascade center. The surviving Frenkel pair population was fit by NFP  4:839E0:607PKA , where EPKA is the PKA energy. Experiments and PKA ¼simulations show that the high energy particle cascade may cause gas atom resolution from the gas bubbles within the cascade region in UO2 [62e64]. The high energy PKAs destroy smaller gas bubbles completely and bring a quasi-constant number of gas atoms into resolution when they interact with larger bubbles. In the phasefield model, different zones as shown in Fig. 3(b) are defined to describe the spatial distribution of defect generation g\_ i in equation (9a) and radiation-induced dissolution during a U235 fission event. A spherical vacancy cluster with N0 vacancies and a radius R0 is introduced at the cascade center. Xe atoms are generated at the cascade center by U235 fission with a yield Y  0:25  0:3. The va-¼ cancies and Xe atoms diffuse and form a gas bubble nucleus. The region R0 < R < R1 is defined as a high-vacancy generation zone ð Þwith a generation rate g\_ 2 NFP N0 =Vvac \_f , where \_f and VVac are ¼ ð  Þthe fission rate and the volume of the region R0 < R < R1 . For ð Þradiation-induced resolution, we assumed that the gas atoms inside the gas bubbles within the region R < R2 were fully or ð Þpartially dissolved into the matrix due to the fission segment cascade. If the gas bubble was smaller than a critical size, Rcritresol, the gas bubble is assumed to be completely dissolved while the gas bubble be partially dissolved if the gas bubble size is larger than Rcritresol. The parameter c is defined as the fraction of total gas atomsinside the gas bubbles that are dissolved. The resolved gas atoms are uniformly redistributed in a larger region R < R3 . The interstitial is assumed to be uniformly generated in an interstitial generation zone R1 < R < R3 . The generation rate, g\_ 1, is calculated ð Þbyg\_ 1 NFP=VInt \_f , where VInt is the volume of interstitial generation ¼zone R < R < R . For given fission rate, the number of fission ð Þevents during phase-field simulation time step is calculated, and the fission events and defects are randomly introduced into the simulation cell. Since the composition and order parameter fields uniquely define the gas bubble location, the gas bubbles inside the cascade zone can be identified, and radiation-induced resolution can be calculated.
+
+
+
+
+
+![](images/887ba07e8e98f21d74d11eed23be23ea0047495ee4d0d20fc20c3391dbc5d48a.jpg)  
+Fig. 3. (a) spatial distribution of defects due to a 50 keV PKA at 16 ps from MD cascade simulation at 1045 K in U alloys, (b) spatial distribution of defect generation and resolution used in phase-field model.
+
+
+## 3.3. Elastic interaction
+
+It is expected that elastic interaction plays an important role in gas bubble evolution because of the presence of a larger internal pressure inside gas bubbles, especially for nano-sized gas bubbles. The elastic interaction energy felas in equation (1) can be calculated as
+
+
+
+
+
+\tag{13}
+
+\tag{14}
+
+where ε\* 1=a da=dck is the composition expansion coefficient of ¼ ð Þthe lattice parameter, dij is the KroneckereDelta function, and ε\* is estimated by the formation volume of defects that can be calculated from atomistic simulations. However, inside the gas bubble, Vegard’s law is no longer valid because of high vacancy and Xe concentrations. In the current work, an effective composition expansion coefficient of the lattice parameter, ε\* c3 , inside the gas ð Þbubble was defined and the stress-free strain tensor is given as
+
+\tag{15}
+
+
+The parameter ε\* c3 inside the gas bubble was calculated as ð Þfollows. First, the bulk modulus B of gas bubbles was assumed to be the same as that of the matrix phase. The pressure inside the gas bubble due to ε\* c3 was approximated as P  Bε\* c3 =3. Using the ð Þ ¼ ð Þequation of state of the Xe gas phase (a relationship P  P c3 be-¼ ð Þtween pressure and Xe concentration) [39,40] results in ε\*0 c3  3P c3 =B. With the stress-free strain ε\* , the stress and ð Þ ¼ ð Þstrain fields can be obtained by solving the mechanical equilibrium equation vsij=vrj 0 [65].
+
+## 3.4. Mobility of Xe, vacancy and interstitials
+
+
+
+
+
+The effective diffusivity and activation energy of Xe in U alloys was studied by measuring Xe release during post-irradiation annealing [66]. The diffusivity of Xe was deduced to be
+
+
+
+
+
+\tag{16}
+
+
+Xe diffusivity in irradiated U alloys also was described in a function of the fission rate asDXe D0 \_f , which was used in ¼modeling Xe gas bubble swelling in UMo alloys [67]. In this equation, D0 is a constant of proportionality associated with the volume affected by a fission spike. At T  400 K, which is around the ¼operation temperature of UMo nuclear fuels, the diffusivity calculated by both models is approximately 10 20 m2=s . Molecular ð Þdynamics method was used to study the U self-diffusion in g U and g UMo alloys [36,68] with EAM [35]and MEAM potentials [31]. The assessment of U self-diffusion data from experiments [28,55] and the atomistic simulations show that the migration barrier of vacancy and U interstitial are about 0.5 eV and 0.25 eV, respectively. From the extrapolation of the self-diffusion coefficients [36] at low temperature T  400 K, the interstitial diffusivity is approximately ¼1015 m2=s and the vacancy diffusivity is approxð Þimately1020 m2=s . The results show that the diffusivities of vað Þcancies and Xe atoms are similar while the interstitial diffusivity is about five order magnitude larger than that of vacancies. For the sake of simplicity, we assumed that the vacancy and Xe have the same diffusivity DXe DVac∝1020 m2=s in the simulations.
+
+¼ ð ÞThe strong anisotropy of SIA diffusivity which is achieved by 1-D and 2-D migration of the SIAs plays an important role in the microstructure evolution in irradiated materials [8e11,14e18]. Although the experiments and MD simulations shows that the selfdiffusivity of U interstitials in bcc UMo is much larger than that of vacancies there is very limited data of U interstitial mobility anisotropy in UMo alloys. It is unknown whether self interstitials migrate along [111] or [110] directions and how Mo concentration affects the U interstitial configuration and mobility. The formation energies of U interstitials in bcc U single crystals at 0 K have been calculated by density functional theory (DFT) [30]. It is found that the dumbbell configurations of U interstitials along [100] and [110] are energetically favored. We studied the effect of Mo on the formation energy and stable configuration of a U dumbbell in U10 wt% Mo alloy by using DFT. VASP [69,70] software is used to solve the Kohn-Sham equations with plane-wave basis sets. Projectoraugmented-wave (PAW) [70,71] pseudo-potentials for U and Mo are taken from VASP’s library, in which the number of valence electrons is 14 and 6, respectively. Perdew-Burke-Ernzerhof (PBE) functionals [72] are employed for the electronic exchangecorrelation energies. The plane-wave cutoff energy is taken to be 253 eV. A Monkhorst-Pack [73] k-point grid of 4  4  4 is  employed to sample the Brillouin zone. The stability of dumbbells are explored using a cubic simulation box of 4 4 4 supercell of  the bcc unit cell. A random U-Mo alloy of \~20 at.% Mo is generated using the Monte Carlo special quasi-random structure (mcsqs) technique [74] as implemented in the ATAT code [75]. A perfect (without defect) cell consists of 102 U and 26 Mo atoms. Subsequently, 8 U sites and 2 Mo sites are selected. A dumbbell is constructed at one of these sites by adding a U interstitial atom, i.e. 8 systems each with one U-U dumbbells and 2 systems each with one Mo-U dumbbell. We explored [100], [110], and [111] dumbbell orientations for a total of 30 systems. The structures are then relaxed such that the coordinates of all atoms and the box volume are optimized while maintaining cubic symmetry. The relaxation is stopped when the norm of the force on each atom is < 0.025 eV/Å and the external pressure acting on the box is < 0.5 kbar. At the end of the relaxations, a static calculation is performed to eliminate errors due to plane-wave basis incompleteness associated with volume changes. The formation energy (Ef,db) of a dumbbell in this alloy is calculated using
+
+
+
+
+
+\tag{17}
+
+In the simulations, we find that some initially generated U dumbbells are unstable. They will transfer to more stable defect configuration. Fig. 4 summaries the defects identified in the relaxed system and their formation energy. We have ten initial U dumbbells along each [100], [110] and [111] directions for a total of 30 dumbbell. We can see that the final number of [110] U dumbbells becomes thirteen. Analyzing the defect configurations, we found that during the structure relaxation seven of ten initial [110] U dumbbell remains in the [110] dumbbell configuration; three of ten initial [110] U dumbbells transfer to [210] U dumbbells; two of ten initial [100] U dumbbells transfer to [110] U dumbbells; and four of ten initial [111] U dumbbells transfer to [110] U dumbbells. There are only four of ten initial [100] U dumbbells remaining in the [100] dumbbell configuration, and three of ten initial [111] U dumbbells remaining in the [111] U dumbbells. Some initial U [100] and [111] dumbbells transfer to U [210], [311], [211], and [310] which depends on the local Mo distribution. The results in Fig. 4, also show that U-U [110] dumbbell has the lowest formation energy, that is 0.204 eV.
+
+![](images/27bdf2954ed009194381d3d30246e5012150c8b288fd9911decd39461e267832.jpg)  
+Types of U interstitial dumbbells  
+Fig. 4. DFT formation energy of U interstitial defect in various final dumbbell configurations in U-Mo random alloys (\~20 at.% Mo). The data are collected from 30 configurations in which initially there are 10 configurations for each [100], [110], and [111] orientation.
+
+The DFT results clearly indicate that U-U[110] dumbbell is the most stable dumbbell configuration in UMo alloys. In addition, the instantaneous relaxation from several [111] and [100] initially oriented dumbbells to [110] dumbbells means that such rotation has no barrier. However, we cannot generalize that all rotations from [111] and [100] to [110] are barrier-less. This is because in U-Mo there exists lattice distortion, atoms are slightly displaced from a perfect bcc lattice sites. It means that some other [111] and [100] initially oriented dumbbells that remain in that orientation are stable not because of the symmetry constraint, but because of the local minimum in the potential energy landscape. In addition, as can be seen from Fig. 4, dumbbells can stabilize in various other orientations such as [210], [310], [211], and [311]. Therefore it is difficult to obtain a definite picture of the migration pathways of interstitial U in UMo without performing a dynamic simulation of diffusion. At this moment, such simulation cannot be done within DFT framework.
+
+
+
+
+
+
+
+Since the pure bcc U is unstable at 0 K the DFT calculations of U migration energy has to be carried out in bcc UMo alloys, which makes the DFT calculation difficult as described above. Nevertheless, in the future we plan to perform DFT calculation to estimate the migration barrier for the 1D diffusion of [110] dumbbell along [110] as well as the rotation barrier among different orientations. But in the current work, we assumed that the large U interstitial diffusivity is attributed to the one-dimensional migration of 〈110〉 U dumbbell along the [110] direction, and the effect of onedimensional migration of interstitials on gas bubble superlattice formation was studied.
+
+
+
+
+
+## 4. Parameters of phase-field modeling
+
+
+
+
+The phase-field model developed was a generic model that considered gas bubble evolution under irradiation in threedimensional polycrystalline materials. The parameters used in phase-field simulations are listed in Table 1.
+
+Evolution equations (9a and b) together with the interstitial evolution equation (8) and mechanical equilibrium equation were numerically solved by a semi-implicit Fourier-spectral method [76]. In the current work, we have focused on investigating the effect of thermodynamic properties and irradiation conditions on intragranular gas bubble evolution and exploring the formation mechanism of an intragranular gas bubble superlattice. The microstructure of intragranular gas bubbles in a single crystal under irradiation is described by three concentration c1; c2; c3 and ð Þtwo order parameter h0; h1 fields. For inter- and intra-granular ð Þgas bubbles in polycrystalline structures, we need to use more order parameter fields h0; h1; ::::; hN . All the model parameters are ð Þsame as that listed in Table 1. Because intragranular gas bubbles are approximately a few nanometers in diameter, a very small grid size, dx  5:2  1010m, was used in the simulations to capture the ¼ morphology of nano-sized gas bubbles. We performed intragranular gas bubble evolution in a three-dimensional simulation cell and intergranular gas bubble evolution in a bicrystal with a parallel code and 24 processors. However, to achieve a specified fission density, large computer resources are needed to simulate gas bubble evolution in a three-dimensional representative volume. More efficient and scalable numerical methods are required to perform large scale three-dimensional (3D) simulations. Therefore, in the current work, the simulations of gas bubble evolution were performed in a two-dimensional, 256dx 256dx simulation cell. The model can be implemented in Idaho National Laboratory’s MARMOT and BISON fuel performance code [77,78], which has efficient scalable numerical methods, for large scale gas bubble microstructure evolution simulations in 3D and polycrystalline materials.
+
+
+
+
+
+Parameters used in the simulations.
+<table><tr><td>Characteristic length</td><td>l</td><td>0.52 nm</td></tr><tr><td>Grid size</td><td>dx =dy=dz</td><td>0.52 nm</td></tr><tr><td>Temperature</td><td></td><td>400K</td></tr><tr><td>Diffusivity of Xe and vacancy</td><td>Dxe= Dvac</td><td>2.0×10-20 m²/s</td></tr><tr><td>Mobility</td><td>Mi =Dxe/(kBT),i=2,</td><td>1.8</td></tr><tr><td>Mobility of interstitial</td><td>Mij =0.0,i≠j DInt = D*Dxe</td><td>D*= 10,10²,104,105,106</td></tr><tr><td>Interfacial energy of gas bubble</td><td>Y</td><td></td></tr><tr><td>Grain boundary energy</td><td>YGB</td><td>0.6J/m² 1.0J/m²</td></tr><tr><td>Gradient coefficient</td><td>Ko/(kBT)</td><td>0.04</td></tr><tr><td>Gradient coefficient</td><td>Kα/(kBTl²)，α=1,2,.,N</td><td>0.04</td></tr><tr><td>Coefficient</td><td>mo/(kBT)</td><td></td></tr><tr><td></td><td>mα/(kBT),α=1,2.,..,N</td><td>0.067 0.067</td></tr><tr><td>Coefficient Coefficient</td><td>Y0,a/(kBT),=1,2.,,</td><td>0.15</td></tr><tr><td>Coefficient</td><td>Ya.g/(kBT），</td><td>0.25</td></tr><tr><td></td><td>α,β=1,2,..,.N,≠β</td><td></td></tr><tr><td>Free energy function</td><td>fa/(kBT),α=0,1,2.,.,</td><td>A(q-）2</td></tr><tr><td>Elastic energy</td><td>felas/(kBTNv)</td><td>2ijkl（ei-ej）(eij-e）)</td></tr><tr><td>Coefficient</td><td>A*</td><td>A=159.4，A=53.1,</td></tr><tr><td>Equilibrium concentration</td><td>C</td><td>A2=0.3,A=0.1 2=6.0×10-7,</td></tr><tr><td></td><td></td><td></td></tr><tr><td>Interface mobility</td><td>La/Dxe</td><td>50</td></tr><tr><td>Elastic constant</td><td>Cj = Cij/(kgTNv),</td><td>1 = 1504.28</td></tr><tr><td></td><td>Nv =4.75×1028atom/m</td><td>C2 = 271.88 [32] 44 =244.35</td></tr><tr><td>Stress free strain</td><td>电</td><td>=0.05,eac*=-0.005</td></tr><tr><td>Time</td><td>Dxet/</td><td>=0.0 1.5×10-3</td></tr><tr><td>Fission rate</td><td>f</td><td>1.34 × 1021,2.68 × 1021,</td></tr><tr><td></td><td></td><td>4.02×10216.03×1021 fission/(m³s)</td></tr><tr><td>Reaction rate</td><td>Yi=Y12DSIAC1C2 i= 1,2</td><td>Y12 = 1.4× 1019/m²</td></tr><tr><td>Fission Yield Saturated Xe concentration</td><td>Y =</td><td>0.25 0.108,0.098,0.088</td></tr><tr><td>Applied strain</td><td></td><td>0.078</td></tr><tr><td>Radiation zones</td><td>epp</td><td>-0.015,-0.0075 0.0075,0.015</td></tr><tr><td></td><td>R=Ri/0</td><td>R=1.0,R=8.0, R=3.0,R=9.6,</td></tr><tr><td></td><td></td><td>R=12.0</td></tr><tr><td></td><td>NFP</td><td>50 in 3D</td></tr><tr><td></td><td></td><td></td></tr><tr><td>Vacancy cluster</td><td>N0</td><td>2</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td>5 in2D</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td>Defect generation per fission</td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td>[38]</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td>Resolution rate</td><td>X</td><td>0.2</td></tr><tr><td></td><td></td><td></td></tr><tr><td>Critical radius of resolution</td><td>Rr</td><td>0.5 nm</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td>Formation energy of defects</td><td>E</td><td>Evac = 1.08~2.6 eV[36]</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td>Ent =0.3~1.5 eVEe=5.549 eV[29]</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></table>
+
+
+
+For a given gas bubble superlattice constant, the volume fraction of gas bubbles in a two-dimensional cell is much higher than that in a three-dimensional simulation cell because the gas bubble is a cylinder in two dimensions while it is a sphere in three dimensions. The ratio between the two-dimensional and three-dimensional volume fraction V2D=V3D can be calculated by3a= 4R , where a is the superlattice constant and R is the gas bubble radius. If a 8nm andR 1nm, then V =V 6. Considering this fact, high ¼ ¼ ¼fission rates and fission densities were used in the two-dimensional simulations. In addition, we believe that the intragranular gas bubbles quickly reach a quasi-static state in which the average gas bubble size and overall gas storage inside grains remains constant. In the current work, a saturated Xe concentration, csatXe , to present the quasi-static state has been introduced, where csatXe is defined as the average Xe concentration inside the grain that includes Xe atoms in the matrix as well as inside the gas bubbles. The saturated Xe concentration could be estimated from the gas bubble structure observed in experiments. For a fcc gas bubble superlattice with a lattice constant 10 nm, gas bubble radius 1 nm, and Xe concentration 0.6 inside the gas bubbles, the overall Xe concentration is can be calculated which is about 0.05. Considering the difference between two and three-dimensions discussed in section, we set up the saturated Xe concentration to be around 0.098 in the simulations. The parameter csatXe may depend on the grain size and fission rate. For example, csatXe in coarser grains should be larger than that in finer grains. In the current work, we studied the effect ofcsatXe , elastic interaction, fission rate, and interstitial mobility anisotropy on gas bubble structure evolution.
+
+
+
+
+## 5. Simulation results
+
+
+
+
+The ordering of bubbles has been observed to develop subsequent to an initial random distribution of bubbles in the matrix [11]. In our simulations, gas bubbles with an average density of 4:4  1016=m2 and average radius of R:0g 2l0 were randomly  ¼introduced into the simulation 256l 256l cell. The gas and va-cancy concentrations inside the gas bubbles were set to the equilibrium concentration 0.6 and 0.4, respectively. The initial concentrations of Xe atoms, vacancies and interstitials in the matrix are input parameters in the simulations. The thermal equilibrium concentrations of these defects are very low which can be estimated from the formation energy Ef the defect. The formation energies of U vacancy and interstitial in bcc U are about 1.0 eV and 0.5 eV [30], respectively. Their thermal equilibrium concentrations can be estimated by exp Ef =kBT . It is about 2:5  10 13 and 5:0 ð Þ  107 at 400 K, respectively. However, the defect concentration in radiated material should be much larger than its’ solubility/or thermal equilibrium concentration. A rate theory model [79] shows that the radiation-induced equilibrium concentration dominates completely over the thermal one at temperatures below 0:5Tm, where Tm is the melting temperature. In Ni under electron radiation with 1 MeV energy and 1:0  1019e=cm2 flux, the predicted steady state vacancy concentration is larger than1:0  105 while the thermal equilibrium concentration is about 1:0  1013 at0:3Tm. Since there is no data of defect concentrations at steady state in irradiated UMo alloys, we assumed that the concentrations of Xe, vacancies, and interstitials in the matrix be 1.0  105 . For a given fission rate, \_f , and saturated Xe concentration, csatXe , the simulation randomly introduced fission events and generated vacancies, interstitials, and Xe atoms according to their generation rates and the spatial profile of defect distribution described in the previous section. After the overall Xe concentration reaches csatXe , the fission event will only generate vacancies and interstitials and turn off the Xe generation to maintain the saturated Xe concentration in the simulation cell. The initial conditions, heterogeneous nucleation of gas bubbles, radiation-induced resolution, reaction between vacancies and interstitials, and elastic interaction are the same in the following simulations, except when specifically noted.
+
+## 5.1. Effect of interstitial mobility on gas bubble structure
+
+
+
+
+
+For a given Xe and vacancy diffusivity, gas bubble evolution was systematically simulated by varying the mobility of onedimensional migration of interstitials. The fission rate \_f  2:68  1021fission= m 3s was used. The saturated Xe concen-¼  ð Þtration was set to becsatXe  0:098, and the ratio of interstitial and Xe ¼diffusivity D\*  DInt=DXe varied from 10 to 106 . Fig. 5 presents the ¼gas bubble microstructure at time t  114.6days. The color bar ¼denotes the Xe concentration. It can be clearly seen that when D\*  DInt=DXe < 104, the spatial distribution of gas bubbles is ¼random as shown in Fig. 5(a).
+
+
+
+
+
+When the interstitial diffusivity is about four orders of magnitude larger than that of Xe diffusivity, short-range ordering of gas bubbles is observed in the regions marked by the white lines in Fig. 5(b). As interstitial diffusivity increases, long-range gas bubble ordering takes place as shown in Fig. 5(c and d). It should be pointed out that the elastic interaction was taken into account in the simulations. The gas bubble microstructure in Fig. 5(a) demonstrates that the elastic interaction does not cause the formation of the gas bubble superlattice. Therefore, we can conclude that the fast one-dimensional migration of interstitials is the primary mechanism for gas bubble superlattice formation. Fig. 6 presents the gas bubble temporal evolution for the case D\*  106. Checking ¼the gas bubble evolution inside region A marked by the dashed-line circle, we find that gas bubble ordering takes place through continuous gas bubble nucleation, resolution, migration, and growth processes. It is clear that ordering of gas bubbles first occurs in some small regions, and then the ordered regions grow and merge with one another to form the superlattice. The gas bubbles inside ordered regions are relatively stable compared to those inside disordered regions. Continuous attachment of gas bubbles in disordered regions to ordered regions causes growth of the ordered region. All gas bubbles in small ordered regions have the same structure and orientation, but they may shift among one another by some distance. When they merge, a dislocation of gas bubbles inside the superlattice may form, which is marked by “⊥” in Fig. 6(c and d). Such dislocations also are observed in TEM images of gas bubble superlattices [2,4,6,80]. Therefore, we conclude that formation of gas bubble superlattices occurs through a nucleation and growth process.
+
+
+
+
+
+A comparison of gas bubble superlattices from experiments and simulations are presented in Fig. 7. Experiments show that the gas bubble superlattice has a fcc structure. From the TEM images in Fig. 7(b), the lattice constant of the superlattice is approximately 11.44 nm, and the average gas bubble size in diameter is approximately 3.5 nm. Fig. 7(a) shows the gas bubble superlattice predicted from the simulation. It can be seen that gas bubbles uniformly align along 〈110〉 directions. The unit cell of the superlattice in two dimensions consists of three sites; that is, (0.0 0.0 0.0), (0.5 0.5 0.0), ( 0.5 0.5 0.0). Extending this lattice to three di-mensions yields a fcc lattice. The predicted superlattice shown in Fig. 7(a) is a fcc structure and the same orientation as that in the TEM image with oriented zone [001] if we remove the second {001} [43] gas bubble layer. Therefore, simulations confirm that gas bubbles form a fcc gas bubble superlattice if U interstitials migrate in one dimension along 〈110〉 directions in the bcc UMo matrix. The lattice constant of the superlattice is about 8.9 nm as shown in Fig. 7(a). The lattice constant of the superlattice in two-dimensional simulations could be different from that in a real three-dimensional system due to different Xe concentrations. However, the simulation result is in reasonable agreement with the experimental result (i.e., 11.44 nm).
+
+
+
+
+
+![](images/535b350760641ccafdb586e549b4a3d936d6a9c3f9237da5791cce16a10add9b.jpg)  
+(a)
+
+
+![](images/f1fcd39a2b9ee1fcf53b5d3fba4a6338726fb76dd6cf9a9d04fe4127211825dc.jpg)  
+(d)  
+Fig. 5. Effect of interstitial diffusivity on gas bubble microstructures. (a) D\* 10, (b) D\* 104, (c) D\* 105, (d) D\* 106.
+
+![](images/3c264d9fb1e3dc0225760edad89d0d81a741891e333155fee93a549e5d2af10f.jpg)  
+
+![](images/3a2fc4e9b83d42a9a217375f6b1d5f7c4ff47b63d7b33e4489def6cd32d05318.jpg)  
+
+Fig. 6. Temporal evolution of gas bubbles for the caseD\*  106. (a) t  64.2 days, (b) t  81.0days, (c) t  97.8days, (d) t  114.6days.  
+![](images/8b9fcd370b8ccf81bb4ac3b6ee8f2a7266beb4a4066778208f6cdc5fb3f558a5.jpg)  
+
+
+![](images/94d3cd1a323c965316ca566c394fd49083aca28dbf7471fa8a13a2531b0e0da8.jpg)  
+(b)
+
+Fig. 7. (a) Superlattice of fission gas bubbles oriented at zone [001] simulated with D\*  106 at t  114.6days (3:98  2028 fission=m3) and (b) TEM images showing the superlattice ¼ ¼ of fission gas bubble observed in a U-7Mo particle with oriented at zone [011] and [001] (fission density 3:2  2027fission=m3 and average fission rate2:7  2020fission=m3s, and peak  temperature T  109C). The spaces of plane “A”, “B” “C” are 5:75nm; 6:55nm; and 5:72nm; respectively, and the average gas bubble diameter is approximately 3.5 nm [80].  
+![](images/709203f2b7c8f96e36320f1041604cbefb7acb979ef9fc8735cce80f78faf4a9.jpg)  
+
+
+
+![](images/c413e972da780249daf2bf1c3bf25e9b5e24003a132697e5a7e4b0c97a09fe42.jpg)  
+Fig. 8. The evolution of gas bubble size distributions (a) for D\* 10 and (b) for D\* 106.
+
+Fig. 8 shows the evolution of gas bubble size distributions for two extreme cases, D\*  10 andD\*  106. These two cases have ¼ ¼similar initial gas bubble size distribution. From the size distribution evolution, we can see that, for both cases, the smallest sized gas bubbles are the same. These small bubbles are the gas bubble nuclei continuously formed by radiation-induced resolution and nucleation. For the case with large interstitial diffusivity, the largest gas bubble size increased slightly as the fission density increased. No gas bubble coarsening was observed. The radiation-induced resolution and shrinkage induced by the reaction between interstitial and gas bubbles result in a narrow size distribution. Finally, for the case with small interstitial diffusivity, gas bubble coarsening does take place and causes a decrease in the gas bubble number and a continuous increase in the radius of the largest gas bubble. The simulations demonstrate that the uniform and small intragranular gas bubbles observed in UMo are attributed to not only radiationinduced resolution, but also to the reaction between fast onedimensional migration of interstitials and gas bubbles.
+
+
+
+
+## 5.2. Effect of fission rates on gas bubble structures
+
+
+
+
+
+We used four fission rates, \_f 1:34 1021; 2:68 1021; ¼  4:02 1021; and 6:03 1021 fission=m3s , to examine the effect   ð Þon gas bubble superlattice formation. In the simulations, the interstitial diffusivity was set as D\* 106. The initial overall Xe ¼concentration was 0.078, and the saturated Xe concentration is assumed to be 0.098. The remaining parameters were the same as those used in Section 5.1. At different fission rates, the system will take different times to reach the saturated Xe concentration. The gas bubble microstructures at time t 54days, which is calculated ¼from the initial state, are shown in Fig. 9. We found that gas bubbles form superlattices for all fission rates considered in this work, which implies that superlattice formation is controlled by the fast one-dimensional migration of interstitials (D\*  106), not the ¼fission rate. However, by analyzing the evolution of gas bubbles and superlattice structure, we found that the fission rate affects the superlattice formation kinetics and the superlattice constant as well as the saturated Xe concentration. A higher fission rate causes more rapid Xe accumulation, resulting in superlattice formation earlier compared to a lower fission rate. The white square in Fig. 9, which covers the 3  3 perfect superlattice shown in Fig. 9(a), shows some representative superlattices under different fission rates. The results demonstrate that the superlattice constant decreases from 9.5 nm to 8.32 nm when the fission rate increases from 1.34 1021 to 6.03 1021 (fission/m3 s). The reason, why the  superlattice constant decreases as the fission rate increases, could be that a higher fission rate causes more gas bubble nucleation sites and a higher gas bubble nucleation rate due to the higher resolution of gas atoms from existing gas bubbles and a higher Xe generation rate. We also observed that the volume fraction of superlattice region decreases with the increase of fission rates for a given saturated Xe concentration. For the fission rate 1.34 1021 shown in Fig. 9(a), the gas bubble structure is close to a perfect superlattice when the saturated Xe concentration reaches 0.098. Simulations with higher saturated Xe concentrations demonstrated that a perfect gas bubble superlattice forms under the fission rate 6.03  1021 (fission/m3 s) when the saturated Xe concentration reaches 0.12. This implies that the saturated Xe concentration for the formation of gas bubble superlattices increases as the fission rate increases. Fig. 10 plots the temporal evolution of total number of gas bubbles inside the simulation cell. Because a higher fission rate causes higher resolution and nucleation rates, as expected, we found that the total gas bubble number (or gas bubble density) increases as the fission rate increases. For the lower fission rate case of 1.34 1021 (fission/m3 s), the gas bubble density almost reaches the ideal value (392) of a perfect superlattice with a lattice constant of 9.5 nm. This also is confirmed by the perfect superlattice shown in Fig. 9(a). For the higher fission rate 6.03  1021 (fission/m3 s), the average gas bubble density is close to the ideal value (578) of a perfect superlattice with a lattice constant of 8.2 nm. However, many small gas bubbles with a low gas concentration are present, which is associated with irradiation-induced nucleation. The average gas bubble size in the disordering region is much smaller than that in the ordering region, which means that a high saturated Xe concentration is required to form the perfect superlattice.
+
+
+
+
+
+![](images/507926ed50963efeafb2114c0d99b812f463f135bb21cd49315169bb6b8e0855.jpg)  
+Fig. 10. Evolution of total gas bubble number for different fission rates. The time in the horizontal axis is taken into account from the initial state with Xe concentration 0.078.
+
+
+
+![](images/21600e63d9555063c6b64458aa78de77685fdb652f71005ffed795a01d479d6c.jpg)  
+
+
+![](images/e53c38c69757825150faa91ca517adbd02d2c2b691c3c806d616c041edc1f14a.jpg)  
+(d）  
+Fig. 9. The effect of fission rates on the formation of gas bubble superlattices. (a) 1:34  1021 fission=m3s , (b) 2:68  1021 fission=m3s , (c) 4:02  1021 fission=m3s , and (d) 6:03  1021 fission=m3s .
+
+![](images/68e60e5147708b3907929f91717f8793cd66b324d20a03639870b0b08f3e9212.jpg)  
+Fig. 11. Distribution of pressurep  sxx  syy  szz in unitC44. The pressure inside the gas bubble is about 1 GPa.
+
+
+
+## 5.3. Effect of applied stresses on gas bubble structures
+
+
+
+
+As described previously, a high pressure is present inside nanosized gas bubbles. Fig. 11 presents the pressure distribution in a gas bubble superlattice obtained in phase-field simulations. The results discussed in Section 5.1 demonstrate that the elastic interaction among gas bubbles and substantial diffusive Xe, U vacancies, and U interstitials do not play an important role in the formation of gas bubble superlattices. However, metallic nuclear fuel or fuel particles are embedded in metal cladding materials. Fuel swelling may cause a large stress field. Evidence of large creep deformation caused by fuel swelling has been observed in monolithic UMo fuels [81]. In addition, the heterogeneous Mo distribution inside the grain also may generate a stress field. In this section, the effect of applied stresses associated with the deformation of matrix on gas bubble evolution is examined. Four different strains, ii εappl: 0:015 0:0075 0:0075 and 0:015 i 1; 2 ; and εappl 0, 33 ¼   ð ¼ Þ ¼are applied to the simulation cell, which mimics the constraint of fuel cladding. In the simulations, the interstitial diffusivity is set to be D\*  106. The initial overall Xe concentration is 0.078, and the ¼saturated Xe concentration is assumed to be 0.098. The fission rate is set at 4.02  1021 (fission/m3 s). The remaining parameters are the same as those discussed in Section 5.1. Fig. 12 shows the gas bubble structures. It can be seen that the gas bubble superlattice forms under both tensile and compressive applied strain, and the volume fraction of gas bubble superlattice in four different applied strains are very similar. Therefore, we conclude that the applied strain does not affect the formation of the gas bubble superlattice. However, analyzing the superlattice evolution, we find that the applied strain does affect the superlattice structure as well as the formation kinetics. A compressive stress (i.e., a negative applied strain) results in the reduction of average gas bubble size and the superlattice constant. In contrast, the average gas bubble size and lattice constant of the superlattice increase as the tensile stress increases. We also found that the applied stress affects the kinetics of the superlattice. A compressive stress accelerates the formation of superlattice while a tensile stress delays the formation of superlattice.
+
+
+
+
+
+## 5.4. Effect of gas saturation on gas bubble structures
+
+
+
+
+
+The simulations in previous sections assumed that the saturated Xe concentration was constant at 0.098. However, the saturation concentration may depend on the grain size and fission rate. For fine grains, the defects including vacancy, Xe, and interstitials have short diffusion paths to grain boundaries. The saturated Xe concentration in fine grains will be lower than that in coarse grains. In this section, we investigate the effect of saturated Xe concentration on gas bubble superlattice formation. Four different concentrations, csatXe 0:078; 0:088; 0:098 and 0:108, are used to examine the effect ¼of Xe saturated concentration on gas bubble evolution. In the simulations the interstitial diffusivity is set to be D\* 106. The ¼initial overall Xe concentration is 0.078. The fission rate is set to be 4.02  1021 (fission/m3 s). The remaining parameters are the same as those discussed in Section 5.1. For a smaller saturated Xe concentration, the system will reach the saturated state at an earlier time. The gas bubble structures at time t 114.6days are presented ¼in Fig. 13. We found that the volume fraction of the superlattice decreases with the decrease of Xe saturated concentration from Figure 13(a) to Figure 13(d). For the case csatXe  0:078, the gas ¼bubbles have a random distribution in space and no ordering occurs. Therefore, a critical Xe concentration, which is larger than 0.078, is required to form the superlattice. The result implies that the superlattice can only form in sufficiently coarse grains where the Xe concentration may be larger than the critical value. Analyzing the gas bubble microstructure evolution, it is interesting to find that no coarsening occurs in disordered regions although the gas bubble density is high, and the average size of gas bubbles in superlattice regions are larger than those in disordered regions.
+
+
+
+
+
+![](images/0224b186936e0fe3b63b93cc3aa307f71f6ba7bee2f7c743271b8be88592d3c7.jpg)  
+
+
+![](images/51c36f537b1ecd76dd6348fdcef1d4e382ad175f5bad090e4229a3c135c32d86.jpg)  
+Fig. 12. The effect of applied strain on gas bubble structure. (a)ε applii 0:015, (b) ε applii 0:0075, (c) ε applii 0:0075, (d) ε applii 0:015. The lattice constant is about 8:36nm under ¼ ε applii 0:015. The lattice constant is about 9:5nm under ε applii 0:015.
+
+![](images/63214e1115faf2afb3a96bbb347ec12b5e735b6cf4b026eac4d71fac576fb57f.jpg)
+
+
+
+![](images/806fcb661ba82944fad92a76a51b3984ae37668887dd9b594cd964271a942450.jpg)  
+Fig. 13. The effect of Xe saturated concentrations on gas bubble structure. (a)csatXe 0:108, (b)csatXe 0:098, (c) csatXe 0:088, and (d) csatXe 0:078.
+
+## 6. Conclusions and discussion
+
+
+
+
+In this work, a phase-field model of gas bubble evolution in irradiated U metallic fuels was developed for the first time. The model enables the investigation of interstitial one-dimensional migration, elastic interactions among gas bubbles, defects and cladding constraints, and radiation conditions on gas bubble evolution and superlattice formation kinetics. The simulation reveals that the elastic interaction doesn’t cause the gas bubble alignment while the fast one-dimensional interstitial migration along 〈110〉 directions in a bcc U matrix results in gas bubble alignment along 〈110〉 directions. The gas bubble alignment along 〈110〉 implies the formation of fcc gas bubble superlattice which is observed in bc UMO alloys. The simulations also show that 1) the superlattice constant decreases with the increase of fission rate and compressive stress; 2) a critical Xe concentration is required to form the superlattice, implying that a critical grain size exists for the formation of gas bubble superlattice; and 3) no coarsening of gas bubbles in disordered regions occurs as a result of radiationinduced resolution and nucleation. The gas bubbles in disordered regions have much larger mobility than those in ordered regions or the superlattice. The simulation results demonstrate the predictive capability of the phase-field model developed. However, a semiimplicit Fourier-spectral method used in the current simulations, which is accurate and efficient for a small simulation cell, is not an efficient and scalable numerical method and limits performing large scale simulations. Therefore, all simulations in the current work were performed in two dimensions. In two-dimensional (2D) simulations, much larger overall defect concentrations and fission rates are required to reproduce a gas bubble size and superlattice constant observed in the experiments. The reason is that in 2D the gas bubble actually has cylindrical morphology. However, in 3D the gas bubbles are isolated spheres. If the gas bubble radius, the concentration of Xe inside the gas bubbles, and superlattice constant in 2D and 3D are the same, we know that more Xe and vacancies are needed to form the cylindrical gas bubble in 2D than the isolated spherical gas bubbles in 3D. In addition, the stress field around the gas bubbles in two dimensions is different from those in three dimensions. These differences may affect gas bubble evolution kinetics, but do not necessarily affect the mechanism of superlattice formation and trends of gas bubble evolution predicted in the simulations. Regarding fcc gas bubble superlattice, it is hard to tell FCC and BCC structure in two dimensions. However, our simulation demonstrates that if U interstitial fast migrates along 〈110〉 directions it will cause gas bubbles uniformly align along 〈110〉 directions. We can image that if gas bubbles uniformly align along 〈110〉 directions in three dimensions the gas bubbles have a fcc superlattice structure. Therefore, our simulations indirectly demonstrate that U interstitial fast migration along 〈110〉 directions results in the formation of fcc gas bubble superlattice in bcc UMo alloys. To verify the conclusion, we have to perform three dimensional (3D) simulations which require an efficient and scalable numerical method to solve the phase-field equations. We examined the formation energies of 30 dumbbell configurations in U-Mo random alloys (20 at%Mo) using DFT. The results clearly indicate that U-U [110] dumbbell is the most stable dumbbell configuration. The instantaneous relaxation from several [111] and [110] initially oriented dumbbells to [110] dumbbells means that such rotation has no barrier. However, it is difficult to obtain a quantitative picture of the migration pathways of interstitials U in UMo without performing a dynamic simulation of diffusion. A quantitative phase-field simulation relies on accurate thermodynamic and kinetic properties of the system. Because of the lack of the thermodynamic properties of UMo alloys, the simulations used in this work employed a number of assumptions, including the interstitial diffusivity, the equation of state of gas bubbles, interfacial energy, and lattice mismatch of defects. These properties could be estimated using atomistic simulations. The simulations show that the saturated Xe concentration will importantly affect the superlattice formation. To study the effect of grain size on the saturated Xe concentration, the simulations need to consider the concurrent evolution of intergranular and intragranular gas bubbles. Therefore, improvements to both numerical methods and thermodynamic models are needed for quantitative simulations.
+
+## Acknowledgements
+
+
+
+[18] S.Y. Hu, C.H. Henager, J. Nucl. Mater. 394 (2009) 155e159.
+
+[19] Y.N. Osetsky, A. Serra, V. Priego, F. Gao, D.J. Bacon, Diffus. Mech. Cryst. Mater. 527 (1998) 49e58.
+
+[20] D.J. Bacon, F. Gao, Y.N. Osetsky, J. Nucl. Mater. 276 (2000) 1e12.
+

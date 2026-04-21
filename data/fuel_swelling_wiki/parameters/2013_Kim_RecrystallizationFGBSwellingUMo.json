@@ -1,0 +1,174 @@
+[
+  {
+    "category": "recrystallization_model",
+    "parameter": "Avrami equation",
+    "equation": "V_rx = 1 - exp[-K(F-F₀)^n]",
+    "description": "Volume fraction recrystallized as function of fission density F"
+  },
+  {
+    "category": "recrystallization_model",
+    "parameter": "K₀",
+    "value": 0.1,
+    "unit": "dimensionless",
+    "description": "Pre-exponential factor in Avrami equation"
+  },
+  {
+    "category": "recrystallization_model",
+    "parameter": "n (Avrami exponent)",
+    "value": 2.6,
+    "unit": "dimensionless",
+    "description": "Avrami exponent for UMo recrystallization kinetics"
+  },
+  {
+    "category": "recrystallization_model",
+    "parameter": "F₀ (atomized powder)",
+    "value": 1.67e21,
+    "unit": "f/cm³",
+    "description": "Incubation fission density for recrystallization onset, atomized powder"
+  },
+  {
+    "category": "recrystallization_model",
+    "parameter": "F₀ (ground powder)",
+    "value": 1.38e21,
+    "unit": "f/cm³",
+    "description": "Incubation fission density for recrystallization onset, ground powder"
+  },
+  {
+    "category": "recrystallization_model",
+    "parameter": "K equation (Mo-dependent)",
+    "equation": "K = K₀[0.75(10-x_Mo)+1]",
+    "description": "Mo composition dependence of recrystallization rate constant K; x_Mo in wt%"
+  },
+  {
+    "category": "recrystallization_model",
+    "parameter": "K equation (with fission rate effect)",
+    "equation": "K = K₀[0.125×10¹⁴(ḟ-2×10¹⁴)+1][0.67(10-x_Mo)+1]",
+    "description": "Full K equation including both fission rate ḟ and Mo composition dependence; ḟ in f/cm³/s, x_Mo in wt%"
+  },
+  {
+    "category": "swelling_rate",
+    "parameter": "Pre-recrystallization FGB swelling rate",
+    "value": 0.6,
+    "unit": "% per 10²¹ f/cm³",
+    "description": "Fission gas bubble swelling rate before recrystallization"
+  },
+  {
+    "category": "swelling_rate",
+    "parameter": "Post-recrystallization FGB swelling rate",
+    "value": 5.2,
+    "unit": "% per 10²¹ f/cm³",
+    "description": "Fission gas bubble swelling rate after recrystallization"
+  },
+  {
+    "category": "swelling_rate",
+    "parameter": "Swelling rate ratio (post/pre)",
+    "value": 8.7,
+    "unit": "dimensionless",
+    "description": "Ratio of post- to pre-recrystallization swelling rates, approximately 5.2/0.6"
+  },
+  {
+    "category": "recrystallization_threshold",
+    "parameter": "Complete recrystallization threshold (atomized)",
+    "value_range": [5.0e21, 5.5e21],
+    "unit": "f/cm³",
+    "description": "Fission density at which atomized U-10Mo fuel is fully recrystallized"
+  },
+  {
+    "category": "recrystallization_threshold",
+    "parameter": "Complete recrystallization threshold (ground)",
+    "value": 4.8e21,
+    "unit": "f/cm³",
+    "description": "Fission density at which ground U-10Mo fuel is fully recrystallized"
+  },
+  {
+    "category": "composition",
+    "parameter": "Mo content in U-10Mo (grain boundary)",
+    "value": 17,
+    "unit": "at%",
+    "description": "Molybdenum concentration at grain boundaries of U-10Mo alloy"
+  },
+  {
+    "category": "composition",
+    "parameter": "Mo content in U-10Mo (nominal)",
+    "value": 22,
+    "unit": "at%",
+    "description": "Nominal molybdenum atomic percent in U-10Mo alloy"
+  },
+  {
+    "category": "microstructure",
+    "parameter": "Atomized powder particle size",
+    "value": 70,
+    "unit": "μm",
+    "description": "Mean particle diameter of atomized U-10Mo powder"
+  },
+  {
+    "category": "microstructure",
+    "parameter": "Atomized powder grain size",
+    "value_range": [3, 15],
+    "unit": "μm",
+    "description": "Grain size range in atomized U-10Mo powder"
+  },
+  {
+    "category": "microstructure",
+    "parameter": "Ground powder grain size",
+    "value_range": [2, 14],
+    "unit": "μm",
+    "description": "Grain size range in ground U-10Mo powder"
+  },
+  {
+    "category": "enrichment",
+    "parameter": "U-235 enrichment",
+    "value": 19.5,
+    "unit": "at%",
+    "description": "Uranium-235 enrichment of experimental fuel"
+  },
+  {
+    "category": "irradiation_conditions",
+    "parameter": "Operating temperature range",
+    "value_range": [60, 160],
+    "unit": "°C",
+    "description": "Temperature range during irradiation"
+  },
+  {
+    "category": "measurement_correction",
+    "parameter": "Fracture surface measurement correction factor",
+    "value": 5.0,
+    "unit": "% per 10²¹ f/cm³",
+    "description": "Correction applied to fracture surface swelling measurements"
+  },
+  {
+    "category": "experimental_data",
+    "parameter": "Number of experimental samples",
+    "value": 20,
+    "unit": "count",
+    "description": "Total number of U-10Mo experimental fuel samples"
+  },
+  {
+    "category": "experimental_data",
+    "parameter": "Fission density range (samples)",
+    "value_range": [2.0e21, 5.7e21],
+    "unit": "f/cm³",
+    "description": "Range of fission densities across experimental samples"
+  },
+  {
+    "category": "experimental_data",
+    "parameter": "Fission rate range (samples)",
+    "value_range": [2.1e14, 6.8e14],
+    "unit": "f/cm³/s",
+    "description": "Range of fission rates across experimental samples"
+  },
+  {
+    "category": "experimental_data",
+    "parameter": "BOL temperature range (samples)",
+    "value_range": [66, 158],
+    "unit": "°C",
+    "description": "Beginning-of-life temperature range across experimental samples"
+  },
+  {
+    "category": "reference_data",
+    "parameter": "UO₂ complete recrystallization threshold",
+    "value": 3.1e21,
+    "unit": "f/cm³",
+    "description": "Fission density for complete recrystallization of UO₂ fuel (Berman 1963)"
+  }
+]

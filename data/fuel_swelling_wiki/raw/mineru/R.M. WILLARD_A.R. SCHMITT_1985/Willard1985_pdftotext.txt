@@ -1,0 +1,3467 @@
+NAA-SR-8956
+COPY
+
+IRRADIATION SWELLING,
+PHASE REVERSION,
+AND
+INTERGRANULAR CRACKING
+OF
+U - 10 wt %Mo FUEL ALLOY
+
+AEC Research and Development Report
+
+ATOMICS INTERyATIONAL
+A DIVISION OF NORTH AMERICAN
+
+AVIATION, INC.
+
+metadc3040
+
+32
+
+LEGAL NOTICE
+This report was prepared as an account of Government sponsored work. Neither the
+United States, nor the Commission, nor any person acting on behalf of the Commission:
+A. Makes any warranty or representation, express or implied, with respect to the
+accuracy, completeness, or usefulness of the information contained in this report, or that
+the use of any information, apparatus, method, or process disclosed in this report may
+not infringe privately owned rights; or
+B. Assumes any liabilities with respect to the use of, or for damages resulting from
+the use of information, apparatus, method, or process disclosed in this report.
+As used in the above, "person acting on behalf of the Commission" includes any
+employee or contractor of the Commission, or employee of such contractor, to the extent
+that such employee or contractor of the Commission, or employee of such contractor prepares, disseminates, or provides access to, any information pursuant to his employment
+or contract with the Commission, or his employment with such contractor.
+
+Price $0.75
+Available from the Office of Technical Services
+Department of Commerce
+Washington 25, D. C.
+
+NAA-SR-8956
+METALS, CERAMICS,
+AND MATERIALS
+33 PAGES
+
+IRRADIATION SWELLING,
+PHASE REVERSION,
+AND
+INTERGRANULAR CRACKING
+OF
+U -10
+
+wt % Mo FUEL ALLOY
+
+By:
+
+R.M. WILLARD
+A.R. SCHMITT
+
+ATOMICS INTELPATIONAL
+A DIVISION OF NORTH AMERICAN AVIATION, INC.
+P.O. BOX 309
+CANOGA PARK, CALIFORNIA
+
+CONTRACT: AT(11-1)-GEN-8
+ISSUED:
+
+FE0
+
+i 199
+
+DISTRIBUTION
+This report has been distributed according to the category
+"Metals,
+
+Ceramics,
+
+and Materials"
+
+as given in "Standard Distri-
+
+bution Lists for Unclassified Scientific and Technical Reports"
+TID-4500 (29th Ed.), April 1, 1964.
+
+A total of 615 copies was
+
+printed.
+
+ACKNOWLEDGMENT
+The authors are indebted to A.
+
+H. Willis, for his stimulating
+
+discussions during the examination of these specimens.
+authors wish to acknowledge the work of D.
+Englebert,
+
+D.
+
+McAfee and S.
+
+in preparing the specimens for observation,
+
+work of J. L. Arnold,
+
+The
+L.
+
+and the
+
+in preparing the final draft of the report.
+
+NAA-SR -89 56
+2
+
+CONTENTS
+Page
+Abstract....
+
+. ..
+
+..
+
+. ..
+
+.......................................
+
+5
+
+I.
+
+Introduction.... . . ..
+
+II.
+
+Experimental Procedure . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+A.
+
+Pre -irradiation Heat Treatment and Metallography. . . . . . . .
+
+10
+
+B.
+
+Irradiation History . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+C.
+
+Post-irradiation Examination . . . . . . . . . . . . . . . . . . . . . .
+
+13
+
+Results of Post-irradiation Examination . . . . . . . . . . . . . . . . .
+
+14
+
+A.
+
+Sw elling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+14
+
+B.
+
+Microstructure...
+
+15
+
+C.
+
+Internal Void Structure..
+
+III.
+
+IV.
+
+V.
+
+....
+
+. . ..
+
+....................................
+
+. ..
+
+7
+
+...............................
+
+. . . . ..
+
+..........................
+
+15
+
+Discussion of Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+A.
+
+Sw elling
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+B.
+
+Phase Reversion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+26
+
+C.
+
+Intergranular Cracking . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+29
+
+Conclusions
+References...........
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+.....................................
+
+32
+33
+
+TABLES
+1.
+
+NAA 47 Series Original Design Conditions . . . . . . . . . . . . . . . .
+
+6
+
+2.
+
+Hallam Nuclear Power Facility Design Conditions - Core I
+
+9
+
+3.
+
+Post-irradiation Examination Data for Metallographic
+Specim ens
+
+4.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Calculated Critical Fission Rate,
+
+Using Equation 4 . . . . . . . . . .
+
+12
+30
+
+FIGURES
+1.
+
+Temperature vs Fission Rate Conditions for Hallam Core I
+
+. . . .
+
+6
+
+2.
+
+Uranium-Molybdenum Phase Diagram . . . . . . . . . . . . . . . . . . .
+
+8
+
+3.
+
+Location of Metallographic Specimens . . . . . . . . . . . . . . . . . . .
+
+10
+
+NAA-SR-8956
+3
+
+FIGURES
+Page
+4.
+
+Typical Pre -irradiation Microstructure
+a.
+
+As Cast
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+b.
+
+Gam m atized. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+c.
+
+Partially Transformed. . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+5.
+
+Diameter Change as a Function of Burnup . . . . . . . . . . . . . . . .
+
+14
+
+6.
+
+Typical Structure After Irradiation
+
+7.
+8.
+
+a.
+
+Retained Gamma
+
+b.
+
+Transformed... . . . . ..
+
+c.
+
+Spheroidized
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+Specimen 7-6B,
+
+Illustrating Wedge and Elliptical Voids . . . . . . .
+
+17
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+.
+
+.................................
+
+16
+16
+
+Specimen 6-4, Showing High Magnification of Wedge Voids
+and Lamellar
+
+Transformed Structure
+
+. . . . . . . . . . . . . . . . . . .
+
+17
+
+9.
+
+Specimen 4-9, From Center to Surface of Specimen
+
+. . . . . . . . .
+
+19
+
+10.
+
+Specimen 7-6B, From Center to Surface of Specimen
+
+. . . . . . . .
+
+23
+
+11.
+
+Schematic Representation of Specimen 7-6 After Irradiation
+to 4600 Mwd/MTU (Bottom of specimen was bonded to Slug
+7-7 during irradiation)... . . . .. .
+.............................
+
+26
+
+Time-Temperature-Transformation Curve for UraniumM olybdenum Alloys . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+Correlation of Observed Microstructure with Theoretical
+Fission Rate Temperature Curve . . . . . . . . . . . . . . . . . . . . . .
+
+30
+
+12.
+13.
+
+NAA-SR -8956
+4
+
+ABSTRACT
+A fuel development program has been conducted,
+gate the behavior of U temperatures
+Facility.
+
+to investi-
+
+10 wt% Mo alloy at the fission rates and
+
+anticipated in Core I of the Hallam Nuclear Power
+
+Unrestrained samples,
+
+0.5 in.
+
+long, were irradiated in the Materials
+up to three years,
+
+in diameter by 2.0 in.
+
+Testing Reactor for periods
+
+to achieve substantial burnup levels at the rela-
+
+tively low CoreIburnup rates.
+
+The specimens were irradiated inthe
+
+fission rate range from 2.5 to 8.0 x 1012 fissions/cc-sec,
+average central temperatures from 750 to 10850F.
+
+at
+Initially,
+
+the
+
+fuel specimen structures were as-cast (inhomogeneous y), partially transformed (a + y' + y),
+
+or homogenized (y).
+
+An almost linear relationship between swelling and burnup
+was obtained in the burnup range from 3000 to 12,000 Mwd/MTU.
+Deviations from this relationship are attributed to abnormal temperatures during irradiation and/or mechanical instability.
+Eleven specimens from four irradiation capsules were ex-
+
+amined metallographically.
+of phase transformation,
+tures.
+
+All specimens exhibited some degree
+
+when compared to pre-irradiation
+
+struc-
+
+The observed structures are in good agreement with the
+
+theoretically predicted in-pile transformation of U - 10 Mo as a
+function of burnup rate and temperature.
+
+Five of the specimens
+
+exhibited grain boundary void formation and intergranular cracking.
+
+The remaining six specimens showed no evidence of void
+
+formation or cracking.
+
+NAA-SR-8956
+5
+
+|
+
+3 x 1013
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+1 x 1013
+
+102
+-
+
+5 x10 12
+
+d
+
+w
+U
+
+12
+
+5 x 1011
+
+1 x 1011
+
+I
+
+600
+
+1200 1300
+1000
+1100
+900
+800
+700
+FUEL CENTRAL TEMPERATURE ( F)
+
+7508-51336
+
+Figure 1.
+
+Temperature vs Fission
+
+Rate Conditions for Hallam Core I
+
+TABLE 1
+NAA 47 SERIES ORIGINAL DESIGN CONDITIONS
+Fission Rate
+Experiment
+
+Fuel
+
+Fuel Temperature (*F)
+
+(fissions/cc-sec)
+
+Power
+
+NAA 47-
+
+$urface
+
+Center
+
+AT ( *F)
+
+(x 10-13)
+
+(kw/ft)
+
+1, 2, 9
+
+1073
+
+1300
+
+227
+
+1.39
+
+14.8
+
+3, 4, 10
+
+1152
+
+1300
+
+148
+
+1.04
+
+9.9
+
+5, 6, 11
+
+1193
+
+1300
+
+107
+
+0.69
+
+7.4
+
+7, 8
+
+1230
+
+1300
+
+70
+
+0.46
+
+5.0
+
+NOTE: NAA-47-9, -10, and -11
+
+were replacement capsules for NAA-47-1, -3,
+
+NAA-SR- 8956
+
+6
+
+and -5.
+
+I. INTRODUCTION
+Under contract to the United States Atomic Energy Commission,
+
+Atomics
+
+International has designed and built the Hallam Nuclear Power Facility (HNPF),
+for operation by the Consumers Public Power District (CPPD).
+
+The reactor,
+
+located at the Sheldon Station, 21 miles from Lincoln, Nebraska,
+
+is a sodium-
+
+cooled, graphite-moderated
+Mwe.
+
+system, designed to operate at 240 Mwt and 75
+
+For several years prior to and during construction of the plant,
+
+International conducted a development program,
+
+many design aspects of the nuclear plant.
+
+Atomics
+
+to establish and substantiate
+
+The HNPF Core I Uranium Alloy
+
+Fuel Evaluation project was an integral part of this development program.
+
+After selection of U - 10 Mo as the Core I fuel, the HNPF Uranium Alloy
+Evaluation project was initiated, to provide specific information at the design
+conditions of Core I.
+
+Irradiation experiments,
+
+designated as the NAA 47 series,
+
+were planned as material proof tests to define the behavior of the alloy at the
+
+anticipated fission rates, temperatures,
+sion rate and temperature
+
+and burnup levels of HNPF.
+
+The fis-
+
+ranges of Core I are shown in Figure 1, while the
+
+original design conditions for the NAA 47 experiments are presented in Table 1.
+The U-Mo system (Figure 2) has a eutectoid reaction at 1065* F, at 10.5
+wt % molybdenum.
+
+At this transformation point,
+
+phase changes to the low-temperature
+
+formation is sluggish,
+
+a and y' phases upon cooling.
+
+It
+
+This trans-
+
+requiring approximately 20 hr at 900*F to reach the nose
+
+of the time-temperature-transformation
+transformation,
+
+the high-temperature
+
+curve.
+
+An alloy fuel with this type of
+
+where the high-temperature phase is retained after cooling to
+
+room temperature,
+
+is prone to phase reversion under critical conditions of
+
+fission rate and temperature.
+effects of fission rate,
+
+time,
+
+Bleiberg
+
+and Shoudy et al.
+
+have discussed the
+
+and temperature on the stability of U-Mo alloys
+
+near the eutectoid composition.
+
+Since HNPF operating conditions necessitate
+
+operation of the U-Mo fuel material over a range of temperatures,
+and burnups in this critical area,
+
+fission rates,
+
+these material proof tests were expected to
+
+yield significant experimental data for the performance evaluation of HNPF
+Core I.
+
+Although the experiments did not simulate actual fuel element design, the
+individual fuel specimens, which were 0.5-in.
+the 0.590-in. diameter HNPF slugs.
+
+diameter cast slugs, approximated
+
+The design specifications of the subject
+
+NAA-SR-8956
+7
+
+2
+I
+
+5
+
+10
+
+20
+
+30
+
+40
+
+60
+
+80
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+I
+
+-
+
+MOLYBDENUM (wt %)
+4800
+
+2600
+
+4400
+2400
+
+2200
+
+I-
+
+4000
+
+2000
+
+3600
+
+1800 I-
+
+L+ E
+
+3200
+U
+
+0
+
+0
+
+W
+1600
+
+w
+
+I2800
+
+v
+
+w
+w
+I
+
+L+ V
+
+1285
+
+2400
+
+1200 f
+
+2000
+loon
+
+y
+
+y+
+
+E
+
+1600
+
+800
+
+y+V
++
+
+1200
+
+V
+
+600
+
+600
+
+IiI
+
+575
+
+a
+
++
+
+I1
+.
+
+I
+
+.
+
+1
+
+4nnA
+
+-rvv
+
+0
+
+'
+
+as
+
++
+
+w
+
+1400 1-
+
+10
+
+20
+
+30
+
+40
+
+50
+
+1
+60
+
+1
+70
+
+1
+80
+
+1
+90
+
+i 1 800
+100
+
+MOLYBDENUM (at.%)
+7508-51345
+
+Figure 2.
+
+Uranium-Molybdenum Phase Diagram
+
+NAA -SR- 8956
+8
+
+Core I element are given in Table 2.
+the microstructural
+
+The purpose of this report is to discuss
+
+changes occurring during irradiation and the effect of these
+
+changes on the observed dimensional change of the fuel slugs.
+
+The engineering
+
+aspects of the fuel irradiation program are reported elsewhere. 4
+
+TABLE 2
+HALLAM NUCLEAR POWER FACILITY DESIGN CONDITIONS - CORE I
+Nominal Full Power Rating
+
+240 Mwt
+
+Net Electrical Power
+
+75 Mwe
+
+Moderator
+
+Graphite,
+
+Coolant
+
+Sodium
+
+Inlet Temperature
+
+610 F
+
+Outlet Temperature
+
+945*F
+
+Fuel Elements
+
+Cladding
+
+151 eighteen-rod clusters
+
+Type 304 SS
+
+Length
+
+180 in.
+
+Inside Diameter
+
+0.640 in.
+
+Thickness
+
+0.010 in.
+
+Bond
+
+Thickness
+Fuel
+
+SS clad
+
+Sodium
+0.025 in.
+3.6% enriched as- cast U - 10 Mo
+
+Length
+
+159 in. (3-1/2 in. /slug)
+
+Diameter
+
+0.590 in.
+
+Enrichment
+
+3.6%
+
+Cover Gas
+
+Helium (-~1 atm pressure)
+
+NAA-SR-8956
+9
+
+II. EXPERIMENTAL PROCEDURE
+Eleven metallographic samples were selected from four of the seven NAA
+The samples were selected from 0.5-in. diameter by 2.0-in.
+
+47 test capsules.
+
+long fuel specimens whose irradiation history was relatively well known.
+
+Fig-
+
+ure 3 shows the location of the metallographic samples in the four capsules.
+TOP
+
+A.
+
+PRE- IRRADIATION HEAT TREATMENT AND METALLOGRAPHY
+
+SLUG NO.
+I
+
+3
+
+2
+
+5
+
+4
+
+BOTTOM
+
+7
+
+6
+
+9
+
+8
+
+HEAT TREATMENT
+4AC-G|PT
+
+The eutectoid transformation of
+
+IAC
+
+IPT|
+
+|PT|AC|IG
+
+IG
+
+2-1
+
+U - 10 wt% Mo is sluggish, and the
+metastable y phase can be retained at
+47-4
+
+room temperature.
+
+To determine the
+
+4-2
+
+4-5
+
+4-9
+
+effect of pre-ir-radiation microstructure on swelling behavior during irradi47-6
+
+ation,
+
+the fuel specimens to be irradi-
+
+6-3
+
+6-4
+
+6-7
+
+6-9
+
+ated were given three heat treatments:
+
+1) As- cast - Specimens received
+no pre-irradiation heat treatment.
+
+The structure (Figure
+
+4a) is inhomogeneous,
+stable
+
+A
+B
+7-6
+
+7-3
+AC- AS CAST
+G- GAMMATIZED
+
+meta-
+
+(AS
+
+CAST
+
++
+
+24 hr AT 900 C, H 0 QUENCH)
+
+PT- PHASE TRANSFORMED
+(AS CAST + 100 hr AT 500
+
+IY phase, throughout the
+
+7508-51348
+
+specimen.
+2)
+
+Gammatized -
+
+As-cast speci-
+
+Figure 3.
+
+Location of Metallographic
+
+Specimens
+
+mens were heated for 24 hr at
+1650 *F, to homogenize the 'y phase,
+
+and w eater quenched.
+
+transformed -As-cast
+
+The structure,
+
+-Y.
+
+as shown in Figure 4b, is homogeneous, r metastable
+3) Partially
+
+2
+
+C, AIR QUENCH)
+
+specimen .s were heated for 100 hr at
+
+900 *F, to transform a portion of the meta stable y phase to the stable
+eutectoid transformation products of a ancd 7'Y.
+
+The structure (Figure 4c)
+
+is a combination of inhomogeneous y and p)earlitic transformation product s.
+
+B.
+
+IRRADIATION HISTORY
+Nine fuel specimens were then loaded into eaLch capsule.
+
+were alternately as-cast,
+
+gammatized,
+
+The specimens
+
+and parti ally transformed,
+
+capsule contained three specimens of each heat ti treatment.
+sule design are completely described elsewhere.
+
+NAA-SR-8956
+10
+
+';
+
+so that each
+
+Details of the cap-
+
+a
+
+;w
+
+a.
+
+As Cast
+
+'Ak
+Am
+Milk
+
+rt
+1)
+
+0.002 in.
+500 x
+
+10
+0
+
+;
+
+N
+
+0.002 in.
+
+.
+
+-A
+
+500 x
+
+AI
+
+b.
+
+Gammatized
+
+c.
+
+Partially Transformed
+
+0.002 in.
+500 x
+
+K--
+
+7508-51338
+
+Figure 4.
+
+Typical Pre -irradiation Microstructure
+
+NAA-SR -8956
+11
+
+TABLE 3
+POST -IRRADIATION EXAMINATION DATA FOR METALLOGRAPHIC SPECIMENS
+
+2-1-S
+
+7.9
+
+2-1-C
+
+7.9
+
+4-2-S
+
+Diameter
+Change
+(%)
+
+Burnup
+(Mwd/MTU)
+
+625
+
+1.0
+
+11,000
+
+750
+
+1.0
+
+6.35
+
+855
+
+25.2
+
+4-2-C
+
+6.35
+
+965
+
+25.2
+
+4-5-S
+
+7.1
+
+960
+
+23.1
+
+4- 5- C
+
+7.1
+
+1085
+
+23.1
+
+4-9-S
+
+5.9
+
+805
+
+4-9- C
+
+5.9
+
+910
+
+35.3
+35.3
+
+6-3-S
+
+4.6
+
+825
+
+9.0
+
+6- 3- C
+
+4.6
+
+905
+
+9.0
+
+6- 4- S
+
+5.2
+
+920
+
+10.2
+
+6-4-C
+
+5.2
+
+990
+
+10.2
+
+6-7-S
+
+5.3
+
+890
+
+10.6
+
+6-7- C
+
+5.3
+
+975
+
+10.6
+
+6-9-S
+
+4.2
+
+790
+
+12.3
+
+6-9-C
+
+4.2
+
+810
+
+12.3
+
+7- 3- C
+
+2.5t
+
+725 t
+
+0.8
+
+7-6A- C
+
+3.3 t
+
+10251
+
+7-6B-C
+
+3.5 t
+
+1025t
+
+10,100
+
+11,800
+10,900
+
+5,600
+6,100
+6,300
+
+Pre-Irradiation
+Structure
+
+Post-Irradiation
+Structure
+
+AC
+
+G
+
+AC
+
+G
+
+G
+
+T
+
+G
+
+T&S
+
+G
+
+T&S
+
+G
+
+T&S
+
+PT
+PT
+
+G
+T
+
+PT
+
+T
+
+PT
+
+T
+
+AC
+
+T
+
+Surface
+Center
+As cast (segregated y)
+Intergranular Cracking
+
+X
+
+x
+x
+
+x
+
+AC
+
+T
+
+AC
+
+T&S
+
+AC
+
+T&S
+T
+
+4,700PT
+PT
+
+T
+
+3,000
+
+PT
+
+G
+
+5.4
+
+4,600
+
+PT
+
+T&S
+
+15.7
+
+4,600
+
+PT
+
+T&S
+
+*The fission rate and average temperature values shown in the table are for the final stages of irradiation, since it
+was assumed that this period had the greatest effect on the observed microstructure. The fission rate at the center
+of the specimens is not corrected for self-shielding absorption of neutrons by the fuel.
+tAverage central temperature and fission rate for entire irradiation.
+Some inhomogeneity noted after irradiation.
+S C AC X -
+
+Intergranular
+Cracking
+
+-
+
+Lo
+U11
+
+Average
+Temperature''
+( F)
+
+-
+
+00
+
+Fission Rate
+(fission/cc- sec)
+(x 10- 12)
+
+-
+
+z
+
+Specimen
+NAA 47-
+
+PT .- Partially Transformed
+G - Gammatized
+T - Transformed
+T&S - Transformed and Spheroidized
+
+X
+
+C.
+
+POST-IRRADIATION
+The metallographic
+
+EXAMINATION
+samples were selected from those capsules which had
+
+the most reliable temperature histories.
+
+range of fission rates, temperatures,
+
+The selected samples provide a broad
+
+burnups,
+
+and swelling values.
+
+Table 3 lists these specimens with pertinent pre- and post-irradiation data.
+The samples were first examined in the as-polished condition, to study void
+density and formation.
+
+They were then etched (1 pt. CrO 3 ,
+
+NH4 F.HF, 4 pts. HNO 3 ),
+
+14 pts. H 2 0,
+
+to reveal the degree of transformation.
+
+NAA-SR-8956
+13
+
+1 pt.
+
+III. RESULTS OF POST-IRRADIATION EXAMINATION
+A.
+
+SWELLING
+Schmitt et al.4 have discussed the swelling of the NAA 47 fuel extensively.
+
+Figure 5 is a plot,
+
+showing the relationship of diameter increase to burnup, of
+
+the eleven metallographic specimens.
+With the exception of Specimens
+
+2-1,
+
+These data are also presented in Table 3.
+6-9, 7-6B,
+
+and 4-9, a linear relationship of
+
+swelling and burnup is obtained over the burnup range of 3,000 to 12,000 Mwd/
+MTU.
+
+Specimen 2-1 demonstrates the irradiation stability of U - 10 Mo under
+
+conditions of low temperature, high fission rate, and high burnup.
+
+Although
+
+irradiated to a high level of burnup, this specimen had a low average central
+Swelling resulting from excessive
+
+temperature (750*F).
+
+irradiation is illustrated by Specimens 4-2,
+
+4-9,
+
+4-5,
+
+temperature during
+
+and 7-6B.
+
+Specimens 4-2
+
+and 4-9 were irradiated at average central temperatures of 910 and 965*F,
+
+spectively, while Specimens 4-5 and 7-6B were at 1085 and 1025 F,
+However,
+
+re-
+
+respectively.
+
+these mean temperatures do not properly emphasize temperature tran-
+
+sients to 1300*F in Capsule 4, and
+40
+
+1500*F in Sample 7-6B,
+
+near the end of
+
+the irradiation exposure.
+
+35 _
+
+04-9
+
+Mechanical instability due to thermal
+30 h-
+
+stresses may also be a factor in the observed swelling behavior.
+
+Violent ther4-20
+
+25
+
+mal shocks from reactor scrams pro-
+
+2
+
+duced cooling rates of several hundred
+
+0i
+(9
+
+*F per minute.
+period,
+
+During the irradiation
+
+04-5
+
+z 20
+
+F-2
+W
+
+it was not uncommon for a cap-
+
+I5
+
+0 7-6B8
+
+0
+
+sule to experience 300 thermal shocks to
+
+6-90
+6-7
+
+room temperature.
+
+Probable effects of
+
+I0
+6-4
+
+6-3
+
+the resultant stresses are reflected in
+7-_ A
+
+5
+
+the degree of structural degradation
+
+shown by several of the specimens.
+
+I
+
+0
+
+02-1
+
+I
+
+v
+
+and 4-9 all showed
+
+2
+
+4
+
+6
+
+8
+
+12
+
+10
+
+4
+
+3
+
+BURNUP (Mwd/MTU) (x 10-
+
+)
+
+Specimens 7-6B, 4-2,
+
+0
+
+cracking which increased the apparent
+7617-51209@
+
+diameter change.
+Figure 5.
+
+Diameter Change as a
+
+Function of Burnup
+
+NAA -SR -89 56
+14
+
+Specimen 6-9 showed no mechanical degradation and no high-temperature
+operation,
+
+and yet it does not conform to the linear swelling curve.
+
+Capsule
+
+hardware constrained the expansion of the lower portion of the specimen.4
+
+This
+
+constraint at the lower end of the specimen probably contributed to the larger
+than expected diameter change at the upper portion of the specimen.
+B.
+
+MICROSTRUCTURE
+All of the 11 specimens examined showed some degree of transformation
+
+from the pre-irradiation structure.
+
+the post-irradiation examination.
+
+Table 3 lists the structures observed during
+
+For convenience in discussion,
+
+areas of each specimen have been considered:
+specimen,
+change,
+
+(1) areas at the center of the
+
+and (2) circumferential surface areas.
+
+in three specimens,
+
+two general
+
+Structures were observed to
+
+when passing from the center to the surface of the
+
+fuel specimen.
+Specimens irradiated below 805*F (average central temperature) either
+maintained or transformed to a -y structure,
+
+as shown in Figure 6a.
+
+irradiated above this temperature transformed to a two-phase,
+For average irradiation temperatures from 800 to 910*F,
+structure was lamellar in appearance,
+perature,
+C.
+
+a + 'y' structure.
+
+the transformed
+
+as shown in Figure 6b.
+
+the transformed structure was spheroidized,
+
+Specimens
+
+Above this tem-
+
+as shown in Figure 6c.
+
+INTERNAL VOID STRUCTURE
+Five of the 11 specimens exhibited internal voids.
+
+these voids were associated with grain boundaries,
+(1) wedge,
+
+and (2) elliptical.6
+
+In all cases observed,
+
+and were of two types:
+
+Both types of voids are illustrated in Figure 7.
+
+Figure 8 is a high-magnification illustration of a wedge-type crack from Speci-
+
+men 6-4.
+
+The circular voids in this figure have the same appearance and loca-
+
+tion as casting voids in as-cast,
+
+unirradiated material.
+
+All of the specimens
+
+with internal voids experienced peak central temperatures >1125*F,
+Specimen 4-2,
+
+which had a peak central temperature
+
+except
+
+of 1029*F (below the eutec-
+
+toid transformation temperature of 1060*F).
+A composite view of Specimen 4-9, from the thermocouple hole to the surface of the slug, is shown in Figure 9.
+
+The internal void structure begins
+
+approximately one-third of the distance from the center of the slug.
+
+This com-
+
+posite shows the extension of these small intergranular cracks to larger cracks,
+
+NAA-SR-8956
+15
+
+a.
+
+.
+
+>j 4
+
+Retained Gamma
+
+44A
+
+44y4
+
+AZ
+
++l
+
+F
+
+0.0092 in.
+109 X
+
+44
+
+4,
+
+4
+
+tB
+
+a
+
+4
+
+4
+
+4
+
+%
+
+M1120
+
+K
+
+4> 44
+
+&
+
+C
+
+444
+
+>4
+
+4
+
+44
+
+7617-51208
+4
+
+4
+
+b.
+
+767510
+
+Transformed
+
+(Photographed at 500X,
+Enlarged ZX)
+
+c. Spheroidized
+(Photographed at 109X,
+Enlarged ZX)
+Figure 6.
+
+Typical Structure After Irradiation
+
+NAA-SR-8956
+16
+
+~
+
+0
+
+XI
+- ,
+
+0.
+
+18
+
+4ft 'p ,_
+4,f
+
+in
+
+.
+
+55
+
+-
+
+~
+
+,
+
+k
+
+Figure 7. Specimen 7-6B,
+Illustrating Wedge and
+Elliptical Voids
+
+'i
+
+M1125
+
+-A.4 'b.02 *
+
+S
+
+.,
+
+Figure 8. Specimen 6-4, Showing
+High Magnification of Wedge
+Voids and Lamellar Transformed
+Structure
+
+M992-1
+
+NAA-SR-8956
+17
+
+A
+
+n
+
+V
+s<
+
+d
+
+4e A
+
+'dx
+
+_
+
+A
+ir
+
+r
+
+A
+
+GI
+
+-"
+< sk
+
+SURFACE OF SLUG
+"
+
+p
+
+S
+
+8
+
+..
+
+w
+
+<.
+
+'
+
+,
+
+,
+
+4
+
+.
+
+,
+
+..
+
+A
+
+t
+
+, ,. ,
+
+;
+
+0.0182 in.
+55 x
+
+M1126,M 1127,M 1128, M1129
+
+Figure 9.
+
+Specimen 4-9, From
+
+Center to Surface of Specimen
+
+NAA-SR -8956
+19
+
+extending from the surface of the slug to the thermocouple hole at the center.
+
+Many of these large macrocracks were observed on the surface of slugs irradiated in the NAA 47 capsule series.4
+A composite view of Specimen 7-6B is shown in Figure 10.
+tends from the center (no T/C hole) to the surface of the slug.
+
+This view exThis type of
+
+cracking was observed to begin approximately one-third of the distance from the
+center of the slug, in an apparent intermediate temperature region.
+
+The con-
+
+centration of voids then diminishes toward the surface of the specimen.
+These two specimens experienced extreme swelling.
+
+Specimen 4-9 was the
+
+most severely damaged specimen of the high-burnup slugs; it swelled more than
+4-2 and 4-5,
+
+even though it was irradiated at lower temperature and at lower
+
+flux levels (see Table 3).
+lesser degree.
+
+Specimens 4-2 and 4-5 were also cracked, but to a
+
+Specimen 7-6B (bottom of Slug 7-6) swelled more than the other
+
+lower -burnup specimens.
+
+Specimen 7-6A (top of Slug 7-6) achieved approxi-
+
+mately the same burnup and temperature history as Specimen 7-6B,
+
+Specimen 7-6A exhibited a structure free from inter
+
+-
+
+swelled significantly less.
+
+and yet
+
+granular cracking.
+
+NAA-SR-8956
+21
+
+.. e
+
+4('1
+
+~
+
+.";
+
+4.
+
+Kyr
+
+b
+
+,
+
+R
+
+'4
+
+"
+
+4444
+
+.4
+
+8
+At
+
+a
+
+t
+
+e
+
+s
+
+.,
+4.
+
+V
+
+4'
+
+A
+
+V .
+
+Brte
+
+V
+
+$4
+
+at
+
+df
+s
+
+ti
+.54
+
+R
+
+It''4
+
+4
+
+* 414
+'2+4
+
+'4'..."'.
+
+'
+
+'
+
+1'
+
+4 44..4
+
+4424.2'."''
+4"4.4
+
+44
+4
+
+9
+
+4
+
+i
+
+;_
+
+4,,
+
+_1'
+
+f
+x
+
+r1
+
+C
+
+<b
+
+*
+
+w
+
+A4
+4'o
+
+ti
+
++
+
+44'
+
+d
+
+fi
+
+:
+
+e
+
+4
+
+.,
+
+,a
+
+h.
+
+"
+
+I
+
+.'.
+fi
+
+*
+
+*43
+.
+
+s
+s' 4
+
+t{ V
+
+<A
+
+**4
+
+ENTER OF
+
+e
+
+g
+-_
+
+'1
+F
+
+41
+
+48
+
+4
+
+4
+
+'44
+
+'4 4 4
+
+A1
+
+4
+
+'
+
+¬
+
+tti
+
+'
+
+5.".
+
+SPECIMEN
+
+-,
+
+a4
+
+4
+
+V
+
+,'
+
+444
+4
+
+f 43
+.44
+
+4
+'4
+
+'.4
+
+4'
+
+'
+
+4'
+
+"
+
+.4
+
+t
+
+~4:4
+
+P
+
+4
+
+4
+
+for
+)44
+444
+4,
+
+'
+4
+
+~
+
+t
+
+r
+
+'
+
+55 X
+
+(1
+
+6 44
+*
+
+H
+
+0.0182 in.
+
+4
+
+4
+
+4p
+P
+
+4
+
+4
+
+4
+
+"44
+
+SURFACE OF
+SPECIMEN
+
+.4
+
+M1105, M1106, M1107, M1108, M1109, Mll10
+
+Specimen 7-*6B, From
+Center to Surface of Sspecimen
+
+Figure 10.
+
+NAA-SR -8956
+23
+
+IV. DISCUSSION OF RESULTS
+Gross swelling,
+
+phase reversal phenomena,
+
+and intergranular cracking
+
+were observed over the broad spectrum of temperature and fission rate conditions investigated.
+
+A.
+
+SWELLING
+The swelling observed in the metallographic
+
+specimens exhibits a linear
+
+relationship between percent diameter change and burnup above 3000 Mwd/MTU,
+as shown in Figure 5.
+
+Exceptions to this curve are Specimens
+
+2-1,
+
+6-9,
+
+7-6B,
+
+and 4-9.
+Specimens
+
+2-1 and 7-6B illustrate the effect of temperature on the swelling
+
+behavior of U - 10 wt% Mo during irradiation.
+
+Specimen 2-1 was irradiated to a
+
+high burnup (11,000 Mwd/MTU) at relatively low temperatures,
+dimensionally stable.
+
+Specimen 7-6B experienced brief temperature excursions
+
+in excess of 1300*F during the irradiation period.
+lower burnup (-4,600
+
+and remained
+
+Relatively severe swelling at
+
+Mwd/MTU) indicates that high temperature operation,
+
+at intermediate burnup levels,
+
+even
+
+has a profound effect on the dimensional stability
+
+of the fuel specimen.
+Of all the fuel specimens examined in the NAA 47 capsule series,
+is the most interesting.
+slug,
+
+Slug 7-6
+
+Figure 11 is a schematic representation of this fuel
+
+showing the location of the diameter measurements and the location of the
+
+metallographic
+this slug,
+
+specimens.
+
+The variation of diameter change,
+
+was among the largest observed for any slug examined in the series.
+
+Due to thermocouple failure,
+
+the temperature
+
+slug is not known accurately.
+
+It is known,
+
+variation over the length of this
+
+however,
+
+gradients did exist in the fuel in this capsule.
+observed,
+rate,
+
+over the length of
+
+that steep temperature
+
+Due to the swelling behavior
+
+the critical values of the swelling parameters
+
+(temperature,
+
+fission
+
+and burnup)4 probably occurred in this sample.
+
+The microstructure of 7-6A was transformed and spheroidized after irradiation.
+
+This structure was free of intergranular voids.
+
+7-6B was also transformed and spheroidized,
+tial cracks and voids.
+
+The microstructure
+
+of
+
+but contained many circumferen-
+
+Thus, the difference in diameter change is directly
+
+linked to the void structure observed in the metallographic specimen from 7-6B
+(for further discussion of this sample,
+
+see Section IV-C).
+
+NAA-SR-8956
+25
+
+TOP
+
+No reason for the relatively high swelling in the
+
+area of the metallographic specimen from Slug 6-9
+was apparent.
+
+%/6D
+
+The temperature of the slug, in the
+
+vicinity of the metallographic specimen,
+ceeded 925*F.
+
+5.4
+
+--.
+
+never ex-
+
+It operated cooler than other speci-
+
+mens from this capsule,
+
+MET 7-6A
+
+and yet swelled more in the
+
+area selected for metallographic examination.
+
+The
+
+total volume change of the slug was less than in slugs
+
+11.2
+
+irradiated to higher burnups at higher temperatures,
+such as Specimens 6-3 and 6-4.4
+
+Schmitt et al.4 have
+
+indicated that the swelling behavior of the bottom
+slugs, such as 6-9,
+
+MET 7-6B
+
+in the capsules is complicated by
+
+the restraint created by capsule hardware and by dif15.7
+
+ferent thermal transfer conditions introduced by this
+
+hardware.
+
+Thus, the behavior of Slug 6 -9 was not as
+
+predictable as that of the other specimens.
+
+BOTTOM
+7508-51349
+
+PHASE REVERSION
+
+B.
+
+Figure 11. Schematic
+Representation of
+
+The retention of y U - 10 Mo in an irradiation
+environment is dependent on temperature and fission
+rate.
+
+1,2 These result in competing mechanisms,
+
+discussed below,
+
+of specimen was
+
+which cause changes between the
+
+metastable y phase and the stable eutectoid transformation products of a and y',
+
+Specimen 7-6 After
+Irradiation to 4600
+Mwd/MTU (Bottom
+bonded to Slug 7-7
+during irradiation)
+
+as irradiation conditions
+
+vary (Figure 2).
+At temperatures below the eutectoid transformation temperature
+the retained Y phase will transform to the stable a and 'Y' phases,
+
+according to
+
+At temperatures
+
+below
+
+the time -temperature
+
+relationship shown in Figure
+
+the nose of this curve,
+
+the rate of transformation is mostly dependent on the dif-
+
+fusion of atoms to nucleation sites.
+
+12.
+
+of 1065*F,
+
+This diffusion may be expressed by the
+
+classical equation:
+
+DT
+
+= DoexP --T
+
+oR
+
+T'
+
+NAA-SR-8956
+26
+
+.. .
+
+(1)
+
+,,I
+
+, , ,1,
+
+,
+
+1 ,
+1,
+
+,
+
+700
+
+I
+
+I I , I ,I ,I
+
+I
+
+, I I I I I ,I
+
+I
+
+,
+
+I
+
+1292
+
+, , , ,I ,I
+
+1200
+600
+
+1100
+
+1000
+
+8% Mo
+
+500
+
+10% Mo
+
+U3
+
+900
+
+12% Mo
+
+0
+w
+800
+
+5.40% Mo
+400
+
+I-L
+700
+
+a-
+
+W
+
+w
+
+w
+600
+300
+
+O 5.4% Mo
+
+500
+
+o 8%Mo
+A 10% Mo
+200
+
+0
+
+120%
+
+400
+
+Mo
+
+SOLUTION
+
+100
+
+I-' I
+0.I
+
+I
+
+'
+
+I'
+
+i
+
+1 1111
+i
+
+i
+
+i
+
+ANNEALING TEMPERATURE = 1000
+
+1
+
+i
+
+I
+
+I
+
+I1'
+
+i
+
+1'1 1'I
+10
+i
+
+i
+
+I
+
+I1'1I
+
+I
+
+I
+
+C
+
+300
+
+I1'11I I
+1'1
+'1
+
+212
+100
+
+1000
+
+TIME (hr)
+
+7508-51 350
+
+Figure 12.
+
+Time -Temperature -Transformation Curve for
+
+Uranium -Molybdenum Alloys
+where
+DT = thermal diffusion coefficient
+
+D
+
+0
+
+= diffusion constant
+
+Q = activation energy
+R = gas constant
+T = absolute temperature
+Thus,
+
+during irradiation,
+
+ture dependent),
+
+thermal diffusion (which is,
+
+of course,
+
+tends to transform the y phase to a and y '.
+
+enon is responsible for another type of diffusion,
+
+tempera-
+
+The fission phenom-
+
+caused by the displacement
+
+spike formed by the energetic particles after a fission event.
+
+Bleiberg
+
+has
+
+shown a proportionality between the radiation diffusion coefficient and the fission
+rate.
+
+The coefficient is expressed by the equation:
+
+(DR)l
+D
+
+R
+
+-
+
+(Bu) 1
+
+x Bu,
+
+B
+
+NAA -SR -8956
+27
+
+(2)
+
+where
+DR = radiation-induced diffusion coefficient
+. 2
+~i18
+
+-18
+(DR)l = 1.4 x 10 1
+
+0.6 x 101cm
+
+/sec
+
+(Ref.
+
+1)
+
+Bu = critical fission rate
+(Bu) 1
+
+= 5.25 x 1012 fissions /cc-sec (Ref.
+
+1)
+
+Thus
+
+-18
+=
+
+D
+
+1.4 x 10
+
+5.25 x 10
+
+2
+(cm2fsec)
+
+x Bu (fissions /cc-sec)
+
+(fissions/cc-sec)
+
+= 2.67 x 10-31 x Bu (cm2 /sec)
+When DT > DR,
+
+the thermal transformation phenomenon predominates,
+
+and
+
+the metastable structure (in this case, y) will follow the expected decomposition
+to the thermally stable phases (in this case,
+
+a + y').
+
+However,
+
+the rate of trans-
+
+formation will decrease from that given on the time-temperature-transformation
+curve (Figure 12), by an amount which depends on the relative values of DT and
+
+DR.
+
+If DR > DT, then the radiation effect predominates,
+
+phase will either be formed or retained,
+
+and the metastable
+
+depending on the initial structure.
+
+Thus,
+
+the competing nature of these processes can result in either terminal structure
+
+(y, or a + y'), depending on the relative values of DR and DT.
+
+An equilibrium
+
+condition exists between the two methods of transformation when:
+DT = DR
+
+Physically,
+rate (Bu -
+
+occur.
+
+this means that,
+
+-
+
+for any temperature
+
+..
+
+(T),
+
+. (3)
+
+there is a fission
+
+called the critical fission rate) at which no transformation
+
+should
+
+From Equations 1, 2, and 3, this rate is:
+
+D0 exp (Bu =
+
+-)
+
+-3l (fissions/cc-sec)
+2.67
+
+x
+
+10-3
+
+Raiklen5 has shown that Q/R for the U - 10 wt% Mo system is 24,600 (*K
+for a value Do
+
+= 10-2cm2/sec) and DT = 2 x 10~14 (cm2/sec) at T = 640 (*0 C).
+NAA-SR-8956
+28
+
+),
+
+Therefore
+
+Bu =
+
+/24,600
+10 -2 explTi
+
+2.67 x 10-31
+/24,600\
+
+= 3.75 exp(-
+
+4T0
+
+x 10
+
+28
+
+(fissions /cc-sec)
+
+...
+
+(4)
+
+Table 4 lists the critical fission rates associated with temperatures between
+A curve representing these data is presented
+
+700 and 775*F,
+
+using Equation 4.
+
+in Figure 13.
+
+Several specimens from Table 3 have been plotted in Figure 13.
+
+The observed metallographic structures are in good agreement with the theoretical curve.
+Specimen 4-9-S is the only deviation.
+
+This specimen exhibited severe inter-
+
+granular cracking, as shown in Figure 9.
+
+Methods of calculating specimen tem-
+
+peratures do not take into account the changes in size,
+of the material used.
+
+shape,
+
+or characteristics
+
+Thus, the surface temperature of 4-9-S was probably
+
+cooler than was observed from the thermocouple data,
+
+ing and penetration of these cracks by the NaK.
+
+due to the severe crack-
+
+This would explain its deviation
+
+from the theoretical curve.
+
+C.
+
+INTERGRANULAR CRACKING
+Conrad,
+
+in summarizing the work of many authors, has shown that inter-
+
+granular cracking may occur at high temperatures,
+
+due to the formation and
+
+agglomeration of cavities
+
+along the grain boundaries.
+
+These cavities are gen-
+
+erally one of two shapes:
+
+(1) wedge,
+
+The cavities are formed
+
+or (2) elliptical.
+
+as a result of stress concentrations due to sliding in the grain boundaries.
+McLean6 has shown that the shape of the cavity is dependent on the magnitude of
+
+NAA-SR- 8956
+29
+
+TABLE 4
+CALCULATED CRITICAL FISSION RATE,
+USING EQUATION 4
+
+the stress
+
+Temperature
+(*F)
+
+Critical Fission Rate
+(fissionsf/cc -sec)
+
+700
+
+8.8x 1011
+
+725
+
+2.2 x 1012
+
+750
+
+4.8 x
+
+775
+
+9.2 x 1012
+
+in the boundary.
+
+wedge-shape
+
+1012
+
+Generally,
+
+cavities occur at higher
+
+stresses than elliptical.
+
+The growth of
+
+the cavities occurs by tip advancement
+due to increased stresses causing addi-
+
+vacancy condensation,
+
+or both.
+
+4-9-S*
+
+1
+
+'2
+
+tional grain boundary sliding, or by
+
+' 10 '3 -2-I-S/
+
+-01
+
+Gener-
+
+U,
+
+S
+
+0
+
+ally, wedge-shape cracks grow by tip
+
+6-3-S
+
+z
+
+0
+
+9-C
+
+--6-9-5
+
+7-3-C
+
+'
+1-
+
+while elliptical cavities grow by vacancy
+
+-
+
+13012
+
+Due to thermal gradients, thermal
+cycles,
+
+04-2-S
+
+-
+
+V)
+.'
+
+advancement and vacancy condensation,
+
+condensation only.
+
+2-I-C
+
+C
+
+0 GAMMA STRUCTURE
+
+r
+
+and phase transformation, tem-
+
+0 TRANSFORMED
+
+-
+
+*
+
+SEVERE
+
+STRUCTURE
+
+INTERNAL CRACKING
+
+perature and stress conditions were
+favorable for the formation of voids in
+
+several of the fuel s lugs examined.
+
+1011
+600
+
+The
+
+700
+
+800
+
+900
+
+1000
+
+growth of these voids could be enhanced
+by vacancy production and mobility due
+
+1100
+
+1200
+
+7617-51204@
+
+Figure 13.
+
+Correlation of Observed
+
+to lattice disturbance by the fission
+
+Microstructure with Theoretical
+
+Both wedge and elliptical
+
+Fission Rate Temperature Curve
+
+process.
+
+voids are shown in Figure 7.
+
+1300
+
+TEMPERATURE ( F)
+
+Figure 8
+
+illustrates a wedge-shaped void in Specimen 6-4 at high magnification.
+tension of these voids to macrocracks is evident in Figure 9.
+ing to this macro cracking are surmized to be the following:
+NAA-SR-8956
+30
+
+The ex-
+
+The events lead-
+
+1)
+
+Voids are produced at grain junctions and along grain boundaries
+
+2)
+
+These voids grow by vacancy condensation and void tip advancement due
+to continued grain sliding
+
+3)
+
+The voids coalesce when they reach a critical size and distribution
+
+4)
+
+Cracks from the grain boundary join with cracks from another grain
+boundary.
+
+Figures 7 and 9 illustrate the nature of cracking in the most severely damaged
+specimens examined.
+
+These represent,
+
+respectively,
+
+Specimens 4-9 and 7-6B.
+
+The cracking and the void structure in both of these specimens are observed to
+begin about one-third of the distance from the center of the slug to the surface,
+and extend to the surface.
+
+The maximum density of the cracking and the void
+
+structure occurs about halfway from the center of the slug to the surface.
+Both of these specimens attained peak central temperatures above the eutectoid transformation temperature
+
+(1065*F).
+
+below this temperature.
+
+at times during irradiation,
+
+Thus,
+
+The surface temperatures remained
+the structure of the
+
+slugs was y in the center with a small area of a + y surrounding it.
+
+face of the slug, the structure was transformed a and y'.
+sion due to these structures and temperature gradients
+systems in the fuel slugs.
+
+At the sur-
+
+The differential expan-
+
+created complex stress
+
+The presence of the void structure and subsequent
+
+growth of cracks is directly attributable to these stresses.
+
+NAA-SR-8956
+31
+
+V. CONCLUSIONS
+The metastable y phase structure can be retained at temperatures below
+800*F for a fission rate range of 1012 to 1013 fissions/cc-sec.
+perature,
+
+the structure transforms to thermally stable a and y'.
+
+Above this temThe a and y'
+
+phases will revert to y if the irradiation temperature is lowered to a value less
+than 800*F at the prescribed fission rate.
+The observed metallographic struck Lares show that critical fission rates
+derived from the theory are valid in predicting whether or. not y transforms under
+It is predicted that, at rates greater than critical (i.e., DR > DT
+
+)
+
+irradiation.
+
+y will be formed or retained; and at lower rates (i. e., DR < DT), they structure
+will transform to the thermally stable a +y'.
+
+Observations (Figure 13) are in
+
+agreement with these predictions.
+Intergranular cracking and operation at excessively high central temperatures,
+
+1300 to 15000F, are responsible for deviations from the linear relation-
+
+ship of swelling to burnup in the range of 3000 to 12,000 Mwd/MTU.
+
+NAA-SR -8956
+32
+
+REFERENCES
+M. L. Bleiberg, "Effect of Fission Rate and Lamella Spacing Upon the
+Irradiation-Induced Phase Transformation of U-9 w/o Mo Alloy,
+"
+
+1.
+
+J. Nuc. Mat. 2 (1959) p 182-190
+A. A. Shoudy et al., "The Effect of Irradiation Temperature and Fission
+Rate on the Radiation Stability of Uranium - 10 w/o Molybdenum Alloy,
+Symposium on Radiation Damage in Solids and Reactor Materials, Venice,
+May 7-11, 1962
+
+3.
+
+R. E. Rauhut and D: G. Harrington, "Capsule Irradiations of Uranium-10
+Molybdenum for Hallam Nuclear Power Facility", NAA-SR-Memo-4017
+(June 1959)
+
+4.
+
+A. R. Schmitt, R. M. Willard, and D. K. Magnus, "The NAA 47 U-10
+Mo Fuel Irradiation Program for HNPF Core I, " NAA-SR-8955
+(to be published)
+
+5.
+
+H. I. Raiklen, Unpublished information,
+Park, Calif. (1959)
+
+6.
+
+J. E. Dorn (ed.), Mechanical Behavior of Materials at Elevated
+Temperatures (McGraw-Hill Book Company, Inc. , New York, 1961)
+
+"
+
+2.
+
+Atomics International,
+
+NAA-SR -8956
+33
+
+Canoga
+
+

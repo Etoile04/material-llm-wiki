@@ -1,0 +1,174 @@
+[
+  {
+    "source_slug": "151846_f3c95453",
+    "count": 37,
+    "categories": {
+      "swelling_rate": 13,
+      "experiment": 10,
+      "irradiation": 4,
+      "microstructure": 6,
+      "mechanical": 4
+    }
+  },
+  {
+    "source_slug": "2001_Fission_gas_release_and_swelling_model_of_metallic_fast_reactor_fuel",
+    "count": 24,
+    "categories": {
+      "bubble": 5,
+      "diffusion": 5,
+      "experiment": 9,
+      "rate_theory": 2,
+      "swelling_rate": 3
+    }
+  },
+  {
+    "source_slug": "2026 - Porosity_ swelling_ and composition evolution in high-burnup monolithic U-Mo fuel",
+    "count": 29,
+    "categories": {
+      "experiment": 3,
+      "irradiation": 2,
+      "microstructure": 20,
+      "swelling_rate": 2,
+      "diffusion": 2
+    }
+  },
+  {
+    "source_slug": "Aagesen - 2024 - Parameterization of vacancy production rate in phase-field models of fission gas bubble evolution in",
+    "count": 6,
+    "categories": {
+      "surface_energy": 1,
+      "experiment": 1,
+      "bubble": 2,
+      "diffusion": 2
+    }
+  },
+  {
+    "source_slug": "Aagesen et al._2022_Phase-field simulations of fission gas bubble growth and interconnection in U-(Pu)-Zr nuclear fuel",
+    "count": 28,
+    "categories": {
+      "bubble": 8,
+      "experiment": 13,
+      "diffusion": 3,
+      "rate_theory": 2,
+      "microstructure": 1,
+      "swelling_rate": 1
+    }
+  },
+  {
+    "source_slug": "Aagesen_JR._Jokisaari_Ke_2020_Lower_length_scale_informed_improvements_to_Bison_U-Pu-Zr_fuel_swelling_model",
+    "count": 20,
+    "categories": {
+      "experiment": 13,
+      "microstructure": 4,
+      "bubble": 1,
+      "swelling_rate": 2
+    }
+  },
+  {
+    "source_slug": "Arivu 等 - 2024 - Atom probe tomography of segregation at grain boundaries and gas bubbles in neutron irradiated U-10",
+    "count": 21,
+    "categories": {
+      "microstructure": 1,
+      "experiment": 14,
+      "bubble": 6
+    }
+  },
+  {
+    "source_slug": "Beeler et al._2020_A improved equation of state for Xe gas bubbles in γU-Mo fuels",
+    "count": 40,
+    "categories": {
+      "experiment": 26,
+      "diffusion": 1,
+      "surface_energy": 3,
+      "mechanical": 4,
+      "bubble": 6
+    }
+  },
+  {
+    "source_slug": "Casella et al_2017_Characterization of fission gas bubbles in irradiated U-10Mo fuel",
+    "count": 42,
+    "categories": {
+      "experiment": 18,
+      "irradiation": 1,
+      "swelling_rate": 1,
+      "microstructure": 2,
+      "diffusion": 1,
+      "bubble": 19
+    }
+  },
+  {
+    "source_slug": "Cui_et_al_2015_Modifications_and_applications_of_the_mechanistic_gaseous_swellin",
+    "count": 21,
+    "categories": {
+      "irradiation": 2,
+      "bubble": 5,
+      "diffusion": 2,
+      "surface_energy": 1,
+      "microstructure": 4,
+      "recrystallization": 3,
+      "mechanical": 3,
+      "thermal": 1
+    }
+  },
+  {
+    "source_slug": "Fission_gas_bubble_nucleated_cavitational_swelling_of_alpha_phase_of_irradiated_UPuZr_fuel",
+    "count": 10,
+    "categories": {
+      "experiment": 3,
+      "diffusion": 2,
+      "rate_theory": 1,
+      "surface_energy": 1,
+      "irradiation": 1,
+      "swelling_rate": 1,
+      "bubble": 1
+    }
+  },
+  {
+    "source_slug": "Gan et al. - 2015 - Thermal stability of fission gas bubble superlattice in irradiated U-10Mo fuel",
+    "count": 10,
+    "categories": {
+      "experiment": 10
+    }
+  },
+  {
+    "source_slug": "Hanson et al. - 2025 - Microstructurally validated stable and predictable swelling in low-enriched uranium monolithic U-10M",
+    "count": 21,
+    "categories": {
+      "swelling_rate": 2,
+      "experiment": 14,
+      "diffusion": 1,
+      "microstructure": 3,
+      "recrystallization": 1
+    }
+  },
+  {
+    "source_slug": "Hanson_et_al._-_2022_-_Non-destructive_analysis_of_swelling_in_the_EMPIrE_fuel_test_fff4750c",
+    "count": 8,
+    "categories": {
+      "microstructure": 3,
+      "experiment": 3,
+      "swelling_rate": 2
+    }
+  },
+  {
+    "source_slug": "Hilty_et_al_2021_Impact_of_fission_gas_bubbles_on_thermal_conductivity_of_UO2",
+    "count": 29,
+    "categories": {
+      "thermal": 3,
+      "experiment": 15,
+      "microstructure": 1,
+      "bubble": 10
+    }
+  },
+  {
+    "source_slug": "Hofman_et_al._1990_Swelling_behavior_of_U-Pu-Zr_fuel",
+    "count": 17,
+    "categories": {
+      "experiment": 6,
+      "microstructure": 3,
+      "rate_theory": 2,
+      "swelling_rate": 5,
+      "mechanical": 1
+    }
+  }
+]

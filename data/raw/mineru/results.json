@@ -1,0 +1,193 @@
+{
+  "success": [],
+  "failed": [
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/3NIJ4CEK/Hu et al._2016_Effect of grain morphology on gas bubble swelling in UMo fuels – A 3D microstructure dependent Booth model.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/47XM5IHL/Surh et al. - 2008 - Void nucleation, growth, and coalescence in irradiated metals.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/57H77A6F/Sun et al._2016_Swelling behavior detection of irradiated U-10Zr alloy fuel using indirect.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/5NB9LXCS/2001_Fission gas release and swelling model of metallic fast reactor fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/625QWTEL/Jian 等 - 2022 - Further development of the fission gas swelling mo.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/6M4YZPUV/Mllett et al. - 2018 - Computational and Experimental Studies of Microstructure-Scale Porosity in Metallic Fuels for Improv.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/6PCNHZZK/Hilty et al. - 2021 - Impact of fission gas bubbles on thermal conductivity of UO2.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/6Y3TGGVS/Liang et al. - 2018 - Three-dimensional phase-field simulations of intragranular gas bubble evolution in irradiated U-Mo f.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/7HMZRJZK/Kim, Hofman_2011_Fission product induced swelling of U-Mo alloy fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/8GYYVWXU/Cui et al. - 2015 - Modifications and applications of the mechanistic gaseous swelling model for UMo fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/8L4XWWSC/Arivu 等 - 2024 - Atom probe tomography of segregation at grain boundaries and gas bubbles in neutron irradiated U-10.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/9Q8LMN2W/Li et al. - 2023 - Models for effective elastic constants of irradiated U-10Mo fuels with distributed fission gas bubbl.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/9Q8MV4MM/Hu et al._2020_Defect cluster and nonequilibrium gas bubble associated growth in irradiated UMo fuels – A cluster dynamics and phase fi.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/A8L8V29I/Beeler et al._2020_A improved equation of state for Xe gas bubbles in γU-Mo fuels.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/AZY4CE5T/Casella et al_2017_Characterization of fission gas bubbles in irradiated U-10Mo fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/BETM2CNZ/2026 - Porosity, swelling, and composition evolution in high-burnup monolithic U-Mo fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/BVQXCVCI/Zhang 等 - 2021 - Modelling of effective irradiation swelling for in.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/C6DGC4IL/Rokkam et al._2009_Phase field modeling of void nucleation and growth in irradiated metals.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/CAQZCJ7A/Ronchi_1979_Physical processes and mechanisms related to fission gas swelling in MX-type nuclear fuels.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/CVK53UZH/Gan et al. - 2015 - Thermal stability of fission gas bubble superlattice in irradiated U–10Mo fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/CVNQT54W/Aagesen, JR., Jokisaari, Ke_2020_Lower length scale informed improvements to Bison U-Pu-Zr fuel swelling model.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/DDLBEMIF/Kim et al._2013_Fission induced swelling and creep of U-Mo alloy fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/DPC49EIJ/Karahan, Andrews_2013_Extended fuel swelling models and ultra high burn-up fuel behavior of U-Pu-Zr metallic fuel using FEAST-METAL.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/EVH7UZNZ/Smith et al_2023_The role of UC inclusions in the development of fission gas bubble superlattice.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/GRNZ82JR/Hofman et al._1990_Swelling behavior of U-Pu-Zr fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/GTGWMI7Z/Muntaha et al. - 2024 - Impact of grain boundary and surface diffusion on predicted fission gas bubble behavior and release.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/IGXKLEDW/Fission gas bubble nucleated cavitational swelling of alpha phase of irradiated UPuZr fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/IZIFSW59/Rest_2005_A model for the effect of the progression of irradiation-induced.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/JN4LYXFS/Ye et al. - 2023 - Integrated simulation of U-10Mo monolithic fuel swelling behavior.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/KXEEN5M5/Williams et al._2020_Assessment of swelling and constituent redistribution in uranium-zirconium fuel using phenomena identification a(2).pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/LSAF6YHK/Hanson et al. - 2022 - Non-destructive analysis of swelling in the EMPIrE fuel test.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/M9DCH6ZP/Smith et al. - 2023 - Early self-organization of fission gas bubble superlattice formation in neutron-irradiated monolithi.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/P6MTYGZK/Miller et al. - 2015 - Transmission electron microscopy characterization of the fission gas bubble superlattice in irradiat.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/Q7B3KBIA/Rest_1993_Kinetics of fission-gas-bubble-nucleated void swelling of the alpha-uranium phase of irradiated U-Zr and U-Pu-Zr fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/QP68Z3Y7/Robinson et al._2021_Swelling of U-Mo Monolithic Fuel Developing a Predictive Swelling Correlation under Research Reactor Conditions.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/RHPYCAFL/Jiang et al. - 2025 - Formation of gas bubble superlattice in U-Mo alloys a phase-field study.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/RICSSFMX/151846.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/RRKIJ2DC/Millett et al. - 2011 - Phase-field simulation of irradiated metals part II gas bubble kinetics.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/THSWYNWF/Kim et al. - 2008 - Characterization of intergranular fission gas bubbles in U-Mo fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/TLW8PEBJ/Qian et al. - 2021 - A kinetic rate theory modelling of fission gas release and fuel swelling for UN fuels.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/TWKXFXSW/R.M. WILLARD_A.R. SCHMITT_1985_Irradiation Swelling, Phase Reversion, and Intergranular Cracking of U-10 wt %.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/V4JX5WD9/Hu et al._2016_Formation mechanism of gas bubble superlattice in UMo metal fuels Phase-field modeling investigation.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/V59CGY3V/Kim, Hofman, Cheon_2013_Recrystallization and fission-gas-bubble swelling of U-Mo fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/X2H2JBFB/Aagesen et al._2022_Phase-field simulations of fission gas bubble growth and interconnection in U-(Pu)-Zr nuclear fuel.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/Z4YI9NVL/Yun 等 - Investigation of swelling behaviors of U-10Zr meta.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/ZGAG4MS4/Aagesen - 2024 - Parameterization of vacancy production rate in phase-field models of fission gas bubble evolution in.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    },
+    {
+      "pdf": "/Volumes/openclaw记忆/Zotero_storage/storage/ZYF5IELV/Hanson et al. - 2025 - Microstructurally validated stable and predictable swelling in low-enriched uranium monolithic U-10M.pdf",
+      "error": "Traceback (most recent call last):\n  File \"/tmp/mineru_runner.py\", line 8, in <module>\n    text = r[0].text if r else \"\"\n           ~^^^\nTypeError: 'coroutine' object is not subscriptable\nsys:1: RuntimeWarning: coroutine '_parse_pdf' was never awaited\n"
+    }
+  ]
+}

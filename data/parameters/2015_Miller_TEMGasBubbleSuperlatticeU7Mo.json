@@ -1,0 +1,133 @@
+[
+  {
+    "parameter": "host crystal structure",
+    "value": "BCC U-7wt%Mo",
+    "lattice_parameter_nm": 0.343,
+    "unit": "nm"
+  },
+  {
+    "parameter": "superlattice structure",
+    "value": "FCC",
+    "description": "gas bubble superlattice in BCC U-7wt%Mo matrix"
+  },
+  {
+    "parameter": "bubble diameter (saturated)",
+    "value_min": 3.1,
+    "value_max": 3.6,
+    "std_dev_min": 0.4,
+    "std_dev_max": 0.5,
+    "unit": "nm"
+  },
+  {
+    "parameter": "superlattice constant",
+    "value_min": 11.1,
+    "value_max": 12.1,
+    "note": "~3× bubble diameter",
+    "unit": "nm"
+  },
+  {
+    "parameter": "ordered domain length",
+    "value": "micrometer-scale",
+    "description": "coherent ordering range"
+  },
+  {
+    "parameter": "saturation fission density",
+    "value": "<3.0e21",
+    "unit": "fiss/cm³"
+  },
+  {
+    "parameter": "fully ordered fission density",
+    "value": "~1.3e21",
+    "reference": "Van den Berghe",
+    "unit": "fiss/cm³"
+  },
+  {
+    "parameter": "superlattice collapse fission density",
+    "value": "~4.5e21",
+    "description": "onset of grain subdivision",
+    "unit": "fiss/cm³"
+  },
+  {
+    "parameter": "grain size after subdivision",
+    "value_min": 100,
+    "value_max": 500,
+    "unit": "nm"
+  },
+  {
+    "parameter": "bubble size after subdivision",
+    "value_min": 0.1,
+    "value_max": 1.0,
+    "unit": "μm"
+  },
+  {
+    "parameter": "sample R2R010",
+    "fission_density_cm3": "4.5e21",
+    "fission_density_unit": "fiss/cm³",
+    "bubble_diameter_nm": 3.52,
+    "bubble_diameter_error_nm": 0.03,
+    "superlattice_constant_nm": 11.1,
+    "bubble_count_N": 319
+  },
+  {
+    "parameter": "sample R2R040",
+    "fission_density_cm3": "3.3e21",
+    "fission_density_unit": "fiss/cm³",
+    "bubble_diameter_nm": 3.1,
+    "superlattice_constant_nm": 12.1
+  },
+  {
+    "parameter": "sample R3R050 (low fission density region)",
+    "fission_density_cm3": "3.0e21",
+    "fission_density_unit": "fiss/cm³",
+    "bubble_diameter_nm": 3.6,
+    "superlattice_constant_nm": 12.0
+  },
+  {
+    "parameter": "sample R3R050 (high fission density region)",
+    "fission_density_cm3": "5.2e21",
+    "fission_density_unit": "fiss/cm³"
+  },
+  {
+    "parameter": "homologous irradiation temperature T_irr/Tm",
+    "value_min": 0.26,
+    "value_max": 0.30,
+    "Tm_K": 1404,
+    "T_irr_min_K": 373,
+    "T_irr_max_K": 423
+  },
+  {
+    "parameter": "Xe solution energy in UO₂",
+    "value": "~9.5",
+    "unit": "eV/atom"
+  },
+  {
+    "parameter": "Xe solubility at 2.4 at.% Xe",
+    "value": "~20",
+    "unit": "kJ/mol"
+  },
+  {
+    "parameter": "cold-worked metal recrystallization threshold",
+    "value": "~20",
+    "unit": "J/mol"
+  },
+  {
+    "parameter": "SEM matrix composition Al-2Si",
+    "enrichment_at_percent": 19
+  },
+  {
+    "parameter": "SEM matrix composition Al-5Si",
+    "enrichment_at_percent": 58
+  },
+  {
+    "parameter": "irradiation temperature",
+    "value_min": 91,
+    "value_max": 130,
+    "unit": "°C"
+  },
+  {
+    "parameter": "fission rate",
+    "value_min": "3.8e14",
+    "value_max": "6.6e14",
+    "unit": "fiss/cm³·s"
+  }
+]

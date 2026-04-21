@@ -1,0 +1,209 @@
+[
+  {
+    "parameter": "characteristic_length",
+    "symbol": "l₀",
+    "value": 5e-8,
+    "unit": "m",
+    "description": "Feature length (50 nm)"
+  },
+  {
+    "parameter": "grid_spacing",
+    "symbol": "dx=dy=dz",
+    "value": 5e-8,
+    "unit": "m",
+    "description": "3D grid spacing (50 nm)"
+  },
+  {
+    "parameter": "Xe_diffusion_coefficient_base",
+    "symbol": "D₀",
+    "value": 1e-40,
+    "unit": "m⁵/fission",
+    "description": "Xe diffusion coefficient base, Dg = D₀ḟ"
+  },
+  {
+    "parameter": "grain_boundary_energy",
+    "symbol": "γ",
+    "value": 1.0,
+    "unit": "J/m²",
+    "description": "Grain boundary energy"
+  },
+  {
+    "parameter": "Xe_fission_yield",
+    "symbol": "β(Y)",
+    "value": 0.25,
+    "unit": "atoms/fission",
+    "description": "Xe fission yield"
+  },
+  {
+    "parameter": "fission_rate_range",
+    "symbol": "ḟ",
+    "value_min": 1.2e20,
+    "value_max": 2.4e22,
+    "unit": "fissions/m³/s",
+    "description": "Fission rate range"
+  },
+  {
+    "parameter": "GB_enhancement_factor",
+    "symbol": "χ",
+    "value": 0.25,
+    "unit": "dimensionless",
+    "description": "Grain boundary enhancement factor"
+  },
+  {
+    "parameter": "GB_enhancement_factor_WoodKear",
+    "symbol": "χ",
+    "value_min": 15,
+    "value_max": 125,
+    "unit": "dimensionless",
+    "description": "GB enhancement factor range (Wood-Kear)"
+  },
+  {
+    "parameter": "dissolution_rate_coefficient_base",
+    "symbol": "b₀",
+    "value": 2e-24,
+    "unit": "m³",
+    "description": "Dissolution rate coefficient, b = b₀ḟ"
+  },
+  {
+    "parameter": "van_der_Waals_constant_Xe",
+    "symbol": "bv",
+    "value": 8.5e-29,
+    "unit": "m³",
+    "description": "Van der Waals constant for Xe"
+  },
+  {
+    "parameter": "nucleation_factor",
+    "symbol": "fn",
+    "value_min": 0.01,
+    "value_max": 0.03,
+    "unit": "dimensionless",
+    "description": "Nucleation factor"
+  },
+  {
+    "parameter": "EOS_fitting_factor_Xe",
+    "symbol": "hs",
+    "value": 0.6,
+    "unit": "dimensionless",
+    "description": "Equation of state fitting factor for Xe"
+  },
+  {
+    "parameter": "GB_thickness",
+    "symbol": "d",
+    "value": 1e-9,
+    "unit": "m",
+    "description": "Grain boundary thickness (1 nm)"
+  },
+  {
+    "parameter": "GB_potential",
+    "symbol": "μ_GB",
+    "value": 0.0,
+    "unit": "eV/atom",
+    "description": "Grain boundary potential"
+  },
+  {
+    "parameter": "Xe_atomic_radius",
+    "symbol": "rg",
+    "value": 2.16e-10,
+    "unit": "m",
+    "description": "Xe atomic radius"
+  },
+  {
+    "parameter": "nearest_jump_sites",
+    "symbol": "z",
+    "value": 8,
+    "unit": "dimensionless",
+    "description": "Number of nearest jump sites"
+  },
+  {
+    "parameter": "Xe_formation_volume",
+    "symbol": "ε₀",
+    "value": 1.05e-29,
+    "unit": "m³",
+    "description": "Xe formation volume"
+  },
+  {
+    "parameter": "equilibrium_GB_concentration",
+    "symbol": "c^eq_GB",
+    "value": 1.5e-5,
+    "unit": "dimensionless",
+    "description": "Equilibrium grain boundary Xe concentration"
+  },
+  {
+    "parameter": "recrystallization_threshold",
+    "symbol": null,
+    "value_min": 3.1e27,
+    "value_max": 3.5e27,
+    "unit": "fissions/m³",
+    "description": "Recrystallization fission dose threshold"
+  },
+  {
+    "parameter": "Mo_concentration",
+    "symbol": null,
+    "value_min": 10,
+    "value_max": 25,
+    "unit": "at%",
+    "description": "Molybdenum concentration range"
+  },
+  {
+    "parameter": "bubble_density_TEM",
+    "symbol": null,
+    "value_min": 1e24,
+    "value_max": 2.6e24,
+    "unit": "bubbles/m³",
+    "description": "Bubble density from TEM observation"
+  },
+  {
+    "parameter": "bubble_diameter_TEM",
+    "symbol": null,
+    "value_min": 2e-9,
+    "value_max": 3.5e-9,
+    "unit": "m",
+    "description": "Bubble diameter from TEM observation (2-3.5 nm)"
+  },
+  {
+    "parameter": "bubble_density_simulated",
+    "symbol": null,
+    "value": 1.8e24,
+    "unit": "bubbles/m³",
+    "description": "Simulated bubble density (~1.8×10²⁴)"
+  },
+  {
+    "parameter": "bubble_diameter_simulated",
+    "symbol": null,
+    "value": 2.2e-9,
+    "unit": "m",
+    "description": "Simulated bubble diameter (~2.2 nm)"
+  },
+  {
+    "parameter": "grain_structure_A",
+    "symbol": null,
+    "value_num_grains": 548,
+    "value_grain_size": 1.34e-6,
+    "unit_grain_size": "m",
+    "description": "Grain structure A: 548 grains, 1.34 μm"
+  },
+  {
+    "parameter": "grain_structure_B",
+    "symbol": null,
+    "value_num_grains": 20,
+    "value_grain_size": 4.36e-6,
+    "unit_grain_size": "m",
+    "description": "Grain structure B: 20 grains, 4.36 μm"
+  },
+  {
+    "parameter": "grain_structure_C",
+    "symbol": null,
+    "value_num_grains": 20,
+    "value_aspect_ratio": "4:1",
+    "unit": null,
+    "description": "Grain structure C: 20 grains, aspect ratio 4:1"
+  },
+  {
+    "parameter": "grain_structure_D",
+    "symbol": null,
+    "value_num_grains": 20,
+    "value_aspect_ratio": "16:1",
+    "unit": null,
+    "description": "Grain structure D: 20 grains, aspect ratio 16:1"
+  }
+]

@@ -25,3 +25,6 @@ PlugMem/
 data/fuel_swelling_wiki/raw/mineru/
 data/fuel_swelling_wiki_v2/raw/mineru/
 data/fuel_swelling_wiki/raw/pdftotext/
+
+# Knowledge base data (generated outputs)
+data/

@@ -416,9 +416,22 @@ textlint → validate + compare → 报告 → log/YYYYMMDD.md
 - 所有变更有据可查（log）
 - 冲突不静默覆盖，必须标注并等待裁定
 
+## Phase 1.5 扩展策略补充
+
+当任务是“继续扩展文献覆盖”而不是“修补已有文献”时，优先执行：
+
+1. 先识别当前空白方向（U-Pu-Zr / irradiation creep / FCCI / fission gas release）
+2. 先做候选文献清单，再决定下载/转换/ingest
+3. 优先找 review / handbook / code-model / PIRT 类型文献，先补领域骨架
+4. 每次搜索后记录：标题、年份、主题、URL、可获取性、优先级、是否与现有库重复
+5. 不要把“只清理仓库 / 只修 repo / 只改文档”误当成 Phase 1.5 进展
+
+检索与扩展细则见：`references/phase15-source-expansion-guide.md`
+
 ## References
 
 - `references/schema-guide.md` — CLAUDE.md template
 - `references/article-guide.md` — Writing good wiki articles
 - `references/log-guide.md` — Log file conventions
 - `references/audit-guide.md` — Audit file format
+- `references/phase15-source-expansion-guide.md` — Phase 1.5 source expansion playbook

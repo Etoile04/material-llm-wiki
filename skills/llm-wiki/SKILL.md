@@ -168,6 +168,13 @@ pdftotext "<pdf_path>" raw/papers/<slug>.txt
 - 如果 PDF 已有对应 `.md` 且公式覆盖率 >70%，自动跳过
 - 转换后验证公式覆盖率：`grep -c '\$\$' output.md`
 
+**异常处理（实战经验）**：
+1. **SSL / 网络失败**：MinerU 连接 HuggingFace 超时 → 跳过 MinerU，直接用 pdftotext 兜底，不要重试浪费等待时间
+2. **pdftotext 后的公式补回**：pdftotext 会丢失所有公式。处理方式：
+   - 在 summary 的 `## Key Equations` 章节中，通过论文 DOI + web_search 补回关键公式
+   - 标记该论文为 `formula_source: doi_search`，区别于 MinerU 直接提取的 `formula_source: pdf`
+3. **目录名预校验**：转换前先检查目录名是否与 PDF 实际标题匹配（昨发现 `Xie_2020` 实际是 Beeler 论文）。以 PDF 正文标题为准，不匹配时记录到 log 并修正 slug
+
 #### 2. 读取源文件全文
 - 读取 MD/TXT 文件全文
 - ⚠️ pdftotext 文件前 200 行可能是元数据，跳过

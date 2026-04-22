@@ -125,7 +125,17 @@ Steps:
 Add a new source. One source typically touches 5–15 wiki pages.
 
 Steps:
-1. **PDF 转 Markdown**：将 PDF 提取为高质量 Markdown
+1. **文献获取**（可选）：通过 Zotero MCP 检索文献
+   ```
+   # Zotero MCP 路径（二选一）
+   # 路径 A: 直接 get_content 获取全文（适合 <10MB PDF）
+   search_library("关键词") → 定位条目 → get_content(item_key)
+   # 路径 B: 下载 PDF 后用 MinerU 转换（推荐，保留公式）
+   search_library("关键词") → 定位附件 → 下载 PDF → MinerU 转换
+   ```
+   - Zotero MCP 工具名: `search_library`, `get_content`, `get_item`
+   - 大型 PDF (>10MB) 的 `get_content` 可能超时，改用路径 B
+2. **PDF 转 Markdown**：将 PDF 提取为高质量 Markdown
    ```bash
    # 方法 A: MinerU（最高质量，保留公式和表格）
    ~/.venvs/mineru/bin/mineru -p "<pdf_path>" -o raw/papers/ -b pipeline -m auto -l en -f true -t true
@@ -148,8 +158,18 @@ Steps:
 4. 创建/更新 `wiki/concepts/` 概念页
 5. 创建/更新 `wiki/entities/` 实体页
 6. 提取参数到 `parameters/<slug>.json`
+   - ⚠️ `value_type` **严格枚举**：`scalar` | `range` | `expression` | `list`，不允许 `point`/`single`/其他值
+   - ⚠️ `confidence` **必须是字符串**：`"high"` | `"medium"` | `"low"`，不允许数字（如 `0.8`）
+   - ⚠️ `source_file` **必须含前缀**：格式为 `summaries/<slug>.md`，不是裸文件名
+   - ⚠️ `value`/`value_min`/`value_max` **必须是数字类型**，不是字符串
 7. 更新 `wiki/index.md`
-8. 记录日志到 `log/YYYYMMDD.md`
+8. **添加 Cross-link**：在相关 `concepts/` 和 `entities/` 页面添加 `## Related Summaries` 入链，指向新创建的 summary
+   ```markdown
+   ## Related Summaries
+   - [[wiki/summaries/<slug>|作者 年份 简述]]
+   ```
+9. 运行 `validate_params.py` 检查新参数质量
+10. 记录日志到 `log/YYYYMMDD.md`
 
 **⚠️ PDF 转 Markdown 是必需步骤**：
 - 所有 PDF 必须先转换为 Markdown，保存到 `raw/papers/`
@@ -210,6 +230,10 @@ Steps:
    - **量级合理性**（magnitude check）：支持 typed values，`scalar` 检查单值，`range` 检查上下界，`expression` 跳过数值校验
    - **单位一致性**（unit consistency）：同参数不同来源的单位是否可转换
    - **必填字段**（required fields）：id, symbol, unit, category, source_file，以及 typed value 所需字段
+   - `value_type`: **严格枚举** `scalar | range | expression | list`（⚠️ 不允许 `point`/`single`/其他值）
+   - `confidence`: **字符串枚举** `"high" | "medium" | "low"`（⚠️ 不允许数字类型）
+   - `source_file`: 格式必须为 `summaries/<slug>.md`（⚠️ 必须含 `summaries/` 前缀）
+   - `value`/`value_min`/`value_max`: **数字类型**（⚠️ 不允许字符串）
    - **ID 唯一性**（unique ID）：全局无重复
    - **重复检测**（duplication）：不同 ID 但相同 symbol+material+temperature 的记录
 4. **typed value schema**：
@@ -361,7 +385,14 @@ Read at the start of every session.
 
 ```
 ingest → validate → (pass) → 写入 parameters/
-                     → (fail) → 返回修复建议 → 人工审核 → 重新 ingest
+                     → (format fail) → auto_fix → re-validate → (pass) → 写入
+                     → (content fail) → 返回修复建议 → 人工审核 → 重新 ingest
+
+**自动修复规则** (auto_fix):
+- `value_type` 非法 → 映射到最近合法值 (`point`/`single` → `scalar`)
+- `confidence` 为数字 → 转字符串 (`<0.5 → "low"`, `<0.8 → "medium"`, `≥0.8 → "high"`)
+- `source_file` 缺前缀 → 自动加 `summaries/` 前缀和 `.md` 后缀
+- `value`/`value_min`/`value_max` 为字符串 → 尝试转 float
 
 参数更新 → compare(v1, v2) → 匹配/新增/修正/冲突/缺失
                                     → 冲突项 → 标注原因 → 人工裁定

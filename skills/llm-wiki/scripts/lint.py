@@ -35,6 +35,9 @@ def lint_wiki(wiki_root: str):
         content = md.read_text(encoding="utf-8", errors="ignore")
         links = find_wikilinks(content)
         for link in links:
+            # Skip anchor-only links (page-internal) and empty links
+            if not link.strip() or link.strip().startswith('#'):
+                continue
             # Check if target exists
             target_path = wiki_dir / f"{link}.md"
             target_rel = root / f"{link}.md"

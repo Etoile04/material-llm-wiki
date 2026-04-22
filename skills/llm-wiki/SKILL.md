@@ -325,44 +325,87 @@ Read at the start of every session.
 
 ## Parameter Database
 
-`parameters/` stores structured JSON extracted from sources. Each file:
+`parameters/` stores structured JSON extracted from sources. Each file is a JSON array of parameter objects.
+
+### 必填字段 (Required Fields)
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `id` | string | 全局唯一标识 |
+| `name` | string | 参数英文名称 |
+| `symbol` | string | 参数符号（支持 LaTeX，如 `$D_v$`）|
+| `unit` | string | 单位（支持 SI 前缀自动换算）|
+| `category` | string | 参数类别（见枚举值）|
+| `source_file` | string | 来源文件路径 |
+| `confidence` | string | 置信度：`high` / `medium` / `low` |
+
+### category 枚举值
+
+```
+crystal_structure | elastic | mechanical | thermodynamic | thermal | physical | irradiation | diffusion | bubble | phase_transformation | surface_energy | microstructure | simulation
+```
+
+### 可选字段 (Optional Fields)
+
+| 字段 | 类型 | 说明 | 示例 |
+|------|------|------|------|
+| `method` | string | 测量/计算方法 | `"XRD"`, `"TEM"`, `"EMTO-CPA"`, `"Tian model"` |
+| `region` | string | 样品区域 | `"U-rich"`, `"Nb/Hf-rich"`, `"columnar grain"` |
+| `subcategory` | string | 子类别（用于更精确的 validate 范围）| `"diffusion_coefficient"`, `"elastic_modulus"` |
+| `note` | string | 备注说明 | 自由文本 |
+| `temperature` | string | 温度条件 | `"773 K"`, `"400-800 K"` |
+| `material` | string | 材料/合金体系 | `"U-10Mo"`, `"U-6Zr"` |
+| `uncertainty` | string | 不确定度 | `"±50%"` |
+
+### JSON 示例
+
 ```json
 [
   {
     "id": "unique_id",
-    "name": "Parameter Name",
+    "name": "Diffusion Coefficient",
     "symbol": "$D_v$",
     "value_type": "scalar",
     "value": 1.38e-8,
     "unit": "m²/s",
-    "uncertainty": "±50%",
+    "category": "diffusion",
+    "subcategory": "diffusion_coefficient",
     "temperature": "400-800 K",
     "material": "U-10Mo",
+    "method": "TEM",
     "source_file": "summaries/slug.md",
-    "confidence": "high"
+    "confidence": "high",
+    "note": "Measured via tracer method"
   },
   {
     "id": "unique_id_2",
-    "name": "Range Parameter",
-    "symbol": "$D_v$",
+    "name": "Elastic Modulus",
+    "symbol": "$E$",
     "value_type": "range",
-    "value_min": 1e-16,
-    "value_max": 1e-9,
-    "unit": "m²/s",
-    "temperature": "773 K",
+    "value_min": 80,
+    "value_max": 120,
+    "unit": "GPa",
+    "category": "mechanical",
+    "subcategory": "elastic_modulus",
+    "temperature": "298 K",
     "material": "U-10Mo",
-    "source_file": "summaries/slug.md",
+    "method": "EMTO-CPA",
+    "source_file": "summaries/slug2.md",
     "confidence": "medium"
   },
   {
     "id": "unique_id_3",
-    "name": "Expression Parameter",
+    "name": "Activation Energy",
     "symbol": "$Q$",
     "value_type": "expression",
     "value_expr": "1e-16 to 1e-9",
     "unit": "J",
+    "category": "diffusion",
+    "subcategory": "activation_energy",
     "temperature": "773 K",
     "material": "U-10Mo",
+    "method": "Curtin parameter-free theory",
+    "region": "U-rich",
     "source_file": "summaries/slug.md",
     "confidence": "low"
   }

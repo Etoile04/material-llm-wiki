@@ -8,7 +8,58 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-# category-level defaults (broad); subcategory overrides below
+# ─── Unit-to-SI conversion table ───────────────────────────────────────────────
+# Maps a unit string to (si_base_unit, factor) so that si_value = raw_value * factor.
+UNIT_TO_SI = {
+    # Pressure
+    'Pa':  ('Pa',  1.0),
+    'kPa': ('Pa',  1e3),
+    'MPa': ('Pa',  1e6),
+    'GPa': ('Pa',  1e9),
+    # Length
+    'm':   ('m',   1.0),
+    'mm':  ('m',   1e-3),
+    'μm':  ('m',   1e-6),
+    'um':  ('m',   1e-6),
+    'nm':  ('m',   1e-9),
+    # Energy
+    'J':   ('J',   1.0),
+    'kJ':  ('J',   1e3),
+    'eV':  ('J',   1.602e-19),
+    # Temperature (no conversion, just pass through)
+    'K':   ('K',   1.0),
+    '°C':  ('K',   1.0),
+    # Time
+    's':   ('s',   1.0),
+    'ms':  ('s',   1e-3),
+    'μs':  ('s',   1e-6),
+    'us':  ('s',   1e-6),
+    'ns':  ('s',   1e-9),
+    # Diffusivity
+    'm²/s':   ('m²/s',   1.0),
+    'cm²/s':  ('m²/s',   1e-4),
+    'mm²/s':  ('m²/s',   1e-6),
+    # Density
+    'g/cm³':  ('kg/m³',  1e3),
+    'kg/m³':  ('kg/m³',  1.0),
+    # Dimensionless
+    'dimensionless': ('dimensionless', 1.0),
+    '%':             ('dimensionless', 0.01),
+    # Misc
+    'K⁻¹':  ('K⁻¹',  1.0),
+    'fissions/m³': ('fissions/m³', 1.0),
+    'fissions/nm³': ('fissions/m³', 1e27),
+    'dpa':  ('dpa', 1.0),
+    'W/m·K': ('W/m·K', 1.0),
+    'W/(m·K)': ('W/m·K', 1.0),
+    'J/mol': ('J/mol', 1.0),
+    'kJ/mol': ('J/mol', 1e3),
+    'eV/atom': ('J', 1.602e-19),
+    'at.%': ('dimensionless', 0.01),
+    'wt.%': ('dimensionless', 0.01),
+}
+
+# ─── RANGES (all in SI base units) ─────────────────────────────────────────────
 RANGES = {
     'diffusion': {'min': 1e-30, 'max': 1e+25},
     'bubble': {'min': 1e-15, 'max': 1e+25},
@@ -21,15 +72,20 @@ RANGES = {
     'microstructure': {'min': 1e-10, 'max': 1e+25},
     'irradiation': {'min': 1e-10, 'max': 1e+30},
     'experiment': {'min': 1e-30, 'max': 1e+30},
+    'simulation': {'min': 1e-30, 'max': 1e+30},
     'simulation_parameter': {'min': 1e-30, 'max': 1e+30},
     'material_property': {'min': 1e-30, 'max': 1e+30},
     'irradiation_condition': {'min': 1e-30, 'max': 1e+30},
     'bubble_characteristics': {'min': 1e-15, 'max': 1e+25},
     'material_processing': {'min': 1e-30, 'max': 1e+30},
     'material_composition': {'min': 0, 'max': 100},
+    'elastic': {'min': 1e9, 'max': 1e12},
+    'thermodynamic': {'min': 1e-30, 'max': 1e+30},
+    'physical': {'min': 1e-30, 'max': 1e+30},
+    'phase_transformation': {'min': 1e-30, 'max': 1e+30},
+    'crystal_structure': {'min': 1e-30, 'max': 1e+30},
 }
 
-# subcategory-level overrides (narrower, more precise)
 SUBCATEGORY_RANGES = {
     ('diffusion', 'diffusion_coefficient'): {'min': 1e-30, 'max': 1e-2},
     ('diffusion', 'activation_energy'): {'min': 0.01, 'max': 10.0},
@@ -46,38 +102,31 @@ SUBCATEGORY_RANGES = {
     ('diffusion', 'general'): {'min': 1e-30, 'max': 1e+30},
     ('bubble', 'general'): {'min': 1e-30, 'max': 1e+30},
     ('rate_theory', 'general'): {'min': 1e-30, 'max': 1e+30},
+    ('elastic', 'elastic_modulus'): {'min': 1e9, 'max': 1e12},
+    ('elastic', 'shear_modulus'): {'min': 1e9, 'max': 1e12},
+    ('elastic', 'bulk_modulus'): {'min': 1e9, 'max': 1e12},
 }
 
 # Skip unit-consistency check for these (too heterogeneous)
 UNIT_CHECK_SKIP = {'experiment', 'microstructure', 'irradiation'}
-# Also downgrade to INFO for coarse subcategories
 UNIT_CHECK_COARSE = {'general', 'swelling_correlation'}
 
 REQUIRED_FIELDS = ['id', 'symbol', 'unit', 'category', 'source_file']
 VALUE_TYPES = {'scalar', 'range', 'expression', 'list'}
 
 
-def load_params(params_dir: Path) -> list[dict]:
-    SKIP_PREFIXES = ('_summary', '_comparison', '_conflict', '_all_params', '_validation',
-                    '_false_positive', '_improvement', '_paper_mapping', '_match_review')
-    records = []
-    for f in sorted(params_dir.rglob('*.json')):
-        if f.stem.startswith(SKIP_PREFIXES):
-            continue
-        try:
-            data = json.loads(f.read_text(encoding='utf-8'))
-        except (json.JSONDecodeError, UnicodeDecodeError) as e:
-            records.append({'_file': str(f), '_error': f'JSON parse error: {e}'})
-            continue
-        items = data if isinstance(data, list) else [data]
-        # Handle nested structure: {"parameters": [...]}
-        if len(items) == 1 and isinstance(items[0], dict) and 'parameters' in items[0]:
-            items = items[0]['parameters']
-        for item in items:
-            if isinstance(item, dict):
-                item.setdefault('_file', str(f))
-                records.append(item)
-    return records
+def to_si(value: float, unit: str) -> tuple[float, str] | None:
+    """Convert value to SI base units. Returns (si_value, si_unit) or None if unrecognized."""
+    u = unit.strip()
+    if u in UNIT_TO_SI:
+        si_unit, factor = UNIT_TO_SI[u]
+        return (value * factor, si_unit)
+    # Try normalizing unicode variants
+    u_norm = u.replace('²', '2').replace('³', '3').replace('μ', 'u').replace('·', '*')
+    if u_norm in UNIT_TO_SI:
+        si_unit, factor = UNIT_TO_SI[u_norm]
+        return (value * factor, si_unit)
+    return None
 
 
 def check_required_fields(records: list[dict]) -> list[dict]:
@@ -92,7 +141,7 @@ def check_required_fields(records: list[dict]) -> list[dict]:
         if not vt:
             if 'value' not in r or not str(r.get('value', '')).strip():
                 missing.append('value/value_type')
-        elif vt == 'scalar' and ('value' not in r or str(r.get('value', '')).strip() == ''):
+        elif vt == 'scalar' and ('value' not in r or str(r.get('value', '')) == ''):
             missing.append('value')
         elif vt == 'range' and ((r.get('value_min') in (None, '')) or (r.get('value_max') in (None, ''))):
             missing.append('value_min/value_max')
@@ -120,6 +169,37 @@ def check_id_uniqueness(records: list[dict]) -> list[dict]:
     return issues
 
 
+def _extract_numeric_values(r: dict) -> list[float] | None:
+    """Extract numeric values from a record. Returns None if no values to check."""
+    vt = r.get('value_type')
+    if vt == 'expression':
+        return None
+    if vt == 'range' and r.get('value_min') not in (None, '') and r.get('value_max') not in (None, ''):
+        return [r.get('value_min'), r.get('value_max')]
+    elif vt == 'list' and isinstance(r.get('values'), list):
+        vals = []
+        for item in r.get('values', []):
+            if isinstance(item, dict):
+                for v in item.values():
+                    if isinstance(v, (int, float)):
+                        vals.append(float(v))
+                    elif isinstance(v, str):
+                        try:
+                            vals.append(float(v))
+                        except (ValueError, TypeError):
+                            pass
+            elif isinstance(item, (int, float)):
+                vals.append(float(item))
+            elif isinstance(item, str):
+                try:
+                    vals.append(float(item))
+                except (ValueError, TypeError):
+                    pass
+        return vals if vals else None
+    else:
+        return [r.get('value')]
+
+
 def check_magnitude(records: list[dict]) -> list[dict]:
     issues = []
     for r in records:
@@ -132,36 +212,14 @@ def check_magnitude(records: list[dict]) -> list[dict]:
             continue
         if rng['min'] <= 1e-29 and rng['max'] >= 1e+29:
             continue
-        vt = r.get('value_type')
-        if vt == 'expression':
+
+        vals = _extract_numeric_values(r)
+        if vals is None:
             continue
-        if vt == 'range' and r.get('value_min') not in (None, '') and r.get('value_max') not in (None, ''):
-            vals = [r.get('value_min'), r.get('value_max')]
-        elif vt == 'list' and isinstance(r.get('values'), list):
-            # Extract numeric values from list items (skip dicts, keep strings/numbers)
-            vals = []
-            for item in r.get('values', []):
-                if isinstance(item, dict):
-                    # Extract all numeric values from dict
-                    for v in item.values():
-                        if isinstance(v, (int, float)):
-                            vals.append(float(v))
-                        elif isinstance(v, str):
-                            try:
-                                vals.append(float(v))
-                            except (ValueError, TypeError):
-                                pass
-                elif isinstance(item, (int, float)):
-                    vals.append(float(item))
-                elif isinstance(item, str):
-                    try:
-                        vals.append(float(item))
-                    except (ValueError, TypeError):
-                        pass
-            if not vals:
-                continue
-        else:
-            vals = [r.get('value')]
+
+        unit = (r.get('unit') or '').strip()
+
+        # Try to convert to SI base units
         for raw_val in vals:
             try:
                 val = float(raw_val)
@@ -169,10 +227,25 @@ def check_magnitude(records: list[dict]) -> list[dict]:
                 issues.append({'level': 'fail', 'id': r.get('id', '?'), 'file': r.get('_file', '?'),
                                'check': 'magnitude', 'detail': f'Non-numeric value: {raw_val}'})
                 break
-            if val < rng['min'] or val > rng['max']:
-                issues.append({'level': 'warn', 'id': r.get('id', '?'), 'file': r.get('_file', '?'),
-                               'check': 'magnitude',
-                               'detail': f'{val:.4e} outside [{rng["min"]:.0e}, {rng["max"]:.0e}] for {cat}'})
+
+            result = to_si(val, unit)
+            if result is not None:
+                si_val, si_unit = result
+                check_val = si_val
+            else:
+                # Unrecognized unit — downgrade to warn only
+                check_val = val
+                si_unit = unit
+
+            if check_val < rng['min'] or check_val > rng['max']:
+                if result is None:
+                    level = 'warn'
+                    detail = f'{val:.4e} {unit} outside [{rng["min"]:.0e}, {rng["max"]:.0e}] for {cat} (unrecognized unit, SI conversion skipped)'
+                else:
+                    level = 'warn'
+                    detail = f'{val:.4e} {unit} → {check_val:.4e} {si_unit} outside [{rng["min"]:.0e}, {rng["max"]:.0e}] for {cat}'
+                issues.append({'level': level, 'id': r.get('id', '?'), 'file': r.get('_file', '?'),
+                               'check': 'magnitude', 'detail': detail})
                 break
     return issues
 
@@ -184,13 +257,11 @@ def check_unit_consistency(records: list[dict]) -> list[dict]:
         if '_error' in r:
             continue
         key = (r.get('category', ''), r.get('subcategory', ''))
-        # Skip unit check for heterogeneous categories (broad subcategories)
         if key[0] in UNIT_CHECK_SKIP and (not key[1] or key[1] == 'general'):
             continue
         groups[key].append(r)
 
     for key, recs in groups.items():
-        # Skip coarse subcategories where multiple physical quantities coexist
         if key[1] in UNIT_CHECK_COARSE:
             continue
         units = defaultdict(list)
@@ -202,6 +273,11 @@ def check_unit_consistency(records: list[dict]) -> list[dict]:
             top = sorted(units.items(), key=lambda x: -len(x[1]))
             dominant = top[0][0]
             for u, ids in top[1:]:
+                # Skip if units are convertible to same SI base
+                dominant_si = to_si(1.0, dominant)
+                other_si = to_si(1.0, u)
+                if dominant_si and other_si and dominant_si[1] == other_si[1]:
+                    continue
                 issues.append({'level': 'warn', 'id': ids[0], 'file': recs[0].get('_file', '?'),
                                'check': 'unit_consistency',
                                'detail': f'{key}: unit "{u}" ({len(ids)} records) differs from dominant "{dominant}" ({len(top[0][1])} records)'})
@@ -213,14 +289,42 @@ def check_duplicates(records: list[dict]) -> list[dict]:
     for r in records:
         if '_error' in r:
             continue
-        key = (r.get('symbol', ''), r.get('material', ''), str(r.get('temperature', '')))
+        key = (
+            r.get('symbol', ''),
+            r.get('material', ''),
+            str(r.get('temperature', '')),
+            r.get('method', ''),
+            r.get('region', ''),
+        )
         if key in seen:
             issues.append({'level': 'warn', 'id': r.get('id', '?'), 'file': r.get('_file', '?'),
                            'check': 'duplicate',
-                           'detail': f'Duplicate of {seen[key]} (same symbol+material+temperature)'})
+                           'detail': f'Duplicate of {seen[key]} (same symbol+material+temperature+method+region)'})
         else:
             seen[key] = r.get('id', '?')
     return issues
+
+
+def load_params(params_dir: Path) -> list[dict]:
+    SKIP_PREFIXES = ('_summary', '_comparison', '_conflict', '_all_params', '_validation',
+                    '_false_positive', '_improvement', '_paper_mapping', '_match_review')
+    records = []
+    for f in sorted(params_dir.rglob('*.json')):
+        if f.stem.startswith(SKIP_PREFIXES):
+            continue
+        try:
+            data = json.loads(f.read_text(encoding='utf-8'))
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            records.append({'_file': str(f), '_error': f'JSON parse error: {e}'})
+            continue
+        items = data if isinstance(data, list) else [data]
+        if len(items) == 1 and isinstance(items[0], dict) and 'parameters' in items[0]:
+            items = items[0]['parameters']
+        for item in items:
+            if isinstance(item, dict):
+                item.setdefault('_file', str(f))
+                records.append(item)
+    return records
 
 
 def format_console(report: dict) -> str:
@@ -230,7 +334,6 @@ def format_console(report: dict) -> str:
     lines.append(f"  Parse errors:   {report['summary']['parse_errors']}\n")
 
     counts = report['summary']['checks']
-    total = sum(v if isinstance(v, int) else v.get('fail',0)+v.get('warn',0)+v.get('pass',0) for v in counts.values())
     lines.append(f"  {'Check':<22} {'PASS':>6} {'WARN':>6} {'FAIL':>6}")
     lines.append(f"  {'-'*22} {'-'*6} {'-'*6} {'-'*6}")
     for check, c in counts.items():

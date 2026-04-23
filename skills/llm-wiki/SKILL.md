@@ -466,6 +466,73 @@ textlint → validate + compare → 报告 → log/YYYYMMDD.md
 - 所有变更有据可查（log）
 - 冲突不静默覆盖，必须标注并等待裁定
 
+## 8. `pipeline` — Lobster 批量 Pipeline
+
+使用 Lobster (OpenClaw typed shell pipeline) 自动化批量 ingest。
+
+### 架构（混合模式）
+
+```
+Lobster pipeline 负责:  PDF 转换 → 质量检查 → Validate → 报告
+子智能体负责:        Summary + Parameters 生成（需多步推理）
+```
+
+### 可用 Pipeline 文件
+
+| 文件 | 用途 | 用法 |
+|------|------|------|
+| `pipeline/ingest_single_full.lobster` | 单篇完整入库 | `lobster run --file ... --args-json '{"PDF_PATH":"...","SLUG":"..."}'` |
+| `pipeline/ingest_batch_v2.lobster` | 批量 PDF 转换 | `lobster run --file ...` |
+| `pipeline/batch_convert.py` | 批量 pdftotext 转换 | `BATCH_FILE=batch.json python3 pipeline/batch_convert.py` |
+| `pipeline/run_llm_ingest.py` | LLM ingest 包装 | 由 pipeline 或主智能体调用 |
+| `pipeline/write_ingest_output.py` | 文件写入辅助 | 由 pipeline 调用 |
+
+### 环境变量
+
+```bash
+WIKI_ROOT=/path/to/wiki      # 知识库根目录
+BATCH_FILE=/path/to/batch.json # 批量论文列表
+PDF_PATH=/path/to/paper.pdf   # 单篇 PDF
+SLUG=YYYY_Author_ShortTitle   # 论文 slug
+```
+
+### 批量 Ingest 流程
+
+1. **准备候选清单** (`batch.json`):
+   ```json
+   [{"filename":"...","pdf":"/abs/path.pdf","year":"2025","author":"...","size_kb":1000}]
+   ```
+2. **PDF 批量转换**: `BATCH_FILE=batch.json python3 pipeline/batch_convert.py`
+3. **启动子智能体并行处理**: `sessions_spawn` 2 组 × 4-5 篇
+4. **Validate**: `python3 scripts/validate_params.py <wiki-root>/`
+5. **质量抽查**: 随机抽取参数文件检查 category/数值合理性
+
+### Lobster .lobster 文件格式
+
+YAML `steps` 结构，`command` 是 shell 命令，`stdin: $step.stdout` 做管道：
+
+```yaml
+name: my-pipeline
+steps:
+  - id: step1
+    command: "python3 script.py"
+  - id: step2
+    command: "python3 process.py"
+    stdin: $step1.stdout
+```
+
+**注意**: 多行 Python 在 YAML 中必须用单行+分号写法，`>-` 折叠会导致缩进错误。
+
+### 性能基准
+
+| 指标 | 目标 | 实测 |
+|------|------|------|
+| 单篇 PDF 转换 | < 10s | < 5s |
+| 单篇 LLM ingest | < 5 min | ~1-4 min |
+| 批量 8 篇（2 组并行）| < 30 min | ~7 min |
+| Validate FAIL | 0 | 0 |
+| 自动化率 | ≥ 90% | ~95% |
+
 ## Phase 1.5 扩展策略补充
 
 当任务是“继续扩展文献覆盖”而不是“修补已有文献”时，优先执行：
@@ -485,3 +552,4 @@ textlint → validate + compare → 报告 → log/YYYYMMDD.md
 - `references/log-guide.md` — Log file conventions
 - `references/audit-guide.md` — Audit file format
 - `references/phase15-source-expansion-guide.md` — Phase 1.5 source expansion playbook
+- `pipeline/` — Lobster pipeline files for automated batch ingest

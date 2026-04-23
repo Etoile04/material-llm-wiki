@@ -20,7 +20,7 @@ def lint_wiki(wiki_root: str):
     wiki_dir = root / "wiki"
     if not wiki_dir.exists():
         print("❌ No wiki/ directory found")
-        return
+        return []
 
     # Collect all wiki pages
     wiki_pages = set()

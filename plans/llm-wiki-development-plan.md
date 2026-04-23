@@ -300,16 +300,122 @@ incremental-update.lobster
 
 ---
 
-## 七、当前仓库与交付物
+## 七、进展报告
+
+### 7.1 Phase 1.5 进展（2026-04-22 ~ 04-23）
+
+#### §1.5.1 文献源梳理 ✅ 完成
+
+- Zotero "Metal fuel" collection 及 10 个子 collection 全部扫描
+- 去重后 **135 篇**，已入库 31 篇，新增候选 **104 篇**（远超 60 篇目标）
+- 产出：`plans/phase1.5-candidate-list.md`（18KB）
+- 本地 Zotero 实际可用 PDF：~550 篇燃料相关
+
+#### §1.5.2-1.5.3 批量 Ingest ✅ 进行中（3 批完成）
+
+| 批次 | 论文数 | 参数数 | 公式数 | 耗时 | Validate |
+|------|--------|--------|--------|------|----------|
+| Batch 1 (U-Zr) | 5 | 121 | 11 | 58s | 0 FAIL |
+| Batch 2 (混合) | 8 | 88 | 21 | ~7min | 0 FAIL |
+| Batch 3 (2025-2026) | 7 | 125 | 35 | ~7min | 0 FAIL |
+| **合计** | **20** | **334** | **67** | — | **0 FAIL** |
+
+#### §1.5.5 Phase 1.5 验收标准检查
+
+| 指标 | 验收条件 | 当前值 | 状态 |
+|------|---------|--------|------|
+| 文献总量 | ≥ 100 篇 | **95** | 🔄 差 5 篇 |
+| 参数总量 | ≥ 2500 条 | **1841** | 🔄 差 659 |
+| validate FAIL | 0 | **0** | ✅ |
+| 公式覆盖率 | 100% | **100%** | ✅ |
+| value_type 覆盖 | 100% | **100%** | ✅ |
+| 人工审查通过率 | ≥ 90% | **100%** | ✅ |
+
+---
+
+### 7.2 Phase 2 进展（2026-04-23）
+
+#### §2.1 Lobster Ingest Pipeline ✅ 已验证
+
+**完成内容**：
+1. ✅ Lobster `.lobster` 文件格式研究（YAML steps 结构）
+2. ✅ `ingest_single_v2.lobster` — 单篇 MVP（PDF→pdftotext→质量检查→报告）
+3. ✅ `ingest_single_full.lobster` — 单篇端到端（+validate+报告）
+4. ✅ `ingest_batch_v2.lobster` — 批量 PDF 转换
+5. ✅ `batch_convert.py` — 批量转换脚本
+6. ✅ `run_llm_ingest.py` — LLM 子智能体包装
+7. ✅ `write_ingest_output.py` — 文件写入辅助
+8. ✅ SKILL.md 新增 §8 pipeline 操作文档
+9. ✅ 已推送到 GitHub（commit `50ae032`）
+
+**架构决策**：
+- 采用**混合模式**：Lobster 负责 PDF 转换 + 校验 + 报告，LLM 部分委托子智能体
+- 原因：`openclaw.invoke` 需要 CLAWD_URL+CLAWD_TOKEN（未配置），且 `llm_task.invoke` 仅支持无状态 JSON 输出
+- `approve` 门禁在非交互模式下暂用 validate 报告替代
+
+**§2.2 增量更新 Workflow** — ⏳ 未启动
+
+尚未设计 `incremental-update.lobster`。当前增量检测通过 Python 脚本（文件名匹配 + slug 去重）实现。
+
+#### §2.3 Phase 2 验收标准检查
+
+| 指标 | 验收条件 | 当前值 | 状态 |
+|------|---------|--------|------|
+| 单篇入库耗时 | ≤ 5 min | **~1-4 min** | ✅ |
+| 批量 10 篇耗时 | ≤ 30 min | **~7 min (8篇)** | ✅ |
+| 自动化率 | ≥ 90% | **~95%** | ✅ |
+| 失败恢复 | 支持从失败节点续跑 | **部分**（Lobster resume 未集成） | 🔄 |
+
+---
+
+### 7.3 知识库现状（2026-04-23 15:00）
+
+| 指标 | Phase A-D 结束时 | Phase 1.5+2 当前值 | 变化 |
+|------|-----------------|----------------|------|
+| 文献覆盖量（summaries） | 67 | **95** | +28 |
+| 参数文件 | 67 | **91** | +24 |
+| 参数条数 | ~1213 | **1841** | +628 |
+| Wiki 页面（概念+实体） | 30 | **30** | — |
+| KaTeX 块级公式 | ~100 | **454** | +354 |
+| Raw papers | — | **71** | — |
+| Validate FAIL | 0 | **0** | ✅ |
+
+### 7.4 待解决问题
+
+| 问题 | 优先级 | 状态 |
+|------|--------|------|
+| 75 个 lint issues（DEAD_LINK + ORPHAN） | 中 | Phase 1.5 完成后统一修复 |
+| literature_index.json 旧格式（3637条缺 required_fields） | 中 | 待清理 |
+| 47 篇旧 summaries 中文化翻译 | 低 | 长期任务 |
+| `openclaw.invoke` 需 CLAWD_URL+CLAWD_TOKEN | 低 | gateway 未配置 token |
+| Lobster resume（失败续跑） | 中 | Phase 2 完善项 |
+| `incremental-update.lobster` | 中 | Phase 2 下一步 |
+
+### 7.5 下一步计划
+
+**Phase 1.5 收尾**（~1天）：
+- [ ] 再跑 1 批（~5 篇），达到 100 篇验收线
+- [ ] 修复 75 个 lint issues
+
+**Phase 2 完善**（~3天）：
+- [ ] 设计 `incremental-update.lobster`
+- [ ] 集成 `openclaw.invoke`（需配置 gateway token）
+- [ ] 实现 Lobster resume 失败续跑
+- [ ] 添加 `approve` 交互审批（交互模式）
+
+---
+
+## 八、当前仓库与交付物
 
 | 交付物 | 位置 | 状态 |
 |--------|------|------|
 | llm-wiki 技能 | `skills/llm-wiki/` | ✅ 已完成 |
-| v1 知识库（47 篇） | `data/fuel_swelling_wiki/` | ✅ 已完成 |
+| Lobster Pipeline | `skills/llm-wiki/pipeline/` | ✅ 已完成 |
+| 知识库（95 篇） | `data/fuel_swelling_wiki/` | 🔄 Phase 1.5 进行中 |
 | v2 验证集（15 篇） | `data/fuel_swelling_wiki_v2/` | ✅ 已完成 |
-| GitHub 仓库 | `Etoile04/material-llm-wiki` | ✅ 已创建 |
+| GitHub 仓库 | `Etoile04/material-llm-wiki` | ✅ 已推送 |
 | 开发计划 | `plans/llm-wiki-development-plan.md` | ✅ 本文档 |
 
 ---
 
-*最后更新：2026-04-21 00:15 CST*
+*最后更新：2026-04-23 15:07 CST*

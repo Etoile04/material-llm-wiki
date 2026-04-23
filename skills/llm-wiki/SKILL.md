@@ -205,7 +205,7 @@ pdftotext "<pdf_path>" raw/papers/<slug>.txt
 - MinerU 路径：`/Users/lwj04/.openclaw/workspace/.venv-mineru/bin/mineru`
 - **公式识别必须开启**: `-f true -t true`
 - 大型 PDF（>10MB）MinerU 处理较慢，可用 pdftotext 先处理
-- 批量处理：`python3 scripts/convert_pdfs.py batch.json raw/papers/`
+- 批量处理：`BATCH_FILE=batch.json python3 scripts/batch_convert.py`
 
 **⚠️ Summary 公式要求**：
 - 涉及数理模型的论文，summary 必须包含 `## Key Equations` 章节

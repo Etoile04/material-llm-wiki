@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LLM Wiki Ingest Input Schema",
+  "description": "Schema for ingest pipeline input (batch.json and single ingest args).",
+  "definitions": {
+    "ingest_item": {
+      "type": "object",
+      "required": ["filename", "pdf"],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "description": "Descriptive filename (e.g., '2023_Kim_FissionGasBubble.pdf')"
+        },
+        "pdf": {
+          "type": "string",
+          "description": "Absolute path to the PDF file"
+        },
+        "year": {
+          "type": "string",
+          "description": "Publication year"
+        },
+        "author": {
+          "type": "string",
+          "description": "First author surname"
+        },
+        "size_kb": {
+          "type": "number",
+          "description": "File size in KB"
+        },
+        "slug": {
+          "type": "string",
+          "description": "Wiki slug (format: YYYY_Author_ShortTitle). Auto-generated if missing."
+        }
+      }
+    }
+  },
+  "type": "array",
+  "items": { "$ref": "#/definitions/ingest_item" }
+}

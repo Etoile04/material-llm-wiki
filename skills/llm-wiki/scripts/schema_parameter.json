@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LLM Wiki Parameter Extraction Schema",
+  "description": "Schema for structured material parameter extraction from nuclear materials literature.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "symbol", "unit", "category", "source_file", "confidence"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Global unique identifier (e.g., 'diff_Dv_U10Mo_Kim2013')"
+      },
+      "name": {
+        "type": "string",
+        "description": "Parameter name in English"
+      },
+      "symbol": {
+        "type": "string",
+        "description": "Parameter symbol, supports LaTeX (e.g., '$D_v$')"
+      },
+      "value_type": {
+        "type": "string",
+        "enum": ["scalar", "range", "expression", "list"],
+        "description": "Type of the parameter value"
+      },
+      "value": {
+        "type": "number",
+        "description": "Single numeric value (for value_type=scalar)"
+      },
+      "value_min": {
+        "type": "number",
+        "description": "Minimum value (for value_type=range)"
+      },
+      "value_max": {
+        "type": "number",
+        "description": "Maximum value (for value_type=range)"
+      },
+      "value_expr": {
+        "type": "string",
+        "description": "Expression or description (for value_type=expression)"
+      },
+      "values": {
+        "type": "array",
+        "items": { "type": "number" },
+        "description": "List of discrete values (for value_type=list)"
+      },
+      "unit": {
+        "type": "string",
+        "description": "SI unit with prefix (e.g., 'm2/s', 'GPa', 'eV')"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "crystal_structure", "elastic", "mechanical", "thermodynamic",
+          "thermal", "physical", "irradiation", "diffusion", "bubble",
+          "phase_transformation", "surface_energy", "microstructure", "simulation"
+        ],
+        "description": "Parameter category"
+      },
+      "subcategory": {
+        "type": "string",
+        "description": "Subcategory for finer classification (e.g., 'diffusion_coefficient', 'elastic_modulus')"
+      },
+      "source_file": {
+        "type": "string",
+        "pattern": "^summaries/",
+        "description": "Source file path, must start with 'summaries/'"
+      },
+      "confidence": {
+        "type": "string",
+        "enum": ["high", "medium", "low"],
+        "description": "Confidence level of the extracted value"
+      },
+      "temperature": {
+        "type": "string",
+        "description": "Temperature condition (e.g., '773 K', '400-800 K')"
+      },
+      "material": {
+        "type": "string",
+        "description": "Material or alloy system (e.g., 'U-10Mo', 'U-6Zr')"
+      },
+      "method": {
+        "type": "string",
+        "description": "Measurement or calculation method (e.g., 'TEM', 'EMTO-CPA', 'DFT')"
+      },
+      "region": {
+        "type": "string",
+        "description": "Sample region (e.g., 'U-rich', 'Nb/Hf-rich')"
+      },
+      "uncertainty": {
+        "type": "string",
+        "description": "Uncertainty (e.g., '±50%')"
+      },
+      "note": {
+        "type": "string",
+        "description": "Additional notes"
+      }
+    },
+    "additionalProperties": false
+  }
+}

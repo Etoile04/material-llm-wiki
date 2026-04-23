@@ -66,8 +66,8 @@ RANGES = {
     'swelling_rate': {'min': 1e-10, 'max': 1e+3},
     'rate_theory': {'min': 1e-30, 'max': 1e+30},
     'surface_energy': {'min': 0.01, 'max': 10.0},
-    'thermal': {'min': 0.1, 'max': 1000.0},
-    'mechanical': {'min': 1e6, 'max': 1e12},
+    'thermal': {'min': 1e-8, 'max': 1e+3},
+    'mechanical': {'min': 1e-6, 'max': 1e12},
     'recrystallization': {'min': 1e20, 'max': 1e30},
     'microstructure': {'min': 1e-10, 'max': 1e+25},
     'irradiation': {'min': 1e-10, 'max': 1e+30},
@@ -79,7 +79,7 @@ RANGES = {
     'bubble_characteristics': {'min': 1e-15, 'max': 1e+25},
     'material_processing': {'min': 1e-30, 'max': 1e+30},
     'material_composition': {'min': 0, 'max': 100},
-    'elastic': {'min': 1e9, 'max': 1e12},
+    'elastic': {'min': 1e-8, 'max': 1e12},
     'thermodynamic': {'min': 1e-30, 'max': 1e+30},
     'physical': {'min': 1e-30, 'max': 1e+30},
     'phase_transformation': {'min': 1e-30, 'max': 1e+30},
@@ -307,7 +307,8 @@ def check_duplicates(records: list[dict]) -> list[dict]:
 
 def load_params(params_dir: Path) -> list[dict]:
     SKIP_PREFIXES = ('_summary', '_comparison', '_conflict', '_all_params', '_validation',
-                    '_false_positive', '_improvement', '_paper_mapping', '_match_review')
+                    '_false_positive', '_improvement', '_paper_mapping', '_match_review',
+                    '_mapping')
     records = []
     for f in sorted(params_dir.rglob('*.json')):
         if f.stem.startswith(SKIP_PREFIXES):

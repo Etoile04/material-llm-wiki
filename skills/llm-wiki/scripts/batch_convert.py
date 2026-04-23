@@ -2,8 +2,8 @@
 """Batch PDF → pdftotext conversion for Lobster pipeline."""
 import json, subprocess, os, sys
 
+WIKI_ROOT = os.environ.get('WIKI_ROOT', '/Users/lwj04/.openclaw/workspace/data/fuel_swelling_wiki')
 BATCH_FILE = os.environ.get('BATCH_FILE', '/tmp/batch2_fuel.json')
-WIKI_ROOT = os.environ.get('WIKI_ROOT', os.path.expanduser('~/.openclaw/workspace/data/nuclear-materials-wiki'))
 
 with open(BATCH_FILE) as f:
     batch = json.load(f)

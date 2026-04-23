@@ -33,10 +33,7 @@ def main():
     
     try:
         params_data = json.loads(args.params)
-        if isinstance(params_data, list):
-            params = params_data
-        else:
-            params = params_data.get("parameters", [])
+        params = params_data.get("parameters", [])
     except json.JSONDecodeError:
         params = []
     

@@ -9,8 +9,8 @@ to trigger sessions_spawn. Falls back to direct LLM call via llm-task if unavail
 """
 import json, sys, os, subprocess, time
 
-WIKI_ROOT = os.environ.get('WIKI_ROOT', os.path.expanduser('~/.openclaw/workspace/data/nuclear-materials-wiki'))
-SKILL_PATH = os.environ.get('SKILL_PATH', os.path.expanduser('~/.openclaw/workspace/skills/material-llm-wiki/skills/llm-wiki/SKILL.md'))
+WIKI_ROOT = os.environ.get('WIKI_ROOT', '/Users/lwj04/.openclaw/workspace/data/fuel_swelling_wiki')
+SKILL_PATH = '/Users/lwj04/.openclaw/workspace/skills/llm-wiki/SKILL.md'
 
 def main():
     data = json.loads(sys.stdin.read())

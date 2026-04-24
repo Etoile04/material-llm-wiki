@@ -49,6 +49,9 @@ def lint_wiki(wiki_root: str):
         links = find_wikilinks(content)
         for link in links:
             all_links_incoming.add(link)
+            # Also add stem form for path-based links
+            link_stem = Path(link).stem if '/' in link else link
+            all_links_incoming.add(link_stem)
             all_links_incoming.add(md.stem)
 
     for md in wiki_dir.rglob("*.md"):

@@ -1,0 +1,287 @@
+[
+  {
+    "name": "E_v_f",
+    "symbol": "E_v^f",
+    "description": "Vacancy formation energy",
+    "value": 0.8,
+    "unit": "eV",
+    "context": "Section 3",
+    "category": "activation_energy"
+  },
+  {
+    "name": "E_i_f_sec3",
+    "symbol": "E_i^f",
+    "description": "Interstitial formation energy (Section 3)",
+    "value": 0.8,
+    "unit": "eV",
+    "context": "Section 3",
+    "category": "activation_energy"
+  },
+  {
+    "name": "E_i_f_sec45",
+    "symbol": "E_i^f",
+    "description": "Interstitial formation energy (Sections 4-5)",
+    "value": 1.5,
+    "unit": "eV",
+    "context": "Sections 4-5",
+    "category": "activation_energy"
+  },
+  {
+    "name": "E_g_f_sec3",
+    "symbol": "E_g^f",
+    "description": "Gas atom formation energy (Section 3)",
+    "value": 0.8,
+    "unit": "eV",
+    "context": "Section 3",
+    "category": "bubble"
+  },
+  {
+    "name": "E_g_f_sec45",
+    "symbol": "E_g^f",
+    "description": "Gas atom formation energy (Sections 4-5)",
+    "value": 1.2,
+    "unit": "eV",
+    "context": "Sections 4-5",
+    "category": "bubble"
+  },
+  {
+    "name": "mu_g_0",
+    "symbol": "μ_g^0",
+    "description": "Gas reference chemical potential",
+    "value": 0.4,
+    "unit": "eV",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "D_v_tilde",
+    "symbol": "D̃_v",
+    "description": "Dimensionless vacancy diffusivity",
+    "value": 1.0,
+    "unit": "dimensionless",
+    "category": "diffusion"
+  },
+  {
+    "name": "D_g_tilde",
+    "symbol": "D̃_g",
+    "description": "Dimensionless gas diffusivity",
+    "value": 1.0,
+    "unit": "dimensionless",
+    "category": "diffusion"
+  },
+  {
+    "name": "D_i_tilde",
+    "symbol": "D̃_i",
+    "description": "Dimensionless interstitial diffusivity",
+    "value": 4.0,
+    "unit": "dimensionless",
+    "category": "diffusion"
+  },
+  {
+    "name": "kBT",
+    "symbol": "k_BT",
+    "description": "Thermal energy",
+    "value": 0.11,
+    "unit": "eV",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "temperature",
+    "symbol": "T",
+    "description": "Simulation temperature",
+    "value": 1276,
+    "unit": "K",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "c_v_eq",
+    "symbol": "c_v^{eq}",
+    "description": "Equilibrium vacancy concentration",
+    "value": 0.00069,
+    "unit": "dimensionless",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "c_i_eq",
+    "symbol": "c_i^{eq}",
+    "description": "Equilibrium interstitial concentration",
+    "value": 0.00069,
+    "unit": "dimensionless",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "dx",
+    "symbol": "Δx",
+    "description": "Grid spacing",
+    "value": "κ",
+    "unit": "length unit κ",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "dt",
+    "symbol": "Δt",
+    "description": "Time step",
+    "value": 0.001,
+    "unit": "s",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "kappa_v",
+    "symbol": "κ_v",
+    "description": "Gradient energy coefficient for vacancies",
+    "value": 1.0,
+    "unit": "eV·κ²",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "kappa_i",
+    "symbol": "κ_i",
+    "description": "Gradient energy coefficient for interstitials",
+    "value": 1.0,
+    "unit": "eV·κ²",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "kappa_g",
+    "symbol": "κ_g",
+    "description": "Gradient energy coefficient for gas atoms",
+    "value": 1.0,
+    "unit": "eV·κ²",
+    "category": "bubble"
+  },
+  {
+    "name": "kappa_phi",
+    "symbol": "κ_φ",
+    "description": "Gradient energy coefficient for order parameter",
+    "value": 1.0,
+    "unit": "eV·κ²",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "R_bulk",
+    "symbol": "R_bulk",
+    "description": "Bulk recombination rate",
+    "value": 1.0,
+    "unit": "s⁻¹",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "R_surf",
+    "symbol": "R_surf",
+    "description": "Surface recombination rate",
+    "value": 5.0,
+    "unit": "s⁻¹",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "displacement_rate_low",
+    "symbol": "K",
+    "description": "Displacement rate (low)",
+    "value": 0.001,
+    "unit": "dpa/s",
+    "category": "irradiation"
+  },
+  {
+    "name": "displacement_rate_high",
+    "symbol": "K",
+    "description": "Displacement rate (high)",
+    "value": 0.0023,
+    "unit": "dpa/s",
+    "category": "irradiation"
+  },
+  {
+    "name": "P_gas_0",
+    "symbol": "P_gas",
+    "description": "Gas production rate (no gas)",
+    "value": 0.0,
+    "unit": "c_g/s",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "P_gas_1",
+    "symbol": "P_gas",
+    "description": "Gas production rate (low)",
+    "value": 2e-05,
+    "unit": "c_g/s",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "P_gas_2",
+    "symbol": "P_gas",
+    "description": "Gas production rate (medium)",
+    "value": 0.0001,
+    "unit": "c_g/s",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "P_gas_3",
+    "symbol": "P_gas",
+    "description": "Gas production rate (high)",
+    "value": 8.2e-06,
+    "unit": "c_g/s",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "interstitial_bias",
+    "symbol": "bias",
+    "description": "Interstitial production bias",
+    "value": 0.9,
+    "unit": "dimensionless",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "num_grains",
+    "symbol": "P",
+    "description": "Number of grains in polycrystal",
+    "value": 40,
+    "unit": "count",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "grain_diameter_min",
+    "symbol": "d_grain",
+    "description": "Minimum average grain diameter",
+    "value": 37,
+    "unit": "κ",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "grain_diameter_max",
+    "symbol": "d_grain",
+    "description": "Maximum average grain diameter",
+    "value": 111,
+    "unit": "κ",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "sim_domain",
+    "symbol": null,
+    "description": "Simulation domain size",
+    "value": "6×6",
+    "unit": "μm",
+    "category": "fuel_performance"
+  },
+  {
+    "name": "U_bulk",
+    "symbol": "U",
+    "description": "Gas formation energy factor (bulk/intragranular)",
+    "value": 1.0,
+    "unit": "dimensionless",
+    "category": "activation_energy"
+  },
+  {
+    "name": "U_gb",
+    "symbol": "U",
+    "description": "Gas formation energy factor (grain boundary/triple junction)",
+    "value": 0.5,
+    "unit": "dimensionless",
+    "category": "activation_energy"
+  },
+  {
+    "name": "dihedral_angle",
+    "symbol": null,
+    "description": "Grain boundary bubble dihedral angle",
+    "value": 120,
+    "unit": "degrees",
+    "category": "bubble"
+  }
+]

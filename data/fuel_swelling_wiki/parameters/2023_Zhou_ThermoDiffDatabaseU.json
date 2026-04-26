@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2023_Zhou_system_components",
+    "name": "数据库体系",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 6,
+    "unit": "elements",
+    "category": "thermodynamic",
+    "material": "U-Nb-Zr-Ti-Mo-C",
+    "confidence": "high",
+    "description": "六元体系U-Nb-Zr-Ti-Mo-C的热力学数据库"
+  },
+  {
+    "id": "2023_Zhou_bcc_diff_db",
+    "name": "bcc扩散数据库",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "database",
+    "category": "diffusion",
+    "material": "U-Nb-Zr-Ti-Mo",
+    "confidence": "high",
+    "description": "bcc相扩散原子迁移率数据库"
+  },
+  {
+    "id": "2023_Zhou_liquid_diff_db",
+    "name": "液相扩散数据库",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "database",
+    "category": "diffusion",
+    "material": "U-Nb-Zr-Ti-Mo",
+    "confidence": "high",
+    "description": "液相扩散系数数据库"
+  },
+  {
+    "id": "2023_Zhou_CALPHAD_method",
+    "name": "建模方法",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "CALPHAD",
+    "category": "thermodynamic",
+    "material": "U-Nb-Zr-Ti-Mo-C",
+    "confidence": "high",
+    "description": "采用CALPHAD方法建立热力学和扩散数据库"
+  },
+  {
+    "id": "2023_Zhou_mobility_database",
+    "name": "原子迁移率数据库",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "database",
+    "category": "diffusion",
+    "material": "U-Nb-Zr-Ti-Mo",
+    "confidence": "high",
+    "description": "基于DICTRA/CALPHAD的原子迁移率数据库"
+  },
+  {
+    "id": "2023_Zhou_thermo_db_type",
+    "name": "热力学数据库类型",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "TDB",
+    "category": "thermodynamic",
+    "material": "U-Nb-Zr-Ti-Mo-C",
+    "confidence": "high",
+    "description": "输出为标准TDB格式热力学数据库"
+  }
+]

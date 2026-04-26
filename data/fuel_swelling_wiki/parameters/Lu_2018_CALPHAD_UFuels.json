@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2018_Lu_ballistic_diffusivity",
+    "name": "弹道扩散率概念",
+    "symbol": "$D_{bal}$",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "m²/s",
+    "category": "diffusion",
+    "material": "U-Zr",
+    "confidence": "high",
+    "description": "辐照下弹道扩散率由原子替代数和晶格参数确定"
+  },
+  {
+    "id": "2018_Lu_eff_free_energy",
+    "name": "有效自由能模型",
+    "symbol": "$G_{eff}$",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "J/mol",
+    "category": "thermodynamic",
+    "material": "U-Zr",
+    "confidence": "high",
+    "description": "Martin等建立的有效自由能模型含辐照效应"
+  },
+  {
+    "id": "2018_Lu_journal",
+    "name": "发表期刊",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "JPE",
+    "category": "other",
+    "material": "U-Zr",
+    "confidence": "high",
+    "description": "发表在J. Phase Equilib. Diffus."
+  },
+  {
+    "id": "2018_Lu_replacement_rate",
+    "name": "原子替代率K0",
+    "symbol": "$K_0$",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "dpa/s",
+    "category": "irradiation",
+    "material": "U-Zr",
+    "confidence": "medium",
+    "description": "辐照下原子替代率用于弹道扩散计算"
+  },
+  {
+    "id": "2018_Lu_CALPHAD_approach",
+    "name": "CALPHAD方法",
+    "symbol": "-",
+    "value_type": "scalar",
+    "value": 0,
+    "unit": "method",
+    "category": "thermodynamic",
+    "material": "U基合金",
+    "confidence": "high",
+    "description": "CALPHAD方法应用于铀基合金热力学评估"
+  }
+]

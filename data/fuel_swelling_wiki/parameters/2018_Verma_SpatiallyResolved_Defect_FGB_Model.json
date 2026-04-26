@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "slug": "2018_Verma_SpatiallyResolved_Defect_FGB_Model",
+    "paper": "Verma, Noirot, Maugis 2018/2019 - Spatially Resolved Defect/FGB Model UO2",
+    "journal": "NIM B 458 (2019) 151-158"
+  },
+  "parameters": [
+    {"name": "vacancy_formation_energy", "value": "2.47", "unit": "eV", "category": "activation_energy", "description": "UO₂ 空位形成能"},
+    {"name": "UO2_site_volume", "value": "4.09e-2", "unit": "nm³", "category": "crystal_structure", "description": "UO₂ 单格点体积（非量纲）"},
+    {"name": "Dv_1800C", "value": "1.62e-12", "unit": "m²/s", "category": "diffusion", "description": "1800°C 空位扩散系数"},
+    {"name": "DU_preexponential", "value": "6.5e-5", "unit": "m²/s", "category": "diffusion", "description": "Matzke 自扩散系数指前因子"},
+    {"name": "DU_activation_energy", "value": "5.6", "unit": "eV", "category": "activation_energy", "description": "UO₂ 自扩散激活能"},
+    {"name": "surface_tension_1800C", "value": "0.24518", "unit": "J/m²", "category": "surface_energy", "description": "1800°C 固-空位界面表面张力"},
+    {"name": "surface_tension_nondim", "value": "1.532375", "unit": "-", "category": "surface_energy", "description": "非量纲表面张力"},
+    {"name": "grid_size", "value": "4", "unit": "nm", "category": "microstructure", "description": "模拟网格尺寸"},
+    {"name": "domain_size", "value": "256x256", "unit": "nm", "category": "microstructure", "description": "物理模拟域尺寸"},
+    {"name": "annealing_temperature", "value": "1800", "unit": "°C", "category": "thermodynamic", "description": "等温退火温度"},
+    {"name": "kT_1800C", "value": "2.86e-20", "unit": "J", "category": "thermodynamic", "description": "1800°C 热能"},
+    {"name": "kT_nondim", "value": "0.178796", "unit": "-", "category": "thermodynamic", "description": "非量纲热能"},
+    {"name": "Cvini_coalescence", "value": "1e-2", "unit": "fraction", "category": "microstructure", "description": "聚并测试初始空位浓度"},
+    {"name": "Cvini_Ostwald", "value": "1.04e-6", "unit": "fraction", "category": "microstructure", "description": "Ostwald 熟化初始空位浓度"},
+    {"name": "Cvini_migration", "value": "2e-6", "unit": "fraction", "category": "microstructure", "description": "定向迁移测试初始空位浓度"},
+    {"name": "bubble_vanish_threshold", "value": "3", "unit": "% of cell volume", "category": "microstructure", "description": "气泡消失体积阈值"},
+    {"name": "coalescence_time", "value": "12", "unit": "s", "category": "irradiation", "description": "聚并发生时间"},
+    {"name": "Ostwald_time", "value": "600", "unit": "s", "category": "irradiation", "description": "Ostwald 熟化时间"},
+    {"name": "grid_sensitivity_relative_diff", "value": "1.5", "unit": "%", "category": "microstructure", "description": "网格敏感性平均相对偏差"}
+  ]
+}

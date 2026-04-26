@@ -1,0 +1,39 @@
+# Generated reports
+*.docx
+*.pdf
+*.png
+*.json
+!schema_*.json
+
+# Environment / secrets
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+PlugMem/
+.openclaw/
+.clawhub/
+.reme/
+
+# MinerU raw outputs
+data/fuel_swelling_wiki/raw/mineru/
+data/fuel_swelling_wiki_v2/raw/mineru/
+data/fuel_swelling_wiki/raw/pdftotext/
+
+# Knowledge base data (generated outputs, not source)
+data/
+
+# Private workspace files
+MEMORY.md
+AGENTS.md
+USER.md
+SOUL.md
+IDENTITY.md
+HEARTBEAT.md
+memory/
+.learnings/
+
+# Embedded repos
+JSRT_code
+claude/
+# Data files — DO NOT track (IP concerns)

@@ -588,6 +588,37 @@ steps:
 | Validate FAIL | 0 | 0 |
 | 自动化率 | ≥ 90% | ~95% |
 
+### 批量深度提取（batch_extract.py）
+
+当需要对大量已有 raw MD 文件进行深度参数提取时使用：
+
+```bash
+# 1. 查找提取不足的论文（params < 40 且 raw > 5KB）
+python3 scripts/batch_extract.py --wiki-root $WIKI_ROOT --mode find-underextracted --threshold 40
+
+# 2. 查找完全未提取的论文
+python3 scripts/batch_extract.py --wiki-root $WIKI_ROOT --mode find-unextracted
+
+# 3. 生成标准化 task list（含查重、分组）
+python3 scripts/batch_extract.py --wiki-root $WIKI_ROOT --mode generate-tasks
+
+# 4. 提取后校验所有参数文件
+python3 scripts/batch_extract.py --wiki-root $WIKI_ROOT --mode post-validate
+```
+
+**关键特性**:
+- 自动查重（paper_registry.json DOI/title/author+year 三级去重）
+- Slug 格式校验（必须 YYYY_Author_Title）
+- Schema 校验（value_type、required fields、非法字段检测）
+- 生成标准化 prompt（避免子智能体 prompt 随意性）
+- 提取后 post-validate 自动修正
+
+**⚠️ 不要手写 prompt 直接 sessions_spawn！** 使用 `batch_extract.py` 生成的标准化任务，可以避免：
+- 重复 slug 导致参数分散
+- 子智能体自创字段名（scalar/number）
+- 漏掉 schema 校验
+- 没有查重就创建新文件
+
 ## Phase 1.5 扩展策略补充
 
 当任务是“继续扩展文献覆盖”而不是“修补已有文献”时，优先执行：

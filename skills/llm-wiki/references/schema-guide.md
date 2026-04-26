@@ -1,11 +1,25 @@
 # Schema Guide — CLAUDE.md Template
 
-> What to put in the wiki's CLAUDE.md file
+> What to put in the wiki's CLAUDE.md file. This file is read before EVERY ingestion/extraction action.
 
 ## Template
 
 ```markdown
 # <Wiki Topic> — Schema
+
+## ⚡ Pre-Action Checks (MANDATORY — read before ANY write)
+
+```
+提取参数前: python3 scripts/batch_extract.py --mode find-underextracted
+提取参数后: python3 scripts/batch_extract.py --mode post-validate
+新论文入库: pipeline/ingest_single_full.lobster → check registry first
+```
+
+**禁止**: 直接 sessions_spawn 手写 prompt 提取参数
+**禁止**: 不查 paper_registry.json 就创建新 slug
+**禁止**: 提取后不运行 post-validate (issues 必须 = 0)
+
+---
 
 ## Scope
 

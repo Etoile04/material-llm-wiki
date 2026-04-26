@@ -1,88 +1,83 @@
-{
-  "paper": "Doyle et al. 2025 - Swelling and Fission Gas Release of U-10Mo and U-17Mo MiniFuel",
-  "slug": "2025_Doyle_Swelling_FGR_U10Mo_U17Mo",
-  "source": "J. Nucl. Mater. 612 (2025) 155851",
-  "parameters": [
-    {
-      "name": "U-10Mo swelling at 250°C, 8 cycles",
-      "value": "~2%",
-      "category": "swelling",
-      "conditions": "6.3e20 f/cm³, unconstrained",
-      "note": "Low-temperature regime, gas retained in solution"
-    },
-    {
-      "name": "U-10Mo swelling at 350°C, 8 cycles",
-      "value": "35.5%",
-      "category": "swelling",
-      "conditions": "5.7e20 f/cm³, unconstrained",
-      "note": "Anomalous high swelling, likely γ-U phase decomposition"
-    },
-    {
-      "name": "U-10Mo swelling at 450°C, 8 cycles",
-      "value": "17.7%",
-      "category": "swelling",
-      "conditions": "6.3e20 f/cm³, unconstrained",
-      "note": "Swelling saturation observed"
-    },
-    {
-      "name": "U-10Mo swelling at 500°C, 8 cycles",
-      "value": "16.9%",
-      "category": "swelling",
-      "conditions": "6.8e20 f/cm³, unconstrained",
-      "note": "Similar to 450°C, swelling plateau"
-    },
-    {
-      "name": "U-17Mo swelling at 250°C, 8 cycles",
-      "value": "~2%",
-      "category": "swelling",
-      "conditions": "4.1e20 f/cm³, unconstrained"
-    },
-    {
-      "name": "U-17Mo swelling at 350°C, 8 cycles",
-      "value": "~3%",
-      "category": "swelling",
-      "conditions": "4.5e20 f/cm³, unconstrained"
-    },
-    {
-      "name": "U-10Mo FGR at 350°C, 8 cycles",
-      "value": "78%",
-      "category": "fuel_performance",
-      "conditions": "5.7e20 f/cm³",
-      "note": "Highest FGR, correlates with 35.5% swelling"
-    },
-    {
-      "name": "U-10Mo FGR at 450°C, 8 cycles",
-      "value": "66%",
-      "category": "fuel_performance",
-      "conditions": "6.3e20 f/cm³"
-    },
-    {
-      "name": "U-10Mo FGR at 500°C, 8 cycles",
-      "value": "48%",
-      "category": "fuel_performance",
-      "conditions": "6.8e20 f/cm³"
-    },
-    {
-      "name": "Swelling-FGR correlation coefficient",
-      "value": "0.93",
-      "category": "fuel_performance",
-      "note": "Linear and logistic fits between swelling and FGR"
-    },
-    {
-      "name": "Fission rate range",
-      "value": "2.5-6.8 × 10¹³ cm⁻³s⁻¹",
-      "category": "irradiation"
-    },
-    {
-      "name": "Sample thickness",
-      "value": "~0.8 mm",
-      "category": "microstructure"
-    },
-    {
-      "name": "Recrystallization threshold (literature)",
-      "value": ">3×10²¹ f/cm³",
-      "category": "microstructure",
-      "note": "Not reached in this experiment"
-    }
-  ]
-}
+[
+  {
+    "name": "U-10Mo swelling at 250°C, 8 cycles",
+    "value": "~2%",
+    "category": "swelling",
+    "conditions": "6.3e20 f/cm³, unconstrained",
+    "note": "Low-temperature regime, gas retained in solution"
+  },
+  {
+    "name": "U-10Mo swelling at 350°C, 8 cycles",
+    "value": "35.5%",
+    "category": "swelling",
+    "conditions": "5.7e20 f/cm³, unconstrained",
+    "note": "Anomalous high swelling, likely γ-U phase decomposition"
+  },
+  {
+    "name": "U-10Mo swelling at 450°C, 8 cycles",
+    "value": "17.7%",
+    "category": "swelling",
+    "conditions": "6.3e20 f/cm³, unconstrained",
+    "note": "Swelling saturation observed"
+  },
+  {
+    "name": "U-10Mo swelling at 500°C, 8 cycles",
+    "value": "16.9%",
+    "category": "swelling",
+    "conditions": "6.8e20 f/cm³, unconstrained",
+    "note": "Similar to 450°C, swelling plateau"
+  },
+  {
+    "name": "U-17Mo swelling at 250°C, 8 cycles",
+    "value": "~2%",
+    "category": "swelling",
+    "conditions": "4.1e20 f/cm³, unconstrained"
+  },
+  {
+    "name": "U-17Mo swelling at 350°C, 8 cycles",
+    "value": "~3%",
+    "category": "swelling",
+    "conditions": "4.5e20 f/cm³, unconstrained"
+  },
+  {
+    "name": "U-10Mo FGR at 350°C, 8 cycles",
+    "value": "78%",
+    "category": "fuel_performance",
+    "conditions": "5.7e20 f/cm³",
+    "note": "Highest FGR, correlates with 35.5% swelling"
+  },
+  {
+    "name": "U-10Mo FGR at 450°C, 8 cycles",
+    "value": "66%",
+    "category": "fuel_performance",
+    "conditions": "6.3e20 f/cm³"
+  },
+  {
+    "name": "U-10Mo FGR at 500°C, 8 cycles",
+    "value": "48%",
+    "category": "fuel_performance",
+    "conditions": "6.8e20 f/cm³"
+  },
+  {
+    "name": "Swelling-FGR correlation coefficient",
+    "value": "0.93",
+    "category": "fuel_performance",
+    "note": "Linear and logistic fits between swelling and FGR"
+  },
+  {
+    "name": "Fission rate range",
+    "value": "2.5-6.8 × 10¹³ cm⁻³s⁻¹",
+    "category": "irradiation"
+  },
+  {
+    "name": "Sample thickness",
+    "value": "~0.8 mm",
+    "category": "microstructure"
+  },
+  {
+    "name": "Recrystallization threshold (literature)",
+    "value": ">3×10²¹ f/cm³",
+    "category": "microstructure",
+    "note": "Not reached in this experiment"
+  }
+]

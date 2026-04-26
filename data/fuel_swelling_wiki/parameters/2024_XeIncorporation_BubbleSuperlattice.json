@@ -1,13 +1,11 @@
-{
-  "parameters": [
-    {
-      "id": "XeBS-001",
-      "name": "Evidence of Xe incorporation in bubble superlattice",
-      "description": "Experimental characterization of Xe atom incorporation within the gas bubble superlattice in irradiated U-Mo fuel, providing evidence for gas atom ordering in superlattice structures",
-      "type": "experimental",
-      "material": "U-Mo",
-      "method": "TEM / APT characterization",
-      "source_paper": "Evidence of Xe-incorporation in the bubble superlattice in irradiated U-Mo fuel"
-    }
-  ]
-}
+[
+  {
+    "id": "XeBS-001",
+    "name": "Evidence of Xe incorporation in bubble superlattice",
+    "description": "Experimental characterization of Xe atom incorporation within the gas bubble superlattice in irradiated U-Mo fuel, providing evidence for gas atom ordering in superlattice structures",
+    "type": "experimental",
+    "material": "U-Mo",
+    "method": "TEM / APT characterization",
+    "source_paper": "Evidence of Xe-incorporation in the bubble superlattice in irradiated U-Mo fuel"
+  }
+]

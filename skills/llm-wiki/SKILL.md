@@ -14,6 +14,33 @@ description: >-
 
 > Based on Karpathy's LLM Wiki pattern. Adapted for OpenClaw by Wenjie Li.
 
+## ⚡ Trigger Table — DO THIS FIRST
+
+> **Read this section BEFORE any extraction or ingestion action.**
+> If you skip this and hand-write prompts, parameters will be duplicated and malformed.
+
+| 用户意图 / 场景 | 必须执行 | 强制步骤 |
+|---|---|---|
+| "提取参数" / "批量提取" / "深度提取" | `python3 scripts/batch_extract.py --mode find-underextracted` | MUST: 查重 → 标准化 prompt → 提取 → post-validate |
+| "导入论文" / "ingest" / "新PDF" | `pipeline/ingest_single_full.lobster` 或 `pipeline/ingest_batch_v2.lobster` | MUST: pre-check registry → PDF→MD → LLM ingest → validate |
+| "校验" / "validate" / "检查质量" | `python3 scripts/batch_extract.py --mode post-validate` | MUST: 修复所有 issues > 0 |
+| "去重" / "dedup" / "合并" | `python3 scripts/dedup_merge.py` | — |
+| "查论文" / "query" | 直接搜索 wiki/summaries + parameters/ | — |
+
+### 🚫 禁止操作
+
+- **禁止手写 sessions_spawn prompt 进行参数提取** — 必须用 `batch_extract.py` 生成的标准化任务
+- **禁止不查 registry 就创建新 slug** — 必须先 `check_duplicate()`
+- **禁止提取后不运行 post-validate** — issues 必须 = 0 才能结束
+
+### 为什么？
+
+2026-04-26 教训: 手工 sessions_spawn 提取 28 篇论文导致:
+- 20% 子智能体空跑退出（浪费 ~20 min）
+- Prompt 不稳定导致字段名混乱（scalar/number/confidence=0.95）
+- 无自动查重导致 slug 重复
+- 需要手动 5 轮 post-validate 修复 2,494 个问题
+
 ## Core Idea
 
 Instead of RAG (re-retrieving raw docs every time), the LLM **compiles** raw sources into a persistent, cross-linked wiki. Knowledge compounds — every ingest, query, lint, and audit pass makes the wiki richer.

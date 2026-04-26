@@ -10,7 +10,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-SMEAR-DENSITY",
@@ -23,7 +24,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-FGR",
@@ -36,7 +38,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020 (citing Harp et al. 2018)",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-TCL",
@@ -49,7 +52,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020 (BISON model)",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-TOUTER",
@@ -62,7 +66,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020 (BISON model)",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-DELTA-GAMMA-TRANS",
@@ -75,7 +80,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020 (citing Sheldon & Peterson 1989)",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZR2SI-LATTICE",
@@ -88,7 +94,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZR2SI-SG",
@@ -101,7 +108,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-FCCZR-LATTICE",
@@ -114,7 +122,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ALPHAU-DIST-131",
@@ -127,7 +136,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-PORE-SIZE-ALPHAU",
@@ -140,7 +150,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-PORE-SIZE-UZR2",
@@ -153,7 +164,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-SPINODAL-DOMAIN",
@@ -166,7 +178,8 @@
     "temperature": "~800°C",
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ION-SPINODAL-DOMAIN",
@@ -179,7 +192,8 @@
     "temperature": "550°C",
     "source_paper": "Yao et al. 2020 (citing Yao et al. 2020, Materialia)",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-FE-INFILTRATION",
@@ -192,7 +206,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-FE-COMPOSITION",
@@ -205,7 +220,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZR-CLUSTER-SIZE",
@@ -218,7 +234,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZR-CENTER-CONC",
@@ -231,7 +248,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZR2SI-MELTING",
@@ -244,7 +262,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "low"
+    "confidence": "low",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-U6FE-DIST",
@@ -257,7 +276,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZRN-LATTICE",
@@ -270,7 +290,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-ZRO2-LATTICE",
@@ -283,7 +304,8 @@
     "temperature": null,
     "source_paper": "Yao et al. 2020, J. Nucl. Mater.",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "high"
+    "confidence": "high",
+    "value_type": "scalar"
   },
   {
     "id": "YAO20-HE-BUBBLE-SIZE",
@@ -296,6 +318,7 @@
     "temperature": "ambient",
     "source_paper": "Yao et al. 2020 (citing Ahn et al. 2016)",
     "source_file": "2020_Yao_AlphaOmega_U10Zr.md",
-    "confidence": "medium"
+    "confidence": "medium",
+    "value_type": "scalar"
   }
 ]

@@ -14,7 +14,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-GAMMA2-T",
@@ -31,7 +32,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-PEAK-T",
@@ -48,7 +50,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-DELTA-T",
@@ -65,7 +68,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-GRAD-A",
@@ -82,7 +86,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-GRAD-B",
@@ -99,7 +104,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-FR-A",
@@ -116,7 +122,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-FR-B",
@@ -133,7 +140,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-SD",
@@ -150,7 +158,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-INC",
@@ -167,7 +176,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-CONTACT-BU",
@@ -184,7 +194,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-RAPID-INT",
@@ -201,7 +212,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-ISO-SD",
@@ -218,7 +230,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-AX-0PU",
@@ -235,7 +248,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-AX-3-26PU",
@@ -252,7 +266,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-B-AX-CONTACT",
@@ -269,7 +284,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "HOF90-STRESS-RATIO",
@@ -286,7 +302,8 @@
     "source_paper": "Hofman et al. 1990, Metall. Trans. A 21A, 517–528",
     "source_file": "summaries/1990_Hofman_SwellingBehaviorUPuZr.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "1990_Hofman_001",

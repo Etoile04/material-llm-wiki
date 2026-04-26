@@ -14,7 +14,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_critical_size_ordering",
@@ -31,7 +32,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_bubble_disordered",
@@ -48,7 +50,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_bubble_GB_115",
@@ -65,7 +68,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_bubble_GB_130",
@@ -82,7 +86,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_BAP_115",
@@ -99,7 +104,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_BAP_130",
@@ -116,7 +122,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_GBS_saturation_Fd",
@@ -133,7 +140,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_GBS_temp_limit",
@@ -150,7 +158,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_GBS_spread_min",
@@ -167,7 +176,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_GBS_spread_max",
@@ -184,7 +194,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_Fd_A2C171",
@@ -201,7 +212,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_Fd_A2C125",
@@ -218,7 +230,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_Fd_range_171",
@@ -235,7 +248,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_Fd_range_171_high",
@@ -252,7 +266,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_Fd_range_125_low",
@@ -269,7 +284,8 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Smith2023a_Fd_range_125_high",
@@ -286,6 +302,7 @@
     "source_paper": "Smith et al. 2023, J. Nucl. Mater. 578, 154358",
     "source_file": "2023_Smith_EarlySelfOrganizationGBS.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

@@ -14,7 +14,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_002",
@@ -31,7 +32,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_003",
@@ -48,7 +50,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_004",
@@ -65,7 +68,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_005",
@@ -82,7 +86,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_006",
@@ -99,7 +104,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_007",
@@ -116,7 +122,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_008",
@@ -133,7 +140,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_009",
@@ -150,7 +158,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_010",
@@ -167,7 +176,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_011",
@@ -184,7 +194,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_012",
@@ -201,7 +212,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_013",
@@ -218,7 +230,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_014",
@@ -235,7 +248,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_015",
@@ -252,7 +266,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_016",
@@ -269,7 +284,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_017",
@@ -286,7 +302,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_018",
@@ -303,7 +320,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_019",
@@ -320,7 +338,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_020",
@@ -337,7 +356,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_021",
@@ -354,7 +374,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_022",
@@ -371,7 +392,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_023",
@@ -388,7 +410,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_024",
@@ -405,7 +428,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_025",
@@ -422,7 +446,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_026",
@@ -439,7 +464,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_027",
@@ -456,7 +482,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_028",
@@ -473,7 +500,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_029",
@@ -490,7 +518,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "medium",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_030",
@@ -507,7 +536,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_031",
@@ -524,7 +554,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_032",
@@ -541,7 +572,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_033",
@@ -558,7 +590,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_034",
@@ -575,7 +608,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_035",
@@ -592,7 +626,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "activation_energy"
+    "category": "activation_energy",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_036",
@@ -609,7 +644,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_037",
@@ -626,7 +662,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_038",
@@ -643,7 +680,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_039",
@@ -660,7 +698,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_040",
@@ -677,7 +716,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_041",
@@ -694,7 +734,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Ye2023_042",
@@ -711,7 +752,8 @@
     "source_paper": "Ye et al., J. Nucl. Mater. 583, 154542 (2023)",
     "source_file": "summaries/2023_Ye_IntegratedSimulationU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "2023_Ye_001",

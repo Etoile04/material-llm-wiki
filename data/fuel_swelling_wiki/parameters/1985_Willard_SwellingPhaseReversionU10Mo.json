@@ -14,7 +14,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-QR",
@@ -31,7 +32,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "activation_energy"
+    "category": "activation_energy",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-DT640",
@@ -48,7 +50,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-DR",
@@ -65,7 +68,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-BUHALF",
@@ -82,7 +86,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-DR-COEFF",
@@ -99,7 +104,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-BUCRIT",
@@ -116,7 +122,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-BUCRIT371",
@@ -133,7 +140,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-BUCRIT385",
@@ -150,7 +158,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-BUCRIT399",
@@ -167,7 +176,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-BUCRIT413",
@@ -184,7 +194,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-EUTECTOID",
@@ -201,7 +212,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-TTTNOSE",
@@ -218,7 +230,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-FISSION-RATE",
@@ -235,7 +248,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-GAMMA-HEAT",
@@ -252,7 +266,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-PT-HEAT",
@@ -269,7 +284,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-CRACK-T",
@@ -286,7 +302,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-THERMAL-SHOCK",
@@ -303,7 +320,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-21",
@@ -320,7 +338,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-42",
@@ -337,7 +356,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-45",
@@ -354,7 +374,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-49",
@@ -371,7 +392,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-63",
@@ -388,7 +410,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-64",
@@ -405,7 +428,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-67",
@@ -422,7 +446,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-69",
@@ -439,7 +464,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-73",
@@ -456,7 +482,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-76A",
@@ -473,7 +500,8 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "WIL85-SWELL-76B",
@@ -490,6 +518,7 @@
     "source_paper": "Willard & Schmitt 1965, NAA-SR-8956",
     "source_file": "1985_Willard_SwellingPhaseReversionU10Mo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   }
 ]

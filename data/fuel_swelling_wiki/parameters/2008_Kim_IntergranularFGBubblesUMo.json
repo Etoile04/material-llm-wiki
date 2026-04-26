@@ -14,7 +14,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_002",
@@ -31,7 +32,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_003",
@@ -48,7 +50,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_004",
@@ -65,7 +68,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_005",
@@ -82,7 +86,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_006",
@@ -99,7 +104,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_007",
@@ -116,7 +122,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_008",
@@ -133,7 +140,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_009",
@@ -150,7 +158,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_010",
@@ -167,7 +176,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_011",
@@ -184,7 +194,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_012",
@@ -201,7 +212,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_013",
@@ -218,7 +230,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_014",
@@ -235,7 +248,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_015",
@@ -252,7 +266,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_016",
@@ -269,7 +284,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_017",
@@ -286,7 +302,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_018",
@@ -303,7 +320,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_019",
@@ -320,7 +338,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_020",
@@ -337,7 +356,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_021",
@@ -354,7 +374,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_022",
@@ -371,7 +392,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_023",
@@ -388,7 +410,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_024",
@@ -405,7 +428,8 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2008K_025",
@@ -422,6 +446,7 @@
     "source_paper": "Kim et al. 2008, ANL-08/11",
     "source_file": "2008_Kim_IntergranularFGBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   }
 ]

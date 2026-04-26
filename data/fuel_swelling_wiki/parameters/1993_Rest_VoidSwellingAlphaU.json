@@ -14,7 +14,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-EM",
@@ -31,7 +32,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-EFV",
@@ -48,7 +50,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "activation_energy"
+    "category": "activation_energy",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-ZVD",
@@ -65,7 +68,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-ZID",
@@ -82,7 +86,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-GAMMA",
@@ -99,7 +104,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-RIV",
@@ -116,7 +122,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-RHO-10ZR",
@@ -133,7 +140,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-RHO-19PU",
@@ -150,7 +158,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-FB",
@@ -167,7 +176,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-FF",
@@ -184,7 +194,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-OMEGA",
@@ -201,7 +212,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-SWELL-U10ZR",
@@ -218,7 +230,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-INC-U10ZR",
@@ -235,7 +248,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-GASREL-U10ZR",
@@ -252,7 +266,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-GASREL-ONSET",
@@ -269,7 +284,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-TPEAK",
@@ -286,7 +302,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-DRC",
@@ -303,7 +320,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-CV0RC",
@@ -320,7 +338,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-DCGB",
@@ -337,7 +356,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-DCGF",
@@ -354,7 +374,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-DCV",
@@ -371,7 +392,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-DCI",
@@ -388,7 +410,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-KVC",
@@ -405,7 +428,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-KVD",
@@ -422,7 +446,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-KID",
@@ -439,7 +464,8 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES93-AC",
@@ -456,6 +482,7 @@
     "source_paper": "Rest 1993, J. Nucl. Mater. 207, 192–204",
     "source_file": "1993_Rest_VoidSwellingAlphaU.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

@@ -14,7 +14,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2005_002",
@@ -31,7 +32,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "2005_003",
@@ -48,7 +50,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_004",
@@ -65,7 +68,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "2005_005",
@@ -82,7 +86,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2005_006",
@@ -99,7 +104,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_007",
@@ -116,7 +122,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_008",
@@ -133,7 +140,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2005_009",
@@ -150,7 +158,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_010",
@@ -167,7 +176,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "2005_011",
@@ -184,7 +194,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "2005_012",
@@ -201,7 +212,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_013",
@@ -218,7 +230,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "2005_014",
@@ -235,7 +248,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "2005_015",
@@ -252,7 +266,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "2005_016",
@@ -269,7 +284,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "2005_017",
@@ -286,7 +302,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "2005_018",
@@ -303,7 +320,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "2005_019",
@@ -320,7 +338,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "2005_020",
@@ -337,7 +356,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "2005_021",
@@ -354,7 +374,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_022",
@@ -371,7 +392,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_023",
@@ -388,7 +410,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "2005_024",
@@ -405,7 +428,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "2005_025",
@@ -422,7 +446,8 @@
     "source_paper": "Rest 2005, JNM 346, 226–232",
     "source_file": "summaries/2005_Rest_RecrystallizationSwellingUO2UMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2005_Rest_001",

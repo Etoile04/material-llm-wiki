@@ -14,7 +14,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_002",
@@ -31,7 +32,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_003",
@@ -48,7 +50,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_004",
@@ -65,7 +68,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_005",
@@ -82,7 +86,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_006",
@@ -99,7 +104,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_007",
@@ -116,7 +122,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_008",
@@ -133,7 +140,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_009",
@@ -150,7 +158,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_010",
@@ -167,7 +176,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_011",
@@ -184,7 +194,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_012",
@@ -201,7 +212,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_013",
@@ -218,7 +230,8 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen2024_014",
@@ -235,6 +248,7 @@
     "source_paper": "Aagesen, J. Nucl. Mater. 601 (2024) 155311",
     "source_file": "2024_Aagesen_VacancyProductionPF.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   }
 ]

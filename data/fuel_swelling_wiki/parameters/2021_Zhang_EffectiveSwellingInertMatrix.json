@@ -14,7 +14,8 @@
     "source_paper": "Zhang et al. 2021, Nucl Eng Technol 53 2616",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_temp_range_low",
@@ -31,7 +32,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_temp_range_high",
@@ -48,7 +50,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_fission_rate",
@@ -65,7 +68,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_fast_neutron_flux",
@@ -82,7 +86,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_vol_fractions",
@@ -104,7 +109,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_grain_size_UO2_low",
@@ -121,7 +127,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_grain_size_UO2_high",
@@ -138,7 +145,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Boltzmann_const",
@@ -155,7 +163,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_matrix_creep_increase",
@@ -172,7 +181,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Pressure_threshold",
@@ -189,7 +199,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_573K_20pct",
@@ -206,7 +217,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_673K_20pct",
@@ -223,7 +235,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_max_error",
@@ -240,7 +253,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_gas_swell_threshold_fd",
@@ -257,7 +271,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_a_473_673K",
@@ -274,7 +289,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_b_473_673K",
@@ -291,7 +307,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_c_473_673K",
@@ -308,7 +325,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_Tcoeff_a",
@@ -325,7 +343,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_Tcoeff_b",
@@ -342,7 +361,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_Tcoeff_c",
@@ -359,7 +379,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_const_a",
@@ -376,7 +397,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_const_b",
@@ -393,7 +415,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Zhang_2021_Hp0_poly_const_c",
@@ -410,7 +433,8 @@
     "source_paper": "Zhang et al. 2021",
     "source_file": "summaries/2021_Zhang_EffectiveSwellingInertMatrix.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2021_Zhang_001",

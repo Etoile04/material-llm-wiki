@@ -14,7 +14,8 @@
     "source_paper": "Hanson et al. 2022, J Nucl Mater 564 153683",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_max_fd",
@@ -31,7 +32,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_enrichment",
@@ -48,7 +50,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_enrichment_uncertainty",
@@ -65,7 +68,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_particle_diameter",
@@ -82,7 +86,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_coating_thickness",
@@ -99,7 +104,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_gas_swell_onset_low",
@@ -116,7 +122,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_gas_swell_onset_high",
@@ -133,7 +140,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_fines_fractions",
@@ -154,7 +162,8 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Hanson_2022_Mo_compositions",
@@ -174,6 +183,7 @@
     "source_paper": "Hanson et al. 2022",
     "source_file": "2022_Hanson_EMPIrESwellingAnalysis.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

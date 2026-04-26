@@ -549,7 +549,9 @@
     "activation_energy": 52000,
     "activation_energy_unit": "cal/mol",
     "source": "2013_Karahan_FEAST_METAL",
-    "source_file": "summaries/2013_Karahan_FEAST_ExtendedSwelling_UPuZr.md"
+    "source_file": "summaries/2013_Karahan_FEAST_ExtendedSwelling_UPuZr.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "id": "2013_Karahan_001",

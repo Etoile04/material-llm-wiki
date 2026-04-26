@@ -4,7 +4,9 @@
     "parameter": "Avrami equation",
     "equation": "V_rx = 1 - exp[-K(F-F₀)^n]",
     "description": "Volume fraction recrystallized as function of fission density F",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "phase_transformation",
@@ -12,7 +14,8 @@
     "value": 0.1,
     "unit": "dimensionless",
     "description": "Pre-exponential factor in Avrami equation",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
@@ -20,7 +23,8 @@
     "value": 2.6,
     "unit": "dimensionless",
     "description": "Avrami exponent for UMo recrystallization kinetics",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
@@ -28,7 +32,8 @@
     "value": 1.67e+21,
     "unit": "f/cm³",
     "description": "Incubation fission density for recrystallization onset, atomized powder",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
@@ -36,21 +41,26 @@
     "value": 1.38e+21,
     "unit": "f/cm³",
     "description": "Incubation fission density for recrystallization onset, ground powder",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
     "parameter": "K equation (Mo-dependent)",
     "equation": "K = K₀[0.75(10-x_Mo)+1]",
     "description": "Mo composition dependence of recrystallization rate constant K; x_Mo in wt%",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "phase_transformation",
     "parameter": "K equation (with fission rate effect)",
     "equation": "K = K₀[0.125×10¹⁴(ḟ-2×10¹⁴)+1][0.67(10-x_Mo)+1]",
     "description": "Full K equation including both fission rate ḟ and Mo composition dependence; ḟ in f/cm³/s, x_Mo in wt%",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "swelling",
@@ -58,7 +68,8 @@
     "value": 0.6,
     "unit": "% per 10²¹ f/cm³",
     "description": "Fission gas bubble swelling rate before recrystallization",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "swelling",
@@ -66,7 +77,8 @@
     "value": 5.2,
     "unit": "% per 10²¹ f/cm³",
     "description": "Fission gas bubble swelling rate after recrystallization",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "swelling",
@@ -74,7 +86,8 @@
     "value": 8.7,
     "unit": "dimensionless",
     "description": "Ratio of post- to pre-recrystallization swelling rates, approximately 5.2/0.6",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
@@ -85,7 +98,9 @@
     ],
     "unit": "f/cm³",
     "description": "Fission density at which atomized U-10Mo fuel is fully recrystallized",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "phase_transformation",
@@ -93,7 +108,8 @@
     "value": 4.8e+21,
     "unit": "f/cm³",
     "description": "Fission density at which ground U-10Mo fuel is fully recrystallized",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "diffusion",
@@ -101,7 +117,8 @@
     "value": 17,
     "unit": "at%",
     "description": "Molybdenum concentration at grain boundaries of U-10Mo alloy",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "diffusion",
@@ -109,7 +126,8 @@
     "value": 22,
     "unit": "at%",
     "description": "Nominal molybdenum atomic percent in U-10Mo alloy",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
@@ -117,7 +135,8 @@
     "value": 70,
     "unit": "μm",
     "description": "Mean particle diameter of atomized U-10Mo powder",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "phase_transformation",
@@ -128,7 +147,9 @@
     ],
     "unit": "μm",
     "description": "Grain size range in atomized U-10Mo powder",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "phase_transformation",
@@ -139,7 +160,9 @@
     ],
     "unit": "μm",
     "description": "Grain size range in ground U-10Mo powder",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "fuel_performance",
@@ -147,7 +170,8 @@
     "value": 19.5,
     "unit": "at%",
     "description": "Uranium-235 enrichment of experimental fuel",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "irradiation",
@@ -158,7 +182,9 @@
     ],
     "unit": "°C",
     "description": "Temperature range during irradiation",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "swelling",
@@ -166,7 +192,8 @@
     "value": 5.0,
     "unit": "% per 10²¹ f/cm³",
     "description": "Correction applied to fracture surface swelling measurements",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "fuel_performance",
@@ -174,7 +201,8 @@
     "value": 20,
     "unit": "count",
     "description": "Total number of U-10Mo experimental fuel samples",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "fuel_performance",
@@ -185,7 +213,9 @@
     ],
     "unit": "f/cm³",
     "description": "Range of fission densities across experimental samples",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "irradiation",
@@ -196,7 +226,9 @@
     ],
     "unit": "f/cm³/s",
     "description": "Range of fission rates across experimental samples",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "thermodynamic",
@@ -207,7 +239,9 @@
     ],
     "unit": "°C",
     "description": "Beginning-of-life temperature range across experimental samples",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "phase_transformation",
@@ -215,7 +249,8 @@
     "value": 3.1e+21,
     "unit": "f/cm³",
     "description": "Fission density for complete recrystallization of UO₂ fuel (Berman 1963)",
-    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md"
+    "source_file": "summaries/2013_Kim_RecrystallizationFGBSwellingUMo.md",
+    "value_type": "scalar"
   },
   {
     "id": "2013_Kim_Recryst_001",

@@ -14,7 +14,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_b0",
@@ -31,7 +32,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_fn",
@@ -48,7 +50,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_rg",
@@ -65,7 +68,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_b0_unrecryst",
@@ -82,7 +86,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_b0_fine",
@@ -99,7 +104,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_Fd0",
@@ -116,7 +122,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_hs",
@@ -133,7 +140,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_bv",
@@ -150,7 +158,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_A_creep",
@@ -167,7 +176,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_Fd0_sat_range",
@@ -184,7 +194,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_swell_before_recryst",
@@ -201,7 +212,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_swell_after_recryst",
@@ -218,7 +230,8 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "Jian2022_bubble_radius_recryst",
@@ -235,6 +248,7 @@
     "source_paper": "Jian et al. 2022, J. Nucl. Mater. 565, 153769",
     "source_file": "2022_Jian_FissionGasSwellingModelU10Mo.md",
     "confidence": "medium",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   }
 ]

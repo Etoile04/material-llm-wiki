@@ -14,7 +14,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_002",
@@ -31,7 +32,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_003",
@@ -48,7 +50,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_004",
@@ -65,7 +68,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_005",
@@ -82,7 +86,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_006",
@@ -99,7 +104,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_007",
@@ -116,7 +122,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_008",
@@ -133,7 +140,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_009",
@@ -150,7 +158,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_010",
@@ -167,7 +176,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_011",
@@ -184,7 +194,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_012",
@@ -201,7 +212,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_013",
@@ -218,7 +230,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_014",
@@ -235,7 +248,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_015",
@@ -252,7 +266,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_016",
@@ -269,7 +284,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_017",
@@ -286,7 +302,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_018",
@@ -303,7 +320,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_019",
@@ -320,7 +338,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_020",
@@ -337,7 +356,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_021",
@@ -354,7 +374,8 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Arivu2024_022",
@@ -371,6 +392,7 @@
     "source_paper": "Arivu et al., Materials Letters 365, 136414 (2024)",
     "source_file": "2024_Arivu_APTSegregationGasBubblesUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

@@ -14,7 +14,9 @@
     "conditions": null,
     "notes": "PDF is image-based; quantitative parameters not extracted. Key parameter categories identified: intergranular resolution rate, hydrostatic pressure, grain-boundary diffusion enhancement factor. Manual extraction required from original PDF.",
     "category": "fuel_performance",
-    "source_file": "summaries/2015_Cui_MechanisticGaseousSwellingUMo.md"
+    "source_file": "summaries/2015_Cui_MechanisticGaseousSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "None"
   },
   {
     "source": {
@@ -31,7 +33,9 @@
     "conditions": null,
     "notes": "PDF is image-based; quantitative parameters not extracted. Manual extraction required.",
     "category": "fuel_performance",
-    "source_file": "summaries/2015_Cui_MechanisticGaseousSwellingUMo.md"
+    "source_file": "summaries/2015_Cui_MechanisticGaseousSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "None"
   },
   {
     "source": {
@@ -48,7 +52,9 @@
     "conditions": null,
     "notes": "PDF is image-based; quantitative parameters not extracted. Manual extraction required.",
     "category": "fuel_performance",
-    "source_file": "summaries/2015_Cui_MechanisticGaseousSwellingUMo.md"
+    "source_file": "summaries/2015_Cui_MechanisticGaseousSwellingUMo.md",
+    "value_type": "expression",
+    "value_expr": "None"
   },
   {
     "id": "2015_Cui_001",

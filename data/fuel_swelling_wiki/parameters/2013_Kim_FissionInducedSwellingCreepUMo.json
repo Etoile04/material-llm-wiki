@@ -7,7 +7,8 @@
     "unit": "cm³/MPa",
     "material": "U-10Mo",
     "note": "Creep strain rate proportional to stress and fission rate density",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "elastic",
@@ -45,7 +46,8 @@
       }
     ],
     "source": "Table comparison in Kim 2013",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "list"
   },
   {
     "category": "swelling",
@@ -55,7 +57,9 @@
     "coefficient": 5.0,
     "unit": "% per 10²¹ f/cm³",
     "material": "U-10Mo",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "swelling",
@@ -69,7 +73,9 @@
     },
     "unit": "%",
     "material": "U-10Mo",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "elastic",
@@ -86,7 +92,8 @@
         "unit": "GPa"
       }
     ],
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "list"
   },
   {
     "category": "elastic",
@@ -101,7 +108,8 @@
         "nu": 0.34
       }
     ],
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "list"
   },
   {
     "category": "elastic",
@@ -110,28 +118,32 @@
     "value": 280,
     "unit": "MPa",
     "condition": "irradiation-hardened",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "elastic",
     "parameter": "Strain hardening exponent",
     "material": "AA6061-T6",
     "value": 0.13,
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "fuel_performance",
     "parameter": "Monolithic fuel plate dimensions",
     "value": "100 × 25.4 × 1.4",
     "unit": "mm",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "fuel_performance",
     "parameter": "Fuel foil dimensions",
     "value": "82.6 × 19.0",
     "unit": "mm",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "fuel_performance",
@@ -148,7 +160,8 @@
         "unit": "mm"
       }
     ],
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "list"
   },
   {
     "category": "fuel_performance",
@@ -159,7 +172,9 @@
     "temperature_unit": "°C",
     "duration": 90,
     "duration_unit": "min",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "category": "irradiation",
@@ -175,7 +190,8 @@
       }
     ],
     "note": "Edge-on vs flat-plate fission density ratio",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "list"
   },
   {
     "category": "phase_transformation",
@@ -193,14 +209,16 @@
       }
     ],
     "note": "Approximate values",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "list"
   },
   {
     "category": "fuel_performance",
     "parameter": "Swelling measurement uncertainty",
     "value": 2,
     "unit": "%",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "scalar"
   },
   {
     "category": "irradiation",
@@ -211,7 +229,9 @@
     ],
     "unit": "°C",
     "note": "Athermal regime for fission-induced creep and swelling",
-    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md"
+    "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "id": "KIM13-CREEP-A",
@@ -228,7 +248,8 @@
     "source_paper": "Kim et al. 2013, J. Nucl. Mater.",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-CREEP-LAW",
@@ -245,7 +266,8 @@
     "source_paper": "Kim et al. 2013, J. Nucl. Mater.",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-E-UMO",
@@ -262,7 +284,8 @@
     "source_paper": "Kim et al. 2013 (citing Nomine & Bedere 1972)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-NU-UMO",
@@ -279,7 +302,8 @@
     "source_paper": "Kim et al. 2013 (citing Nomine & Bedere 1972)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-E-AL",
@@ -296,7 +320,8 @@
     "source_paper": "Kim et al. 2013 (citing Cheon & Kim 2012)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-SY-AL",
@@ -313,7 +338,8 @@
     "source_paper": "Kim et al. 2013 (citing Kim & Hofman 2011)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-SWELL-GAS",
@@ -330,7 +356,8 @@
     "source_paper": "Kim et al. 2013 (citing Kim & Hofman 2011, Eq. 3)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-SWELL-SOLID",
@@ -347,7 +374,8 @@
     "source_paper": "Kim et al. 2013 (citing Kim & Hofman 2011, Eq. 4)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-CREEP-COMPARE",
@@ -364,7 +392,8 @@
     "source_paper": "Kim et al. 2013, Table 3",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-STRAIN-HARD",
@@ -381,7 +410,8 @@
     "source_paper": "Kim et al. 2013 (citing Tamarin 2002)",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "KIM13-CREEP-ADDITIONAL",
@@ -398,7 +428,8 @@
     "source_paper": "Kim et al. 2013",
     "source_file": "summaries/2013_Kim_FissionInducedSwellingCreepUMo.md",
     "confidence": "low",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "2013_KimSC_001",

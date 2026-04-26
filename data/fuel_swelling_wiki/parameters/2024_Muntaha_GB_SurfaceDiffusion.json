@@ -14,7 +14,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_002",
@@ -31,7 +32,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_003",
@@ -48,7 +50,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_004",
@@ -65,7 +68,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_005",
@@ -82,7 +86,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_006",
@@ -99,7 +104,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_007",
@@ -116,7 +122,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_008",
@@ -133,7 +140,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_009",
@@ -150,7 +158,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_010",
@@ -167,7 +176,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_011",
@@ -184,7 +194,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_012",
@@ -201,7 +212,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_013",
@@ -218,7 +230,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_014",
@@ -235,7 +248,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_015",
@@ -252,7 +266,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_016",
@@ -269,7 +284,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_017",
@@ -286,7 +302,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_018",
@@ -303,7 +320,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Muntaha2024_019",
@@ -320,7 +338,8 @@
     "source_paper": "Muntaha et al., J. Nucl. Mater. 594 (2024) 155032",
     "source_file": "summaries/2024_Muntaha_GB_SurfaceDiffusion.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2024_Muntaha_001",

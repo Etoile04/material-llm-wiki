@@ -14,7 +14,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_nu",
@@ -31,7 +32,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_alpha",
@@ -48,7 +50,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_beta",
@@ -65,7 +68,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_bk",
@@ -82,7 +86,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_bg",
@@ -99,7 +104,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_kB",
@@ -116,7 +122,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_hs",
@@ -133,7 +140,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_bv",
@@ -150,7 +158,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_EffE_predicted",
@@ -167,7 +176,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_EffE_measured_64",
@@ -184,7 +194,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_EffE_measured_65",
@@ -201,7 +212,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_EffE_measured_57",
@@ -218,7 +230,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_porosity_L1P773",
@@ -235,7 +248,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Li2023_RVE_elements",
@@ -252,7 +266,8 @@
     "source_paper": "Li et al. 2023, J. Nucl. Mater. 579, 154359",
     "source_file": "summaries/2023_Li_ElasticConstantsU10Mo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2023Li_001",

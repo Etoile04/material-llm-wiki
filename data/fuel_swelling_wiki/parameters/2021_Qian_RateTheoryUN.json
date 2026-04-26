@@ -14,7 +14,8 @@
     "source_paper": "Qian et al. 2021, J Nucl Mater 556 153188",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_surface_energy",
@@ -31,7 +32,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_hydrostatic_pressure",
@@ -48,7 +50,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_vdw_constant",
@@ -65,7 +68,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_lattice_constant",
@@ -82,7 +86,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_surface_diffusivity_D0",
@@ -99,7 +104,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_surface_diffusivity_Ea",
@@ -116,7 +122,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_escape_layer",
@@ -133,7 +140,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_return_layer",
@@ -150,7 +158,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_Xe_diffusivity_D0",
@@ -167,7 +176,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_Xe_diffusivity_Ea",
@@ -184,7 +194,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_nucleation_factor",
@@ -201,7 +212,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_resolution_constant",
@@ -218,7 +230,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_grain_diameter",
@@ -235,7 +248,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_fission_yield",
@@ -252,7 +266,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_bubble_grouping_m",
@@ -269,7 +284,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_JOYO_fuel_diameter",
@@ -286,7 +302,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_JOYO_fuel_height",
@@ -303,7 +320,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_JOYO_density",
@@ -320,7 +338,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_JOYO_enrichment",
@@ -337,7 +356,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_gas_in_grain",
@@ -354,7 +374,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_gas_at_GB",
@@ -371,7 +392,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_gas_released",
@@ -388,7 +410,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_thermal_conductivity_coeff",
@@ -405,7 +428,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_thermal_conductivity_exp",
@@ -422,7 +446,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_cladding_thermal_cond_a",
@@ -439,7 +464,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_cladding_thermal_cond_b",
@@ -456,7 +482,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_cladding_thermal_cond_c",
@@ -473,7 +500,8 @@
     "source_paper": "Qian et al. 2021",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "thermodynamic"
+    "category": "thermodynamic",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_diffusivity_Oi_D0",
@@ -490,7 +518,8 @@
     "source_paper": "Oi (referenced in Qian et al. 2021)",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_diffusivity_Melehan_D0",
@@ -507,7 +536,8 @@
     "source_paper": "Melehan & Gates (in Qian 2021)",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_diffusivity_Melehan_Ea",
@@ -524,7 +554,8 @@
     "source_paper": "Melehan & Gates (in Qian 2021)",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_diffusivity_Biddle_D0",
@@ -541,7 +572,8 @@
     "source_paper": "Biddle (in Qian 2021)",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_diffusivity_BMI_D0",
@@ -558,7 +590,8 @@
     "source_paper": "BMI (in Qian 2021)",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Qian_2021_UN_diffusivity_NASA_D0",
@@ -575,6 +608,7 @@
     "source_paper": "NASA (in Qian 2021)",
     "source_file": "2021_Qian_RateTheoryUN.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   }
 ]

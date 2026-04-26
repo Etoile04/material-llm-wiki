@@ -14,7 +14,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_002",
@@ -31,7 +32,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_003",
@@ -48,7 +50,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_004",
@@ -65,7 +68,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_005",
@@ -82,7 +86,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_006",
@@ -99,7 +104,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_007",
@@ -116,7 +122,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_008",
@@ -133,7 +140,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_009",
@@ -150,7 +158,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_010",
@@ -167,7 +176,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_011",
@@ -184,7 +194,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_012",
@@ -201,7 +212,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_013",
@@ -218,7 +230,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_014",
@@ -235,7 +248,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_015",
@@ -252,7 +266,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_016",
@@ -269,7 +284,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_017",
@@ -286,7 +302,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_018",
@@ -303,7 +320,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_019",
@@ -320,7 +338,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_020",
@@ -337,7 +356,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_021",
@@ -354,7 +374,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_022",
@@ -371,7 +392,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_023",
@@ -388,7 +410,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_024",
@@ -405,7 +428,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_025",
@@ -422,7 +446,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_026",
@@ -439,7 +464,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_027",
@@ -456,7 +482,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_028",
@@ -473,7 +500,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_029",
@@ -490,7 +518,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "phase_transformation"
+    "category": "phase_transformation",
+    "value_type": "scalar"
   },
   {
     "id": "FigueroaBengoa2026_030",
@@ -507,7 +536,8 @@
     "source_paper": "Figueroa Bengoa et al., J. Nucl. Mater. 618, 156165 (2026)",
     "source_file": "summaries/2026_FigueroaBengoa_HighBurnupPorosityUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2026_PorositySwelling_001",

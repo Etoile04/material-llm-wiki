@@ -14,7 +14,8 @@
     "source_paper": "Aagesen et al. 2022, Mater Theory 6:8",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_interface_thickness",
@@ -31,7 +32,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_gradient_energy",
@@ -48,7 +50,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_double_well_height",
@@ -65,7 +68,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_defect_diffusivity_low",
@@ -82,7 +86,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_defect_diffusivity_high",
@@ -99,7 +104,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_source_rate",
@@ -116,7 +122,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_atomic_volume_gammaU",
@@ -133,7 +140,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_defect_production_rate",
@@ -150,7 +158,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_fission_rate_EBR2",
@@ -167,7 +176,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "irradiation"
+    "category": "irradiation",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_Xe_yield",
@@ -184,7 +194,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_percolation_threshold",
@@ -201,7 +212,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_percolation_center_low",
@@ -218,7 +230,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_percolation_center_high",
@@ -235,7 +248,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_full_interconnection_porosity",
@@ -252,7 +266,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_bubble_number_density",
@@ -269,7 +284,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_bubble_N_range_high",
@@ -286,7 +302,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_domain_size",
@@ -303,7 +320,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_initial_bubble_count",
@@ -320,7 +338,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_initial_bubble_radius",
@@ -337,7 +356,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_min_bubble_spacing",
@@ -354,7 +374,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_min_mesh_element",
@@ -371,7 +392,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_swelling_pct",
@@ -388,7 +410,8 @@
     "source_paper": "Hofman et al. 1997 (in Aagesen 2022)",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_bubble_diameter_range",
@@ -408,7 +431,8 @@
     "source_paper": "Hofman et al. 1990 (in Aagesen 2022)",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_phase_transition_temp",
@@ -425,7 +449,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_initial_vol_fraction",
@@ -442,7 +467,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_num_configurations",
@@ -459,7 +485,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_cores_used",
@@ -476,7 +503,8 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Aagesen_2022_bubble_id_threshold",
@@ -493,6 +521,7 @@
     "source_paper": "Aagesen et al. 2022",
     "source_file": "2022_Aagesen_PFBubbleInterconnection.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   }
 ]

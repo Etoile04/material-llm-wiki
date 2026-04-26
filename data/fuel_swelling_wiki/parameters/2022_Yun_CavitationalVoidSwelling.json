@@ -14,7 +14,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Em_v",
@@ -31,7 +32,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Ef_v",
@@ -48,7 +50,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Di0",
@@ -65,7 +68,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Em_i",
@@ -82,7 +86,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Dfg0",
@@ -99,7 +104,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Em_fg",
@@ -116,7 +122,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_rho_d",
@@ -133,7 +140,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_fn",
@@ -150,7 +158,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_grain_size",
@@ -167,7 +176,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_gamma_s",
@@ -184,7 +194,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Dbubble_highT",
@@ -201,7 +212,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_b_resolution",
@@ -218,7 +230,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_grain_size_gamma",
@@ -235,7 +248,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_T_phase_boundary",
@@ -252,7 +266,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_cavity_diameter",
@@ -269,7 +284,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_cavity_density",
@@ -286,7 +302,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_swell_lowT",
@@ -303,7 +320,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_stress_range",
@@ -320,7 +338,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_swell_highT_04",
@@ -337,7 +356,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_swell_highT_065",
@@ -354,7 +374,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_fgr_highT",
@@ -371,7 +392,8 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Yun2022_Em_v_Rest",
@@ -388,6 +410,7 @@
     "source_paper": "Qian, Xie, Fu, Yun et al. 2022, J. Nucl. Mater. 564, 153665",
     "source_file": "2022_Yun_CavitationalVoidSwelling.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

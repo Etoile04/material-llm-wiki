@@ -14,7 +14,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP002",
@@ -34,7 +35,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP003",
@@ -51,7 +53,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP004",
@@ -68,7 +71,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP005",
@@ -85,7 +89,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP006",
@@ -102,7 +107,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP007",
@@ -119,7 +125,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP008",
@@ -136,7 +143,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP009",
@@ -153,7 +161,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP010",
@@ -173,7 +182,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP011",
@@ -193,7 +203,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP012",
@@ -213,7 +224,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP013",
@@ -233,7 +245,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP014",
@@ -253,7 +266,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP015",
@@ -270,7 +284,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP016",
@@ -287,7 +302,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP017",
@@ -304,7 +320,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP018",
@@ -321,7 +338,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP019",
@@ -338,7 +356,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP020",
@@ -355,7 +374,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP021",
@@ -372,7 +392,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP022",
@@ -389,7 +410,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP023",
@@ -406,7 +428,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP024",
@@ -423,7 +446,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP025",
@@ -443,7 +467,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP026",
@@ -460,7 +485,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP027",
@@ -477,7 +503,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "KP028",
@@ -494,7 +521,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP029",
@@ -511,7 +539,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP030",
@@ -528,7 +557,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP031",
@@ -545,7 +575,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP032",
@@ -562,7 +593,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP033",
@@ -579,7 +611,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP034",
@@ -596,7 +629,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "KP035",
@@ -613,7 +647,8 @@
     "source_paper": "Kim et al. 2011",
     "source_file": "summaries/2011_Kim_FissionProductInducedSwellingUMo.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "2011_KimFPS_001",

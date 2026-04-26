@@ -14,7 +14,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "activation_energy"
+    "category": "activation_energy",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-DV0",
@@ -31,7 +32,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-EM",
@@ -48,7 +50,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-RIV",
@@ -65,7 +68,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-GAMMA",
@@ -82,7 +86,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-OMEGA",
@@ -99,7 +104,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-TIRR",
@@ -116,7 +122,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-TPEAK",
@@ -133,7 +140,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-INC-BU",
@@ -150,7 +158,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-GAS-REL",
@@ -167,7 +176,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-DRC",
@@ -184,7 +194,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-CV0-RC",
@@ -201,7 +212,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-CV-SS",
@@ -218,7 +230,8 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RES92-RC-CRIT",
@@ -235,6 +248,7 @@
     "source_paper": "Rest 1992, ASTM STP 1175",
     "source_file": "1992_Rest_CavitationalSwellingAlphaUPuZr.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

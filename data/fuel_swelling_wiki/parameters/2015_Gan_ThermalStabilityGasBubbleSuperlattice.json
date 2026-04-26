@@ -6,7 +6,8 @@
     "value": 1175,
     "unit": "°C",
     "note": "approximate",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "irradiation_temperature",
@@ -14,7 +15,8 @@
     "symbol": "Tirr",
     "value": 140,
     "unit": "°C",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "irradiation_temperature_ratio",
@@ -22,7 +24,8 @@
     "symbol": "Tirr/Tm",
     "value": 0.29,
     "unit": "dimensionless",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "GBS_formation_window",
@@ -34,7 +37,9 @@
     ],
     "unit": "T/Tm",
     "note": "for Mo reference; 161-741°C",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "parameter": "maximum_heating_temperature",
@@ -42,7 +47,8 @@
     "symbol": "Tht",
     "value": 850,
     "unit": "°C",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "maximum_heating_temperature_ratio",
@@ -50,7 +56,8 @@
     "symbol": "Tht/Tm",
     "value": 0.78,
     "unit": "dimensionless",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "fission_density",
@@ -74,7 +81,8 @@
         "unit": "fissions/cm³"
       }
     ],
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "list"
   },
   {
     "parameter": "gas_bubble_size",
@@ -99,7 +107,8 @@
         "unit": "nm"
       }
     ],
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "list"
   },
   {
     "parameter": "superlattice_constant",
@@ -107,14 +116,16 @@
     "value": 12,
     "unit": "nm",
     "note": "observed at fission densities 3.3×10²¹ and 5.2×10²¹ fissions/cm³",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "GBS_crystal_structure",
     "material": "U-10Mo",
     "value": "fcc",
     "note": "fcc gas bubble superlattice within bcc U-Mo matrix",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "Xe_Kr_ratio",
@@ -123,7 +134,8 @@
     "value": 10,
     "unit": "dimensionless",
     "note": "approximate",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "parameter": "fission_product_kinetic_energy",
@@ -141,14 +153,16 @@
         "note": "approximate per fragment"
       }
     ],
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "list"
   },
   {
     "parameter": "Xe_atomic_radius",
     "material": "Xe",
     "value": 2.15,
     "unit": "Å",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "heating_rate",
@@ -166,7 +180,8 @@
       }
     ],
     "note": "held at 700°C for 34 min between stages",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "list"
   },
   {
     "parameter": "hold_time",
@@ -175,7 +190,8 @@
     "temperature_unit": "°C",
     "value": 34,
     "unit": "min",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "TEM_column_pressure",
@@ -185,14 +201,17 @@
       1.5e-05
     ],
     "unit": "Pa",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "parameter": "FIB_TEM_sample_size",
     "instrument": "FIB-TEM",
     "value": "10×15",
     "unit": "μm²",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "Xe_mobility_in_Al_immobile_below",
@@ -203,7 +222,9 @@
     "temperature_ratio": 0.57,
     "temperature_ratio_unit": "T/Tm",
     "behavior": "immobile",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "parameter": "Xe_mobility_in_Al_mobile_above",
@@ -214,7 +235,9 @@
     "temperature_ratio": 0.6,
     "temperature_ratio_unit": "T/Tm",
     "behavior": "high mobility",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "parameter": "Xe_mobility_in_U10Mo",
@@ -225,7 +248,9 @@
     "temperature_ratio": 0.67,
     "temperature_ratio_unit": "T/Tm",
     "behavior": "low mobility",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "expression",
+    "value_expr": "N/A"
   },
   {
     "parameter": "gamma_phase_decomposition_time",
@@ -234,7 +259,8 @@
     "temperature_unit": "°C",
     "value": 5,
     "unit": "h",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "parameter": "gamma_phase_stable_above",
@@ -242,6 +268,8 @@
     "temperature": 580,
     "temperature_unit": "°C",
     "note": "γ-U phase stable above this temperature",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "expression",
+    "value_expr": "N/A"
   }
 ]

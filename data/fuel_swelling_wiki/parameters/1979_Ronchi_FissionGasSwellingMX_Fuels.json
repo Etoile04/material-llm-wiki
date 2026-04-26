@@ -14,7 +14,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-DS",
@@ -31,7 +32,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-DG",
@@ -48,7 +50,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-GAMMA",
@@ -65,7 +68,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-RPRIME",
@@ -82,7 +86,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-R0",
@@ -99,7 +104,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-VdW",
@@ -116,7 +122,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-RES",
@@ -133,7 +140,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-P",
@@ -150,7 +158,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-NMAX",
@@ -167,7 +176,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-DB",
@@ -184,7 +194,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-C0",
@@ -201,7 +212,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-KJ",
@@ -218,7 +230,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-X",
@@ -235,7 +248,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-PERC",
@@ -252,7 +266,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-TAU-B1",
@@ -269,7 +284,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-TAU-B2",
@@ -286,7 +302,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-TAU-TG",
@@ -303,7 +320,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-U-VAP",
@@ -320,7 +338,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-U-VAP-VAL",
@@ -337,7 +356,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "low",
-    "category": "diffusion"
+    "category": "diffusion",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-C1300",
@@ -354,7 +374,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-C1500",
@@ -371,7 +392,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-C1700",
@@ -388,7 +410,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-PVAL",
@@ -405,7 +428,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-N1300",
@@ -422,7 +446,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-N1500",
@@ -439,7 +464,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-N1700",
@@ -456,7 +482,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-SWELL-EQ",
@@ -473,7 +500,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "swelling"
+    "category": "swelling",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-CREEP",
@@ -490,7 +518,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "medium",
-    "category": "elastic"
+    "category": "elastic",
+    "value_type": "scalar"
   },
   {
     "id": "RON79-DISL",
@@ -507,7 +536,8 @@
     "source_paper": "Ronchi 1979, J. Nucl. Mater. 84, 55–84",
     "source_file": "summaries/1979_Ronchi_FissionGasSwellingMX_Fuels.md",
     "confidence": "low",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "1979_Ronchi_001",

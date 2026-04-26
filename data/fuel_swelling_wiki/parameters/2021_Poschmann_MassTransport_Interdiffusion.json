@@ -3,7 +3,7 @@
     "id": "poschmann2021_D0_alphaU",
     "name": "α-U phase pre-exponential diffusion coefficient",
     "symbol": "D_0^{\\alpha_U}",
-    "value": 1.35e-1,
+    "value": 0.135,
     "unit": "m²/s",
     "category": "diffusion",
     "material": "U-Pu-Zr (αU phase)",
@@ -11,7 +11,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Scaled by factor 3000 in this study. Original from Galloway et al. 2015."
+    "note": "Scaled by factor 3000 in this study. Original from Galloway et al. 2015.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_Q_alphaU",
@@ -25,13 +26,14 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Original from Galloway et al. 2015."
+    "note": "Original from Galloway et al. 2015.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_D0_alphaZr",
     "name": "α-Zr phase pre-exponential diffusion coefficient",
     "symbol": "D_0^{\\alpha_{Zr}}",
-    "value": 1.50e-1,
+    "value": 0.15,
     "unit": "m²/s",
     "category": "diffusion",
     "material": "U-Pu-Zr (αZr phase)",
@@ -39,7 +41,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Scaled by factor 3000 in this study. Original from Horváth et al. 1984."
+    "note": "Scaled by factor 3000 in this study. Original from Horváth et al. 1984.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_Q_alphaZr",
@@ -53,7 +56,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Original from Horváth et al. 1984."
+    "note": "Original from Horváth et al. 1984.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_D0_gamma",
@@ -112,13 +116,14 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "low",
-    "note": "All diffusion coefficients uniformly scaled by 3000 relative to literature values. Partially due to lower Q* values from Thermochimica vs assumed values."
+    "note": "All diffusion coefficients uniformly scaled by 3000 relative to literature values. Partially due to lower Q* values from Thermochimica vs assumed values.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_fuel_radius",
     "name": "T179 fuel pin radius",
     "symbol": "R_{fuel}",
-    "value": 2.16e-3,
+    "value": 0.00216,
     "unit": "m",
     "category": "fuel_performance",
     "material": "U-19Pu-10Zr",
@@ -126,7 +131,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "high",
-    "note": "T179 pin from EBR-II X419 experiment."
+    "note": "T179 pin from EBR-II X419 experiment.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_linear_heat_rate",
@@ -140,7 +146,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "high",
-    "note": "Corresponds to ~200 MW·d/t(iHM)."
+    "note": "Corresponds to ~200 MW·d/t(iHM).",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_burnup",
@@ -154,7 +161,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "high",
-    "note": "~92 days irradiation."
+    "note": "~92 days irradiation.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_T_centerline",
@@ -168,7 +176,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Fixed temperature profile, lower than previous studies."
+    "note": "Fixed temperature profile, lower than previous studies.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_T_periphery",
@@ -182,7 +191,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Fixed temperature profile."
+    "note": "Fixed temperature profile.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_phase_transition_temp",
@@ -196,7 +206,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "From TAF-ID thermodynamic calculations for as-fabricated composition."
+    "note": "From TAF-ID thermodynamic calculations for as-fabricated composition.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_fuel_density",
@@ -210,7 +221,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "high",
-    "note": "Used in SCALE/Triton neutronics calculation."
+    "note": "Used in SCALE/Triton neutronics calculation.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_miscibility_gap_temp",
@@ -224,7 +236,8 @@
     "source_paper": "Poschmann et al. 2021",
     "source_file": "2021_Poschmann_MassTransport_Interdiffusion",
     "confidence": "medium",
-    "note": "Appears above 795K at 1.9% FIMA composition, not present in fresh fuel."
+    "note": "Appears above 795K at 1.9% FIMA composition, not present in fresh fuel.",
+    "value_type": "scalar"
   },
   {
     "id": "poschmann2021_Zr_min_depleted",

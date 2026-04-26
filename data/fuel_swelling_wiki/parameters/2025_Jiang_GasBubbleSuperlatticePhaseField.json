@@ -14,7 +14,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_002",
@@ -31,7 +32,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_003",
@@ -48,7 +50,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_004",
@@ -65,7 +68,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_005",
@@ -82,7 +86,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_006",
@@ -99,7 +104,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_007",
@@ -116,7 +122,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "bubble"
+    "category": "bubble",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_008",
@@ -133,7 +140,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_009",
@@ -150,7 +158,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_010",
@@ -167,7 +176,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "medium",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_011",
@@ -184,7 +194,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_012",
@@ -201,7 +212,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_013",
@@ -218,7 +230,8 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   },
   {
     "id": "Jiang2025_014",
@@ -235,6 +248,7 @@
     "source_paper": "Jiang et al., Nucl. Eng. Des. 435, 113912 (2025)",
     "source_file": "2025_Jiang_GasBubbleSuperlatticePhaseField.md",
     "confidence": "high",
-    "category": "fuel_performance"
+    "category": "fuel_performance",
+    "value_type": "scalar"
   }
 ]

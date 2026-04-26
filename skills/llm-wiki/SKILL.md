@@ -23,6 +23,20 @@ Instead of RAG (re-retrieving raw docs every time), the LLM **compiles** raw sou
 
 Five operations: `compile`, `ingest`, `query`, `lint`, `audit`.
 
+### ⚠️ Anti-Duplication (Mandatory)
+
+**Before ingesting any paper or writing parameter files, you MUST check for duplicates.**
+
+1. **Read `paper_registry.json`** at wiki root. It maps DOI/slug → paper metadata.
+2. **DOI lookup**: If the paper has a DOI, search the registry by DOI key. If found → **append to existing slug**, do NOT create a new one.
+3. **Title fuzzy match**: If no DOI, compare paper title against registry entries (similarity > 0.85 → duplicate).
+4. **Author+Year check**: Check `first_author` + `year` combination for potential duplicates.
+5. **Slug format**: MUST be `YYYY_FirstAuthor_ShortTitle` (year first). `Author_YYYY_Title` format is **forbidden**.
+6. **Register**: After writing a new paper, add it to `paper_registry.json`.
+7. **Reports/handbooks** without DOI: use `report_id` field (e.g., `INL/EXT-15-36520`) as registry key.
+
+**Why**: Without this, parallel sub-agits create duplicate files with different slugs for the same paper, fragmenting parameters across files.
+
 ## Directory Layout
 
 ```
@@ -127,6 +141,16 @@ Add a new source. One source typically touches 5–15 wiki pages.
 Steps:
 
 #### 0. 源文件验证（Pre-ingest Check）
+
+**Step 0a: Duplicate Detection**
+1. Read `paper_registry.json` from wiki root
+2. If paper has DOI → lookup by DOI
+3. If no DOI → fuzzy match title against registry entries
+4. If duplicate found → use existing slug, merge new params into existing file
+5. If new → proceed with slug `YYYY_FirstAuthor_ShortTitle`
+6. After successful ingest → register paper in `paper_registry.json`
+
+**Step 0b: Source File Validation**
 1. 读取 MD 文件前 50 行，提取论文标题
 2. 与目录名/文件名对比
 3. 如不匹配：以 MD 内容中的标题为准，更新 slug 为 `YYYY_Author_ShortTitle`
@@ -363,6 +387,37 @@ crystal_structure | elastic | mechanical | thermodynamic | thermal | physical | 
 | `temperature` | string | 温度条件 | `"773 K"`, `"400-800 K"` |
 | `material` | string | 材料/合金体系 | `"U-10Mo"`, `"U-6Zr"` |
 | `uncertainty` | string | 不确定度 | `"±50%"` |
+
+### 论文注册表 (paper_registry.json)
+
+Wiki root 下的 `paper_registry.json` 是论文唯一性注册中心：
+
+```json
+{
+  "10.1016/j.jnucmat.2022.153665": {
+    "slug": "2022_Qian_U10Zr_CavitationalVoidSwelling",
+    "title": "Cavitational void swelling of U-10Zr...",
+    "year": 2022,
+    "first_author": "Qian",
+    "doi": "10.1016/j.jnucmat.2022.153665",
+    "report_id": null,
+    "has_params": true,
+    "param_count": 19
+  },
+  "INL/EXT-15-36520": {
+    "slug": "2018_Janney_MetallicFuelsHandbook",
+    "title": "Metallic Fuels Handbook...",
+    "year": 2018,
+    "first_author": "Janney",
+    "doi": null,
+    "report_id": "INL/EXT-15-36520",
+    "has_params": true,
+    "param_count": 112
+  }
+}
+```
+
+**用途**: 防止同一论文被不同子智能体以不同 slug 重复提取。提取前必须查询此文件。
 
 ### JSON 示例
 

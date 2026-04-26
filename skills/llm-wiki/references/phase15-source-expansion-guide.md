@@ -99,10 +99,13 @@ Phase 1.5 后半段优先补以下 4 个方向：
 
 新增候选文献在进入 ingest 前先做：
 
-1. 是否已在现有 summary / parameters 中出现
-2. 是否与已有 raw/mineru 目录重复
-3. 是否存在标题错配（目录名不可信，以正文标题为准）
-4. 是否值得进入本轮 Phase 1.5 范围
+1. **查询 `paper_registry.json`** — 按 DOI 精确匹配，按标题模糊匹配（>0.85）
+2. 是否已在现有 summary / parameters 中出现
+3. 是否与已有 raw/mineru 目录重复
+4. 是否存在标题错配（目录名不可信，以正文标题为准）
+5. 是否值得进入本轮 Phase 1.5 范围
+6. **如果重复**: 使用已有 slug，追加参数到现有文件，禁止创建新 slug
+7. **如果新论文**: 使用 `YYYY_FirstAuthor_ShortTitle` 格式创建 slug，注册到 paper_registry.json
 
 ## 本轮建议最低交付
 

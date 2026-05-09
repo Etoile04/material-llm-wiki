@@ -25,17 +25,6 @@ import argparse
 from pathlib import Path
 from collections import defaultdict
 
-# Maximum single-read size for subagent stability (bytes)
-MAX_READ_SIZE = 60000  # ~60KB
-
-CHUNKED_READ_INSTRUCTION = """
-## ⚠️ 读取限制（MANDATORY）
-- 如果 raw MD 文件 >60KB，必须分批读取（使用 read 工具的 offset/limit 参数）
-- 第一次读取前 1500 行（约 60KB）
-- 如果内容截断，用 offset 继续读取剩余部分
-- 不要一次性读取超过 60KB 的文件
-"""
-
 
 # ============================================================
 # Schema & Validation
@@ -273,24 +262,22 @@ EXTRACTION_PROMPT_TEMPLATE = """你是核材料知识库的参数提取专家。
 5. 报告新增参数数量和类别分布"""
 
 
-def generate_prompt(slug: str, raw_path: str, param_path: str, existing_count: int, raw_size_kb: int = 0) -> str:
+def generate_prompt(slug: str, raw_path: str, param_path: str, existing_count: int, source: str = "mineru") -> str:
     """Generate standardized extraction prompt."""
     source_paper = slug.split("_")[1] + "_" + slug.split("_")[0] if "_" in slug else slug
-    prompt = EXTRACTION_PROMPT_TEMPLATE.format(
+    # Determine correct source_file path
+    if source == "pdftotext":
+        source_file = f"raw/papers/{slug}.txt"
+    else:
+        source_file = f"raw/mineru/{slug}/paper.md"
+    return EXTRACTION_PROMPT_TEMPLATE.format(
         slug=slug,
         raw_path=raw_path,
         param_path=param_path,
         existing_count=existing_count,
         source_paper=source_paper,
-        source_file=f"raw/mineru/{slug}/paper.md",
+        source_file=source_file,
     )
-
-    # Append chunked-read instruction for large files
-    prompt += CHUNKED_READ_INSTRUCTION
-    if raw_size_kb > 60:
-        prompt += f"\n**注意: 该文件约 {raw_size_kb}KB，远超 60KB 限制。必须分批读取！**\n"
-
-    return prompt
 
 
 # ============================================================
@@ -298,8 +285,9 @@ def generate_prompt(slug: str, raw_path: str, param_path: str, existing_count: i
 # ============================================================
 
 def cmd_find_candidates(wiki_root: Path, mode: str, threshold: int = 40) -> list[dict]:
-    """Find papers that need extraction."""
-    raw_dir = wiki_root / "raw" / "mineru"
+    """Find papers that need extraction. Scans both raw/mineru/ and raw/papers/."""
+    mineru_dir = wiki_root / "raw" / "mineru"
+    papers_dir = wiki_root / "raw" / "papers"
     params_dir = wiki_root / "parameters"
     registry = load_registry(wiki_root)
 
@@ -309,68 +297,129 @@ def cmd_find_candidates(wiki_root: Path, mode: str, threshold: int = 40) -> list
         if not f.endswith('.json'):
             continue
         slug = f.replace('.json', '')
-        with open(params_dir / f, encoding='utf-8') as fp:
-            data = json.load(fp)
-            n = len(data) if isinstance(data, list) else 0
-        param_info[slug] = n
+        try:
+            with open(params_dir / f, encoding='utf-8') as fp:
+                data = json.load(fp)
+                n = len(data) if isinstance(data, list) else 0
+            param_info[slug] = n
+        except Exception:
+            param_info[slug] = 0
 
     candidates = []
+    seen_raw_paths = set()  # avoid duplicates between mineru and papers
 
-    for rd in sorted(os.listdir(raw_dir)):
-        rd_path = raw_dir / rd
-        if not os.path.isdir(rd_path):
-            continue
+    # --- Pass 1: raw/mineru/ (MinerU MD with formulas, preferred) ---
+    if mineru_dir.exists():
+        for rd in sorted(os.listdir(mineru_dir)):
+            rd_path = mineru_dir / rd
+            if not os.path.isdir(rd_path):
+                continue
 
-        # Find MD file
-        mds = [f for f in os.listdir(rd_path) if f.endswith('.md')]
-        if not mds:
-            continue
-        md_path = os.path.join(rd_path, mds[0])
-        md_size = os.path.getsize(md_path)
+            mds = [f for f in os.listdir(rd_path) if f.endswith('.md')]
+            if not mds:
+                continue
+            md_path = os.path.join(rd_path, mds[0])
+            md_size = os.path.getsize(md_path)
 
-        if md_size < 5000:  # Skip tiny files
-            continue
+            if md_size < 5000:
+                continue
 
-        # Try to match to existing slug
-        matched_slug = match_raw_to_slug(rd, set(param_info.keys()))
+            seen_raw_paths.add(os.path.normpath(md_path))
 
-        if matched_slug:
-            existing_count = param_info.get(matched_slug, 0)
+            matched_slug = match_raw_to_slug(rd, set(param_info.keys()))
 
-            if mode == "unextracted":
-                continue  # Already has params
-
-            if mode == "underextracted" and existing_count >= threshold:
-                continue  # Already well-extracted
-
-            slug = matched_slug
-            param_path = str(params_dir / f"{matched_slug}.json")
-        else:
-            # Truly new paper — generate slug from raw dir
-            year_match = re.search(r'(19\d{2}|20\d{2})', rd)
-            if not year_match:
-                continue  # Can't determine year
-
-            # Check registry for duplicate
-            dup = check_duplicate("", rd, year_match.group(1), "", registry)
-            if dup:
-                slug = dup
-                param_path = str(params_dir / f"{dup}.json")
-                existing_count = param_info.get(dup, 0)
+            if matched_slug:
+                existing_count = param_info.get(matched_slug, 0)
+                if mode == "unextracted":
+                    continue
+                if mode == "underextracted" and existing_count >= threshold:
+                    continue
+                slug = matched_slug
+                param_path = str(params_dir / f"{matched_slug}.json")
             else:
-                # Generate a slug
-                slug = standardize_slug(rd.replace(" ", "_")[:60])
-                param_path = str(params_dir / f"{slug}.json")
-                existing_count = 0
+                year_match = re.search(r'(19\d{2}|20\d{2})', rd)
+                if not year_match:
+                    continue
+                dup = check_duplicate("", rd, year_match.group(1), "", registry)
+                if dup:
+                    slug = dup
+                    param_path = str(params_dir / f"{dup}.json")
+                    existing_count = param_info.get(dup, 0)
+                else:
+                    slug = standardize_slug(rd.replace(" ", "_")[:60])
+                    param_path = str(params_dir / f"{slug}.json")
+                    existing_count = 0
 
-        candidates.append({
-            "slug": slug,
-            "raw_path": md_path,
-            "param_path": param_path,
-            "existing_count": existing_count,
-            "raw_size": md_size,
-            "raw_size_kb": md_size // 1024,
-        })
+            candidates.append({
+                "slug": slug,
+                "raw_path": md_path,
+                "param_path": param_path,
+                "existing_count": existing_count,
+                "raw_size": md_size,
+                "source": "mineru",
+            })
+
+    # --- Pass 2: raw/papers/ (pdftotext TXT, broader coverage) ---
+    if papers_dir.exists():
+        for f in sorted(os.listdir(papers_dir)):
+            if not f.endswith('.txt'):
+                continue
+            if f.startswith('auto'):
+                continue
+            txt_path = str(papers_dir / f)
+            txt_size = os.path.getsize(txt_path)
+
+            if txt_size < 5000:
+                continue
+
+            raw_slug = f.replace('.txt', '')
+
+            # Try to match to existing param slug
+            matched_slug = match_raw_to_slug(raw_slug, set(param_info.keys()))
+
+            # Also try direct slug match
+            if not matched_slug and raw_slug in param_info:
+                matched_slug = raw_slug
+
+            if matched_slug:
+                existing_count = param_info.get(matched_slug, 0)
+                if mode == "unextracted":
+                    continue
+                if mode == "underextracted" and existing_count >= threshold:
+                    continue
+                slug = matched_slug
+                param_path = str(params_dir / f"{matched_slug}.json")
+            else:
+                year_match = re.search(r'(19\d{2}|20\d{2})', raw_slug)
+                if not year_match:
+                    continue
+                dup = check_duplicate("", raw_slug, year_match.group(1), "", registry)
+                if dup:
+                    slug = dup
+                    param_path = str(params_dir / f"{dup}.json")
+                    existing_count = param_info.get(dup, 0)
+                else:
+                    slug = standardize_slug(raw_slug[:60])
+                    param_path = str(params_dir / f"{slug}.json")
+                    existing_count = 0
+
+            # Skip if already covered by mineru pass
+            if os.path.normpath(txt_path) in seen_raw_paths:
+                continue
+
+            # Check if we already have this slug from mineru pass
+            already = [c for c in candidates if c['slug'] == slug]
+            if already:
+                continue  # mineru version preferred
+
+            candidates.append({
+                "slug": slug,
+                "raw_path": txt_path,
+                "param_path": param_path,
+                "existing_count": existing_count,
+                "raw_size": txt_size,
+                "source": "pdftotext",
+            })
 
     return candidates
 
@@ -429,9 +478,10 @@ def cmd_generate_tasks(wiki_root: Path, candidates: list[dict], group_size: int 
         paper_list = []
         for p in group:
             prompt = generate_prompt(
-                p["slug"], p["raw_path"], p["param_path"], p["existing_count"], p["raw_size_kb"]
+                p["slug"], p["raw_path"], p["param_path"], p["existing_count"],
+                p.get("source", "mineru")
             )
-            paper_list.append(f"### 论文: {p['slug']} ({p['existing_count']} existing, {p['raw_size']//1024}KB raw)\n- Raw: {p['raw_path']}\n- Params: {p['param_path']}\n")
+            paper_list.append(f"### 论文: {p['slug']} ({p['existing_count']} existing, {p['raw_size']//1024}KB raw, {p.get('source','mineru')})\n- Raw: {p['raw_path']}\n- Params: {p['param_path']}\n")
 
         header = f"你是核材料知识库的参数提取专家。请从以下 {len(group)} 篇文献中深度提取参数。\n\n"
         header += "## 规则\n1. JSON 纯数组 `[...]` 2. value 字段存数值 3. value_type: scalar|range|expression|list 4. 无数值不创建 5. 表格每格一条\n\n"

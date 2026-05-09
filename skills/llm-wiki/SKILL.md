@@ -346,18 +346,18 @@ Steps:
 
 ### 7. `compare` — 参数版本比对
 
-对比两个参数目录（如 v1 和 v2），精确匹配论文级别变更。
+对比两个参数目录（如当前版本与备份版本），精确匹配论文级别变更。
 
 Steps:
-1. 读取两个参数目录（v1 和 v2）
-2. 运行 `scripts/compare_params.py`
+1. 读取两个参数目录（`--baseline <dir>` 和 `--updated <dir>`）
+2. 运行 `scripts/compare_params.py <baseline_dir> <updated_dir>`
 3. 按论文级别精确匹配（source_file + symbol + material + temperature）
 4. 分类输出：
    - **匹配**（matched）：完全一致
-   - **新增**（added）：v2 独有
+   - **新增**（added）：updated 独有
    - **修正**（corrected）：同 ID 但值/单位不同
    - **冲突**（conflict）：匹配键相同但值差异超阈值
-   - **缺失**（missing）：v1 有但 v2 无
+   - **缺失**（missing）：baseline 有但 updated 无
 5. 对冲突项标注差异原因：单位不同 / 条件不同 / 提取错误 / 疑似匹配错误
 6. Log to `log/YYYYMMDD.md`
 
@@ -559,8 +559,8 @@ Wiki root 下的 `paper_registry.json` 是论文唯一性注册中心：
 ingest → validate → (pass) → 写入 parameters/
                      → (fail) → 返回修复建议 → 人工审核 → 重新 ingest
 
-参数更新 → compare(v1, v2) → 匹配/新增/修正/冲突/缺失
-                                    → 冲突项 → 标注原因 → 人工裁定
+参数更新 → compare(baseline, updated) → 匹配/新增/修正/冲突/缺失
+                                        → 冲突项 → 标注原因 → 人工裁定
 
 textlint → validate + compare → 报告 → log/YYYYMMDD.md
 ```

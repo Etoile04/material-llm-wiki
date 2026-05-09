@@ -25,6 +25,17 @@ import argparse
 from pathlib import Path
 from collections import defaultdict
 
+# Maximum single-read size for subagent stability (bytes)
+MAX_READ_SIZE = 60000  # ~60KB
+
+CHUNKED_READ_INSTRUCTION = """
+## ⚠️ 读取限制（MANDATORY）
+- 如果 raw MD 文件 >60KB，必须分批读取（使用 read 工具的 offset/limit 参数）
+- 第一次读取前 1500 行（约 60KB）
+- 如果内容截断，用 offset 继续读取剩余部分
+- 不要一次性读取超过 60KB 的文件
+"""
+
 
 # ============================================================
 # Schema & Validation
@@ -262,10 +273,10 @@ EXTRACTION_PROMPT_TEMPLATE = """你是核材料知识库的参数提取专家。
 5. 报告新增参数数量和类别分布"""
 
 
-def generate_prompt(slug: str, raw_path: str, param_path: str, existing_count: int) -> str:
+def generate_prompt(slug: str, raw_path: str, param_path: str, existing_count: int, raw_size_kb: int = 0) -> str:
     """Generate standardized extraction prompt."""
     source_paper = slug.split("_")[1] + "_" + slug.split("_")[0] if "_" in slug else slug
-    return EXTRACTION_PROMPT_TEMPLATE.format(
+    prompt = EXTRACTION_PROMPT_TEMPLATE.format(
         slug=slug,
         raw_path=raw_path,
         param_path=param_path,
@@ -273,6 +284,13 @@ def generate_prompt(slug: str, raw_path: str, param_path: str, existing_count: i
         source_paper=source_paper,
         source_file=f"raw/mineru/{slug}/paper.md",
     )
+
+    # Append chunked-read instruction for large files
+    prompt += CHUNKED_READ_INSTRUCTION
+    if raw_size_kb > 60:
+        prompt += f"\n**注意: 该文件约 {raw_size_kb}KB，远超 60KB 限制。必须分批读取！**\n"
+
+    return prompt
 
 
 # ============================================================
@@ -351,6 +369,7 @@ def cmd_find_candidates(wiki_root: Path, mode: str, threshold: int = 40) -> list
             "param_path": param_path,
             "existing_count": existing_count,
             "raw_size": md_size,
+            "raw_size_kb": md_size // 1024,
         })
 
     return candidates
@@ -410,7 +429,7 @@ def cmd_generate_tasks(wiki_root: Path, candidates: list[dict], group_size: int 
         paper_list = []
         for p in group:
             prompt = generate_prompt(
-                p["slug"], p["raw_path"], p["param_path"], p["existing_count"]
+                p["slug"], p["raw_path"], p["param_path"], p["existing_count"], p["raw_size_kb"]
             )
             paper_list.append(f"### 论文: {p['slug']} ({p['existing_count']} existing, {p['raw_size']//1024}KB raw)\n- Raw: {p['raw_path']}\n- Params: {p['param_path']}\n")
 

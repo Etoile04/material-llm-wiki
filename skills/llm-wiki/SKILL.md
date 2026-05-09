@@ -26,12 +26,14 @@ description: >-
 | "校验" / "validate" / "检查质量" | `python3 scripts/batch_extract.py --mode post-validate` | MUST: 修复所有 issues > 0 |
 | "去重" / "dedup" / "合并" | `python3 scripts/dedup_merge.py` | — |
 | "查论文" / "query" | 直接搜索 wiki/summaries + parameters/ | — |
+| "验证ingest" / "post-validate" / "检查文件" | `python3 scripts/verify_ingest.py --wiki-root . --slugs slug1 slug2` | MUST: 每批 ingest 后必须验证文件存在 |
 
 ### 🚫 禁止操作
 
 - **禁止手写 sessions_spawn prompt 进行参数提取** — 必须用 `batch_extract.py` 生成的标准化任务
 - **禁止不查 registry 就创建新 slug** — 必须先 `check_duplicate()`
 - **禁止提取后不运行 post-validate** — issues 必须 = 0 才能结束
+- **禁止信任子智能体返回文本作为成功标志** — 必须用 `verify_ingest.py` 验证文件实际创建
 
 ### 为什么？
 
@@ -40,6 +42,14 @@ description: >-
 - Prompt 不稳定导致字段名混乱（scalar/number/confidence=0.95）
 - 无自动查重导致 slug 重复
 - 需要手动 5 轮 post-validate 修复 2,494 个问题
+
+### 为什么？（续：批量 ingest 教训）
+
+2026-05-08 教训: 103 篇批量 ingest 中:
+- 20% 子智能体返回原始论文文本（空跑，0 token output）
+- 特殊字符 slug（空格、中文、逗号）导致 read/write 路径错误
+- "completed successfully" 状态与实际文件创建不一致
+- 分批读取（<60KB）可将空跑率从 20% 降至 0%
 
 ## Core Idea
 
@@ -59,6 +69,11 @@ Five operations: `compile`, `ingest`, `query`, `lint`, `audit`.
 3. **Title fuzzy match**: If no DOI, compare paper title against registry entries (similarity > 0.85 → duplicate).
 4. **Author+Year check**: Check `first_author` + `year` combination for potential duplicates.
 5. **Slug format**: MUST be `YYYY_FirstAuthor_ShortTitle` (year first). `Author_YYYY_Title` format is **forbidden**.
+6. **Slug sanitization（必须执行）**: 
+   - 所有非 DOI 格式的目录名在转为 slug 时必须经过 `slug_utils.sanitize_slug()` 处理
+   - 替换空格、逗号、中文、特殊字符为下划线
+   - DOI slug（`10_xxxx` 格式）保持不变
+   - 详见 `scripts/slug_utils.py`
 6. **Register**: After writing a new paper, add it to `paper_registry.json`.
 7. **Reports/handbooks** without DOI: use `report_id` field (e.g., `INL/EXT-15-36520`) as registry key.
 
@@ -227,6 +242,13 @@ pdftotext "<pdf_path>" raw/papers/<slug>.txt
 3. **目录名预校验**：转换前先检查目录名是否与 PDF 实际标题匹配（昨发现 `Xie_2020` 实际是 Beeler 论文）。以 PDF 正文标题为准，不匹配时记录到 log 并修正 slug
 
 #### 2. 读取源文件全文
+
+**⚠️ 文件大小限制（防止子智能体空跑）**
+- raw MD 文件 >60KB 时，**禁止一次性读取全文**
+- 使用 `read` 工具的 `offset`/`limit` 参数分批读取（每次 1500 行）
+- 子智能体 echo 原文是空跑的标志，分批读取可避免
+- 经验值：60KB 以下 glm-5-turbo 稳定，超过则需要分批
+
 - 读取 MD/TXT 文件全文
 - ⚠️ pdftotext 文件前 200 行可能是元数据，跳过
 - ⚠️ MinerU 输出中 `Formula Recognition: ❌ Disabled` 的需重新转换

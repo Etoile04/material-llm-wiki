@@ -27,3 +27,8 @@ steps:
   - id: report
     command: "python3 -c \"import json,sys,os,glob; wiki=os.environ.get('WIKI_ROOT','/Users/lwj04/.openclaw/workspace/data/fuel_swelling_wiki'); sums=glob.glob(os.path.join(wiki,'wiki','summaries','*.md')); params=glob.glob(os.path.join(wiki,'parameters','*.json')); raws=glob.glob(os.path.join(wiki,'raw','papers','*')); print(json.dumps({'status':'complete','summaries':len(sums),'params_files':len(params),'raw_files':len(raws)},ensure_ascii=False))\""
     stdin: $validate.stdout
+
+  # ── Step 6: Post-ingest Supabase sync ──
+  - id: post-sync
+    command: "bash /Users/lwj04/.openclaw/workspace/scripts/sync_auto_trigger.sh"
+    stdin: $report.stdout

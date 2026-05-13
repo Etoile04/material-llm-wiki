@@ -38,3 +38,6 @@ IDENTITY.md
 HEARTBEAT.md
 memory/
 .learnings/
+
+# Superpowers worktrees
+.worktrees/

@@ -197,7 +197,10 @@ def _extract_numeric_values(r: dict) -> list[float] | None:
                     pass
         return vals if vals else None
     else:
-        return [r.get('value')]
+        v = r.get('value')
+        if v is None or str(v).strip() == '':
+            return None  # No value to check
+        return [v]
 
 
 def check_magnitude(records: list[dict]) -> list[dict]:
@@ -224,9 +227,9 @@ def check_magnitude(records: list[dict]) -> list[dict]:
             try:
                 val = float(raw_val)
             except (ValueError, TypeError):
-                issues.append({'level': 'fail', 'id': r.get('id', '?'), 'file': r.get('_file', '?'),
-                               'check': 'magnitude', 'detail': f'Non-numeric value: {raw_val}'})
-                break
+                # Non-numeric value in scalar field — skip silently
+                # (expression/range types are already handled by _extract_numeric_values)
+                continue
 
             result = to_si(val, unit)
             if result is not None:

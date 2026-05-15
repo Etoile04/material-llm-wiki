@@ -22,6 +22,9 @@ def infer_value_type(record: dict) -> str:
     if val is None:
         return "scalar"
 
+    if isinstance(val, bool):
+        return "scalar"
+
     if isinstance(val, (int, float)):
         return "scalar"
 
@@ -116,6 +119,7 @@ def fix_file(filepath: str) -> tuple:
         records = json.load(f)
 
     if not isinstance(records, list):
+        print(f"  WARNING: {filename} is not a list — skipped", file=sys.stderr)
         return 0, 0
 
     total = len(records)

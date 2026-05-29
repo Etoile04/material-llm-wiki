@@ -1,0 +1,1 @@
+/Users/lwj04/.openclaw/workspace/docs/superpowers/specs/2026-05-29-ref-gap-fill-design.md

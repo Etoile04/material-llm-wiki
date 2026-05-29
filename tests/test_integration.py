@@ -68,14 +68,11 @@ class TestAdapterCompatibility:
             "source": "Test Paper 2024",
         }
         adapted = adapt_wiki_param(param)
-        # Wiki adapter returns confidence as float (0.8);
-        # write_ref_value expects a string. Normalize before passing.
-        adapted["confidence"] = "high" if adapted["confidence"] >= 0.8 else "medium"
         result = write_ref_value(adapted, _existing=[])
         assert result.status in (WriteStatus.WRITTEN_AUTO, WriteStatus.WRITTEN_PENDING_REVIEW)
 
-    def test_wiki_adapter_raw_confidence_type_mismatch(self):
-        """Document known type mismatch: wiki adapter returns float confidence."""
+    def test_wiki_adapter_confidence_is_string(self):
+        """Wiki adapter should return confidence as string (fixed)."""
         param = {
             "system": "Mo",
             "phase": "BCC",
@@ -88,8 +85,8 @@ class TestAdapterCompatibility:
         }
         adapted = adapt_wiki_param(param)
         # confidence should be str for write_ref_value compatibility
-        assert isinstance(adapted["confidence"], float), (
-            "wiki adapter returns float confidence — write_ref_value expects str; "
+        assert isinstance(adapted["confidence"], str), (
+            "wiki adapter must return string confidence for write_ref_value compatibility; "
             "consumers must normalize"
         )
 

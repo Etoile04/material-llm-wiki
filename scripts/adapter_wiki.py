@@ -115,7 +115,7 @@ def adapt_wiki_param(param: dict) -> dict:
         "method": param.get("method", ""),
         "source": param.get("source", ""),
         "source_doi": param.get("source_doi", ""),
-        "confidence": param.get("confidence", 0.8),
+        "confidence": str(param.get("confidence", "medium")),
         "uncertainty": param.get("uncertainty"),
         "temperature": temperature,
     }

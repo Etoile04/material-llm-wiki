@@ -28,6 +28,9 @@ data/fuel_swelling_wiki/raw/pdftotext/
 
 # Knowledge base data (generated outputs)
 data/
+!data/property-mapping.json
+!data/ref-gaps/
+!data/ref-logs/
 
 # Private workspace memory / persona files
 MEMORY.md

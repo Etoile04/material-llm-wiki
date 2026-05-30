@@ -9,7 +9,7 @@
 |----|--------|------|------|
 | L2.1 | 缺口分析 vs 真实 PG | ✅ PASSED | 89 缺口 / 23 已填 / 112 目标，数量平衡 |
 | L2.2 | L1 缓存命中/未命中 | ✅ PASSED | U BCC C11=119 命中，U-Zr C33 未命中 |
-| L2.3 | L2 NFMD 缓存查询 | ⏭️ SKIPPED | SUPABASE_URL/KEY 未配置 |
+| L2.3 | L2 NFMD 缓存查询 | ✅ PASSED | 43 条 NFMD 参数，映射链路正确；弹性常数数据缺失是预期 |
 | L2.4 | 真实写入 PG (受控) | ⚠️ PARTIAL | 写入+清理成功，但 PG 缺 UNIQUE constraint |
 | L2.5 | L3A Wiki adapter | ✅ PASSED | adapter 可用且转换正确，knowledge/params 待慢线构建 |
 | L2.6 | 全量范围校验 | ✅ PASSED | 23/23 条均在范围内 |
@@ -17,7 +17,7 @@
 | L3.2 | 快线模式 C (U-Mo C44) | ✅ PASSED | L3A 知识库提取 C44=49.52 GPa，范围校验通过 |
 | L3.3 | RefLogger 真实日志 | ✅ PASSED | JSON 日志完整，cache_hits.L1=3 |
 
-**通过率: 7/9 (L2.3 skip + L2.4 partial = 符合方案预期)**
+**通过率: 8/9 (L2.4 partial = PG 缺 constraint，其余全部通过)**
 
 ## 关键发现
 
@@ -26,23 +26,29 @@
 - **影响:** 应用层 write_ref_value.py 有去重，但直接 SQL 写入可产生重复
 - **建议:** 添加 UNIQUE constraint 或至少添加 UNIQUE INDEX
 
-### F2: L3A 知识库数据丰富
+### F2: NFMD 参数库现状
+- 43 条参数，主要是密度/力学性能，无弹性常数
+- `nfmd-postgres` 容器因 5432 端口冲突无法启动（需改端口或停 nucpot-db）
+- L2 缓存查询链路正确，但数据覆盖率低
+- 建议: 慢线优先回填 NFMD parameters 表
+
+### F3: L3A 知识库数据丰富
 - 本地 llm-wiki 参数库包含大量 U-Mo 弹性常数数据
 - 4 个来源给出 C44 ≈ 42-50 GPa，一致性良好
 - L3 cache 是快线的重要数据源
 
-### F3: 网络搜索不稳定
+### F4: 网络搜索不稳定
 - web_search 连续超时，web_fetch 也受阻
 - 快线模式 C 的文献搜索功能受网络限制
 - 建议: 快线优先查 L3A 本地知识库，网络搜索作为补充
 
-### F4: cache_query L1 接口设计
+### F5: cache_query L1 接口设计
 - `query_l1()` 使用 `_mock_rows` kwarg 注入数据
 - 生产使用时需通过 PG 连接获取数据
 - 当前无 PG 连接池模块（L1 查询靠 SSH tunnel）
 
 ## 未覆盖项
-- L2 缓存查询 (NFMD Supabase) — 需配置环境变量
+- NFMD parameters 数据覆盖扩展 (回填弹性常数)
 - 真实 LLM 物性提取 (PDF → LLM) — 网络超时
 - Agent 级编排 (nucpot-db → nucpot-librarian) — 需 agent 启动
 

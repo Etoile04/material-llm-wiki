@@ -5,7 +5,7 @@
 | **项目名** | ref-gap-fill |
 | **负责人** | 李文杰 |
 | **开发代理** | main (调度) |
-| **状态** | 🟢 开发中 (子项目 A+B+D 完成，C 待实现) |
+| **状态** | 🟢 开发完成 (Phase 1+2 全部完成，待交付确认) |
 | **开始日期** | 2026-05-29 |
 | **预计完成** | 2026-06-05 |
 | **设计规范** | `docs/superpowers/specs/2026-05-29-ref-gap-fill-design.md` |
@@ -18,10 +18,11 @@
 |--------|------|------|------|-------------|
 | **A: 基础设施** | T1-T8 | ✅ 完成 | 51/51 | 8 commits |
 | **B: 快线技能** | T9-T10 | ✅ 完成 | — | — (SKILL.md 无 pytest) |
-| **C: 慢线** | cron + 回填 | 🔜 待实现 | — | — |
+| **C: 慢线** | T14-T22 | ✅ 完成 | 20/20 | 3 commits |
 | **D: 编排+验证** | T11-T13 | ✅ 完成 | 21/21 | 3 commits |
+| **E: Phase 2 测试** | T23 | ✅ 完成 | 16/16 | 1 commit |
 
-## 总测试: 72/72 通过
+## 总测试: 108/108 通过
 
 ## 关键产出物
 
@@ -46,7 +47,8 @@
 - 10 个测试文件, 72 个测试用例, 0 失败
 
 ## 遗留问题
-- 慢线 (子项目 C) 未实现：cron 配置、Zotero tag 管理、回填流程
-- ontofuel 本体缺少 C11/C12/C44/C33 属性定义
-- nucpot-db / nucpot-librarian agent 配置未添加到 openclaw.json
+- ontofuel 本体 C11/C12/C44/C33 已扩展（workspace-extractor 仓库）
+- nucpot-db / nucpot-librarian agent 配置已添加到 openclaw.json
+- 慢线 cron job 已注册 (每周一 09:00 CST)
+- 慢线 L2 Supabase 实际写入标记为 TODO（格式转换已完成）
 - 专家审查待通过 (M0.9)

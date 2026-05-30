@@ -9,3 +9,4 @@
 | 5 | T6 完成事件丢失 (session yield) | 🟢已解决 | 2026-05-30 | 通过直接跑测试确认 |
 | 6 | gitignore 排除 data/ 导致 property-mapping.json 不追踪 | 🟢已解决 | 2026-05-30 | 添加 `!data/property-mapping.json` 例外 |
 | 7 | 慢线 L2 Supabase 实际写入未实现 | 🟡处理中 | 2026-05-30 | 格式转换已完成，INSERT 标记 TODO |
+| 8 | PG reference_values 缺 UNIQUE constraint (element_system, phase, property, method, source) | 🟡待解决 | 2026-05-30 | L2.4 发现：重复写入未被 DB 拦截，应用层有去重但 DB 层无保护 |

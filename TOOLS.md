@@ -16,6 +16,26 @@
 - **预检步骤**：写入前先 COUNT 预览影响行数 + 确认备份存在
 - **教训来源**：2026-05-11 子智能体误执行 TRUNCATE 导致全部修复回滚
 
+## ThinkStation Docker 容器端口映射
+
+| 容器名 | 服务 | 端口 | 用途 |
+|--------|------|------|------|
+| nucpot-nucpot-db-1 | PostgreSQL 16 | 5432 | reference_values / potentials / verifications (库: nucpot, 用户: nucpot) |
+| nfmd-postgres | PostgreSQL 16 | **15432** | NFMD parameters / materials / literature (库: nfmd, 用户: postgres) |
+| nucpot-autovc-api-1 | FastAPI | 8001 | 势函数验证 API |
+
+- `nfmd-postgres` 端口从 5432 改为 15432（2026-05-30），避免与 nucpot-db 冲突
+- 数据卷: `nfmd_pgdata`，跨容器重建保留
+- 从 Mac 远程直连 NFMD: `100.70.30.21:15432`
+- ThinkStation 上的脚本走 `localhost:54321`(REST) 或 `docker exec`，不受端口变更影响
+
+## ThinkStation SSH
+- **Host**: z203-ThinkStation-P3-Tower (Linux, Ubuntu 22.04, x86_64)
+- **Tailscale IP**: 100.70.30.21
+- **SSH**: `ssh z203@100.70.30.21`
+- **User**: z203
+- **Tailscale account**: Etoile04@
+
 Local tool notes placeholder.
 
 This file is intentionally minimal in the public repository.

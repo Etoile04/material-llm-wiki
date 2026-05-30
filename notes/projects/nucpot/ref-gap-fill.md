@@ -5,85 +5,97 @@
 ## 基本信息
 
 - **类型**: 多智能体自动化系统
-- **状态**: Design Phase Complete (v0.1) — 待专家审查
+- **状态**: ✅ **Phase 2 完成** — 快线 9/9 + 慢线 11/11 功能测试全部通过
 - **开始日期**: 2026-05-29
-- **目标截止**: 2026-06-10 (预估 6-10 天实施)
+- **当前日期**: 2026-05-30
 
-## 问题陈述
+## 架构概览
 
-NucPot 势函数验证服务依赖 `reference_values` 表，但仅 23 条记录覆盖 5 个体系。实际需 14+ 体系 × 8+ 物性 ≈ 100+ 条。手动补充不可持续。
+```
+验证服务 → GapRequest → nucpot-db (三级缓存 + 编排)
+                              ├─ L1: reference_values (PG, 23条) → HIT: 返回
+                              ├─ L2: NFMD parameters (15432, 43条) → HIT: 返回
+                              ├─ L3: llm-wiki + ontofuel → HIT: 返回
+                              └─ 全 MISS → 快线 (nucpot-librarian)
+                                    搜索→提取→分级写入
 
-## 设计方案
+慢线 (cron 每周一 09:00):
+  Zotero 扫描 → llm-wiki ingest → ontofuel 提取 → 三级缓存回填
+```
 
-**多智能体协作 + 快慢线分离：**
-- **数据库智能体** (nucpot-db): 三级缓存查询 + 编排
-- **搜索智能体** (nucpot-librarian): 快线搜索/提取
-- **慢线**: cron 每周消化文献，回填缓存
+## 完成状态
 
-**三级缓存**: L1 reference_values (23条) → L2 NFMD (6981条) → L3 llm-wiki + ontofuel
+| 里程碑 | 状态 | 说明 |
+|--------|------|------|
+| M1: 基础设施 | ✅ | 12 物性映射, 三级缓存, 6 适配器, 质量门控 |
+| M2: 快线跑通 | ✅ | 9/9 功能测试通过, U-Mo C44 端到端验证 |
+| M3: 慢线上线 | ✅ | 11/11 功能测试通过, cron 每周一触发 |
+| M4: 全量覆盖 | ⏳ | 23→100+ 条需持续运行 |
+
+## 测试结果
+
+- **单元测试**: 108/108 通过 (Phase 1: 72 + Phase 2: 36)
+- **快线功能测试**: 9/9 通过
+- **慢线功能测试**: 11/11 通过
+- **PG UNIQUE 约束**: 已添加 `uq_ref_value_unique`
 
 ## 文件索引
 
-### 设计文档（本目录）
+### 项目管理 (projects/ref-gap-fill/)
 
 | 文件 | 说明 |
 |------|------|
-| `prd-ref-gap-fill.md` | 产品需求文档 v1.0 (22KB) |
-| `ref-gap-fill-progress.md` | 阶段性进展总结 + 10 个待审查问题 (11KB) |
-| `design-spec.md` | 详细设计规格，含消息 schema + 文件清单 (23KB) |
+| `STATE.json` | 项目状态机 |
+| `DECISIONS.md` | 9 个设计决策 (D001-D009) |
+| `WORK_LOG.md` | 每日工作日志 |
+| `ISSUES.md` | 已知问题跟踪 |
+| `SIGNALS.md` | 信号采集配置 |
+| `README.md` | 项目说明 |
+| `express-test-report.md` | 快线测试报告 |
+| `slowlane-test-report.md` | 慢线测试报告 |
 
-> 注：设计规格原始文件在 `docs/superpowers/specs/2026-05-29-ref-gap-fill-design.md`，此处为 PARA 归档副本。
-
-### 关联技能文件（只读引用）
-
-| 文件 | 说明 |
-|------|------|
-| `~/.openclaw/skills/ref-gap-fill/SKILL.md` | 现有技能 (待重构为编排协议) |
-| `~/.openclaw/skills/ref-gap-fill/test-prompts.json` | darwin-skill 测试用例 |
-
-### 关联代码/数据（只读引用）
+### 设计文档 (docs/superpowers/)
 
 | 文件 | 说明 |
 |------|------|
-| `projects/2026-Q2-database-platform/sql/current_schema_dump.sql` | NFMD schema |
-| `skills/llm-wiki/pipeline/*.lobster` | 可复用的 Lobster 工作流 |
-| `skills/llm-wiki/scripts/zotero_sync.py` | Zotero 同步脚本 |
-| `workspace-extractor/src/ontofuel/` | ontofuel Python API |
+| `specs/2026-05-29-ref-gap-fill-design.md` | 详细设计规格 |
+| `specs/2026-05-30-ref-gap-fill-phase2-design.md` | Phase 2 设计 |
+| `specs/2026-05-30-express-functional-test-plan.md` | 快线测试方案 |
+| `specs/2026-05-30-slowlane-functional-test-plan.md` | 慢线测试方案 |
+| `plans/2026-05-30-ref-gap-fill-phase2-implementation.md` | Phase 2 实施计划 |
+
+### 代码 (scripts/ + tests/)
+
+| 文件 | 说明 |
+|------|------|
+| `scripts/property-mapping.json` | 12 物性映射 + 范围 |
+| `scripts/gap_analyzer.py` | 缺口分析 |
+| `scripts/cache_query.py` | 三级缓存查询 |
+| `scripts/adapter_*.py` | 6 个适配器 (nfmd/wiki/ontology) |
+| `scripts/write_ref_value.py` | 分级写入 |
+| `scripts/db_migrate.py` | PG schema |
+| `scripts/slowlane_backfill.py` | 慢线回填 |
+| `scripts/ref_logger.py` | 日志记录 |
+| `scripts/message_schemas.py` | 消息协议 |
+| `tests/test_*.py` | 14 个测试文件, 108 tests |
 
 ## 关键决策
 
-| # | 决策 | 选择 | 确认日期 |
-|---|------|------|----------|
-| Q1 | 智能体架构 | 新建 nucpot-db + nucpot-librarian | 2026-05-29 |
-| Q2 | 慢线触发 | 混合：快线标记 + cron 批量 | 2026-05-29 |
-| Q3 | 写入策略 | 分级：high auto / medium-low 待审 | 2026-05-29 |
-| Q4 | 数据存储 | 本地 PG 为主，慢线双写 NFMD | 2026-05-29 |
-
-## 实施计划
-
-| 子项目 | 范围 | 预估 | 依赖 |
-|--------|------|------|------|
-| A: 基础设施 | property-mapping, cache-query, adapters, write-ref-value | 2-3d | 无 |
-| B: 快线 | librarian-search/extract SKILL, nucpot-librarian agent | 2-3d | A |
-| C: 慢线 | cron, llm-wiki + ontofuel 集成, 回填 | 1-2d | A |
-| D: 编排集成 | ref-gap-fill SKILL 重构, nucpot-db agent, E2E 测试 | 1-2d | A+B+C |
-
-**执行顺序: A → B/C 并行 → D**
-
-## 可复用资产
-
-详见 → [../resources/ref-gap-fill-reuse-audit.md]
-
-## 里程碑
-
-- [ ] M1: 基础设施就绪 (property-mapping + cache-query + adapters)
-- [ ] M2: 快线跑通 (U-Mo BCC 缺口端到端)
-- [ ] M3: 慢线上线 (cron + 消化 + 回填)
-- [ ] M4: 系统集成 (reference_values 达 100+ 条)
+| # | 决策 | 选择 | 状态 |
+|---|------|------|------|
+| D001 | 智能体架构 | nucpot-db + nucpot-librarian | ✅ 已验证 |
+| D002 | 慢线触发 | 快线标记 + cron 批量 | ✅ cron 已注册 |
+| D003 | 写入策略 | 分级 (high/medium/low) | ✅ 已验证 |
+| D004 | 数据存储 | 本地 PG + 慢线双写 NFMD | ✅ 双写验证 |
+| D005 | llm-wiki 集成 | 直接调用 agent | ⏳ 待首次运行 |
+| D006 | ontofuel 扩展 | 先扩展再集成 | ✅ C11/C12/C44/C33 |
+| D007 | Agent 配置 | 本次配置 | ✅ openclaw.json |
+| D008 | 消息协议 | 轻量 (GapRequest+DataSet 严格) | ✅ 已验证 |
+| D009 | 可观测性 | 最小 JSON 日志 | ✅ ref_logger |
 
 ## 下一步
 
-1. 提交专家审查 → 收集反馈
-2. 更新 spec
-3. 按 Superpowers writing-plans 写实施计划
-4. 按 subagent-driven-development 执行 Phase A
+1. ~~专家审查~~ → 功能测试已替代
+2. 等待慢线 cron 首次运行 (下周一 09:00)
+3. 可选：将 L3.2 提取的 U-Mo C44 = 49.52 GPa 正式写入 PG
+4. 项目关闭确认

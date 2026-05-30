@@ -6,7 +6,7 @@
 - **线上地址**: https://nucpot.dpdns.org
 - **验证服务**: https://verify.nucpot.dpdns.org
 - **开发周期**: 2026-05-25 ~ 进行中
-- **状态**: Phase 4 进行中 (T1-T6 完成，ref-gap-fill 设计完成待审查)
+- **状态**: Phase 4 进行中 (T1-T6 + ref-gap-fill ✅完成)
 
 ## 技术栈
 
@@ -41,15 +41,15 @@
 - [x] 参考值 seed 数据 (23 条)
 - [x] 运维文档
 
-**ref-gap-fill 参考值补全系统 (设计完成，待审查 🔍)**
-- [x] PRD v1.0
-- [x] 多智能体架构设计 (nucpot-db + nucpot-librarian)
-- [x] 详细设计 spec (消息 schema + 文件清单 + 错误处理)
-- [x] 可复用资产审计 (节省约 40% 工期)
-- [ ] 专家审查 → 更新 spec
-- [ ] Phase A: 基础设施实施
-- [ ] Phase B/C: 快线/慢线实施
-- [ ] Phase D: 编排集成 + E2E 测试
+**ref-gap-fill 参考值补全系统 (✅ 开发完成)**
+- [x] PRD v1.0 + 详细设计 spec
+- [x] Phase 1: 基础设施 + 快线 + 编排 (72 tests)
+- [x] Phase 2: 慢线 + 协议 + 部署 (36 tests)
+- [x] 快线功能测试 9/9 通过
+- [x] 慢线功能测试 11/11 通过
+- [x] PG UNIQUE 约束 + 网络拓扑集中化
+- [ ] 慢线 cron 首次运行验证 (下周一)
+- [ ] reference_values 覆盖 23→100+
 
 详见 → [ref-gap-fill 项目页](ref-gap-fill.md)
 

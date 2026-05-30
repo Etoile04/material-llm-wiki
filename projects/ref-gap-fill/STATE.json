@@ -1,28 +1,33 @@
 {
-  "project": "ref-gap-fill",
-  "scale": "M",
-  "current_phase": 2,
-  "current_step": 3,
-  "step_status": {
-    "1": "done",
-    "2": "done",
-    "3": "in_progress",
-    "4": "pending",
-    "5": "pending",
-    "6": "pending"
-  },
-  "active_subagents": [],
-  "last_checkpoint": "2026-05-30T08:15:00+08:00",
-  "drift_score": 0.0,
-  "decisions_count": 9,
-  "decisions_new": ["D005", "D006", "D007", "D008", "D009"],
-  "signal_jobs": {
-    "zombie": "0375f34c-4c5b-4149-9952-42ed27e9080a",
-    "drift": "90c86115-c690-4d40-8917-2c3d84abdd74",
-    "heartbeat": "7a2f27ec-f762-4839-9d2d-a92b3af108d2",
-    "decision_review": "04e3890b-6fa8-4a07-a997-4f2c133e8d99"
-  },
-  "slowlane_job": "2d8fbf6c-4fcb-4716-abe0-c3f89a59a120",
-  "context": "延续开发：子项目 A+B+D 已完成(75%)，需实现子项目 C(慢线) + 部署配置 + 消息协议 + 可观测性",
-  "updated_at": "2026-05-30T07:56:00+08:00"
+    "project": "ref-gap-fill",
+    "scale": "M",
+    "current_phase": 2,
+    "current_step": 6,
+    "step_status": {
+        "1": "done",
+        "2": "done",
+        "3": "done",
+        "4": "done",
+        "5": "done",
+        "6": "done"
+    },
+    "active_subagents": [],
+    "last_checkpoint": "2026-05-30T11:45:00+08:00",
+    "drift_score": 0.0,
+    "decisions_count": 9,
+    "decisions_new": [],
+    "signal_jobs": {
+        "zombie": "0375f34c-4c5b-4149-9952-42ed27e9080a",
+        "drift": "90c86115-c690-4d40-8917-2c3d84abdd74",
+        "heartbeat": "7a2f27ec-f762-4839-9d2d-a92b3af108d2",
+        "decision_review": "04e3890b-6fa8-4a07-a997-4f2c133e8d99"
+    },
+    "slowlane_job": "2d8fbf6c-4fcb-4716-abe0-c3f89a59a120",
+    "test_results": {
+        "unit": "108/108",
+        "express_functional": "9/9",
+        "slowlane_functional": "11/11"
+    },
+    "context": "Phase 2 全部完成。快线+慢线功能测试 20/20 通过。PG UNIQUE 约束已添加。PARA+SGT 跟踪体系已建立。等待慢线 cron 首次运行验证。",
+    "updated_at": "2026-05-30T11:45:00+08:00"
 }

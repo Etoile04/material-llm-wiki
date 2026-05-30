@@ -23,7 +23,7 @@
       "ref_unit": "GPa",
       "nfmd_names": ["elastic constant C11", "C11"],
       "nfmd_symbols": ["C11", "c11"],
-      "ontofuel_keys": [],
+      "ontofuel_keys": ["elasticConstantC11"],
       "range": {"min": 10, "max": 600}
     },
     {
@@ -31,7 +31,7 @@
       "ref_unit": "GPa",
       "nfmd_names": ["elastic constant C12", "C12"],
       "nfmd_symbols": ["C12", "c12"],
-      "ontofuel_keys": [],
+      "ontofuel_keys": ["elasticConstantC12"],
       "range": {"min": 5, "max": 400}
     },
     {
@@ -39,7 +39,7 @@
       "ref_unit": "GPa",
       "nfmd_names": ["elastic constant C44", "C44"],
       "nfmd_symbols": ["C44", "c44"],
-      "ontofuel_keys": [],
+      "ontofuel_keys": ["elasticConstantC44"],
       "range": {"min": 5, "max": 400}
     },
     {
@@ -47,7 +47,7 @@
       "ref_unit": "GPa",
       "nfmd_names": ["elastic constant C33", "C33"],
       "nfmd_symbols": ["C33", "c33"],
-      "ontofuel_keys": [],
+      "ontofuel_keys": ["elasticConstantC33"],
       "range": {"min": 10, "max": 600}
     },
     {

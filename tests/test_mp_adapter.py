@@ -33,13 +33,10 @@ def make_mock_doc(
     crystal_system="cubic",
     sg_number=229,
     a=3.165,
-    c11=160.0,
-    c12=64.0,
-    c44=78.0,
-    k_vrh=96.0,
+    bulk_modulus=96.0,
     formation_energy=-0.5,
     energy_above_hull=0.0,
-    has_elastic=True,
+    has_bulk_modulus=True,
 ):
     """Create a mock MP summary document."""
     doc = MagicMock()
@@ -60,21 +57,11 @@ def make_mock_doc(
     structure.lattice = lattice
     doc.structure = structure
 
-    # Elasticity
-    if has_elastic:
-        elast = MagicMock()
-        elast.k_vrh = k_vrh
-        elast.elastic_tensor = [
-            [c11, c12, c12, 0, 0, 0],
-            [c12, c11, c12, 0, 0, 0],
-            [c12, c12, c11, 0, 0, 0],
-            [0, 0, 0, c44, 0, 0],
-            [0, 0, 0, 0, c44, 0],
-            [0, 0, 0, 0, 0, c44],
-        ]
-        doc.elasticity = elast
+    # Elasticity → now bulk_modulus directly on summary
+    if has_bulk_modulus:
+        doc.bulk_modulus = bulk_modulus
     else:
-        doc.elasticity = None
+        doc.bulk_modulus = None
 
     # Thermo
     doc.formation_energy_per_atom = formation_energy
@@ -139,31 +126,28 @@ class TestPhaseDetermination:
 
 
 class TestExtractElasticProps:
-    def test_cubic_elastic_constants(self):
-        doc = make_mock_doc(c11=160, c12=64, c44=78, k_vrh=96)
+    def test_bulk_modulus(self):
+        doc = make_mock_doc(bulk_modulus=96)
         props = _extract_elastic_props(doc, "U", "BCC")
         prop_names = [p.property for p in props]
-        assert "C11" in prop_names
-        assert "C12" in prop_names
-        assert "C44" in prop_names
         assert "bulk_modulus" in prop_names
-        # Check values
-        c11 = next(p for p in props if p.property == "C11")
-        assert c11.value == 160.0
-        assert c11.unit == "GPa"
-        assert c11.method == "DFT"
-        assert c11.confidence == "medium"
+        bm = next(p for p in props if p.property == "bulk_modulus")
+        assert bm.value == 96.0
+        assert bm.unit == "GPa"
+        assert bm.method == "DFT"
+        assert bm.confidence == "medium"
 
-    def test_no_elasticity(self):
-        doc = make_mock_doc(has_elastic=False)
+    def test_no_bulk_modulus(self):
+        doc = make_mock_doc(has_bulk_modulus=False)
         props = _extract_elastic_props(doc, "U", "BCC")
         assert len(props) == 0
 
-    def test_bulk_modulus_positive(self):
-        doc = make_mock_doc(k_vrh=96)
+    def test_bulk_modulus_dict_vrh(self):
+        doc = make_mock_doc()
+        doc.bulk_modulus = {"VRH": 105.3}
         props = _extract_elastic_props(doc, "Mo", "BCC")
-        bm = next(p for p in props if p.property == "bulk_modulus")
-        assert bm.value == 96.0
+        assert len(props) == 1
+        assert props[0].value == 105.3
 
 
 class TestExtractLatticeConstant:
@@ -223,10 +207,10 @@ class TestPickBestMaterial:
         result = _pick_best_material([hcp, bcc], "U", "BCC")
         assert str(result[0].material_id) == "mp-149"
 
-    def test_prefers_with_elasticity(self):
-        no_elastic = make_mock_doc(has_elastic=False, mp_id="mp-111")
-        with_elastic = make_mock_doc(has_elastic=True, mp_id="mp-222")
-        result = _pick_best_material([no_elastic, with_elastic], "U", "BCC")
+    def test_prefers_with_bulk_modulus(self):
+        no_bm = make_mock_doc(has_bulk_modulus=False, mp_id="mp-111")
+        with_bm = make_mock_doc(has_bulk_modulus=True, mp_id="mp-222")
+        result = _pick_best_material([no_bm, with_bm], "U", "BCC")
         assert str(result[0].material_id) == "mp-222"
 
     def test_empty_input(self):
@@ -270,7 +254,7 @@ class TestPipelineIntegration:
         """Extracted properties should pass write_ref_value quality gate."""
         from scripts.write_ref_value import passes_quality_gate
 
-        doc = make_mock_doc(c11=160, c12=64, c44=78, k_vrh=96, a=3.165)
+        doc = make_mock_doc(bulk_modulus=96, a=3.165)
         props = _extract_elastic_props(doc, "U", "BCC")
         props.extend(_extract_lattice_constant(doc, "U", "BCC"))
 
@@ -291,7 +275,7 @@ class TestPipelineIntegration:
         """Values should be within property-mapping.json ranges."""
         from scripts.write_ref_value import passes_range_check
 
-        doc = make_mock_doc(c11=160, c12=64, c44=78, k_vrh=96)
+        doc = make_mock_doc(bulk_modulus=96)
         props = _extract_elastic_props(doc, "Mo", "BCC")
 
         for p in props:

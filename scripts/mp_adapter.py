@@ -102,73 +102,30 @@ def _extract_elastic_props(
     element_system: str,
     phase: str,
 ) -> list[MpProperty]:
-    """Extract elastic constants from a summary document."""
-    props = []
-    elasticity = getattr(doc, "elasticity", None)
-    if elasticity is None:
-        return props
+    """Extract elastic constants from a summary document.
 
+    MP summary provides bulk_modulus and shear_modulus (Voigt-Reuss-Hill averages).
+    Individual C_ij require a separate query to the elasticity endpoint.
+    """
+    props = []
     mp_id = str(doc.material_id)
 
-    # Voigt-Reuss-Hill averages → bulk_modulus
-    k_vrh = getattr(elasticity, "k_vrh", None)
-    if k_vrh is not None and k_vrh > 0:
-        props.append(MpProperty(
-            element_system=element_system, phase=phase,
-            property="bulk_modulus", value=round(k_vrh, 2),
-            unit="GPa", method="DFT",
-            source=f"Materials Project ({mp_id})",
-            confidence="medium", mp_id=mp_id,
-            chemsys=element_system if "-" not in element_system else element_system,
-            crystal_system=getattr(doc, "symmetry", None) and doc.symmetry.crystal_system,
-            spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
-        ))
-
-    # Full elastic tensor → C11, C12, C44
-    tensor = getattr(elasticity, "elastic_tensor", None)
-    if tensor is not None and len(tensor) >= 3:
-        # tensor is Voigt notation: [[C11,C12,...],[C12,C22,...],...]
-        # For cubic: C11=tensor[0][0], C12=tensor[0][1], C44=tensor[3][3]
-        try:
-            c11 = tensor[0][0]
-            c12 = tensor[0][1]
-            c44 = tensor[3][3] if len(tensor) > 3 else None
-
-            if c11 and c11 > 0:
-                props.append(MpProperty(
-                    element_system=element_system, phase=phase,
-                    property="C11", value=round(c11, 2),
-                    unit="GPa", method="DFT",
-                    source=f"Materials Project ({mp_id})",
-                    confidence="medium", mp_id=mp_id,
-                    chemsys=element_system,
-                    crystal_system=getattr(doc, "symmetry", None) and doc.symmetry.crystal_system,
-                    spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
-                ))
-            if c12 is not None:
-                props.append(MpProperty(
-                    element_system=element_system, phase=phase,
-                    property="C12", value=round(c12, 2),
-                    unit="GPa", method="DFT",
-                    source=f"Materials Project ({mp_id})",
-                    confidence="medium", mp_id=mp_id,
-                    chemsys=element_system,
-                    crystal_system=getattr(doc, "symmetry", None) and doc.symmetry.crystal_system,
-                    spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
-                ))
-            if c44 is not None and c44 > 0:
-                props.append(MpProperty(
-                    element_system=element_system, phase=phase,
-                    property="C44", value=round(c44, 2),
-                    unit="GPa", method="DFT",
-                    source=f"Materials Project ({mp_id})",
-                    confidence="medium", mp_id=mp_id,
-                    chemsys=element_system,
-                    crystal_system=getattr(doc, "symmetry", None) and doc.symmetry.crystal_system,
-                    spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
-                ))
-        except (IndexError, TypeError):
-            pass
+    # bulk_modulus is available directly in summary
+    bm = getattr(doc, "bulk_modulus", None)
+    if bm is not None:
+        # bulk_modulus may be a dict {"VRH": value} or a float
+        k_vrh = bm if isinstance(bm, (int, float)) else bm.get("VRH", None)
+        if k_vrh is not None and k_vrh > 0:
+            props.append(MpProperty(
+                element_system=element_system, phase=phase,
+                property="bulk_modulus", value=round(float(k_vrh), 2),
+                unit="GPa", method="DFT",
+                source=f"Materials Project ({mp_id})",
+                confidence="medium", mp_id=mp_id,
+                chemsys=element_system,
+                crystal_system=str(getattr(doc, "symmetry", None) and doc.symmetry.crystal_system or ""),
+                spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
+            ))
 
     return props
 
@@ -196,7 +153,7 @@ def _extract_lattice_constant(
                 source=f"Materials Project ({mp_id})",
                 confidence="medium", mp_id=mp_id,
                 chemsys=element_system,
-                crystal_system=getattr(doc, "symmetry", None) and doc.symmetry.crystal_system,
+                crystal_system=str(getattr(doc, "symmetry", None) and doc.symmetry.crystal_system or ""),
                 spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
             ))
     except Exception:
@@ -224,7 +181,7 @@ def _extract_thermo_props(
             source=f"Materials Project ({mp_id})",
             confidence="medium", mp_id=mp_id,
             chemsys=element_system,
-            crystal_system=getattr(doc, "symmetry", None) and doc.symmetry.crystal_system,
+            crystal_system=str(getattr(doc, "symmetry", None) and doc.symmetry.crystal_system or ""),
             spacegroup_number=getattr(doc, "symmetry", None) and doc.symmetry.number,
         ))
 
@@ -247,7 +204,88 @@ def _determine_phase(doc) -> str:
         return "HCP"
 
     # Fall back to crystal system
-    return CRYSTAL_SYSTEM_TO_PHASE.get(cs, cs or "unknown")
+    return CRYSTAL_SYSTEM_TO_PHASE.get(cs, str(cs) if cs else "unknown")
+
+
+def _fetch_elastic_tensor(
+    mpr,
+    mp_id: str,
+    element_system: str,
+    phase: str,
+) -> list[MpProperty]:
+    """Fetch individual C_ij from the elasticity endpoint for a specific material."""
+    props = []
+    try:
+        elast_docs = mpr.materials.elasticity.search(
+            material_ids=[mp_id],
+        )
+        if not elast_docs:
+            return props
+
+        ed = elast_docs[0]
+        raw_tensor = getattr(ed, "elastic_tensor", None)
+        if raw_tensor is None:
+            return props
+
+        # elastic_tensor is a named-tuple-like object with 'raw' and 'ieee_format' components
+        # Use ieee_format for rounded values, raw for precision
+        # The object iterates as list of (name, matrix) pairs
+        # Access the matrix directly via indexing
+        try:
+            # Try ieee_format first (rounded)
+            if hasattr(raw_tensor, 'ieee_format'):
+                matrix = raw_tensor.ieee_format
+            elif hasattr(raw_tensor, 'raw'):
+                matrix = raw_tensor.raw
+            else:
+                matrix = raw_tensor
+        except Exception:
+            matrix = raw_tensor
+
+        # Convert to list of lists
+        t = [list(row) for row in matrix]
+        if len(t) < 6:
+            return props
+
+        # Voigt notation: [[C11,C12,C12,0,0,0],[C12,...],[C12,C12,C11,...],[0,0,0,C44,...],...]
+        c11 = t[0][0]
+        c12 = t[0][1]
+        c44 = t[3][3] if len(t) > 3 else None
+
+        if c11 and c11 > 0:
+            props.append(MpProperty(
+                element_system=element_system, phase=phase,
+                property="C11", value=round(float(c11), 2),
+                unit="GPa", method="DFT",
+                source=f"Materials Project ({mp_id})",
+                confidence="medium", mp_id=mp_id,
+                chemsys=element_system,
+                crystal_system="", spacegroup_number=0,
+            ))
+        if c12 is not None:
+            props.append(MpProperty(
+                element_system=element_system, phase=phase,
+                property="C12", value=round(float(c12), 2),
+                unit="GPa", method="DFT",
+                source=f"Materials Project ({mp_id})",
+                confidence="medium", mp_id=mp_id,
+                chemsys=element_system,
+                crystal_system="", spacegroup_number=0,
+            ))
+        if c44 is not None and c44 > 0:
+            props.append(MpProperty(
+                element_system=element_system, phase=phase,
+                property="C44", value=round(float(c44), 2),
+                unit="GPa", method="DFT",
+                source=f"Materials Project ({mp_id})",
+                confidence="medium", mp_id=mp_id,
+                chemsys=element_system,
+                crystal_system="", spacegroup_number=0,
+            ))
+    except Exception as e:
+        print(f"    ⚠️  Elasticity fetch failed for {mp_id}: {e}", file=sys.stderr)
+
+    return props
 
 
 def _pick_best_material(docs: list, element_system: str, preferred_phase: str | None = None) -> list:
@@ -266,7 +304,7 @@ def _pick_best_material(docs: list, element_system: str, preferred_phase: str | 
         phase = _determine_phase(doc)
         e_hull = getattr(doc, "energy_above_hull", None)
         e_hull_val = e_hull if e_hull is not None else 999.0
-        has_elastic = getattr(doc, "elasticity", None) is not None
+        has_elastic = getattr(doc, "bulk_modulus", None) is not None
 
         # Prefer: phase match > on hull > has elastic data
         score = 0
@@ -315,7 +353,8 @@ def extract_system(
             chemsys=chemsys,
             fields=[
                 "material_id", "formula_pretty", "structure",
-                "symmetry", "elasticity", "formation_energy_per_atom",
+                "symmetry", "bulk_modulus", "shear_modulus",
+                "formation_energy_per_atom",
                 "energy_above_hull", "band_gap", "density",
             ],
         )
@@ -339,6 +378,12 @@ def extract_system(
         props.extend(_extract_elastic_props(doc, element_system, phase))
         props.extend(_extract_lattice_constant(doc, element_system, phase))
         props.extend(_extract_thermo_props(doc, element_system, phase))
+
+        # Fetch individual C_ij from elasticity endpoint
+        tensor_props = _fetch_elastic_tensor(mpr, mp_id, element_system, phase)
+        if tensor_props:
+            props.extend(tensor_props)
+            print(f"    ✅ Elastic tensor for {mp_id}: {len(tensor_props)} C_ij values", file=sys.stderr)
 
     return props
 
@@ -365,8 +410,8 @@ def extract_all(
     if dry_run:
         print("=== DRY RUN ===")
         print(f"Would query {len(target_chemsys)} systems:")
-        for sys, chem in target_chemsys.items():
-            print(f"  {sys:15s} → chemsys={chem}")
+        for name, chem in target_chemsys.items():
+            print(f"  {name:15s} → chemsys={chem}")
         print(f"\nExtractable properties per material:")
         print("  lattice_constant, C11, C12, C44, bulk_modulus, formation_energy")
         print(f"\nConfidence: medium (DFT computed, not experimental)")
@@ -442,7 +487,7 @@ def main():
         "properties": result.properties,
     }
 
-    output_json = json.dumps(output, indent=2, ensure_ascii=False)
+    output_json = json.dumps(output, indent=2, ensure_ascii=False, default=str)
 
     if args.output:
         Path(args.output).parent.mkdir(parents=True, exist_ok=True)

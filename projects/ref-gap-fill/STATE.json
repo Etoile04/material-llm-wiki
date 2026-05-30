@@ -1,18 +1,19 @@
 {
     "project": "ref-gap-fill",
     "scale": "M",
-    "current_phase": 2,
-    "current_step": 6,
+    "current_phase": "closed",
+    "current_step": "complete",
     "step_status": {
         "1": "done",
         "2": "done",
         "3": "done",
         "4": "done",
         "5": "done",
-        "6": "done"
+        "6": "done",
+        "closure": "done"
     },
     "active_subagents": [],
-    "last_checkpoint": "2026-05-30T11:45:00+08:00",
+    "last_checkpoint": "2026-05-30T15:15:00+08:00",
     "drift_score": 0.0,
     "decisions_count": 9,
     "decisions_new": [],
@@ -24,10 +25,18 @@
     },
     "slowlane_job": "2d8fbf6c-4fcb-4716-abe0-c3f89a59a120",
     "test_results": {
-        "unit": "108/108",
+        "unit": "134/134",
         "express_functional": "9/9",
         "slowlane_functional": "11/11"
     },
-    "context": "Phase 2 全部完成。快线+慢线功能测试 20/20 通过。PG UNIQUE 约束已添加。PARA+SGT 跟踪体系已建立。等待慢线 cron 首次运行验证。",
-    "updated_at": "2026-05-30T11:45:00+08:00"
+    "final_stats": {
+        "pg_reference_values": 219,
+        "system_phase_combos": 38,
+        "systems_covered": 14,
+        "properties_per_combo_avg": 5.8,
+        "mp_extracted": 111,
+        "mp_written_to_pg": 107
+    },
+    "context": "Project closed. 219 reference values in PG covering 38 (system,phase) combos. 134/134 tests pass. All code pushed to origin.",
+    "updated_at": "2026-05-30T15:15:00+08:00"
 }

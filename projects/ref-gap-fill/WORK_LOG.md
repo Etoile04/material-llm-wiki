@@ -1,6 +1,55 @@
 # Ref-Gap-Fill 工作日志
 
-## 2026-05-30 (Sat)
+## 2026-05-30 (Sat) — Phase 2
+
+### 完成事项
+- **M 级项目管理流程**：注册 4 个信号采集 cron + 1 个慢线周任务
+- **Step 1 Brainstorming**：5 个设计决策确认
+  - D005: 慢线直接调用 agent 执行 llm-wiki ingest (方案 A)
+  - D006: 慢线 agent = main agent 按需切换角色 (方案 A)
+  - D007: 简化消息协议为 dataclass (方案 A)
+  - D008: 慢线 cron 每周一 09:00 CST (方案 B)
+  - D009: 最小日志写入 JSON 文件 (方案 B)
+- **Step 2 Writing Plans**：spec + plan 文件产出
+- **Step 3 Subagent-Driven Dev**：
+  - 批次 1 (6 并行): T14, T15, T16, T17, T18, T21
+  - 批次 2+3: T19, T20(随 T14 完成), T22
+  - 批次 4: T23
+- **T14: ontofuel 本体扩展** (subagent, 2m35s)
+  - 添加 ElasticConstant class + 4 子类 (C11/C12/C44/C33)
+  - 更新 property-mapping.json ontofuel_keys
+  - workspace-extractor 仓库: 28 测试通过
+- **T15: slowlane_backfill.py** (subagent, 1m1s)
+  - L1+L2 回填逻辑 (6 tests)
+- **T16: ref_logger.py** (subagent, 28s)
+  - JSON 日志记录器 (7 tests)
+- **T17: message_schemas.py** (subagent, 31s)
+  - GapRequest + DataSet schema (7 tests)
+- **T18: librarian-extract SKILL.md** (直接执行)
+  - 补充 Step 4.5 慢线标记 (pending-slowlane tag)
+- **T19: ref-gap-fill SKILL.md** (直接执行)
+  - 补充完整慢线 5 步流程 + cron job 配置模板
+- **T20: adapter_ontology.py** (验证)
+  - 确认动态读取 property-mapping.json，无需修改代码
+- **T21: agent 配置** (直接执行)
+  - openclaw.json 添加 nucpot-db + nucpot-librarian
+- **T22: 慢线 cron job** (直接执行)
+  - 注册 slowlane-weekly-ref-gap-fill (每周一 09:00)
+- **T23: E2E 慢线测试** (subagent)
+  - 16 个端到端测试 (0 regression)
+- **Step 4 Verification**: 108/108 全量测试通过
+
+### Bug / Issue
+- T21 Python heredoc 语法错误 → 改用脚本文件执行
+
+### 统计
+- 总测试：108/108 通过 (Phase 1: 72 + Phase 2: 36)
+- Git commits: 17 (Phase 1: 13 + Phase 2: 4)
+- Subagent 运行: 5 次 (T14, T15, T16, T17, T23)
+
+---
+
+## 2026-05-30 (Sat) — Phase 1
 
 ### 完成事项
 - **T1-T8 全部完成** (子项目 A: 基础设施层)

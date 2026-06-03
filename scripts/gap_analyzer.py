@@ -22,6 +22,8 @@ REQUIRED_PROPERTIES = [
     "lattice_constant", "cohesive_energy",
     "C11", "C12", "C44", "C33",
     "bulk_modulus", "vacancy_formation_energy",
+    # Phase 2: thermal & physical properties
+    "thermal_expansion", "melting_point", "density", "specific_heat",
 ]
 
 

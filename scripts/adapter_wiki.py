@@ -27,6 +27,13 @@ ZH_TO_REF_PROPERTY = {
     "表面能": "surface_energy",
     "熔点": "melting_point",
     "热导率": "thermal_conductivity",
+    # Phase 2: thermal & physical properties
+    "热膨胀系数": "thermal_expansion",
+    "线膨胀系数": "thermal_expansion",
+    "密度": "density",
+    "比热容": "specific_heat",
+    "比热": "specific_heat",
+    "定压比热": "specific_heat",
 }
 
 

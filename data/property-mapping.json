@@ -1,102 +1,188 @@
 {
-  "version": "1.0.0",
-  "description": "Property name mapping across L1 (reference_values), L2 (NFMD), L3 (llm-wiki/ontofuel) with validation ranges.",
   "mappings": [
     {
-      "ref_property": "lattice_constant",
-      "ref_unit": "Å",
-      "nfmd_names": ["lattice parameter", "lattice constant", "a0", "lattice parameter a"],
-      "nfmd_symbols": ["a", "a0", "a_lat"],
-      "ontofuel_keys": ["latticeConstant"],
-      "range": {"min": 2.0, "max": 6.5}
-    },
-    {
-      "ref_property": "cohesive_energy",
-      "ref_unit": "eV/atom",
-      "nfmd_names": ["cohesive energy"],
-      "nfmd_symbols": ["E_coh", "E_c"],
-      "ontofuel_keys": [],
-      "range": {"min": -10.0, "max": 0.0}
-    },
-    {
       "ref_property": "C11",
+      "nfmd_names": [
+        "elastic constant C11",
+        "C11"
+      ],
+      "nfmd_symbols": [
+        "C11"
+      ],
       "ref_unit": "GPa",
-      "nfmd_names": ["elastic constant C11", "C11"],
-      "nfmd_symbols": ["C11", "c11"],
-      "ontofuel_keys": ["elasticConstantC11"],
-      "range": {"min": 10, "max": 600}
+      "ontofuel_keys": [
+        "hasElasticConstantC11",
+        "C11"
+      ]
     },
     {
       "ref_property": "C12",
+      "nfmd_names": [
+        "elastic constant C12",
+        "C12"
+      ],
+      "nfmd_symbols": [
+        "C12"
+      ],
       "ref_unit": "GPa",
-      "nfmd_names": ["elastic constant C12", "C12"],
-      "nfmd_symbols": ["C12", "c12"],
-      "ontofuel_keys": ["elasticConstantC12"],
-      "range": {"min": 5, "max": 400}
+      "ontofuel_keys": [
+        "hasElasticConstantC12",
+        "C12"
+      ]
     },
     {
       "ref_property": "C44",
+      "nfmd_names": [
+        "elastic constant C44",
+        "C44"
+      ],
+      "nfmd_symbols": [
+        "C44"
+      ],
       "ref_unit": "GPa",
-      "nfmd_names": ["elastic constant C44", "C44"],
-      "nfmd_symbols": ["C44", "c44"],
-      "ontofuel_keys": ["elasticConstantC44"],
-      "range": {"min": 5, "max": 400}
-    },
-    {
-      "ref_property": "C33",
-      "ref_unit": "GPa",
-      "nfmd_names": ["elastic constant C33", "C33"],
-      "nfmd_symbols": ["C33", "c33"],
-      "ontofuel_keys": ["elasticConstantC33"],
-      "range": {"min": 10, "max": 600}
+      "ontofuel_keys": [
+        "hasElasticConstantC44",
+        "C44"
+      ]
     },
     {
       "ref_property": "bulk_modulus",
+      "nfmd_names": [
+        "bulk modulus",
+        "K"
+      ],
+      "nfmd_symbols": [
+        "K"
+      ],
       "ref_unit": "GPa",
-      "nfmd_names": ["bulk modulus", "isothermal bulk modulus"],
-      "nfmd_symbols": ["B", "K", "B0"],
-      "ontofuel_keys": [],
-      "range": {"min": 10, "max": 400}
+      "ontofuel_keys": [
+        "hasBulkModulus",
+        "bulkModulus"
+      ]
     },
     {
-      "ref_property": "vacancy_formation_energy",
-      "ref_unit": "eV",
-      "nfmd_names": ["vacancy formation energy"],
-      "nfmd_symbols": ["E_vf", "E_vac"],
-      "ontofuel_keys": [],
-      "range": {"min": 0.5, "max": 5.0}
-    },
-    {
-      "ref_property": "formation_energy",
+      "ref_property": "cohesive_energy",
+      "nfmd_names": [
+        "cohesive energy",
+        "E_coh"
+      ],
+      "nfmd_symbols": [
+        "E_coh"
+      ],
       "ref_unit": "eV/atom",
-      "nfmd_names": ["formation energy", "enthalpy of formation"],
-      "nfmd_symbols": ["E_f", "ΔH_f"],
-      "ontofuel_keys": ["formationEnergy"],
-      "range": {"min": -2.0, "max": 2.0}
+      "ontofuel_keys": [
+        "hasCohesiveEnergy",
+        "cohesiveEnergy"
+      ]
     },
     {
-      "ref_property": "surface_energy",
-      "ref_unit": "J/m²",
-      "nfmd_names": ["surface energy"],
-      "nfmd_symbols": ["γ", "E_surf"],
-      "ontofuel_keys": [],
-      "range": {"min": 0.5, "max": 5.0}
+      "ref_property": "lattice_constant",
+      "nfmd_names": [
+        "lattice constant",
+        "a"
+      ],
+      "nfmd_symbols": [
+        "a"
+      ],
+      "ref_unit": "Å",
+      "ontofuel_keys": [
+        "hasLatticeConstant",
+        "latticeConstant"
+      ]
+    },
+    {
+      "ref_property": "thermal_expansion",
+      "nfmd_names": [
+        "thermal expansion coefficient",
+        "coefficient of thermal expansion",
+        "CTE",
+        "α",
+        "alpha"
+      ],
+      "nfmd_symbols": [
+        "α",
+        "alpha",
+        "CTE"
+      ],
+      "range": {
+        "min": 0.0,
+        "max": 100.0,
+        "unit": "1e-6/K"
+      },
+      "ref_unit": "1e-6/K",
+      "ontofuel_keys": [
+        "hasThermalExpansion",
+        "thermalExpansionCoefficient"
+      ]
     },
     {
       "ref_property": "melting_point",
+      "nfmd_names": [
+        "melting point",
+        "melting temperature",
+        "Tm",
+        "T_melt"
+      ],
+      "nfmd_symbols": [
+        "Tm",
+        "T_melt"
+      ],
+      "range": {
+        "min": 200.0,
+        "max": 5000.0,
+        "unit": "K"
+      },
       "ref_unit": "K",
-      "nfmd_names": ["melting point", "melting temperature"],
-      "nfmd_symbols": ["T_m", "T_melt"],
-      "ontofuel_keys": ["meltingPoint"],
-      "range": {"min": 300, "max": 4500}
+      "ontofuel_keys": [
+        "hasMeltingPoint",
+        "meltingTemperature"
+      ]
     },
     {
-      "ref_property": "thermal_conductivity",
-      "ref_unit": "W/m·K",
-      "nfmd_names": ["thermal conductivity"],
-      "nfmd_symbols": ["κ", "k", "λ"],
-      "ontofuel_keys": ["thermalConductivity"],
-      "range": {"min": 0.1, "max": 500}
+      "ref_property": "density",
+      "nfmd_names": [
+        "density",
+        "ρ",
+        "mass density"
+      ],
+      "nfmd_symbols": [
+        "ρ",
+        "rho"
+      ],
+      "range": {
+        "min": 0.1,
+        "max": 30.0,
+        "unit": "g/cm³"
+      },
+      "ref_unit": "g/cm³",
+      "ontofuel_keys": [
+        "hasDensity",
+        "massDensity"
+      ]
+    },
+    {
+      "ref_property": "specific_heat",
+      "nfmd_names": [
+        "specific heat capacity",
+        "heat capacity",
+        "Cp",
+        "specific heat",
+        "C_p"
+      ],
+      "nfmd_symbols": [
+        "Cp",
+        "C_p"
+      ],
+      "range": {
+        "min": 0.0,
+        "max": 2000.0,
+        "unit": "J/(mol·K)"
+      },
+      "ref_unit": "J/(mol·K)",
+      "ontofuel_keys": [
+        "hasSpecificHeatCapacity",
+        "heatCapacity"
+      ]
     }
   ]
 }

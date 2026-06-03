@@ -41,7 +41,11 @@
 - `librarian-extract/SKILL.md` — 物性提取技能 (4.0KB)
 
 ### 数据
-- `data/property-mapping.json` — 12物性 × 跨系统名称映射 + 范围校验
+- `data/property-mapping.json` — **10 物性** × 跨系统名称映射 + 范围校验 + ref_unit + ontofuel_keys
+
+**物性列表**:
+- Phase 1: lattice_constant, cohesive_energy, C11, C12, C44, C33, bulk_modulus, vacancy_formation_energy
+- Phase 2 新增 ⭐: thermal_expansion, melting_point, density, specific_heat
 
 ### 测试 (tests/)
 - 10 个测试文件, 72 个测试用例, 0 失败

@@ -44,3 +44,4 @@ memory/
 
 # Superpowers worktrees
 .worktrees/
+tests/__pycache__/

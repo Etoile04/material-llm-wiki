@@ -14,7 +14,9 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
+_workspace = str(Path(__file__).resolve().parent.parent)
+sys.path.insert(0, _workspace)          # for 'scripts.xxx' imports
+sys.path.insert(0, str(Path(__file__).parent))  # for 'slowlane_backfill' import
 
 from slowlane_backfill import backfill_l2, BackfillResult
 

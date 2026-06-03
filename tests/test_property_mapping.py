@@ -47,8 +47,7 @@ def test_all_required_properties_covered():
         "lattice_constant", "cohesive_energy",
         "C11", "C12", "C44", "C33",
         "bulk_modulus", "vacancy_formation_energy",
-        "formation_energy", "surface_energy",
-        "melting_point", "thermal_conductivity"
+        "thermal_expansion", "melting_point", "density", "specific_heat",
     }
     with open(MAPPING_PATH) as f:
         data = json.load(f)

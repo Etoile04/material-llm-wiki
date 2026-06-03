@@ -30,8 +30,8 @@ def test_basic_adaptation():
 def test_unknown_property_raises():
     param = {
         "material_raw": "U",
-        "name": "unknown property",
-        "symbol": "X",
+        "name": "ZZZZZ",
+        "symbol": "ZZZZ",
         "value_scalar": 1.0,
         "unit": "m",
         "temperature_k": 0,

@@ -23,8 +23,7 @@ class TestPropertyMappingIntegration:
             "lattice_constant", "cohesive_energy",
             "C11", "C12", "C44", "C33",
             "bulk_modulus", "vacancy_formation_energy",
-            "formation_energy", "surface_energy",
-            "melting_point", "thermal_conductivity",
+            "thermal_expansion", "melting_point", "density", "specific_heat",
         ]
         for prop in expected:
             assert prop in mapping, f"Missing property: {prop}"
@@ -116,10 +115,9 @@ class TestGapAnalyzerIntegration:
         targets = load_target_systems()
         existing = set()  # no existing data
         gaps = compute_gaps(targets, existing)
-        # 14 systems × 8 properties = 112 gaps max
-        # Some systems have fewer properties (e.g. SiC may not have all)
-        assert len(gaps) > 50
-        assert len(gaps) <= 112
+        # 14 systems × 12 properties = 168 gaps max
+        assert len(gaps) > 100
+        assert len(gaps) <= 168
 
     def test_fully_populated_no_gaps(self):
         targets = load_target_systems()

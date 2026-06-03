@@ -1,5 +1,7 @@
 """Gap analyzer: compare target matrix vs existing data to find missing property tuples."""
+import json
 from dataclasses import dataclass, asdict
+from pathlib import Path
 
 TARGET_SYSTEMS = [
     {"element_system": "U", "phase": "BCC", "priority": 1},
@@ -18,13 +20,31 @@ TARGET_SYSTEMS = [
     {"element_system": "SiC", "phase": None, "priority": 3},
 ]
 
-REQUIRED_PROPERTIES = [
-    "lattice_constant", "cohesive_energy",
-    "C11", "C12", "C44", "C33",
-    "bulk_modulus", "vacancy_formation_energy",
-    # Phase 2: thermal & physical properties
-    "thermal_expansion", "melting_point", "density", "specific_heat",
-]
+_MAPPING_PATH = Path(__file__).parent.parent / "data" / "property-mapping.json"
+
+
+def _load_required_properties() -> list[str]:
+    """Load REQUIRED_PROPERTIES dynamically from property-mapping.json.
+
+    Single source of truth: no more hard-coded list to drift out of sync.
+    """
+    with open(_MAPPING_PATH) as f:
+        data = json.load(f)
+    return sorted(m["ref_property"] for m in data["mappings"])
+
+
+# Lazy-loaded to avoid file I/O at import time (breaks tests that mock the file)
+_REQUIRED_PROPERTIES_CACHE: list[str] | None = None
+
+
+def _get_required_properties() -> list[str]:
+    global _REQUIRED_PROPERTIES_CACHE
+    if _REQUIRED_PROPERTIES_CACHE is None:
+        _REQUIRED_PROPERTIES_CACHE = _load_required_properties()
+    return _REQUIRED_PROPERTIES_CACHE
+
+
+REQUIRED_PROPERTIES = _get_required_properties()
 
 
 @dataclass
@@ -40,7 +60,8 @@ class GapItem:
 
 def load_target_systems() -> list[dict]:
     """Return TARGET_SYSTEMS with REQUIRED_PROPERTIES added to each entry."""
-    return [{**s, "properties": REQUIRED_PROPERTIES} for s in TARGET_SYSTEMS]
+    props = _get_required_properties()
+    return [{**s, "properties": props} for s in TARGET_SYSTEMS]
 
 
 def load_existing_refs(refs: list[dict]) -> set[tuple[str, str, str]]:

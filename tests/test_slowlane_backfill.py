@@ -104,51 +104,35 @@ def test_backfill_l1_skips_duplicates(mock_write):
 # ---------------------------------------------------------------------------
 
 
-@patch("scripts.slowlane_backfill.adapt_nfmd_param")
-def test_backfill_l2_adapts_format(mock_adapt):
-    """NFMD 格式转换正确."""
-    mock_adapt.return_value = {
-        "element_system": "U-10Zr",
-        "phase": "BCC",
-        "property": "density",
-        "value": 15.9,
-        "unit": "g/cm³",
-        "method": "Experiment",
-        "source": "Hofman 1990",
-        "confidence": "medium",
-    }
+@patch("scripts.slowlane_backfill._supabase_insert")
+def test_backfill_l2_adapts_format(mock_insert):
+    """NFMD 格式转换并写入 Supabase."""
+    mock_insert.return_value = "test-uuid-123"
 
-    result = backfill_l2(NFMD_FORMAT_VALUES)
+    result = backfill_l2(SAMPLE_VALUES[:1])
 
     assert result.written == 1
     assert result.skipped == 0
-    mock_adapt.assert_called_once()
+    assert result.errors == []
+    mock_insert.assert_called_once()
+    # Verify the row mapping
+    call_args = mock_insert.call_args[0][0]
+    assert call_args["material"] == "U-10Zr"
+    assert call_args["structure"] == "BCC"
+    assert call_args["property_name"] == "density"
+    assert call_args["value"] == 15.9
 
 
-def test_backfill_l2_skips_existing():
-    """已有 NFMD 记录的跳过 (L2 uses phase='BCC' default)."""
-    from scripts.adapter_nfmd import NfmdAdapterError
+@patch("scripts.slowlane_backfill._supabase_insert")
+def test_backfill_l2_skips_existing(mock_insert):
+    """Supabase INSERT 重复时记为 skipped."""
+    mock_insert.side_effect = RuntimeError("Supabase INSERT failed (409): duplicate key")
 
-    # Provide values that will fail adaptation (can't map)
-    bad_values = [
-        {
-            "material_raw": "U-10Zr",
-            "name": "nonexistent_property_xyz",
-            "symbol": "???",
-            "value_scalar": 1.0,
-            "unit": "K",
-            "temperature_k": 300,
-            "method": "Experiment",
-            "source_file": "Test 2026",
-        },
-    ]
-
-    result = backfill_l2(bad_values)
+    result = backfill_l2(SAMPLE_VALUES[:1])
 
     assert result.written == 0
-    assert result.skipped == 0
-    assert len(result.errors) == 1
-    assert "nonexistent_property_xyz" in result.errors[0]
+    assert result.skipped == 1
+    assert len(result.errors) == 0
 
 
 # ---------------------------------------------------------------------------

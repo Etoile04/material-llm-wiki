@@ -11,6 +11,7 @@ import json
 import uuid
 
 import pytest
+from unittest.mock import patch
 
 from scripts.slowlane_backfill import (
     BackfillResult,
@@ -111,8 +112,11 @@ class TestSlowlaneExtractsAndBackfillsL2:
     """Simulate 2 extracted NFMD values, call backfill_l2, verify NFMD format
     conversion produces correct reference_value fields."""
 
-    def test_l2_adaptation_produces_correct_format(self):
+    @patch("scripts.slowlane_backfill._supabase_insert")
+    def test_l2_adaptation_produces_correct_format(self, mock_insert):
         """NFMD param → reference_value via adapt_nfmd_param inside backfill_l2."""
+        mock_insert.return_value = "test-uuid"
+
         nfmd_params = [
             {
                 "material_raw": "U-Mo",
@@ -140,6 +144,7 @@ class TestSlowlaneExtractsAndBackfillsL2:
         assert result.written == 2
         assert result.skipped == 0
         assert len(result.errors) == 0
+        assert mock_insert.call_count == 2
 
 
 # ═══════════════════════════════════════════════════════════════════════════
